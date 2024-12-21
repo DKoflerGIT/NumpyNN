@@ -87,6 +87,10 @@ class ProgressBar(Callback):
         if self.pbar is not None:
             self.pbar.set_postfix_str(", ".join(stats))
 
+    def on_run_end(self, trainer_cache: dict[str, Any]) -> None:
+        if self.pbar is not None:
+            self.pbar.close()
+
 
 class Tensorboard(Callback):
     """Logs statistics to Tensorboard.
