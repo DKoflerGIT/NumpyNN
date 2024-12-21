@@ -3,30 +3,30 @@
 from typing import Optional
 
 from ...tensors import Tensor
-from .functions import Function, FunctionCache, PseudoCache
+from .functions import Function, FunctionContext, PseudoContext
 
 __all__ = ["linear"]
 
 
-class LinearFn(Function):
+class LinearFunction(Function):
     """Applies a linear transformation to the input."""
 
     @staticmethod
     def forward(
-        cache: FunctionCache, x: Tensor, w: Tensor, b: Optional[Tensor]
+        ctx: FunctionContext, x: Tensor, w: Tensor, b: Optional[Tensor]
     ) -> Tensor:
         y = x @ w.T
         if b:
             y += b
 
-        cache.push(x, w, b is not None)
+        ctx.add(x, w, b is not None)
         return y
 
     @staticmethod
     def backward(
-        cache: FunctionCache, dy: Tensor
+        ctx: FunctionContext, dy: Tensor
     ) -> tuple[Tensor, Tensor, Optional[Tensor]]:
-        x, w, b = cache.pop()
+        x, w, b = ctx.get()
 
         dx = dy @ w
         dw = (dy.T @ x).sum(tuple(range(dy.ndim - 2)))
@@ -56,4 +56,4 @@ def linear(x: Tensor, w: Tensor, b: Optional[Tensor] = None) -> Tensor:
     ----------
     :class:`compyute.nn.Linear`
     """
-    return LinearFn.forward(PseudoCache(), x, w, b)
+    return LinearFunction.forward(PseudoContext(), x, w, b)

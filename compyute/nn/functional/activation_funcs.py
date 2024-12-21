@@ -4,8 +4,7 @@ from ...tensor_ops.selection_ops import maximum
 from ...tensor_ops.unary_ops import exp
 from ...tensor_ops.unary_ops import tanh as _tanh
 from ...tensors import Tensor
-from ...typing import int8
-from .functions import Function, FunctionCache, PseudoCache
+from .functions import Function, FunctionContext, PseudoContext
 
 __all__ = [
     "relu",
@@ -19,18 +18,18 @@ __all__ = [
 ]
 
 
-class ReLUFn(Function):
+class ReLUFunction(Function):
     """Applies the Rectified Linear Unit activation function to the input."""
 
     @staticmethod
-    def forward(cache: FunctionCache, x: Tensor) -> Tensor:
+    def forward(ctx: FunctionContext, x: Tensor) -> Tensor:
         y = maximum(x, 0.0)
-        cache.push(y > 0.0)
+        ctx.add(y > 0.0)
         return y
 
     @staticmethod
-    def backward(cache: FunctionCache, dy: Tensor) -> Tensor:
-        (mask,) = cache.pop()
+    def backward(ctx: FunctionContext, dy: Tensor) -> Tensor:
+        mask = ctx.get()
         return dy * mask
 
 
@@ -51,21 +50,21 @@ def relu(x: Tensor) -> Tensor:
     --------
     :class:`compyute.nn.ReLU`
     """
-    return ReLUFn.forward(PseudoCache(), x)
+    return ReLUFunction.forward(PseudoContext(), x)
 
 
-class LeakyReLUFn(Function):
+class LeakyReLUFunction(Function):
     """Applies the leaky ReLU function to an input tensor."""
 
     @staticmethod
-    def forward(cache: FunctionCache, x: Tensor, alpha: float) -> Tensor:
+    def forward(ctx: FunctionContext, x: Tensor, alpha: float) -> Tensor:
         y = maximum(alpha * x, x)
-        cache.push(alpha, y > 0.0)
+        ctx.add(alpha, y > 0.0)
         return y
 
     @staticmethod
-    def backward(cache: FunctionCache, dy: Tensor) -> Tensor:
-        alpha, mask = cache.pop()
+    def backward(ctx: FunctionContext, dy: Tensor) -> Tensor:
+        alpha, mask = ctx.get()
         return dy * (mask + (~mask).to_type(dy.dtype) * alpha)
 
 
@@ -88,21 +87,21 @@ def leaky_relu(x: Tensor, alpha: float = 0.01) -> Tensor:
     --------
     :class:`compyute.nn.LeakyReLU`
     """
-    return LeakyReLUFn.forward(PseudoCache(), x, alpha)
+    return LeakyReLUFunction.forward(PseudoContext(), x, alpha)
 
 
-class SigmoidFn(Function):
+class SigmoidFunction(Function):
     """Applies the sigmoid function to an input tensor."""
 
     @staticmethod
-    def forward(cache: FunctionCache, x: Tensor) -> Tensor:
+    def forward(ctx: FunctionContext, x: Tensor) -> Tensor:
         y = 1.0 / (1.0 + exp(-x))
-        cache.push(y)
+        ctx.add(y)
         return y
 
     @staticmethod
-    def backward(cache: FunctionCache, dy: Tensor) -> Tensor:
-        (y,) = cache.pop()
+    def backward(ctx: FunctionContext, dy: Tensor) -> Tensor:
+        y = ctx.get()
         return y * (1.0 - y) * dy
 
 
@@ -123,21 +122,21 @@ def sigmoid(x: Tensor) -> Tensor:
     --------
     :class:`compyute.nn.Sigmoid`
     """
-    return SigmoidFn.forward(PseudoCache(), x)
+    return SigmoidFunction.forward(PseudoContext(), x)
 
 
-class TanhFn(Function):
+class TanhFunction(Function):
     """Applies the hyperbolic tangent activation function to the input."""
 
     @staticmethod
-    def forward(cache: FunctionCache, x: Tensor) -> Tensor:
+    def forward(ctx: FunctionContext, x: Tensor) -> Tensor:
         y = _tanh(x)
-        cache.push(y)
+        ctx.add(y)
         return y
 
     @staticmethod
-    def backward(cache: FunctionCache, dy: Tensor) -> Tensor:
-        (y,) = cache.pop()
+    def backward(ctx: FunctionContext, dy: Tensor) -> Tensor:
+        y = ctx.get()
         return (1.0 - y * y) * dy
 
 
@@ -158,23 +157,23 @@ def tanh(x: Tensor) -> Tensor:
     --------
     :class:`compyute.nn.Tanh`
     """
-    return TanhFn.forward(PseudoCache(), x)
+    return TanhFunction.forward(PseudoContext(), x)
 
 
-class GELUFn(Function):
+class GELUFunction(Function):
     """Applies the Gaussian Error Linear Unit activation function to the input."""
 
     @staticmethod
-    def forward(cache: FunctionCache, x: Tensor) -> Tensor:
+    def forward(ctx: FunctionContext, x: Tensor) -> Tensor:
         # sqrt(2/pi) = 0.7978845608
         tanh_term = _tanh(x * 0.7978845608 * (1.0 + 0.044715 * x * x))
         y = 0.5 * x * (1.0 + tanh_term)
-        cache.push(x, tanh_term)
+        ctx.add(x, tanh_term)
         return y
 
     @staticmethod
-    def backward(cache: FunctionCache, dy: Tensor) -> Tensor:
-        x, tanh_term = cache.pop()
+    def backward(ctx: FunctionContext, dy: Tensor) -> Tensor:
+        x, tanh_term = ctx.get()
         dx1 = 1.0 + tanh_term
         # sqrt(2/pi) * 3 * 0.044715 = 0.1070322243
         dx2 = x * (1.0 - tanh_term * tanh_term) * (0.7978845608 + 0.1070322243 * x * x)
@@ -198,22 +197,22 @@ def gelu(x: Tensor) -> Tensor:
     --------
     :class:`compyute.nn.GELU`
     """
-    return GELUFn.forward(PseudoCache(), x)
+    return GELUFunction.forward(PseudoContext(), x)
 
 
-class FastGELUFn(Function):
+class FastGELUFunction(Function):
     """Applies the Gaussian Error Linear Unit activation function to the input."""
 
     @staticmethod
-    def forward(cache: FunctionCache, x: Tensor) -> Tensor:
+    def forward(ctx: FunctionContext, x: Tensor) -> Tensor:
         sigm = 1.0 / (1.0 + exp(x * -1.702))
         y = x * sigm
-        cache.push(x, sigm)
+        ctx.add(x, sigm)
         return y
 
     @staticmethod
-    def backward(cache: FunctionCache, dy: Tensor) -> Tensor:
-        x, sigm = cache.pop()
+    def backward(ctx: FunctionContext, dy: Tensor) -> Tensor:
+        x, sigm = ctx.get()
         return dy * sigm * (1.0 + x * 1.702 * (1.0 - sigm))
 
 
@@ -234,22 +233,22 @@ def fast_gelu(x: Tensor) -> Tensor:
     --------
     :class:`compyute.nn.FastGELU`
     """
-    return FastGELUFn.forward(PseudoCache(), x)
+    return FastGELUFunction.forward(PseudoContext(), x)
 
 
-class SiLUFn(Function):
+class SiLUFunction(Function):
     """Applies the Sigmoid Linear Unit activation function to the input."""
 
     @staticmethod
-    def forward(cache: FunctionCache, x: Tensor) -> Tensor:
+    def forward(ctx: FunctionContext, x: Tensor) -> Tensor:
         sigm = 1.0 / (1.0 + exp(-x))
         y = x * sigm
-        cache.push(x, sigm)
+        ctx.add(x, sigm)
         return y
 
     @staticmethod
-    def backward(cache: FunctionCache, dy: Tensor) -> Tensor:
-        x, sigm = cache.pop()
+    def backward(ctx: FunctionContext, dy: Tensor) -> Tensor:
+        x, sigm = ctx.get()
         return dy * sigm * (1.0 + x * (1.0 - sigm))
 
 
@@ -270,22 +269,22 @@ def silu(x: Tensor) -> Tensor:
     --------
     :class:`compyute.nn.SiLU`
     """
-    return SiLUFn.forward(PseudoCache(), x)
+    return SiLUFunction.forward(PseudoContext(), x)
 
 
-class SoftmaxFn(Function):
+class SoftmaxFunction(Function):
     """Applies the softmax activation function to the last dimension of an input tensor."""
 
     @staticmethod
-    def forward(cache: FunctionCache, x: Tensor, dim: int) -> Tensor:
+    def forward(ctx: FunctionContext, x: Tensor, dim: int) -> Tensor:
         x = exp(x - x.max(dim, keepdims=True))
         y = x / x.sum(dim, keepdims=True)
-        cache.push(dim, y)
+        ctx.add(dim, y)
         return y
 
     @staticmethod
-    def backward(cache: FunctionCache, dy: Tensor) -> Tensor:
-        dim, y = cache.pop()
+    def backward(ctx: FunctionContext, dy: Tensor) -> Tensor:
+        dim, y = ctx.get()
         return y * (dy - (dy * y).sum(dim, keepdims=True))  # thank you ChatGPT
 
 
@@ -308,4 +307,4 @@ def softmax(x: Tensor, dim: int = -1) -> Tensor:
     --------
     :class:`compyute.nn.Softmax`
     """
-    return SoftmaxFn.forward(PseudoCache(), x, dim)
+    return SoftmaxFunction.forward(PseudoContext(), x, dim)

@@ -4,14 +4,14 @@ from typing import Literal, Optional, TypeAlias
 
 from ...tensors import Tensor
 from ..functional.activation_funcs import (
-    FastGELUFn,
-    GELUFn,
-    LeakyReLUFn,
-    ReLUFn,
-    SigmoidFn,
-    SiLUFn,
-    SoftmaxFn,
-    TanhFn,
+    FastGELUFunction,
+    GELUFunction,
+    LeakyReLUFunction,
+    ReLUFunction,
+    SigmoidFunction,
+    SiLUFunction,
+    SoftmaxFunction,
+    TanhFunction,
 )
 from .module import Module
 
@@ -42,11 +42,11 @@ class GELU(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return GELUFn.forward(self.fcache, x)
+        return GELUFunction.forward(self.function_ctx, x)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return GELUFn.backward(self.fcache, dy)
+        return GELUFunction.backward(self.function_ctx, dy)
 
 
 class FastGELU(Module):
@@ -64,11 +64,11 @@ class FastGELU(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return FastGELUFn.forward(self.fcache, x)
+        return FastGELUFunction.forward(self.function_ctx, x)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return FastGELUFn.backward(self.fcache, dy)
+        return FastGELUFunction.backward(self.function_ctx, dy)
 
 
 class LeakyReLU(Module):
@@ -91,11 +91,11 @@ class LeakyReLU(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return LeakyReLUFn.forward(self.fcache, x, self.alpha)
+        return LeakyReLUFunction.forward(self.function_ctx, x, self.alpha)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return LeakyReLUFn.backward(self.fcache, dy)
+        return LeakyReLUFunction.backward(self.function_ctx, dy)
 
 
 class ReLU(Module):
@@ -113,11 +113,11 @@ class ReLU(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return ReLUFn.forward(self.fcache, x)
+        return ReLUFunction.forward(self.function_ctx, x)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return ReLUFn.backward(self.fcache, dy)
+        return ReLUFunction.backward(self.function_ctx, dy)
 
 
 class Sigmoid(Module):
@@ -134,11 +134,11 @@ class Sigmoid(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return SigmoidFn.forward(self.fcache, x)
+        return SigmoidFunction.forward(self.function_ctx, x)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return SigmoidFn.backward(self.fcache, dy)
+        return SigmoidFunction.backward(self.function_ctx, dy)
 
 
 class SiLU(Module):
@@ -155,11 +155,11 @@ class SiLU(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return SiLUFn.forward(self.fcache, x)
+        return SiLUFunction.forward(self.function_ctx, x)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return SiLUFn.backward(self.fcache, dy)
+        return SiLUFunction.backward(self.function_ctx, dy)
 
 
 class Softmax(Module):
@@ -176,11 +176,11 @@ class Softmax(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return SoftmaxFn.forward(self.fcache, x, -1)
+        return SoftmaxFunction.forward(self.function_ctx, x, -1)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return SoftmaxFn.backward(self.fcache, dy)
+        return SoftmaxFunction.backward(self.function_ctx, dy)
 
 
 class Tanh(Module):
@@ -197,11 +197,11 @@ class Tanh(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return TanhFn.forward(self.fcache, x)
+        return TanhFunction.forward(self.function_ctx, x)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return TanhFn.backward(self.fcache, dy)
+        return TanhFunction.backward(self.function_ctx, dy)
 
 
 ActivationLike: TypeAlias = Literal[

@@ -5,7 +5,7 @@ from typing import Literal, Optional
 
 from ...random import uniform
 from ...tensors import Tensor
-from ..functional.recurrent_funcs import GRUFn, LSTMFn, RecurrentFn
+from ..functional.recurrent_funcs import GRUFunction, LSTMFunction, RecurrentFunction
 from ..parameter import Parameter
 from .module import Module
 
@@ -66,25 +66,26 @@ class Recurrent(Module):
 
         # init parameters
         k = 1.0 / math.sqrt(self.h_channels)
-        w_i_init = lambda: uniform((h_channels, in_channels), -k, k)
-        w_h_init = lambda: uniform((h_channels, h_channels), -k, k)
-        b_init = lambda: uniform((h_channels,), -k, k)
-
-        self.w_i = Parameter(w_i_init())
-        self.b_i = Parameter(b_init())
-
-        self.w_h = Parameter(w_h_init())
-        self.b_h = Parameter(b_init())
+        self.w_i = Parameter(uniform((h_channels, in_channels), -k, k))
+        self.b_i = Parameter(uniform((h_channels,), -k, k))
+        self.w_h = Parameter(uniform((h_channels, h_channels), -k, k))
+        self.b_h = Parameter(uniform((h_channels,), -k, k))
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return RecurrentFn.forward(
-            self.fcache, x, self.w_i, self.b_i, self.w_h, self.b_h, self.activation
+        return RecurrentFunction.forward(
+            self.function_ctx,
+            x,
+            self.w_i,
+            self.b_i,
+            self.w_h,
+            self.b_h,
+            self.activation,
         )
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        dx, dw_i, db_i, dw_h, db_h = RecurrentFn.backward(self.fcache, dy)
+        dx, dw_i, db_i, dw_h, db_h = RecurrentFunction.backward(self.function_ctx, dy)
         self.update_parameter_grad(self.w_i, dw_i)
         self.update_parameter_grad(self.b_i, db_i)
         self.update_parameter_grad(self.w_h, dw_h)
@@ -156,89 +157,30 @@ class LSTM(Module):
 
         # init parameters
         k = 1.0 / math.sqrt(self.h_channels)
-        w_i_init = lambda: uniform((h_channels, in_channels), -k, k)
-        w_h_init = lambda: uniform((h_channels, h_channels), -k, k)
-        b_init = lambda: uniform((h_channels,), -k, k)
-
-        self.w_ii = Parameter(w_i_init())
-        self.b_ii = None if not bias else Parameter(b_init())
-        self.w_if = Parameter(w_i_init())
-        self.b_if = None if not bias else Parameter(b_init())
-        self.w_ig = Parameter(w_i_init())
-        self.b_ig = None if not bias else Parameter(b_init())
-        self.w_io = Parameter(w_i_init())
-        self.b_io = None if not bias else Parameter(b_init())
-
-        self.w_hi = Parameter(w_h_init())
-        self.b_hi = None if not bias else Parameter(b_init())
-        self.w_hf = Parameter(w_h_init())
-        self.b_hf = None if not bias else Parameter(b_init())
-        self.w_hg = Parameter(w_h_init())
-        self.b_hg = None if not bias else Parameter(b_init())
-        self.w_ho = Parameter(w_h_init())
-        self.b_ho = None if not bias else Parameter(b_init())
+        self.w_i = Parameter(uniform((4 * h_channels, in_channels), -k, k))
+        self.b_i = None if not bias else Parameter(uniform((4 * h_channels,), -k, k))
+        self.w_h = Parameter(uniform((4 * h_channels, h_channels), -k, k))
+        self.b_h = None if not bias else Parameter(uniform((4 * h_channels,), -k, k))
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return LSTMFn.forward(
-            self.fcache,
+        return LSTMFunction.forward(
+            self.function_ctx,
             x,
-            self.w_ii,
-            self.b_ii,
-            self.w_if,
-            self.b_if,
-            self.w_ig,
-            self.b_ig,
-            self.w_io,
-            self.b_io,
-            self.w_hi,
-            self.b_hi,
-            self.w_hf,
-            self.b_hf,
-            self.w_hg,
-            self.b_hg,
-            self.w_ho,
-            self.b_ho,
+            self.w_i,
+            self.b_i,
+            self.w_h,
+            self.b_h,
             self.activation,
         )
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        (
-            dx,
-            dw_ii,
-            db_ii,
-            dw_if,
-            db_if,
-            dw_ig,
-            db_ig,
-            dw_io,
-            db_io,
-            dw_hi,
-            db_hi,
-            dw_hf,
-            db_hf,
-            dw_hg,
-            db_hg,
-            dw_ho,
-            db_ho,
-        ) = LSTMFn.backward(self.fcache, dy)
-        self.update_parameter_grad(self.w_ii, dw_ii)
-        self.update_parameter_grad(self.b_ii, db_ii)
-        self.update_parameter_grad(self.w_if, dw_if)
-        self.update_parameter_grad(self.b_if, db_if)
-        self.update_parameter_grad(self.w_ig, dw_ig)
-        self.update_parameter_grad(self.b_ig, db_ig)
-        self.update_parameter_grad(self.w_io, dw_io)
-        self.update_parameter_grad(self.b_io, db_io)
-        self.update_parameter_grad(self.w_hi, dw_hi)
-        self.update_parameter_grad(self.b_hi, db_hi)
-        self.update_parameter_grad(self.w_hf, dw_hf)
-        self.update_parameter_grad(self.b_hf, db_hf)
-        self.update_parameter_grad(self.w_hg, dw_hg)
-        self.update_parameter_grad(self.b_hg, db_hg)
-        self.update_parameter_grad(self.w_ho, dw_ho)
-        self.update_parameter_grad(self.b_ho, db_ho)
+        dx, dw_i, db_i, dw_h, db_h = LSTMFunction.backward(self.function_ctx, dy)
+        self.update_parameter_grad(self.w_i, dw_i)
+        self.update_parameter_grad(self.b_i, db_i)
+        self.update_parameter_grad(self.w_h, dw_h)
+        self.update_parameter_grad(self.b_h, db_h)
         return dx
 
 
@@ -304,71 +246,28 @@ class GRU(Module):
 
         # init parameters
         k = 1.0 / math.sqrt(self.h_channels)
-        w_i_init = lambda: uniform((h_channels, in_channels), -k, k)
-        w_h_init = lambda: uniform((h_channels, h_channels), -k, k)
-        b_init = lambda: uniform((h_channels,), -k, k)
-
-        self.w_ir = Parameter(w_i_init())
-        self.b_ir = None if not bias else Parameter(b_init())
-        self.w_iz = Parameter(w_i_init())
-        self.b_iz = None if not bias else Parameter(b_init())
-        self.w_in = Parameter(w_i_init())
-        self.b_in = None if not bias else Parameter(b_init())
-
-        self.w_hr = Parameter(w_h_init())
-        self.b_hr = None if not bias else Parameter(b_init())
-        self.w_hz = Parameter(w_h_init())
-        self.b_hz = None if not bias else Parameter(b_init())
-        self.w_hn = Parameter(w_h_init())
-        self.b_hn = None if not bias else Parameter(b_init())
+        self.w_i = Parameter(uniform((h_channels, in_channels), -k, k))
+        self.b_i = None if not bias else Parameter(uniform((h_channels,), -k, k))
+        self.w_h = Parameter(uniform((h_channels, h_channels), -k, k))
+        self.b_h = None if not bias else Parameter(uniform((h_channels,), -k, k))
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return GRUFn.forward(
-            self.fcache,
+        return GRUFunction.forward(
+            self.function_ctx,
             x,
-            self.w_ir,
-            self.b_ir,
-            self.w_iz,
-            self.b_iz,
-            self.w_in,
-            self.b_in,
-            self.w_hr,
-            self.b_hr,
-            self.w_hz,
-            self.b_hz,
-            self.w_hn,
-            self.b_hn,
+            self.w_i,
+            self.b_i,
+            self.w_h,
+            self.b_h,
             self.activation,
         )
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        (
-            dx,
-            dw_ir,
-            db_ir,
-            dw_iz,
-            db_iz,
-            dw_in,
-            db_in,
-            dw_hr,
-            db_hr,
-            dw_hz,
-            db_hz,
-            dw_hn,
-            db_hn,
-        ) = GRUFn.backward(self.fcache, dy)
-        self.update_parameter_grad(self.w_ir, dw_ir)
-        self.update_parameter_grad(self.b_ir, db_ir)
-        self.update_parameter_grad(self.w_iz, dw_iz)
-        self.update_parameter_grad(self.b_iz, db_iz)
-        self.update_parameter_grad(self.w_in, dw_in)
-        self.update_parameter_grad(self.b_in, db_in)
-        self.update_parameter_grad(self.w_hr, dw_hr)
-        self.update_parameter_grad(self.b_hr, db_hr)
-        self.update_parameter_grad(self.w_hz, dw_hz)
-        self.update_parameter_grad(self.b_hz, db_hz)
-        self.update_parameter_grad(self.w_hn, dw_hn)
-        self.update_parameter_grad(self.b_hn, db_hn)
+        dx, dw_i, db_i, dw_h, db_h = GRUFunction.backward(self.function_ctx, dy)
+        self.update_parameter_grad(self.w_i, dw_i)
+        self.update_parameter_grad(self.b_i, db_i)
+        self.update_parameter_grad(self.w_h, dw_h)
+        self.update_parameter_grad(self.b_h, db_h)
         return dx

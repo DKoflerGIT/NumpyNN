@@ -6,32 +6,35 @@ from collections.abc import Generator
 from contextlib import contextmanager
 from typing import Any
 
-__all__ = ["Function", "FunctionCache", "no_caching"]
+__all__ = ["Function", "FunctionContext", "no_cache_ctx"]
 
 
-class FunctionCache:
-    """Cache for intermediate data that needs to be cached for gradient computation.
-    Data is stored as a stack (last in - first out)"""
+class FunctionContext:
+    """Cache for context data that needs to be cached for gradient computation.
+    Items are cached as a stack (last in - first out)"""
 
-    cache: deque[tuple[Any, ...]]
+    context: deque[tuple[Any, ...]]
 
     def __init__(self) -> None:
-        self.cache = deque()
+        self.context = deque()
 
-    def push(self, *items: Any) -> None:
-        """Adds items to the function cache."""
-        if get_caching_enabled():
-            self.cache.append(items)
+    def add(self, *items: Any) -> None:
+        """Adds items to the function context stack."""
+        if get_cache_ctx_enabled():
+            self.context.append(items)
 
-    def pop(self) -> tuple[Any, ...]:
-        """Removes and returns the topmost items from the function cache."""
-        return self.cache.pop()
+    def get(self) -> Any:
+        """Removes and returns the topmost items from the function context stack."""
+        items = self.context.pop()
+        if len(items) == 1:
+            return items[0]
+        return items
 
 
-class PseudoCache(FunctionCache):
-    """Pseudo cache as a placeholder that does not cache anything."""
+class PseudoContext(FunctionContext):
+    """Pseudo context that does not cache anything."""
 
-    def push(self, *values: Any) -> None: ...
+    def add(self, *values: Any) -> None: ...
 
 
 class Function(ABC):
@@ -54,25 +57,25 @@ class Function(ABC):
         """Backward pass of the function."""
 
 
-caching_enabled: bool = True
+context_enabled: bool = True
 
 
-def get_caching_enabled() -> bool:
-    """Returns ``True`` if caching is enabled."""
-    return caching_enabled
+def get_cache_ctx_enabled() -> bool:
+    """Returns ``True`` if caching of context data for gradient computation is enabled."""
+    return context_enabled
 
 
-def set_caching_enabled(enabled: bool) -> None:
-    """Sets whether caching of values for gradient computation is enabled."""
-    global caching_enabled
-    caching_enabled = enabled
+def set_cache_ctx_enabled(enabled: bool) -> None:
+    """Sets whether caching of context data for gradient computation is enabled."""
+    global context_enabled
+    context_enabled = enabled
 
 
 @contextmanager
-def no_caching() -> Generator:
-    """Context manager to disable caching of values for gradient computation."""
-    set_caching_enabled(False)
+def no_cache_ctx() -> Generator:
+    """Context manager to disable caching of context data for gradient computation."""
+    set_cache_ctx_enabled(False)
     try:
         yield
     finally:
-        set_caching_enabled(True)
+        set_cache_ctx_enabled(True)

@@ -164,8 +164,8 @@ class Tensor:
             prefix
             + self.device.module.array2string(
                 self.data,
-                100,
-                4,
+                max_line_width=80,
+                precision=4,
                 separator=", ",
                 prefix=prefix,
                 floatmode="maxprec_equal",
@@ -197,7 +197,6 @@ class Tensor:
         return Tensor(self.data + to_arraylike(other))
 
     def __radd__(self, other: Optional[ScalarLike]) -> Tensor:
-        # for gradient accumulation make None += Tensor to be 0 += Tensor
         return Tensor(self.data + other)
 
     def __iadd__(self, other: Tensor | ScalarLike) -> Tensor:

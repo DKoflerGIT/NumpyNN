@@ -3,30 +3,30 @@
 from ...random.random import bernoulli
 from ...tensors import Tensor
 from ...typing import int8
-from .functions import Function, FunctionCache, PseudoCache
+from .functions import Function, FunctionContext, PseudoContext
 
 __all__ = ["dropout"]
 
 
-class DropoutFn(Function):
+class DropoutFunction(Function):
     """Randomly sets tensor values to zero."""
 
     @staticmethod
-    def forward(cache: FunctionCache, x: Tensor, p: float, training: bool) -> Tensor:
+    def forward(ctx: FunctionContext, x: Tensor, p: float, training: bool) -> Tensor:
         if not training or p == 0.0:
-            cache.push(False, p, None)  # a bit hacky
+            ctx.add(False, p, None)  # a bit hacky
             return x
 
         p = 1.0 - p
         dropout_mask = bernoulli(p, x.shape, device=x.device, dtype=int8)
         y = x * dropout_mask / p
 
-        cache.push(True, p, dropout_mask)
+        ctx.add(True, p, dropout_mask)
         return y
 
     @staticmethod
-    def backward(cache: FunctionCache, dy: Tensor) -> Tensor:
-        training, p, dropout_mask = cache.pop()
+    def backward(ctx: FunctionContext, dy: Tensor) -> Tensor:
+        training, p, dropout_mask = ctx.get()
         if not training:
             return dy
         return dy * dropout_mask / p
@@ -49,4 +49,4 @@ def dropout(x: Tensor, p: float = 0.5, training: bool = False) -> Tensor:
     Tensor
         Output tensor.
     """
-    return DropoutFn.forward(PseudoCache(), x, p, training)
+    return DropoutFunction.forward(PseudoContext(), x, p, training)

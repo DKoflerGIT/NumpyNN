@@ -3,7 +3,7 @@
 from typing import Optional
 
 from ...tensors import ShapeLike, Tensor
-from ..functional.shape_funcs import FlattenFn, ReshapeFn, SliceFn
+from ..functional.shape_funcs import FlattenFunction, ReshapeFunction, SliceFunction
 from .module import Module
 
 __all__ = ["Flatten", "Reshape", "Slice"]
@@ -20,11 +20,11 @@ class Flatten(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return FlattenFn.forward(self.fcache, x)
+        return FlattenFunction.forward(self.function_ctx, x)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return FlattenFn.backward(self.fcache, dy)
+        return FlattenFunction.backward(self.function_ctx, dy)
 
 
 class Reshape(Module):
@@ -44,11 +44,11 @@ class Reshape(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return ReshapeFn.forward(self.fcache, x, self.shape)
+        return ReshapeFunction.forward(self.function_ctx, x, self.shape)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return ReshapeFn.backward(self.fcache, dy)
+        return ReshapeFunction.backward(self.function_ctx, dy)
 
 
 class Slice(Module):
@@ -68,11 +68,11 @@ class Slice(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return SliceFn.forward(self.fcache, x, self.slice)
+        return SliceFunction.forward(self.function_ctx, x, self.slice)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return SliceFn.backward(self.fcache, dy)
+        return SliceFunction.backward(self.function_ctx, dy)
 
 
 def _parse_slices(slice_str: str) -> tuple[slice | int, ...]:

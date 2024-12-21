@@ -5,7 +5,7 @@ from typing import Optional
 from ...random import normal
 from ...tensor_ops.creation_ops import empty
 from ...tensors import Tensor
-from ..functional.embedding_funcs import EmbeddingFn
+from ..functional.embedding_funcs import EmbeddingFunction
 from ..parameter import Parameter
 from .module import Module
 
@@ -25,10 +25,10 @@ class Embedding(Module):
 
     Parameters
     ----------
-    n_embeddings : int
+    n_embeds : int
         Number of embedding vectors.
-    embedding_dim : int
-        Embedding vector dimensions.
+    embed_dim : int
+        Nubmer of embedding vector dimensions.
     label : str, optional
         Module label. Defaults to ``None``. If ``None``, the class name is used.
 
@@ -38,24 +38,21 @@ class Embedding(Module):
     """
 
     def __init__(
-        self,
-        n_embeddings: int,
-        embedding_dim: int,
-        label: Optional[str] = None,
+        self, n_embeds: int, embed_dim: int, label: Optional[str] = None
     ) -> None:
         super().__init__(label)
-        self.n_embeddings = n_embeddings
-        self.embedding_dim = embedding_dim
+        self.n_embeddings = n_embeds
+        self.embedding_dim = embed_dim
 
         # init parameters
-        self.w = Parameter(normal((n_embeddings, embedding_dim)))
+        self.w = Parameter(normal((n_embeds, embed_dim)))
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return EmbeddingFn.forward(self.fcache, x, self.w)
+        return EmbeddingFunction.forward(self.function_ctx, x, self.w)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        dw = EmbeddingFn.backward(self.fcache, dy)
+        dw = EmbeddingFunction.backward(self.function_ctx, dy)
         self.update_parameter_grad(self.w, dw)
         return empty((0,))

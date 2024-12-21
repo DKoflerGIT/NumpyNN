@@ -3,7 +3,11 @@
 from typing import Optional
 
 from ...tensors import ShapeLike, Tensor
-from ..functional.pooling_funcs import AvgPooling2DFn, MaxPooling2DFn, Upsample2DFn
+from ..functional.pooling_funcs import (
+    AvgPooling2DFunction,
+    MaxPooling2DFunction,
+    Upsample2DFunction,
+)
 from .module import Module
 
 __all__ = ["Upsample2D", "MaxPooling2D", "AvgPooling2D"]
@@ -33,11 +37,13 @@ class Upsample2D(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return Upsample2DFn.forward(self.fcache, x, self.scaling, self.target_shape)
+        return Upsample2DFunction.forward(
+            self.function_ctx, x, self.scaling, self.target_shape
+        )
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return Upsample2DFn.backward(self.fcache, dy)
+        return Upsample2DFunction.backward(self.function_ctx, dy)
 
 
 class MaxPooling2D(Module):
@@ -56,11 +62,11 @@ class MaxPooling2D(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return MaxPooling2DFn.forward(self.fcache, x, self.kernel_size)
+        return MaxPooling2DFunction.forward(self.function_ctx, x, self.kernel_size)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return MaxPooling2DFn.backward(self.fcache, dy)
+        return MaxPooling2DFunction.backward(self.function_ctx, dy)
 
 
 class AvgPooling2D(Module):
@@ -79,8 +85,8 @@ class AvgPooling2D(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return AvgPooling2DFn.forward(self.fcache, x, self.kernel_size)
+        return AvgPooling2DFunction.forward(self.function_ctx, x, self.kernel_size)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return AvgPooling2DFn.backward(self.fcache, dy)
+        return AvgPooling2DFunction.backward(self.function_ctx, dy)

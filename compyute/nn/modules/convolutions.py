@@ -6,10 +6,10 @@ from typing import Literal, Optional
 from ...random import uniform
 from ...tensors import Tensor
 from ..functional.convolution_funcs import (
-    Conv1DFn,
-    Conv2DFn,
-    ConvTranspose1DFn,
-    ConvTranspose2DFn,
+    Conv1DFunction,
+    Conv2DFunction,
+    ConvTranspose1DFunction,
+    ConvTranspose2DFunction,
 )
 from ..parameter import Parameter
 from .module import Module
@@ -103,13 +103,19 @@ class Conv1D(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return Conv1DFn.forward(
-            self.fcache, x, self.w, self.b, self.padding, self.stride, self.dilation
+        return Conv1DFunction.forward(
+            self.function_ctx,
+            x,
+            self.w,
+            self.b,
+            self.padding,
+            self.stride,
+            self.dilation,
         )
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        dx, dw, db = Conv1DFn.backward(self.fcache, dy)
+        dx, dw, db = Conv1DFunction.backward(self.function_ctx, dy)
         self.update_parameter_grad(self.w, dw)
         self.update_parameter_grad(self.b, db)
         return dx
@@ -192,13 +198,19 @@ class Conv2D(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return Conv2DFn.forward(
-            self.fcache, x, self.w, self.b, self.padding, self.stride, self.dilation
+        return Conv2DFunction.forward(
+            self.function_ctx,
+            x,
+            self.w,
+            self.b,
+            self.padding,
+            self.stride,
+            self.dilation,
         )
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        dx, dw, db = Conv2DFn.backward(self.fcache, dy)
+        dx, dw, db = Conv2DFunction.backward(self.function_ctx, dy)
         self.update_parameter_grad(self.w, dw)
         self.update_parameter_grad(self.b, db)
         return dx
@@ -275,13 +287,19 @@ class ConvTranspose1D(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return ConvTranspose1DFn.forward(
-            self.fcache, x, self.w, self.b, self.padding, self.stride, self.dilation
+        return ConvTranspose1DFunction.forward(
+            self.function_ctx,
+            x,
+            self.w,
+            self.b,
+            self.padding,
+            self.stride,
+            self.dilation,
         )
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        dx, dw, db = ConvTranspose1DFn.backward(self.fcache, dy)
+        dx, dw, db = ConvTranspose1DFunction.backward(self.function_ctx, dy)
         self.update_parameter_grad(self.w, dw)
         self.update_parameter_grad(self.b, db)
         return dx
@@ -360,13 +378,19 @@ class ConvTranspose2D(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return ConvTranspose2DFn.forward(
-            self.fcache, x, self.w, self.b, self.padding, self.stride, self.dilation
+        return ConvTranspose2DFunction.forward(
+            self.function_ctx,
+            x,
+            self.w,
+            self.b,
+            self.padding,
+            self.stride,
+            self.dilation,
         )
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        dx, dw, db = ConvTranspose2DFn.backward(self.fcache, dy)
+        dx, dw, db = ConvTranspose2DFunction.backward(self.function_ctx, dy)
         self.update_parameter_grad(self.w, dw)
         self.update_parameter_grad(self.b, db)
         return dx
