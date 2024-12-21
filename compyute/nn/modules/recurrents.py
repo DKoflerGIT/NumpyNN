@@ -5,7 +5,7 @@ from typing import Literal, Optional
 
 from ...random import uniform
 from ...tensors import Tensor
-from ..functional.recurrent_funcs import GRUFn, LSTMFn, RecurrentFn
+from ..functional.recurrent_funcs import GRUFunction, LSTMFunction, RecurrentFunction
 from ..parameter import Parameter
 from .module import Module
 
@@ -73,13 +73,19 @@ class Recurrent(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return RecurrentFn.forward(
-            self.fcache, x, self.w_i, self.b_i, self.w_h, self.b_h, self.activation
+        return RecurrentFunction.forward(
+            self.function_ctx,
+            x,
+            self.w_i,
+            self.b_i,
+            self.w_h,
+            self.b_h,
+            self.activation,
         )
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        dx, dw_i, db_i, dw_h, db_h = RecurrentFn.backward(self.fcache, dy)
+        dx, dw_i, db_i, dw_h, db_h = RecurrentFunction.backward(self.function_ctx, dy)
         self.update_parameter_grad(self.w_i, dw_i)
         self.update_parameter_grad(self.b_i, db_i)
         self.update_parameter_grad(self.w_h, dw_h)
@@ -158,13 +164,19 @@ class LSTM(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return LSTMFn.forward(
-            self.fcache, x, self.w_i, self.b_i, self.w_h, self.b_h, self.activation
+        return LSTMFunction.forward(
+            self.function_ctx,
+            x,
+            self.w_i,
+            self.b_i,
+            self.w_h,
+            self.b_h,
+            self.activation,
         )
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        dx, dw_i, db_i, dw_h, db_h = LSTMFn.backward(self.fcache, dy)
+        dx, dw_i, db_i, dw_h, db_h = LSTMFunction.backward(self.function_ctx, dy)
         self.update_parameter_grad(self.w_i, dw_i)
         self.update_parameter_grad(self.b_i, db_i)
         self.update_parameter_grad(self.w_h, dw_h)
@@ -241,13 +253,19 @@ class GRU(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return GRUFn.forward(
-            self.fcache, x, self.w_i, self.b_i, self.w_h, self.b_h, self.activation
+        return GRUFunction.forward(
+            self.function_ctx,
+            x,
+            self.w_i,
+            self.b_i,
+            self.w_h,
+            self.b_h,
+            self.activation,
         )
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        dx, dw_i, db_i, dw_h, db_h = GRUFn.backward(self.fcache, dy)
+        dx, dw_i, db_i, dw_h, db_h = GRUFunction.backward(self.function_ctx, dy)
         self.update_parameter_grad(self.w_i, dw_i)
         self.update_parameter_grad(self.b_i, db_i)
         self.update_parameter_grad(self.w_h, dw_h)

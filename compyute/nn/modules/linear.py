@@ -5,7 +5,7 @@ from typing import Optional
 
 from ...random import uniform
 from ...tensors import Tensor
-from ..functional.linear_funcs import LinearFn
+from ..functional.linear_funcs import LinearFunction
 from ..parameter import Parameter
 from .module import Module
 
@@ -62,11 +62,11 @@ class Linear(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return LinearFn.forward(self.fcache, x, self.w, self.b)
+        return LinearFunction.forward(self.function_ctx, x, self.w, self.b)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        dx, dw, db = LinearFn.backward(self.fcache, dy)
+        dx, dw, db = LinearFunction.backward(self.function_ctx, dy)
         self.update_parameter_grad(self.w, dw)
         self.update_parameter_grad(self.b, db)
         return dx

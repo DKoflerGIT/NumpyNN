@@ -5,7 +5,7 @@ from typing import Optional
 from ...random import normal
 from ...tensor_ops.creation_ops import empty
 from ...tensors import Tensor
-from ..functional.embedding_funcs import EmbeddingFn
+from ..functional.embedding_funcs import EmbeddingFunction
 from ..parameter import Parameter
 from .module import Module
 
@@ -49,10 +49,10 @@ class Embedding(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return EmbeddingFn.forward(self.fcache, x, self.w)
+        return EmbeddingFunction.forward(self.function_ctx, x, self.w)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        dw = EmbeddingFn.backward(self.fcache, dy)
+        dw = EmbeddingFunction.backward(self.function_ctx, dy)
         self.update_parameter_grad(self.w, dw)
         return empty((0,))

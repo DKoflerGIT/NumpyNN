@@ -3,7 +3,7 @@
 from collections.abc import Iterable
 from typing import Any, Literal, Optional
 
-from tqdm.auto import tqdm
+from tqdm import tqdm
 
 from ...utils.tensorboard import SummaryWriter
 from .callback import Callback
@@ -70,14 +70,13 @@ class ProgressBar(Callback):
                 unit=" steps",
                 total=trainer_cache["train_steps"],
             )
+        elif self.pbar is not None:
+            self.pbar.update()
 
     def on_epoch_end(self, trainer_cache: dict[str, Any]) -> None:
         self._set_pbar_postfix(trainer_cache)
-        if self.pbar is not None:
-            if self.mode == "epoch":
-                self.pbar.update()
-            else:
-                self.pbar.close()
+        if self.pbar is not None and self.mode == "step":
+            self.pbar.close()
 
     def _set_pbar_postfix(self, trainer_cache: dict[str, Any]) -> None:
         stats = []

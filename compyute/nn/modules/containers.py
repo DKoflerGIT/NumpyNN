@@ -76,13 +76,14 @@ class ParallelConcat(Module):
     def forward(self, x: Tensor) -> Tensor:
         ys = [m(x) for m in self.modules]
         y = concat(ys, dim=self.concat_dim)
-        self.fcache.push(list(accumulate(y.shape[self.concat_dim] for y in ys[:-1])))
+        split_indices = list(accumulate(y.shape[self.concat_dim] for y in ys[:-1]))
+        self.function_ctx.add(split_indices)
         return y
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        (y_idx,) = self.fcache.pop()
-        splits = split(dy, splits=y_idx, dim=self.concat_dim)
+        split_indices = self.function_ctx.get()
+        splits = split(dy, splits=split_indices, dim=self.concat_dim)
         return tensorsum(m.backward(s) for m, s in zip(self.modules, splits))
 
 

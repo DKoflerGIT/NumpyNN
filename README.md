@@ -184,7 +184,7 @@ for epoch in range(epochs):
     
     # validiation
     model.inference()
-    with nn.no_caching():  # disable caching required for gradient computation
+    with nn.no_cache_ctx():  # disable caching of contextual data for gradient computation
         val_loss = 0
         for x, y in val_dl():
             y_pred = model(x)

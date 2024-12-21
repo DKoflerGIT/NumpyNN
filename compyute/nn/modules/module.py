@@ -15,7 +15,7 @@ from ...tensor_ops.unary_ops import is_nan
 from ...tensors import Tensor
 from ...typing import DType
 from ...utils import get_debug_mode
-from ..functional.functions import FunctionCache, PseudoCache
+from ..functional.functions import FunctionContext, PseudoContext
 from ..parameter import Buffer, Parameter
 
 __all__ = ["Module", "Identity", "ModuleList"]
@@ -32,7 +32,7 @@ class Module(ABC):
 
     def __init__(self, label: Optional[str] = None) -> None:
         self.label = label or self.__class__.__name__
-        self.fcache = FunctionCache()
+        self.function_ctx = FunctionContext()
         self.x: Optional[Tensor] = None
         self.y: Optional[Tensor] = None
         self._is_training = True
@@ -122,7 +122,7 @@ class Module(ABC):
     def training(self) -> None:
         """Puts the module in training mode."""
         self._is_training = True
-        self.fcache = FunctionCache()
+        self.function_ctx = FunctionContext()
 
         for module in self.get_modules(recursive=False):
             module.training()
@@ -130,7 +130,7 @@ class Module(ABC):
     def inference(self) -> None:
         """Puts the module in inference mode."""
         self._is_training = False
-        self.fcache = PseudoCache()
+        self.function_ctx = PseudoContext()
 
         for module in self.get_modules(recursive=False):
             module.inference()
@@ -378,7 +378,7 @@ class Module(ABC):
         force : bool, optional
             Whether to force clean and ignore ``retain_values``. Defaults to ``False``.
         """
-        self.fcache.cache.clear()
+        self.function_ctx.context.clear()
 
         if not self._retain_values or force:
             self.x = self.y = None

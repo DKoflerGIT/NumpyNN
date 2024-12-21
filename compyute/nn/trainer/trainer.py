@@ -3,7 +3,7 @@
 from typing import Any, Optional
 
 from ...tensors import Tensor
-from ..functional.functions import no_caching
+from ..functional.functions import no_cache_ctx
 from ..losses import LossLike, get_loss_function
 from ..metrics import MetricLike, get_metric_function
 from ..modules.module import Module
@@ -159,7 +159,7 @@ class Trainer:
         losses, scores = [], []
 
         # compute loss/score for each batch to save memory
-        with no_caching():
+        with no_cache_ctx():
             for x_batch, y_batch in dataloader():
                 y_pred = self.model(x_batch)
                 losses.append(self.loss(y_pred, y_batch).item())

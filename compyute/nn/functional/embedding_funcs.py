@@ -3,25 +3,25 @@
 from ...preprocessing.basic import one_hot_encode
 from ...tensors import Tensor
 from ...typing import is_integer
-from .functions import Function, FunctionCache, PseudoCache
+from .functions import Function, FunctionContext, PseudoContext
 
 __all__ = ["embedding"]
 
 
-class EmbeddingFn(Function):
+class EmbeddingFunction(Function):
     """Performs lookup embedding on a tensor of indices."""
 
     @staticmethod
-    def forward(cache: FunctionCache, x: Tensor, embed_table: Tensor) -> Tensor:
+    def forward(ctx: FunctionContext, x: Tensor, embed_table: Tensor) -> Tensor:
         if not is_integer(x.dtype):
             raise ValueError(f"Input must be an integer, got '{x.dtype}'.")
         y = embed_table[x]
-        cache.push(x, embed_table.shape[0])
+        ctx.add(x, embed_table.shape[0])
         return y
 
     @staticmethod
-    def backward(cache: FunctionCache, dy: Tensor) -> Tensor:
-        x, n_embs = cache.pop()
+    def backward(ctx: FunctionContext, dy: Tensor) -> Tensor:
+        x, n_embs = ctx.get()
         batch_dims = tuple(range(x.ndim - 1))
         x = one_hot_encode(x, n_embs, dy.dtype)
         return (x.T @ dy).sum(batch_dims)
@@ -42,4 +42,4 @@ def embedding(x: Tensor, embed_table: Tensor) -> Tensor:
     Tensor
         Output tensor.
     """
-    return EmbeddingFn.forward(PseudoCache(), x, embed_table)
+    return EmbeddingFunction.forward(PseudoContext(), x, embed_table)

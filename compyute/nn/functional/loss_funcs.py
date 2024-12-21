@@ -6,25 +6,25 @@ from ...preprocessing.basic import one_hot_encode
 from ...tensor_ops.selection_ops import maximum
 from ...tensor_ops.unary_ops import abs, exp, log
 from ...tensors import ShapeError, Tensor
-from .activation_funcs import SoftmaxFn, sigmoid, softmax
-from .functions import Function, FunctionCache, PseudoCache
+from .activation_funcs import SoftmaxFunction, sigmoid, softmax
+from .functions import Function, FunctionContext, PseudoContext
 
 __all__ = ["mse_loss", "cross_entropy_loss", "bce_loss", "dice_loss"]
 
 
-class MSELossFn(Function):
+class MSELossFunction(Function):
     """Computes the mean squared error loss."""
 
     @staticmethod
-    def forward(cache: FunctionCache, logits: Tensor, targets: Tensor) -> Tensor:
+    def forward(ctx: FunctionContext, logits: Tensor, targets: Tensor) -> Tensor:
         diff = logits - targets
         loss = (diff * diff).mean()
-        cache.push(logits.size, diff)
+        ctx.add(logits.size, diff)
         return loss
 
     @staticmethod
-    def backward(cache: FunctionCache) -> Tensor:
-        logits_size, diff = cache.pop()
+    def backward(ctx: FunctionContext) -> Tensor:
+        logits_size, diff = ctx.get()
         return 2.0 * diff / float(logits_size)
 
 
@@ -47,25 +47,25 @@ def mse_loss(logits: Tensor, targets: Tensor) -> Tensor:
     --------
     :class:`compyute.nn.MSELoss`
     """
-    return MSELossFn.forward(PseudoCache(), logits, targets)
+    return MSELossFunction.forward(PseudoContext(), logits, targets)
 
 
-class CrossEntropyLossFn(Function):
+class CrossEntropyLossFunction(Function):
     """Computes the cross entropy loss from logits."""
 
     @staticmethod
     def forward(
-        cache: FunctionCache, logits: Tensor, targets: Tensor, eta: float
+        ctx: FunctionContext, logits: Tensor, targets: Tensor, eta: float
     ) -> Tensor:
         probs = softmax(logits)
         targets = one_hot_encode(targets, logits.shape[-1], probs.dtype)
         loss = -(log(probs + eta) * targets).sum(-1).mean()
-        cache.push(targets, probs)
+        ctx.add(targets, probs)
         return loss
 
     @staticmethod
-    def backward(cache: FunctionCache) -> Tensor:
-        targets, probs = cache.pop()
+    def backward(ctx: FunctionContext) -> Tensor:
+        targets, probs = ctx.get()
         return (probs - targets) / float(math.prod(targets.shape[:-1]))
 
 
@@ -91,22 +91,22 @@ def cross_entropy_loss(logits: Tensor, targets: Tensor, eta: float = 1e-8) -> Te
     --------
     :class:`compyute.nn.CrossEntropyLoss`
     """
-    return CrossEntropyLossFn.forward(PseudoCache(), logits, targets, eta)
+    return CrossEntropyLossFunction.forward(PseudoContext(), logits, targets, eta)
 
 
-class BCELossFn(Function):
+class BCELossFunction(Function):
     """Computes the binary cross entropy loss from logits."""
 
     @staticmethod
-    def forward(cache: FunctionCache, logits: Tensor, targets: Tensor) -> Tensor:
+    def forward(ctx: FunctionContext, logits: Tensor, targets: Tensor) -> Tensor:
         max_logits = maximum(logits, 0.0)
         loss = (max_logits - logits * targets + log(1 + exp(-abs(logits)))).mean()
-        cache.push(logits, targets)
+        ctx.add(logits, targets)
         return loss
 
     @staticmethod
-    def backward(cache: FunctionCache) -> Tensor:
-        logits, targets = cache.pop()
+    def backward(ctx: FunctionContext) -> Tensor:
+        logits, targets = ctx.get()
         return (sigmoid(logits) - targets) / float(logits.size)  # thank you ChatGPT
 
 
@@ -129,15 +129,15 @@ def bce_loss(logits: Tensor, targets: Tensor) -> Tensor:
     --------
     :class:`compyute.nn.BCELoss`
     """
-    return BCELossFn.forward(PseudoCache(), logits, targets)
+    return BCELossFunction.forward(PseudoContext(), logits, targets)
 
 
-class DiceLossFn(Function):
+class DiceLossFunction(Function):
     """Computes the dice loss from logits."""
 
     @staticmethod
     def forward(
-        cache: FunctionCache, logits: Tensor, targets: Tensor, eps: float = 1e-5
+        ctx: FunctionContext, logits: Tensor, targets: Tensor, eps: float = 1e-5
     ) -> Tensor:
         if logits.ndim != 4:
             raise ShapeError(f"Expected input to be 4D, got {logits.ndim}D.")
@@ -149,7 +149,7 @@ class DiceLossFn(Function):
         targets = targets.view((logits.shape[0], -1))
 
         # softmax along channel dim
-        probs = SoftmaxFn.forward(cache, logits, dim=1)
+        probs = SoftmaxFunction.forward(ctx, logits, dim=1)
 
         # one hot along channel dim
         targets = one_hot_encode(targets, logits.shape[1], probs.dtype).T
@@ -159,17 +159,17 @@ class DiceLossFn(Function):
         dice_coeff = (2 * intersection + eps) / (union + eps)
         loss = 1 - dice_coeff.mean()
 
-        cache.push(logits_shape, probs, targets, intersection + eps, union + eps)
+        ctx.add(logits_shape, probs, targets, intersection + eps, union + eps)
         return loss
 
     @staticmethod
-    def backward(cache: FunctionCache) -> Tensor:
-        logits_shape, probs, targets, intersection_eps, union_eps = cache.pop()
+    def backward(ctx: FunctionContext) -> Tensor:
+        logits_shape, probs, targets, intersection_eps, union_eps = ctx.get()
         ddice_coeff = -2 / float(math.prod(targets.shape[:2]))
         dintersection = ddice_coeff / union_eps
         dunion = -ddice_coeff * intersection_eps / union_eps**2
         dprobs = dintersection * targets + dunion * 2 * probs
-        dlogits = SoftmaxFn.backward(cache, dprobs)
+        dlogits = SoftmaxFunction.backward(ctx, dprobs)
         return dlogits.view(logits_shape)
 
 
@@ -192,4 +192,4 @@ def dice_loss(logits: Tensor, targets: Tensor) -> Tensor:
     --------
     :class:`compyute.nn.DiceLoss`
     """
-    return DiceLossFn.forward(PseudoCache(), logits, targets)
+    return DiceLossFunction.forward(PseudoContext(), logits, targets)
