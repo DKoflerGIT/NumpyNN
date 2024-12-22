@@ -353,6 +353,7 @@ class Module(ABC):
                 dx = bwd_fn(m, dy)
 
             assert not is_nan(dx).any().item(), "NaNs detected in " + repr(m)
+            assert not m.function_ctx.context, "Context not cleared in " + repr(m)
 
             if m.retain_values and m.x and m.y:
                 m.x.grad = dx

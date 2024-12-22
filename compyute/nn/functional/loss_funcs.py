@@ -140,9 +140,9 @@ class DiceLossFunction(Function):
         ctx: FunctionContext, logits: Tensor, targets: Tensor, eps: float = 1e-5
     ) -> Tensor:
         if logits.ndim != 4:
-            raise ShapeError(f"Expected input to be 4D, got {logits.ndim}D.")
+            raise ShapeError(f"Expected logits to be 4D, got {logits.ndim}D.")
         if targets.ndim != 3:
-            raise ShapeError(f"Expected input to be 3D, got {targets.ndim}D.")
+            raise ShapeError(f"Expected targets to be 3D, got {targets.ndim}D.")
 
         logits_shape = logits.shape
         logits = logits.view((*logits.shape[:2], -1))
