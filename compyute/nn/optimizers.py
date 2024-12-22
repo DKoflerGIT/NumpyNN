@@ -4,6 +4,7 @@ from abc import ABC, abstractmethod
 from collections.abc import Iterable
 from typing import Any, Literal, Optional
 
+from ..backend import Device, cpu
 from ..tensor_ops.unary_ops import sqrt
 from ..tensors import Tensor
 from .parameter import Parameter
@@ -53,20 +54,26 @@ class Optimizer(ABC):
         self._state = {i: {} for i in range(len(self._parameters))}
 
     def get_state_dict(self) -> dict[str, dict[Any, Any]]:
-        """Returns a state dict containing variables and buffers.
+        """Returns a state dict containing the optimizer state and variables.
 
         Returns
         -------
         dict[str, dict[Any, Any]]
-            State dict containing buffers and variables.
+            State dict containing the optimizer state and variables.
         """
-        bad_vars = {"_parameters", "_state"}
-        return {
-            "state": self._state,
-            "vars": {k: v for k, v in vars(self).items() if k not in bad_vars},
+        state = {
+            i: {k: v.to_cpu() for k, v in d.items()} for i, d in self._state.items()
         }
+        variables = {
+            k: v for k, v in vars(self).items() if k not in {"_parameters", "_state"}
+        }
+        return {"state": state, "variables": variables}
 
-    def load_state_dict(self, state_dict: dict[str, dict[Any, Any]]) -> None:
+    def load_state_dict(
+        self,
+        state_dict: dict[str, dict[Any, Any]],
+        target_device: Optional[Device] = cpu,
+    ) -> None:
         """Loads the optimizer state from a state dict.
 
         .. note::
@@ -77,9 +84,18 @@ class Optimizer(ABC):
         ----------
         state_dict : dict[str, dict[Any, Any]]
             State dict containing parameters and buffers.
+        target_device : Device, optional
+            Device to move the optimizer state to. Defaults to ``cpu``.
         """
-        self._state = state_dict["state"]
-        for k, v in state_dict["vars"].items():
+
+        # load state
+        self._state = {
+            i: {k: v.to_device(target_device) for k, v in d.items()}
+            for i, d in state_dict["state"].items()
+        }
+
+        # load variables
+        for k, v in state_dict["variables"].items():
             setattr(self, k, v)
 
     def reset_grads(self) -> None:

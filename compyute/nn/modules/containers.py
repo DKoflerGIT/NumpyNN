@@ -32,6 +32,17 @@ class Sequential(Module):
 
         self.layers = ModuleList(modules)
 
+    def add(self, module: Module) -> None:
+        """Add a module to the container.
+
+        Parameters
+        ----------
+        module : Module
+            Module to add.
+        """
+
+        self.layers.append(module)
+
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
         for module in self.layers:

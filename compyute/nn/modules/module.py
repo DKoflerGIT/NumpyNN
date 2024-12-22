@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import gc
 import time
 from abc import ABC, abstractmethod
 from collections import OrderedDict
@@ -10,7 +9,7 @@ from collections.abc import Callable, Iterable, Iterator
 from functools import wraps
 from typing import Any, Optional
 
-from ...backend import Device, DeviceError, free_cuda_memory
+from ...backend import Device, cpu, free_memory
 from ...tensor_ops.unary_ops import is_nan
 from ...tensors import Tensor
 from ...typing import DType
@@ -145,7 +144,7 @@ class Module(ABC):
     # ----------------------------------------------------------------------------------
 
     def __repr__(self) -> str:
-        attrs = [f"{a}={v}" for a, v in vars(self).items() if is_repr_attr(a, v)]
+        attrs = [f"{a}={v}" for a, v in vars(self).items() if _is_repr_attr(a, v)]
         repr_string = f"{self.label}(" + ", ".join(attrs) + ")"
         for module in self.get_modules(recursive=False):
             repr_string += "\n" + repr(module)
@@ -221,21 +220,15 @@ class Module(ABC):
             for m in self.get_modules():
                 yield from m.get_buffers(recursive=False)
 
-    def get_state_dict(self) -> OrderedDict[str, Tensor]:
-        """Returns a state dict containing module parameters and buffers.
-
-        Returns
-        -------
-        OrderedDict[str, Tensor]
-            State dict containing parameters and buffers.
-        """
+    def _get_pointer_state_dict(self) -> OrderedDict[str, Tensor]:
+        """Returns a state dict containing pointers to module parameters and buffers."""
         state_dict: OrderedDict[str, Tensor] = OrderedDict()
         state_dict.update(self._parameters)
         state_dict.update(self._buffers)
 
         for k, m in self._modules.items():
             # get child module state dict
-            m_state_dict = m.get_state_dict()
+            m_state_dict = m._get_pointer_state_dict()
 
             # update child module state dict keys
             new_m_state_dict = OrderedDict()
@@ -248,29 +241,41 @@ class Module(ABC):
 
         return state_dict
 
-    def load_state_dict(self, state_dict: OrderedDict) -> None:
+    def get_state_dict(self) -> OrderedDict[str, Tensor]:
+        """Returns a state dict containing module parameters and buffers.
+
+        Returns
+        -------
+        OrderedDict[str, Tensor]
+            State dict containing parameters and buffers.
+        """
+        state_dict = self._get_pointer_state_dict()
+
+        for k, v in state_dict.items():
+            state_dict[k] = v.to_cpu()
+
+        return state_dict
+
+    def load_state_dict(
+        self, state_dict: OrderedDict, target_device: Optional[Device] = cpu
+    ) -> None:
         """Loads the module state from a state dict.
 
         Parameters
         ----------
         state_dict : OrderedDict
             State dict containing parameters and buffers.
+        target_device : Device, optional
+            Device to move the parameters and buffers to. Defaults to ``cpu``.
         """
-        for kv1, kv2 in zip(self.get_state_dict().items(), state_dict.items()):
-            self_key, self_value = kv1
-            other_key, other_value = kv2
+        self_state_dict = self._get_pointer_state_dict()
+        for (k1, v1), (k2, v2) in zip(self_state_dict.items(), state_dict.items()):
+            if k1 != k2:
+                raise ValueError(f"State dict key mismatch: {k1},  {k2}")
 
-            if self_key != other_key:
-                raise ValueError(f"State dict key mismatch: {self_key} != {other_key}")
-
-            if self_value.device != other_value.device:
-                raise DeviceError(
-                    "Device mismatch."
-                    f"Module device: {self_value.device}, state dict device: {other_value.device}"
-                )
-
-            self_value.data = other_value.data
-            self_value.grad = other_value.grad
+            v1.data = v2.to_device(target_device).data
+            if v2.grad is not None:
+                v1.grad = v2.grad.to_device(target_device)
 
     def __call__(self, x: Tensor) -> Tensor:
         return self.forward(x)
@@ -316,12 +321,7 @@ class Module(ABC):
                 dt = time.perf_counter()
                 y = fwd_fn(m, x)
                 dt = (time.perf_counter() - dt) * 1e3
-                print(
-                    f"{m.label:20s} | fwd | "
-                    f"{x.dtype:15s} | "
-                    f"{y.dtype:15s} | "
-                    f"{dt=:>10.4f} ms"
-                )
+                print(_format_debug_str(m.label, "fwd", x.dtype, y.dtype, dt))
             else:
                 y = fwd_fn(m, x)
 
@@ -348,15 +348,7 @@ class Module(ABC):
                 dt = time.perf_counter()
                 dx = bwd_fn(m, dy)
                 dt = (time.perf_counter() - dt) * 1e3
-                if dx:
-                    print(
-                        f"{m.label:20s} | bwd | "
-                        f"{dx.dtype:15s} | "
-                        f"{dy.dtype:15s} | "
-                        f"{dt=:>10.4f} ms"
-                    )
-                else:
-                    print(f"{m.label:20s} | bwd | {dy.dtype:15s} | {dt=:>10.4f} ms")
+                print(_format_debug_str(m.label, "bwd", dx.dtype, dy.dtype, dt))
             else:
                 dx = bwd_fn(m, dy)
 
@@ -388,8 +380,7 @@ class Module(ABC):
         for module in self.get_modules(recursive=False):
             module.clean(force)
 
-        gc.collect()
-        free_cuda_memory()
+        free_memory()
 
     def update_parameter_grad(
         self, parameter: Optional[Parameter], grad: Optional[Tensor]
@@ -400,7 +391,7 @@ class Module(ABC):
         if parameter.grad is None:
             parameter.grad = grad
         else:
-            parameter.grad += grad
+            parameter.grad += grad  # for gradient accumulation
 
 
 class Identity(Module):
@@ -434,7 +425,7 @@ class ModuleList(list):
         super().__init__(modules)
 
 
-def is_repr_attr(attr: str, value: Any) -> bool:
+def _is_repr_attr(attr: str, value: Any) -> bool:
     """Checks if an attribute should be included int the class representation."""
     return all(
         [
@@ -443,4 +434,16 @@ def is_repr_attr(attr: str, value: Any) -> bool:
             not isinstance(value, (Tensor, Module, ModuleList)),
             value is not None,
         ]
+    )
+
+
+def _format_debug_str(
+    label: str, mode: str, in_dtype: DType, out_dtype: DType, dt: float
+) -> str:
+    """Formats debug string for forward and backward passes."""
+    return (
+        f"{label:20s} | {mode} | "
+        f"{in_dtype:15s} | "
+        f"{out_dtype:15s} | "
+        f"{dt=:>10.4f} ms"
     )

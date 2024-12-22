@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import gc
 from abc import ABC
 from collections.abc import Generator
 from contextlib import contextmanager
@@ -114,8 +115,9 @@ def get_device_count() -> int:
     return cupy.cuda.runtime.getDeviceCount()
 
 
-def free_cuda_memory() -> None:
+def free_memory() -> None:
     """Frees unused blocks from the GPU memory."""
+    gc.collect()
     if not gpu_available():
         return
     cupy.get_default_memory_pool().free_all_blocks()
