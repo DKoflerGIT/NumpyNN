@@ -430,7 +430,7 @@ def _is_repr_attr(attr: str, value: Any) -> bool:
     """Checks if an attribute should be included int the class representation."""
     return all(
         [
-            attr not in {"label", "fcache"},
+            attr not in {"label", "function_ctx"},
             not attr.startswith("_"),
             not isinstance(value, (Tensor, Module, ModuleList)),
             value is not None,
