@@ -50,8 +50,8 @@ class Module(ABC):
         """Device module parameters and variables are stored on."""
         try:
             return next(self.get_parameters()).device
-        except StopIteration:
-            raise ValueError("Module has no parameters.")
+        except StopIteration as e:
+            raise ValueError("Module has no parameters.") from e
 
     def to_device(self, device: Device) -> None:
         """Moves module parameters and variables to the specified device.
@@ -73,8 +73,8 @@ class Module(ABC):
         """Data type of module parameters and variables."""
         try:
             return next(self.get_parameters()).dtype
-        except StopIteration:
-            raise ValueError("Module has no parameters.")
+        except StopIteration as e:
+            raise ValueError("Module has no parameters.") from e
 
     def to_type(self, dtype: DType) -> None:
         """Casts module parameters and variables to the specified dtype.

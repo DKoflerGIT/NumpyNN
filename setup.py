@@ -2,7 +2,6 @@
 
 import pathlib
 
-# from mypyc.build import mypycify
 from setuptools import find_packages, setup
 
 setup(
@@ -11,13 +10,13 @@ setup(
     description="Deep learning toolbox developed in pure NumPy/CuPy.",
     long_description=pathlib.Path("README.md").read_text(encoding="utf-8"),
     long_description_content_type="text/markdown",
-    url="https://github.com/dakofler/Compyute/",
+    url="https://github.com/dakofler/compyute/",
     author="Daniel Kofler",
     author_email="dkofler@outlook.com",
     license="MIT",
     project_urls={
-        "Source Code": "https://github.com/dakofler/Compyute",
-        "Issues": "https://github.com/dakofler/Compyute/issues",
+        "Source Code": "https://github.com/dakofler/compyute",
+        "Issues": "https://github.com/dakofler/compyute/issues",
     },
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -34,7 +33,6 @@ setup(
     install_requires=[
         "cupy_cuda12x>=13.0.0",
         "ipywidgets>=8.1.2",
-        # "ml_dtypes>=0.5.0",
         "numpy>=1.26.4",
         "regex>=2023.12.25",
         "tqdm>=4.66.2",
@@ -45,10 +43,7 @@ setup(
             "mypy>=1.11.2",
             "pytest>=8.2.0",
             "pytest-cov>=5.0.0",
-            "torch>=2.3.0",
-            "torchaudio>=2.3.0",
-            "torchvision>=0.18.0",
-            "torchtune>=0.2.1",
+            "torch>=2.5.0",
             "twine>=5.1.1",
             "wheel>=0.43.0",
             "Sphinx>=7.4.7",
@@ -57,5 +52,4 @@ setup(
     },
     packages=find_packages(exclude=["tests", ".github", ".venv", "docs"]),
     include_package_data=True,
-    # ext_modules=mypycify(["compyute", "--disallow-untyped-defs"]),
 )

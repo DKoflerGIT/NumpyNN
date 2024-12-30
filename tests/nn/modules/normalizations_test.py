@@ -2,7 +2,6 @@
 
 import pytest
 import torch
-import torchtune
 
 from compyute.nn import BatchNorm1D, BatchNorm2D, LayerNorm, RMSNorm
 from tests.utils import get_random_floats, is_close
@@ -107,14 +106,15 @@ def test_layernorm(shape, normalized_shape, eps) -> None:
 
 
 @pytest.mark.parametrize("shape,normalized_shape", rms_testdata)
-def test_rmsnorm(shape, normalized_shape) -> None:
+@pytest.mark.parametrize("eps", eps_testdata)
+def test_rmsnorm(shape, normalized_shape, eps) -> None:
     """Test for the rmsnorm layer."""
 
     # init compyute module
-    compyute_module = RMSNorm((normalized_shape,), eps=1e-6)
+    compyute_module = RMSNorm((normalized_shape,), eps=eps)
 
     # init torch module
-    torch_module = torchtune.modules.RMSNorm(normalized_shape)
+    torch_module = torch.nn.RMSNorm(normalized_shape, eps)
 
     # forward
     compyute_x, torch_x = get_random_floats(shape)
@@ -127,4 +127,4 @@ def test_rmsnorm(shape, normalized_shape) -> None:
     compyute_dx = compyute_module.backward(compyute_dy)
     torch_y.backward(torch_dy)
     assert is_close(compyute_dx, torch_x.grad)
-    assert is_close(compyute_module.w.grad, torch_module.scale.grad)
+    assert is_close(compyute_module.w.grad, torch_module.weight.grad)

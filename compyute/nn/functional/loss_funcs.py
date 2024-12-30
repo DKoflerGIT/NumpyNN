@@ -4,7 +4,8 @@ import math
 
 from ...preprocessing.basic import one_hot_encode
 from ...tensor_ops.selection_ops import maximum
-from ...tensor_ops.unary_ops import abs, exp, log
+from ...tensor_ops.unary_ops import abs as _abs
+from ...tensor_ops.unary_ops import exp, log
 from ...tensors import ShapeError, Tensor
 from .activation_funcs import SoftmaxFunction, sigmoid, softmax
 from .functions import Function, FunctionContext, PseudoContext
@@ -100,7 +101,7 @@ class BCELossFunction(Function):
     @staticmethod
     def forward(ctx: FunctionContext, logits: Tensor, targets: Tensor) -> Tensor:
         max_logits = maximum(logits, 0.0)
-        loss = (max_logits - logits * targets + log(1 + exp(-abs(logits)))).mean()
+        loss = (max_logits - logits * targets + log(1 + exp(-_abs(logits)))).mean()
         ctx.add(logits, targets)
         return loss
 
