@@ -7,5 +7,5 @@ compyute.backend
     
     gpu_available
     get_device_count
-    free_cuda_memory
+    free_memory
     synchronize

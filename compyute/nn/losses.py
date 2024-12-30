@@ -29,7 +29,7 @@ class Loss(ABC):
     """Loss base class."""
 
     def __init__(self) -> None:
-        self.fcache = FunctionContext()
+        self.function_ctx = FunctionContext()
         self.label = self.__class__.__name__
         self._is_training = True
 
@@ -69,7 +69,7 @@ class Loss(ABC):
 
         @wraps(fwd_fn)
         def wrapper(l: Loss, logits: Tensor, targets: Tensor) -> Tensor:
-            l.fcache.context.clear()
+            l.function_ctx.context.clear()
 
             if DEBUG:
                 dt = time.perf_counter()
@@ -85,7 +85,7 @@ class Loss(ABC):
             else:
                 loss = fwd_fn(l, logits, targets)
 
-            assert not is_nan(loss).any().item(), l
+            assert not is_nan(loss).any().item(), "NaNs detected in " + repr(l)
             return loss
 
         return wrapper
@@ -104,8 +104,8 @@ class Loss(ABC):
             else:
                 dx = bwd_fn(l)
 
-            assert not l.fcache.context, "FunctionCache not empty after backward."
-            assert not is_nan(dx).any().item(), l
+            assert not is_nan(dx).any().item(), "NaNs detected in " + repr(l)
+            assert not l.function_ctx.context, "Context not cleared in " + repr(l)
             return dx
 
         return wrapper
@@ -124,11 +124,11 @@ class MSELoss(Loss):
 
     @Loss.register_forward
     def forward(self, logits: Tensor, targets: Tensor) -> Tensor:
-        return MSELossFunction.forward(self.fcache, logits, targets)
+        return MSELossFunction.forward(self.function_ctx, logits, targets)
 
     @Loss.register_backward
     def backward(self) -> Tensor:
-        return MSELossFunction.backward(self.fcache)
+        return MSELossFunction.backward(self.function_ctx)
 
 
 class CrossEntropyLoss(Loss):
@@ -144,11 +144,11 @@ class CrossEntropyLoss(Loss):
 
     @Loss.register_forward
     def forward(self, logits: Tensor, targets: Tensor, eta: float = 1e-8) -> Tensor:
-        return CrossEntropyLossFunction.forward(self.fcache, logits, targets, eta)
+        return CrossEntropyLossFunction.forward(self.function_ctx, logits, targets, eta)
 
     @Loss.register_backward
     def backward(self) -> Tensor:
-        return CrossEntropyLossFunction.backward(self.fcache)
+        return CrossEntropyLossFunction.backward(self.function_ctx)
 
 
 class BCELoss(Loss):
@@ -169,11 +169,11 @@ class BCELoss(Loss):
 
     @Loss.register_forward
     def forward(self, logits: Tensor, targets: Tensor) -> Tensor:
-        return BCELossFunction.forward(self.fcache, logits, targets)
+        return BCELossFunction.forward(self.function_ctx, logits, targets)
 
     @Loss.register_backward
     def backward(self) -> Tensor:
-        return BCELossFunction.backward(self.fcache)
+        return BCELossFunction.backward(self.function_ctx)
 
 
 class DiceLoss(Loss):
@@ -191,11 +191,11 @@ class DiceLoss(Loss):
 
     @Loss.register_forward
     def forward(self, logits: Tensor, targets: Tensor) -> Tensor:
-        return DiceLossFunction.forward(self.fcache, logits, targets)
+        return DiceLossFunction.forward(self.function_ctx, logits, targets)
 
     @Loss.register_backward
     def backward(self) -> Tensor:
-        return DiceLossFunction.backward(self.fcache)
+        return DiceLossFunction.backward(self.function_ctx)
 
 
 LossLike = Loss | Literal["bce", "cross_entropy", "mse", "dice"]

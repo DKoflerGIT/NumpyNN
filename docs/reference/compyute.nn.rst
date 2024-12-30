@@ -7,8 +7,7 @@ compyute.nn
     :toctree: ../_generated/compyute.nn
 
     Function
-    FunctionCache
-    no_caching
+    FunctionContext
 
 
 .. _losses:

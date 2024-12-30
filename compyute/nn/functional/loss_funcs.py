@@ -4,7 +4,8 @@ import math
 
 from ...preprocessing.basic import one_hot_encode
 from ...tensor_ops.selection_ops import maximum
-from ...tensor_ops.unary_ops import abs, exp, log
+from ...tensor_ops.unary_ops import abs as _abs
+from ...tensor_ops.unary_ops import exp, log
 from ...tensors import ShapeError, Tensor
 from .activation_funcs import SoftmaxFunction, sigmoid, softmax
 from .functions import Function, FunctionContext, PseudoContext
@@ -100,7 +101,7 @@ class BCELossFunction(Function):
     @staticmethod
     def forward(ctx: FunctionContext, logits: Tensor, targets: Tensor) -> Tensor:
         max_logits = maximum(logits, 0.0)
-        loss = (max_logits - logits * targets + log(1 + exp(-abs(logits)))).mean()
+        loss = (max_logits - logits * targets + log(1 + exp(-_abs(logits)))).mean()
         ctx.add(logits, targets)
         return loss
 
@@ -140,9 +141,9 @@ class DiceLossFunction(Function):
         ctx: FunctionContext, logits: Tensor, targets: Tensor, eps: float = 1e-5
     ) -> Tensor:
         if logits.ndim != 4:
-            raise ShapeError(f"Expected input to be 4D, got {logits.ndim}D.")
+            raise ShapeError(f"Expected logits to be 4D, got {logits.ndim}D.")
         if targets.ndim != 3:
-            raise ShapeError(f"Expected input to be 3D, got {targets.ndim}D.")
+            raise ShapeError(f"Expected targets to be 3D, got {targets.ndim}D.")
 
         logits_shape = logits.shape
         logits = logits.view((*logits.shape[:2], -1))

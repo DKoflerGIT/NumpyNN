@@ -5,8 +5,8 @@ Compyute documentation
 **Version**: |version|
 
 **Useful links**:
-`Source Repository <https://github.com/dakofler/Compyute>`_ |
-`Issue Tracker <https://github.com/dakofler/Compyute/issues>`_
+`Source Repository <https://github.com/dakofler/compyute>`_ |
+`Issue Tracker <https://github.com/dakofler/compyute/issues>`_
 
 Python deep learning library focused on transparency and readability only using ``NumPy`` and ``CuPy`` under the hood.
 Gradient computation is implemented from scratch to facilitate understanding of the inner workings of neural networks.
@@ -25,7 +25,7 @@ You can install Compyute directly from GitHub.
 
 .. code-block:: bash
 
-    pip install git+https://github.com/dakofler/Compyute.git
+    pip install git+https://github.com/dakofler/compyute.git
 
 
 As of ``CuPy`` v13, the package does not require a GPU toolkit to be installed, so ``Compyute`` can be used on CPU-only machines. If you want to make use of GPUs, make sure to install the CUDA Toolkit following the `installation guide <https://docs.cupy.dev/en/stable/install.html>`_ of ``CuPy``.
@@ -209,12 +209,11 @@ Alternatively, you can write your own training loop.
         
         # validiation
         model.inference()
-        with nn.no_cache_ctx():  # disable caching of contextual data for gradient computation
-            val_loss = 0
-            for x, y in val_dl():
-                y_pred = model(x)
-                val_loss += loss_fn(y_pred, y).item()
-            val_loss /= len(val_dl)
+        val_loss = 0
+        for x, y in val_dl():
+            y_pred = model(x)
+            val_loss += loss_fn(y_pred, y).item()
+        val_loss /= len(val_dl)
 
         print(f"epoch {epoch}: {val_loss=:.4f}")
 
@@ -241,7 +240,7 @@ Model checkpoints can also be saved and loaded later on.
 Examples
 ===========
 
-see https://github.com/dakofler/Compyute/tree/main/examples.
+see https://github.com/dakofler/compyute/tree/main/examples.
 
 
 Final notes

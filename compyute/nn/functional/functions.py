@@ -2,11 +2,9 @@
 
 from abc import ABC, abstractmethod
 from collections import deque
-from collections.abc import Generator
-from contextlib import contextmanager
 from typing import Any
 
-__all__ = ["Function", "FunctionContext", "no_cache_ctx"]
+__all__ = ["Function", "FunctionContext"]
 
 
 class FunctionContext:
@@ -20,8 +18,7 @@ class FunctionContext:
 
     def add(self, *items: Any) -> None:
         """Adds items to the function context stack."""
-        if get_cache_ctx_enabled():
-            self.context.append(items)
+        self.context.append(items)
 
     def get(self) -> Any:
         """Removes and returns the topmost items from the function context stack."""
@@ -55,27 +52,3 @@ class Function(ABC):
     @abstractmethod
     def backward(*args: Any, **kwargs: Any) -> Any:
         """Backward pass of the function."""
-
-
-context_enabled: bool = True
-
-
-def get_cache_ctx_enabled() -> bool:
-    """Returns ``True`` if caching of context data for gradient computation is enabled."""
-    return context_enabled
-
-
-def set_cache_ctx_enabled(enabled: bool) -> None:
-    """Sets whether caching of context data for gradient computation is enabled."""
-    global context_enabled
-    context_enabled = enabled
-
-
-@contextmanager
-def no_cache_ctx() -> Generator:
-    """Context manager to disable caching of context data for gradient computation."""
-    set_cache_ctx_enabled(False)
-    try:
-        yield
-    finally:
-        set_cache_ctx_enabled(True)

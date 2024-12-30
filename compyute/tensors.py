@@ -321,10 +321,8 @@ class Tensor:
         Tensor
             Tensor on the specified device.
         """
-        if self.device == device:
-            return self
-
-        new_tensor = Tensor(data_to_device(self.data, device))
+        data = self.data if self.device == device else data_to_device(self.data, device)
+        new_tensor = Tensor(data)
         if self.grad:
             new_tensor.grad = self.grad.to_device(device)
         return new_tensor
@@ -381,10 +379,10 @@ class Tensor:
         Tensor
             Tensor with elements cast to the given dtype.
         """
-        if self.dtype == dtype:
-            return self
-
-        return Tensor(self.data.astype(dtype.t, copy=False))
+        data = (
+            self.data if self.dtype == dtype else self.data.astype(dtype.t, copy=False)
+        )
+        return Tensor(data)
 
     def ito_type(self, dtype: DType) -> None:
         """Inplace operation to cast the tensor to the given dtype.
