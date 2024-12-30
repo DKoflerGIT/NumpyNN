@@ -1,0 +1,6 @@
+compyute.Tensor.max
+===================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.max

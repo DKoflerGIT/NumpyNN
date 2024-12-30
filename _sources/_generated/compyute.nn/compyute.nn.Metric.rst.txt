@@ -1,0 +1,22 @@
+﻿compyute.nn.Metric
+==================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Metric
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Metric.__init__
+    
+    
+
+
+    
+    
+    

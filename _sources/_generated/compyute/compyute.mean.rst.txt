@@ -1,0 +1,6 @@
+﻿compyute.mean
+=============
+
+.. currentmodule:: compyute
+
+.. autofunction:: mean

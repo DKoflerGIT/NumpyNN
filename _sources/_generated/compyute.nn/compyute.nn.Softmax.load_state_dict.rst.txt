@@ -1,0 +1,6 @@
+compyute.nn.Softmax.load\_state\_dict
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Softmax.load_state_dict

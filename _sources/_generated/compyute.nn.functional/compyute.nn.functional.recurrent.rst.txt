@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.recurrent
+================================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: recurrent

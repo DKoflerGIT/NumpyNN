@@ -1,0 +1,6 @@
+compyute.nn.RMSNorm.clean
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: RMSNorm.clean

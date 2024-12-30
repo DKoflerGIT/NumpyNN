@@ -1,0 +1,6 @@
+﻿compyute.pooling2d
+==================
+
+.. currentmodule:: compyute
+
+.. autofunction:: pooling2d

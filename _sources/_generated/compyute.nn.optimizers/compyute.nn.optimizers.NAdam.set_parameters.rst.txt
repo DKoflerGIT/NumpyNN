@@ -1,0 +1,6 @@
+compyute.nn.optimizers.NAdam.set\_parameters
+============================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: NAdam.set_parameters

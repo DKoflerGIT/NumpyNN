@@ -1,0 +1,6 @@
+compyute.nn.DenseBlock.get\_parameters
+======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: DenseBlock.get_parameters

@@ -1,0 +1,48 @@
+﻿compyute.nn.Tanh
+================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Tanh
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Tanh.__init__
+        ~Tanh.backward
+        ~Tanh.clean
+        ~Tanh.forward
+        ~Tanh.get_buffers
+        ~Tanh.get_modules
+        ~Tanh.get_parameters
+        ~Tanh.get_state_dict
+        ~Tanh.inference
+        ~Tanh.load_state_dict
+        ~Tanh.register_backward
+        ~Tanh.register_forward
+        ~Tanh.to_device
+        ~Tanh.to_type
+        ~Tanh.training
+        ~Tanh.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Tanh.device
+        ~Tanh.dtype
+        ~Tanh.is_training
+        ~Tanh.n_modules
+        ~Tanh.retain_values
+        ~Tanh.trainable
+    
+    

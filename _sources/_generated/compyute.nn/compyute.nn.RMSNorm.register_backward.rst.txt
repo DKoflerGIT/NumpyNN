@@ -1,0 +1,6 @@
+compyute.nn.RMSNorm.register\_backward
+======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: RMSNorm.register_backward

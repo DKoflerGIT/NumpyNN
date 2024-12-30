@@ -1,0 +1,6 @@
+compyute.nn.BatchNorm2D.training
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: BatchNorm2D.training

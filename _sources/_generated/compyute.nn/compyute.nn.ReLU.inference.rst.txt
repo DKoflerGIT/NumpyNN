@@ -1,0 +1,6 @@
+compyute.nn.ReLU.inference
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ReLU.inference

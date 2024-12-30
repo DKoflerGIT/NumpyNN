@@ -1,0 +1,6 @@
+compyute.nn.Slice.load\_state\_dict
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Slice.load_state_dict

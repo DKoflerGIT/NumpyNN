@@ -1,0 +1,6 @@
+compyute.nn.ConvTranspose2D.training
+====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ConvTranspose2D.training

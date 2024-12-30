@@ -1,0 +1,6 @@
+compyute.Tensor.min
+===================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.min

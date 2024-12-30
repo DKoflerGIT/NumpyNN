@@ -1,0 +1,28 @@
+﻿compyute.nn.trainer.callbacks.MultistepLrScheduler
+==================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. autoclass:: MultistepLrScheduler
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~MultistepLrScheduler.__init__
+        ~MultistepLrScheduler.on_epoch_end
+        ~MultistepLrScheduler.on_epoch_start
+        ~MultistepLrScheduler.on_run_end
+        ~MultistepLrScheduler.on_run_start
+        ~MultistepLrScheduler.on_step_end
+        ~MultistepLrScheduler.on_step_start
+    
+    
+
+
+    
+    
+    

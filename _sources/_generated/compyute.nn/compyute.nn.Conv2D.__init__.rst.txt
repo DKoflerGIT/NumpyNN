@@ -1,0 +1,6 @@
+compyute.nn.Conv2D.\_\_init\_\_
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv2D.__init__

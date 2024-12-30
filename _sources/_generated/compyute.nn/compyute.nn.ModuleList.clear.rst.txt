@@ -1,0 +1,6 @@
+compyute.nn.ModuleList.clear
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ModuleList.clear

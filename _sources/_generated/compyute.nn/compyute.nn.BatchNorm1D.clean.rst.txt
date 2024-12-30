@@ -1,0 +1,6 @@
+compyute.nn.BatchNorm1D.clean
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: BatchNorm1D.clean

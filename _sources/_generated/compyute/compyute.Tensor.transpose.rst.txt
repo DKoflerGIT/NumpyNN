@@ -1,0 +1,6 @@
+compyute.Tensor.transpose
+=========================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.transpose

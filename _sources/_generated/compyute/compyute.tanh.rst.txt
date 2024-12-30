@@ -1,0 +1,6 @@
+﻿compyute.tanh
+=============
+
+.. currentmodule:: compyute
+
+.. autofunction:: tanh

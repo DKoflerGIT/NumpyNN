@@ -1,0 +1,6 @@
+compyute.Tensor.to\_cuda
+========================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.to_cuda

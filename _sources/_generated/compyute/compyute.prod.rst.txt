@@ -1,0 +1,6 @@
+﻿compyute.prod
+=============
+
+.. currentmodule:: compyute
+
+.. autofunction:: prod

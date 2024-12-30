@@ -1,0 +1,6 @@
+compyute.nn.DenseBlock.to\_type
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: DenseBlock.to_type

@@ -1,0 +1,6 @@
+compyute.nn.Linear.inference
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Linear.inference

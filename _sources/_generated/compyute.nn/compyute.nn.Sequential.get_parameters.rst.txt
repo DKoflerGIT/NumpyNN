@@ -1,0 +1,6 @@
+compyute.nn.Sequential.get\_parameters
+======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sequential.get_parameters

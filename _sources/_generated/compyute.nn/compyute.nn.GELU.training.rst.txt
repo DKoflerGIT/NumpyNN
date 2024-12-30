@@ -1,0 +1,6 @@
+compyute.nn.GELU.training
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GELU.training

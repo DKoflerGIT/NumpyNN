@@ -1,0 +1,6 @@
+compyute.nn.Slice.get\_modules
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Slice.get_modules

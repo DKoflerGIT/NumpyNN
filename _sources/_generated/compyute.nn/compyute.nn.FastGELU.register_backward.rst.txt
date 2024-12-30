@@ -1,0 +1,6 @@
+compyute.nn.FastGELU.register\_backward
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: FastGELU.register_backward

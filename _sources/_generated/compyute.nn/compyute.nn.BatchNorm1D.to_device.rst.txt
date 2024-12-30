@@ -1,0 +1,6 @@
+compyute.nn.BatchNorm1D.to\_device
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: BatchNorm1D.to_device

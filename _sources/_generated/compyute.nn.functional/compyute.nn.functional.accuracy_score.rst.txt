@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.accuracy\_score
+======================================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: accuracy_score

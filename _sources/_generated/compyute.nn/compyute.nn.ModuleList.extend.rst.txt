@@ -1,0 +1,6 @@
+compyute.nn.ModuleList.extend
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ModuleList.extend

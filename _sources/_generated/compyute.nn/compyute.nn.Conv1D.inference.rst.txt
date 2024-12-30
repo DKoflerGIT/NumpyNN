@@ -1,0 +1,6 @@
+compyute.nn.Conv1D.inference
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv1D.inference

@@ -1,0 +1,6 @@
+compyute.nn.Flatten.get\_buffers
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Flatten.get_buffers

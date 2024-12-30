@@ -1,0 +1,6 @@
+﻿compyute.tensorsum
+==================
+
+.. currentmodule:: compyute
+
+.. autofunction:: tensorsum

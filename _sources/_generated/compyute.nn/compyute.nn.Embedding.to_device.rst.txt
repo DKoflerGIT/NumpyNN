@@ -1,0 +1,6 @@
+compyute.nn.Embedding.to\_device
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Embedding.to_device

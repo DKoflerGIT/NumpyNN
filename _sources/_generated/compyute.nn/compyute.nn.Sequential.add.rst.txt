@@ -1,0 +1,6 @@
+compyute.nn.Sequential.add
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sequential.add

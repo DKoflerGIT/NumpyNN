@@ -1,0 +1,6 @@
+compyute.nn.Buffer.imag
+=======================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.imag

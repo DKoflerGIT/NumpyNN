@@ -1,0 +1,6 @@
+compyute.nn.LeakyReLU.to\_type
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LeakyReLU.to_type

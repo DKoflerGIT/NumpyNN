@@ -1,0 +1,6 @@
+compyute.nn.Conv2D.to\_device
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv2D.to_device

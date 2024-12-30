@@ -1,0 +1,6 @@
+compyute.nn.Parameter.var
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.var

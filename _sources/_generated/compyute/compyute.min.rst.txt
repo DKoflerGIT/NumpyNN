@@ -1,0 +1,6 @@
+﻿compyute.min
+============
+
+.. currentmodule:: compyute
+
+.. autofunction:: min

@@ -1,0 +1,6 @@
+compyute.nn.Conv1DBlock.register\_forward
+=========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv1DBlock.register_forward

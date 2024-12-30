@@ -1,0 +1,27 @@
+﻿compyute.nn.optimizers.NAdam
+============================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. autoclass:: NAdam
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~NAdam.__init__
+        ~NAdam.get_state_dict
+        ~NAdam.load_state_dict
+        ~NAdam.reset_grads
+        ~NAdam.set_parameters
+        ~NAdam.step
+    
+    
+
+
+    
+    
+    

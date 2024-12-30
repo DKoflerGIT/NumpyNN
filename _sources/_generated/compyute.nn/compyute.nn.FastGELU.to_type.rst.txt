@@ -1,0 +1,6 @@
+compyute.nn.FastGELU.to\_type
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: FastGELU.to_type

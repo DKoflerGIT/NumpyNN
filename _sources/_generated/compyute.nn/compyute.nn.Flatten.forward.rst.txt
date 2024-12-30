@@ -1,0 +1,6 @@
+compyute.nn.Flatten.forward
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Flatten.forward

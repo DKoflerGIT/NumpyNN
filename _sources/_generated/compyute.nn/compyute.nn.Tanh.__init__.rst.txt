@@ -1,0 +1,6 @@
+compyute.nn.Tanh.\_\_init\_\_
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Tanh.__init__

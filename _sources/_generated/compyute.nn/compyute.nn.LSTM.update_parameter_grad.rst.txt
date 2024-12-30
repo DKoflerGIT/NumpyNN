@@ -1,0 +1,6 @@
+compyute.nn.LSTM.update\_parameter\_grad
+========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LSTM.update_parameter_grad

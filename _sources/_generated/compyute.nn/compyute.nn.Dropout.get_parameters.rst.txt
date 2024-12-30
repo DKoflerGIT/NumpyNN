@@ -1,0 +1,6 @@
+compyute.nn.Dropout.get\_parameters
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Dropout.get_parameters

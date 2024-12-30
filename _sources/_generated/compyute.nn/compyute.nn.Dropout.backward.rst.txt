@@ -1,0 +1,6 @@
+compyute.nn.Dropout.backward
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Dropout.backward

@@ -1,0 +1,6 @@
+﻿compyute.random.permutation
+===========================
+
+.. currentmodule:: compyute.random
+
+.. autofunction:: permutation

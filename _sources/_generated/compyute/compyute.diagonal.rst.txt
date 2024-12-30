@@ -1,0 +1,6 @@
+﻿compyute.diagonal
+=================
+
+.. currentmodule:: compyute
+
+.. autofunction:: diagonal

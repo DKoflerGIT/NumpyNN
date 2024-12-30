@@ -1,0 +1,6 @@
+compyute.nn.CrossEntropyLoss.forward
+====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: CrossEntropyLoss.forward

@@ -1,0 +1,6 @@
+compyute.nn.Conv1DBlock.backward
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv1DBlock.backward

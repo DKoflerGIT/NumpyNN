@@ -1,0 +1,6 @@
+compyute.nn.Parameter.mean
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.mean

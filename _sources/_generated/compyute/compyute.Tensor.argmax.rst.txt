@@ -1,0 +1,6 @@
+compyute.Tensor.argmax
+======================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.argmax

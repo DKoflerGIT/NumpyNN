@@ -1,0 +1,6 @@
+compyute.nn.Slice.training
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Slice.training

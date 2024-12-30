@@ -1,0 +1,6 @@
+compyute.nn.ParallelConcat.backward
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelConcat.backward

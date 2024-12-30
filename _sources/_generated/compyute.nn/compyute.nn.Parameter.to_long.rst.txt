@@ -1,0 +1,6 @@
+compyute.nn.Parameter.to\_long
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.to_long

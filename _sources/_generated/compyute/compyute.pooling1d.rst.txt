@@ -1,0 +1,6 @@
+﻿compyute.pooling1d
+==================
+
+.. currentmodule:: compyute
+
+.. autofunction:: pooling1d

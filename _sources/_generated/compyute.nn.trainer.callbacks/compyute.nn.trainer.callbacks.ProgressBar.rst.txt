@@ -1,0 +1,28 @@
+﻿compyute.nn.trainer.callbacks.ProgressBar
+=========================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. autoclass:: ProgressBar
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~ProgressBar.__init__
+        ~ProgressBar.on_epoch_end
+        ~ProgressBar.on_epoch_start
+        ~ProgressBar.on_run_end
+        ~ProgressBar.on_run_start
+        ~ProgressBar.on_step_end
+        ~ProgressBar.on_step_start
+    
+    
+
+
+    
+    
+    

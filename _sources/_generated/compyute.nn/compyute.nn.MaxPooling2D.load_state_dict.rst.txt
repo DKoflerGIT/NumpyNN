@@ -1,0 +1,6 @@
+compyute.nn.MaxPooling2D.load\_state\_dict
+==========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: MaxPooling2D.load_state_dict

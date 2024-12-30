@@ -1,0 +1,6 @@
+compyute.nn.Buffer.squeeze
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.squeeze

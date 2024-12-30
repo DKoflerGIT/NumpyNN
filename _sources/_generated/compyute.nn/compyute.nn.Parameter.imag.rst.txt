@@ -1,0 +1,6 @@
+compyute.nn.Parameter.imag
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.imag

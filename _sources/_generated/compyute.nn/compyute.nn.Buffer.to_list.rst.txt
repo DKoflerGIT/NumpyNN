@@ -1,0 +1,6 @@
+compyute.nn.Buffer.to\_list
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.to_list

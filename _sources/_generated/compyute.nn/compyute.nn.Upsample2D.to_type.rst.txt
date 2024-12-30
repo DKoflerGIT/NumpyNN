@@ -1,0 +1,6 @@
+compyute.nn.Upsample2D.to\_type
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Upsample2D.to_type

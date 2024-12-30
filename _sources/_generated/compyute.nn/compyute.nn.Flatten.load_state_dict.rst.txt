@@ -1,0 +1,6 @@
+compyute.nn.Flatten.load\_state\_dict
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Flatten.load_state_dict

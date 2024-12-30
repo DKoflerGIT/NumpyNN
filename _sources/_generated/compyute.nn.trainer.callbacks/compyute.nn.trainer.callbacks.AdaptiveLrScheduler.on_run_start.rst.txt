@@ -1,0 +1,6 @@
+compyute.nn.trainer.callbacks.AdaptiveLrScheduler.on\_run\_start
+================================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. automethod:: AdaptiveLrScheduler.on_run_start

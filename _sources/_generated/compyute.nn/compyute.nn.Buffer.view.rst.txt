@@ -1,0 +1,6 @@
+compyute.nn.Buffer.view
+=======================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.view

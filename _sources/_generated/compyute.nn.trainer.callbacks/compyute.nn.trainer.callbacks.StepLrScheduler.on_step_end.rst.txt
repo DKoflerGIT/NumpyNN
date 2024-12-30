@@ -1,0 +1,6 @@
+compyute.nn.trainer.callbacks.StepLrScheduler.on\_step\_end
+===========================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. automethod:: StepLrScheduler.on_step_end

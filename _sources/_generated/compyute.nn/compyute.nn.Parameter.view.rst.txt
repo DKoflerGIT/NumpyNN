@@ -1,0 +1,6 @@
+compyute.nn.Parameter.view
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.view

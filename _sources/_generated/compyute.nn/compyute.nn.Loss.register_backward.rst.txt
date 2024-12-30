@@ -1,0 +1,6 @@
+compyute.nn.Loss.register\_backward
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Loss.register_backward

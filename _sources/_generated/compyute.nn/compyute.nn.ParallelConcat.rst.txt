@@ -1,0 +1,48 @@
+﻿compyute.nn.ParallelConcat
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: ParallelConcat
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~ParallelConcat.__init__
+        ~ParallelConcat.backward
+        ~ParallelConcat.clean
+        ~ParallelConcat.forward
+        ~ParallelConcat.get_buffers
+        ~ParallelConcat.get_modules
+        ~ParallelConcat.get_parameters
+        ~ParallelConcat.get_state_dict
+        ~ParallelConcat.inference
+        ~ParallelConcat.load_state_dict
+        ~ParallelConcat.register_backward
+        ~ParallelConcat.register_forward
+        ~ParallelConcat.to_device
+        ~ParallelConcat.to_type
+        ~ParallelConcat.training
+        ~ParallelConcat.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~ParallelConcat.device
+        ~ParallelConcat.dtype
+        ~ParallelConcat.is_training
+        ~ParallelConcat.n_modules
+        ~ParallelConcat.retain_values
+        ~ParallelConcat.trainable
+    
+    

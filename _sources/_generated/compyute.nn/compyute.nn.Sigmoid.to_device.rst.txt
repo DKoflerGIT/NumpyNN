@@ -1,0 +1,6 @@
+compyute.nn.Sigmoid.to\_device
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sigmoid.to_device

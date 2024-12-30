@@ -1,0 +1,6 @@
+compyute.nn.ConvTranspose2D.get\_state\_dict
+============================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ConvTranspose2D.get_state_dict

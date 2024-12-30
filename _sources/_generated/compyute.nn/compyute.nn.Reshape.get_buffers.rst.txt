@@ -1,0 +1,6 @@
+compyute.nn.Reshape.get\_buffers
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Reshape.get_buffers

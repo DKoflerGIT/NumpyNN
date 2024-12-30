@@ -1,0 +1,6 @@
+compyute.nn.DenseBlock.get\_state\_dict
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: DenseBlock.get_state_dict

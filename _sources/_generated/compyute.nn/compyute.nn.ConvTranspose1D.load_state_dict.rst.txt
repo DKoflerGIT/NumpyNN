@@ -1,0 +1,6 @@
+compyute.nn.ConvTranspose1D.load\_state\_dict
+=============================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ConvTranspose1D.load_state_dict

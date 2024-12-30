@@ -1,0 +1,6 @@
+compyute.nn.ConvTranspose2D.forward
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ConvTranspose2D.forward

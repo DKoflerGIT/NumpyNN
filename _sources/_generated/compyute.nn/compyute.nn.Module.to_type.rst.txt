@@ -1,0 +1,6 @@
+compyute.nn.Module.to\_type
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Module.to_type

@@ -1,0 +1,6 @@
+compyute.nn.SiLU.to\_type
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: SiLU.to_type

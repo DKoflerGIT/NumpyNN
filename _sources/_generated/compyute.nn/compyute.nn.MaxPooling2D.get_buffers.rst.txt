@@ -1,0 +1,6 @@
+compyute.nn.MaxPooling2D.get\_buffers
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: MaxPooling2D.get_buffers

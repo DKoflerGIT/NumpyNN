@@ -1,0 +1,6 @@
+﻿compyute.log2
+=============
+
+.. currentmodule:: compyute
+
+.. autofunction:: log2

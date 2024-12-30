@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.leaky\_relu
+==================================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: leaky_relu

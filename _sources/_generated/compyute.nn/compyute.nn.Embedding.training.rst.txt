@@ -1,0 +1,6 @@
+compyute.nn.Embedding.training
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Embedding.training

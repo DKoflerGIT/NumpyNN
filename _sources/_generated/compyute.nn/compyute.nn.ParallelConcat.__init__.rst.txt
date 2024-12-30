@@ -1,0 +1,6 @@
+compyute.nn.ParallelConcat.\_\_init\_\_
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelConcat.__init__

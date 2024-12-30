@@ -1,0 +1,6 @@
+compyute.nn.Flatten.get\_modules
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Flatten.get_modules

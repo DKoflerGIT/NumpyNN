@@ -1,0 +1,6 @@
+compyute.Device.\_\_init\_\_
+============================
+
+.. currentmodule:: compyute
+
+.. automethod:: Device.__init__

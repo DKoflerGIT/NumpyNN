@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.mse\_loss
+================================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: mse_loss

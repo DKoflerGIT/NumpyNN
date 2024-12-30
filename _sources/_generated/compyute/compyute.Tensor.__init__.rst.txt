@@ -1,0 +1,6 @@
+compyute.Tensor.\_\_init\_\_
+============================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.__init__

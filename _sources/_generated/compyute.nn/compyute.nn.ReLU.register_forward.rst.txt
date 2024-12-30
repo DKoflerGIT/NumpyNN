@@ -1,0 +1,6 @@
+compyute.nn.ReLU.register\_forward
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ReLU.register_forward

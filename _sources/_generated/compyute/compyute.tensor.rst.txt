@@ -1,0 +1,6 @@
+﻿compyute.tensor
+===============
+
+.. currentmodule:: compyute
+
+.. autofunction:: tensor

@@ -1,0 +1,6 @@
+compyute.nn.Upsample2D.register\_forward
+========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Upsample2D.register_forward

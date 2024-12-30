@@ -1,0 +1,6 @@
+compyute.nn.BatchNorm2D.clean
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: BatchNorm2D.clean

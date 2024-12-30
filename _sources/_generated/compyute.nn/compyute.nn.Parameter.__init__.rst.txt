@@ -1,0 +1,6 @@
+compyute.nn.Parameter.\_\_init\_\_
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.__init__

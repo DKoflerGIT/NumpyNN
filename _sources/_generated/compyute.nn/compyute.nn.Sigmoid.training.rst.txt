@@ -1,0 +1,6 @@
+compyute.nn.Sigmoid.training
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sigmoid.training

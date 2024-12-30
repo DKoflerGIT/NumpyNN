@@ -1,0 +1,6 @@
+compyute.nn.ParallelAdd.backward
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelAdd.backward

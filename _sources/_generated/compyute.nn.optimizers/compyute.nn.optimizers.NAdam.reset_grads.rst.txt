@@ -1,0 +1,6 @@
+compyute.nn.optimizers.NAdam.reset\_grads
+=========================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: NAdam.reset_grads

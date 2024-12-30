@@ -1,0 +1,6 @@
+compyute.nn.Sigmoid.inference
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sigmoid.inference

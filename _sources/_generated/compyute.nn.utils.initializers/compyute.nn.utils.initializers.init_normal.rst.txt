@@ -1,0 +1,6 @@
+﻿compyute.nn.utils.initializers.init\_normal
+===========================================
+
+.. currentmodule:: compyute.nn.utils.initializers
+
+.. autofunction:: init_normal

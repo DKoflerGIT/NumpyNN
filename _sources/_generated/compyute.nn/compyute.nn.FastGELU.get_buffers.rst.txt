@@ -1,0 +1,6 @@
+compyute.nn.FastGELU.get\_buffers
+=================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: FastGELU.get_buffers

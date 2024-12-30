@@ -1,0 +1,6 @@
+compyute.nn.LeakyReLU.update\_parameter\_grad
+=============================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LeakyReLU.update_parameter_grad

@@ -1,0 +1,28 @@
+﻿compyute.nn.trainer.callbacks.CosineLrScheduler
+===============================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. autoclass:: CosineLrScheduler
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~CosineLrScheduler.__init__
+        ~CosineLrScheduler.on_epoch_end
+        ~CosineLrScheduler.on_epoch_start
+        ~CosineLrScheduler.on_run_end
+        ~CosineLrScheduler.on_run_start
+        ~CosineLrScheduler.on_step_end
+        ~CosineLrScheduler.on_step_start
+    
+    
+
+
+    
+    
+    

@@ -1,0 +1,6 @@
+﻿compyute.backend.gpu\_available
+===============================
+
+.. currentmodule:: compyute.backend
+
+.. autofunction:: gpu_available

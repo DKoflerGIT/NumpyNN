@@ -1,0 +1,6 @@
+compyute.nn.DenseBlock.inference
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: DenseBlock.inference

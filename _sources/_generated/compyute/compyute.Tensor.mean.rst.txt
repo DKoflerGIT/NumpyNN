@@ -1,0 +1,6 @@
+compyute.Tensor.mean
+====================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.mean

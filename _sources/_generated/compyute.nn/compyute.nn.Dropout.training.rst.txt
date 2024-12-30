@@ -1,0 +1,6 @@
+compyute.nn.Dropout.training
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Dropout.training

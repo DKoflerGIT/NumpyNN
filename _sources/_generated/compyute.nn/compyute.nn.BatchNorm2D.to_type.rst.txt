@@ -1,0 +1,6 @@
+compyute.nn.BatchNorm2D.to\_type
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: BatchNorm2D.to_type

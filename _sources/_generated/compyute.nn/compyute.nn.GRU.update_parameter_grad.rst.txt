@@ -1,0 +1,6 @@
+compyute.nn.GRU.update\_parameter\_grad
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GRU.update_parameter_grad

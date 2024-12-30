@@ -1,0 +1,6 @@
+compyute.nn.trainer.callbacks.Tensorboard.\_\_init\_\_
+======================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. automethod:: Tensorboard.__init__

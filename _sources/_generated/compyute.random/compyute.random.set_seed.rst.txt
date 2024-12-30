@@ -1,0 +1,6 @@
+﻿compyute.random.set\_seed
+=========================
+
+.. currentmodule:: compyute.random
+
+.. autofunction:: set_seed

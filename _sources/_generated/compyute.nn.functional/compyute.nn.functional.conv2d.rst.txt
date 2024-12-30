@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.conv2d
+=============================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: conv2d

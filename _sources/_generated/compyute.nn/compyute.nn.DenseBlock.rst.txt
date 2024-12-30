@@ -1,0 +1,49 @@
+﻿compyute.nn.DenseBlock
+======================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: DenseBlock
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~DenseBlock.__init__
+        ~DenseBlock.add
+        ~DenseBlock.backward
+        ~DenseBlock.clean
+        ~DenseBlock.forward
+        ~DenseBlock.get_buffers
+        ~DenseBlock.get_modules
+        ~DenseBlock.get_parameters
+        ~DenseBlock.get_state_dict
+        ~DenseBlock.inference
+        ~DenseBlock.load_state_dict
+        ~DenseBlock.register_backward
+        ~DenseBlock.register_forward
+        ~DenseBlock.to_device
+        ~DenseBlock.to_type
+        ~DenseBlock.training
+        ~DenseBlock.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~DenseBlock.device
+        ~DenseBlock.dtype
+        ~DenseBlock.is_training
+        ~DenseBlock.n_modules
+        ~DenseBlock.retain_values
+        ~DenseBlock.trainable
+    
+    

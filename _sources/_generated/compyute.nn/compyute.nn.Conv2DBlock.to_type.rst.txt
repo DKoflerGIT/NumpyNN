@@ -1,0 +1,6 @@
+compyute.nn.Conv2DBlock.to\_type
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv2DBlock.to_type

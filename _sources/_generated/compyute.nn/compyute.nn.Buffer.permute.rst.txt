@@ -1,0 +1,6 @@
+compyute.nn.Buffer.permute
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.permute

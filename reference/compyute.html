@@ -1,0 +1,1023 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" data-theme="light">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>compyute &#8212; Compyute v0.1.8 Manual</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=22607128"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/compyute';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="compyute.tensor" href="../_generated/compyute/compyute.tensor.html" />
+    <link rel="prev" title="Compyute reference" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.1.8" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Compyute v0.1.8 Manual</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    API reference
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/dakofler/Compyute" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    API reference
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/dakofler/Compyute" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Python API</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">compyute</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.tensor.html">compyute.tensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.Tensor.html">compyute.Tensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.arange.html">compyute.arange</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.empty.html">compyute.empty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.empty_like.html">compyute.empty_like</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.full.html">compyute.full</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.full_like.html">compyute.full_like</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.identity.html">compyute.identity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.linspace.html">compyute.linspace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.ones.html">compyute.ones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.ones_like.html">compyute.ones_like</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.zeros.html">compyute.zeros</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.zeros_like.html">compyute.zeros_like</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.abs.html">compyute.abs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.clip.html">compyute.clip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.cos.html">compyute.cos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.cosh.html">compyute.cosh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.exp.html">compyute.exp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.fft1d.html">compyute.fft1d</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.fft2d.html">compyute.fft2d</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.histogram.html">compyute.histogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.ifft1d.html">compyute.ifft1d</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.ifft2d.html">compyute.ifft2d</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.is_nan.html">compyute.is_nan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.log.html">compyute.log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.log2.html">compyute.log2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.log10.html">compyute.log10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.real.html">compyute.real</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.round.html">compyute.round</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.sech.html">compyute.sech</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.sin.html">compyute.sin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.sinh.html">compyute.sinh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.sqrt.html">compyute.sqrt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.tan.html">compyute.tan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.tanh.html">compyute.tanh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.allclose.html">compyute.allclose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.convolve1d_fft.html">compyute.convolve1d_fft</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.convolve2d_fft.html">compyute.convolve2d_fft</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.dot.html">compyute.dot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.einsum.html">compyute.einsum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.inner.html">compyute.inner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.outer.html">compyute.outer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.tensorprod.html">compyute.tensorprod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.tensorsum.html">compyute.tensorsum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.all.html">compyute.all</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.any.html">compyute.any</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.mean.html">compyute.mean</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.norm.html">compyute.norm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.prod.html">compyute.prod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.std.html">compyute.std</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.tensorprod.html">compyute.tensorprod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.tensorsum.html">compyute.tensorsum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.sum.html">compyute.sum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.var.html">compyute.var</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.append.html">compyute.append</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.broadcast_to.html">compyute.broadcast_to</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.concat.html">compyute.concat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.diagonal.html">compyute.diagonal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.flatten.html">compyute.flatten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.flip.html">compyute.flip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.insert_dim.html">compyute.insert_dim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.movedim.html">compyute.movedim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.pad.html">compyute.pad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.pad_to_shape.html">compyute.pad_to_shape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.permute.html">compyute.permute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.pooling1d.html">compyute.pooling1d</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.pooling2d.html">compyute.pooling2d</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.repeat1d.html">compyute.repeat1d</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.repeat2d.html">compyute.repeat2d</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.reshape.html">compyute.reshape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.split.html">compyute.split</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.squeeze.html">compyute.squeeze</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.stack.html">compyute.stack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.tile.html">compyute.tile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.transpose.html">compyute.transpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.argmax.html">compyute.argmax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.get_diagonal.html">compyute.get_diagonal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.max.html">compyute.max</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.maximum.html">compyute.maximum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.mean.html">compyute.mean</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.min.html">compyute.min</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.minimum.html">compyute.minimum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.get_diagonal.html">compyute.get_diagonal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.tril.html">compyute.tril</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.triu.html">compyute.triu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.unique.html">compyute.unique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.bool_.html">compyute.bool_</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.int8.html">compyute.int8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.int16.html">compyute.int16</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.int32.html">compyute.int32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.int64.html">compyute.int64</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.float16.html">compyute.float16</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.float32.html">compyute.float32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.float64.html">compyute.float64</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.complex64.html">compyute.complex64</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.complex128.html">compyute.complex128</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.set_default_dtype.html">compyute.set_default_dtype</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.use_dtype.html">compyute.use_dtype</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.cpu.html">compyute.cpu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.cuda.html">compyute.cuda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.Device.html">compyute.Device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.set_default_device.html">compyute.set_default_device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.use_device.html">compyute.use_device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.save.html">compyute.save</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.load.html">compyute.load</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.set_debug_mode.html">compyute.set_debug_mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute/compyute.debug.html">compyute.debug</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.backend.html">compyute.backend</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.nn.html">compyute.nn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.nn.functional.html">compyute.nn.functional</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.nn.optimizers.html">compyute.nn.optimizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.nn.trainer.html">compyute.nn.trainer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.nn.trainer.callbacks.html">compyute.nn.trainer.callbacks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.nn.utils.html">compyute.nn.utils</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.nn.utils.initializers.html">compyute.nn.utils.initializers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.nn.utils.lr_schedulers.html">compyute.nn.utils.lr_schedulers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.nn.utils.tensorboard.html">compyute.nn.utils.tensorboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.preprocessing.html">compyute.preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.random.html">compyute.random</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Compyute reference</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">compyute</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="compyute">
+<h1>compyute<a class="headerlink" href="#compyute" title="Link to this heading">#</a></h1>
+<section id="tensors">
+<h2>Tensors<a class="headerlink" href="#tensors" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.tensor.html#compyute.tensor" title="compyute.tensor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensor</span></code></a>(data[, device, dtype])</p></td>
+<td><p>Creates a tensor object from arbitrary data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.Tensor.html#compyute.Tensor" title="compyute.Tensor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tensor</span></code></a>(data)</p></td>
+<td><p>Tensor object used for storing multidimensional data.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="tensor-operations">
+<h2>Tensor Operations<a class="headerlink" href="#tensor-operations" title="Link to this heading">#</a></h2>
+<section id="creating-and-combining-operations">
+<h3>Creating and Combining Operations<a class="headerlink" href="#creating-and-combining-operations" title="Link to this heading">#</a></h3>
+<p>Functions to create new tensors or combine existing tensors.</p>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.arange.html#compyute.arange" title="compyute.arange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">arange</span></code></a>(stop[, start, step, device, dtype])</p></td>
+<td><p>Returns a tensor of evenly spaced values using a step size within a given interval .:math:<cite>[start, stop)</cite>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.empty.html#compyute.empty" title="compyute.empty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">empty</span></code></a>(shape, *[, device, dtype])</p></td>
+<td><p>Returns an tensor with uninitialized values.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.empty_like.html#compyute.empty_like" title="compyute.empty_like"><code class="xref py py-obj docutils literal notranslate"><span class="pre">empty_like</span></code></a>(x)</p></td>
+<td><p>Returns a tensor based on a given other tensor with uninitialized values.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.full.html#compyute.full" title="compyute.full"><code class="xref py py-obj docutils literal notranslate"><span class="pre">full</span></code></a>(shape, value, *[, device, dtype])</p></td>
+<td><p>Returns a tensor of a given shape filled with a specified value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.full_like.html#compyute.full_like" title="compyute.full_like"><code class="xref py py-obj docutils literal notranslate"><span class="pre">full_like</span></code></a>(x, value)</p></td>
+<td><p>Returns a tensor of a given shape filled with a specified value.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.identity.html#compyute.identity" title="compyute.identity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">identity</span></code></a>(n, *[, device, dtype])</p></td>
+<td><p>Returns a diagonal tensor of shape <code class="docutils literal notranslate"><span class="pre">(n,</span> <span class="pre">n)</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.linspace.html#compyute.linspace" title="compyute.linspace"><code class="xref py py-obj docutils literal notranslate"><span class="pre">linspace</span></code></a>(start, stop, n, *[, device, dtype])</p></td>
+<td><p>Returns a tensor of num evenly spaced values within a given interval <span class="math notranslate nohighlight">\([start, stop]\)</span>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.ones.html#compyute.ones" title="compyute.ones"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ones</span></code></a>(shape, *[, device, dtype])</p></td>
+<td><p>Returns a tensor of a given shape filled with ones.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.ones_like.html#compyute.ones_like" title="compyute.ones_like"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ones_like</span></code></a>(x)</p></td>
+<td><p>Returns a tensor based on a given other tensor filled with ones.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.zeros.html#compyute.zeros" title="compyute.zeros"><code class="xref py py-obj docutils literal notranslate"><span class="pre">zeros</span></code></a>(shape, *[, device, dtype])</p></td>
+<td><p>Returns a tensor of a given shape filled with zeros.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.zeros_like.html#compyute.zeros_like" title="compyute.zeros_like"><code class="xref py py-obj docutils literal notranslate"><span class="pre">zeros_like</span></code></a>(x)</p></td>
+<td><p>Returns a tensor based on a given other tensor filled with zeros.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="unary-operations">
+<h3>Unary Operations<a class="headerlink" href="#unary-operations" title="Link to this heading">#</a></h3>
+<p>Functions that operate on one tensor.</p>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.abs.html#compyute.abs" title="compyute.abs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abs</span></code></a>(x)</p></td>
+<td><p>Computes the element-wise absolute value of a tensor.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.clip.html#compyute.clip" title="compyute.clip"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clip</span></code></a>(x[, min_val, max_val])</p></td>
+<td><p>Returns a tensor with values clipped to min_value and max_value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.cos.html#compyute.cos" title="compyute.cos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cos</span></code></a>(x)</p></td>
+<td><p>Computes the element-wise cosine of a tensor.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.cosh.html#compyute.cosh" title="compyute.cosh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cosh</span></code></a>(x)</p></td>
+<td><p>Computes the element-wise hyperbolic cosine of a tensor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.exp.html#compyute.exp" title="compyute.exp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">exp</span></code></a>(x)</p></td>
+<td><p>Computes the element-wise exponential of a tensor.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.fft1d.html#compyute.fft1d" title="compyute.fft1d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fft1d</span></code></a>(x[, n, dim])</p></td>
+<td><p>Computes the 1D Fast Fourier Transform over a given dimension.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.fft2d.html#compyute.fft2d" title="compyute.fft2d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fft2d</span></code></a>(x[, n, dims])</p></td>
+<td><p>Computes the 2D Fast Fourier Transform over given dimensions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.histogram.html#compyute.histogram" title="compyute.histogram"><code class="xref py py-obj docutils literal notranslate"><span class="pre">histogram</span></code></a>(x[, bins, binrange, density, weights])</p></td>
+<td><p>Computes the histogram of a tensor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.ifft1d.html#compyute.ifft1d" title="compyute.ifft1d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ifft1d</span></code></a>(x[, n, dim])</p></td>
+<td><p>Computes the inverse 1D Fast Fourier Transform over a given dimension.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.ifft2d.html#compyute.ifft2d" title="compyute.ifft2d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ifft2d</span></code></a>(x[, s, dims])</p></td>
+<td><p>Computes the inverse 2D Fast Fourier Transform over given dims.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.is_nan.html#compyute.is_nan" title="compyute.is_nan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_nan</span></code></a>(x)</p></td>
+<td><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the element in a tensor is not a number.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.log.html#compyute.log" title="compyute.log"><code class="xref py py-obj docutils literal notranslate"><span class="pre">log</span></code></a>(x)</p></td>
+<td><p>Computes the element-wise natural log of a tensor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.log2.html#compyute.log2" title="compyute.log2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">log2</span></code></a>(x)</p></td>
+<td><p>Computes the element-wise log base 2 of a tensor.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.log10.html#compyute.log10" title="compyute.log10"><code class="xref py py-obj docutils literal notranslate"><span class="pre">log10</span></code></a>(x)</p></td>
+<td><p>Computes the element-wise log base 10 of a tensor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.real.html#compyute.real" title="compyute.real"><code class="xref py py-obj docutils literal notranslate"><span class="pre">real</span></code></a>(x)</p></td>
+<td><p>Returns the real part of a complex tensor.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.round.html#compyute.round" title="compyute.round"><code class="xref py py-obj docutils literal notranslate"><span class="pre">round</span></code></a>(x, decimals)</p></td>
+<td><p>Rounds tensor elements.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.sech.html#compyute.sech" title="compyute.sech"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sech</span></code></a>(x)</p></td>
+<td><p>Computes the element-wise secant of a tensor.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.sin.html#compyute.sin" title="compyute.sin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sin</span></code></a>(x)</p></td>
+<td><p>Computes the element-wise sine of a tensor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.sinh.html#compyute.sinh" title="compyute.sinh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sinh</span></code></a>(x)</p></td>
+<td><p>Computes the element-wise hyperbolic sine of a tensor.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.sqrt.html#compyute.sqrt" title="compyute.sqrt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sqrt</span></code></a>(x)</p></td>
+<td><p>Computes the element-wise square root of a tensor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.tan.html#compyute.tan" title="compyute.tan"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tan</span></code></a>(x)</p></td>
+<td><p>Computes the element-wise tangent of a tensor.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.tanh.html#compyute.tanh" title="compyute.tanh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tanh</span></code></a>(x)</p></td>
+<td><p>Computes the element-wise hyperbolic tangent of a tensor.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="multinary-operations">
+<h3>Multinary Operations<a class="headerlink" href="#multinary-operations" title="Link to this heading">#</a></h3>
+<p>Functions that operate on two or more tensors.</p>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.allclose.html#compyute.allclose" title="compyute.allclose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">allclose</span></code></a>(x1, x2, *[, rtol, atol])</p></td>
+<td><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if all elements in the tensor are <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.convolve1d_fft.html#compyute.convolve1d_fft" title="compyute.convolve1d_fft"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convolve1d_fft</span></code></a>(x1, x2)</p></td>
+<td><p>Computes the convolution of two tensors using FFT over their last dimension.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.convolve2d_fft.html#compyute.convolve2d_fft" title="compyute.convolve2d_fft"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convolve2d_fft</span></code></a>(x1, x2)</p></td>
+<td><p>Computes the convolution of two tensors using FFT over their last two dimensions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.dot.html#compyute.dot" title="compyute.dot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dot</span></code></a>(x1, x2)</p></td>
+<td><p>Computes the dot product of two tensors.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.einsum.html#compyute.einsum" title="compyute.einsum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">einsum</span></code></a>(subscripts, *tensors)</p></td>
+<td><p>Computes the Einstein summation.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.inner.html#compyute.inner" title="compyute.inner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">inner</span></code></a>(*tensors)</p></td>
+<td><p>Computes the inner product of two or more tensors.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.outer.html#compyute.outer" title="compyute.outer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">outer</span></code></a>(*tensors)</p></td>
+<td><p>Computes the outer product of two or more tensors.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.tensorprod.html#compyute.tensorprod" title="compyute.tensorprod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorprod</span></code></a>(tensors)</p></td>
+<td><p>Computes the element-wise product of any number of two or more tensors over their first dim.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.tensorsum.html#compyute.tensorsum" title="compyute.tensorsum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorsum</span></code></a>(tensors)</p></td>
+<td><p>Computes the element-wise sum of any number of two or more tensors over their first dim.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="reducing-operations">
+<h3>Reducing Operations<a class="headerlink" href="#reducing-operations" title="Link to this heading">#</a></h3>
+<p>Functions that aggregate tensors.</p>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.all.html#compyute.all" title="compyute.all"><code class="xref py py-obj docutils literal notranslate"><span class="pre">all</span></code></a>(x[, dim, keepdims])</p></td>
+<td><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if all elements in the tensor are <code class="docutils literal notranslate"><span class="pre">True</span></code> over given dimensions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.any.html#compyute.any" title="compyute.any"><code class="xref py py-obj docutils literal notranslate"><span class="pre">any</span></code></a>(x[, dim, keepdims])</p></td>
+<td><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if at least one element in the tensor is <code class="docutils literal notranslate"><span class="pre">True</span></code> over given dimensions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.mean.html#compyute.mean" title="compyute.mean"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mean</span></code></a>(x[, dim, keepdims])</p></td>
+<td><p>Computes the mean of tensor elements over given dimensions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.norm.html#compyute.norm" title="compyute.norm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">norm</span></code></a>(x[, dim, keepdims])</p></td>
+<td><p>Computes the norm of tensor elements over given dimensions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.prod.html#compyute.prod" title="compyute.prod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">prod</span></code></a>(x[, dim, keepdims])</p></td>
+<td><p>Computes the product of tensor elements over given dimensions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.std.html#compyute.std" title="compyute.std"><code class="xref py py-obj docutils literal notranslate"><span class="pre">std</span></code></a>(x[, dim, keepdims])</p></td>
+<td><p>Computes the standard deviation of tensor elements over given dimensions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.tensorprod.html#compyute.tensorprod" title="compyute.tensorprod"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorprod</span></code></a>(tensors)</p></td>
+<td><p>Computes the element-wise product of any number of two or more tensors over their first dim.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.tensorsum.html#compyute.tensorsum" title="compyute.tensorsum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tensorsum</span></code></a>(tensors)</p></td>
+<td><p>Computes the element-wise sum of any number of two or more tensors over their first dim.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.sum.html#compyute.sum" title="compyute.sum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sum</span></code></a>(x[, dim, keepdims])</p></td>
+<td><p>Computes the sum of tensor elements over given dimensions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.var.html#compyute.var" title="compyute.var"><code class="xref py py-obj docutils literal notranslate"><span class="pre">var</span></code></a>(x[, dim, ddof, keepdims])</p></td>
+<td><p>Computes the variance of tensor elements over given dimensions.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="shape-operations">
+<h3>Shape Operations<a class="headerlink" href="#shape-operations" title="Link to this heading">#</a></h3>
+<p>Functions that change tensor shapes.</p>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.append.html#compyute.append" title="compyute.append"><code class="xref py py-obj docutils literal notranslate"><span class="pre">append</span></code></a>(x, values[, dim])</p></td>
+<td><p>Returns a copy of the tensor with appended values.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.broadcast_to.html#compyute.broadcast_to" title="compyute.broadcast_to"><code class="xref py py-obj docutils literal notranslate"><span class="pre">broadcast_to</span></code></a>(x, shape)</p></td>
+<td><p>Broadcast a tensor to a new shape.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.concat.html#compyute.concat" title="compyute.concat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">concat</span></code></a>(tensors[, dim])</p></td>
+<td><p>Returns a new tensor by joining a sequence of tensors along a given dimension.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.diagonal.html#compyute.diagonal" title="compyute.diagonal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">diagonal</span></code></a>(x)</p></td>
+<td><p>Expands a tensor by turning the last dim into a diagonal matrix.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.flatten.html#compyute.flatten" title="compyute.flatten"><code class="xref py py-obj docutils literal notranslate"><span class="pre">flatten</span></code></a>(x)</p></td>
+<td><p>Returns a flattened 1D-tensor.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.flip.html#compyute.flip" title="compyute.flip"><code class="xref py py-obj docutils literal notranslate"><span class="pre">flip</span></code></a>(x[, dim])</p></td>
+<td><p>Returns a tensor with flipped elements along given dim.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.insert_dim.html#compyute.insert_dim" title="compyute.insert_dim"><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert_dim</span></code></a>(x, dim)</p></td>
+<td><p>Returns a view of the tensor with an added dimension.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.movedim.html#compyute.movedim" title="compyute.movedim"><code class="xref py py-obj docutils literal notranslate"><span class="pre">movedim</span></code></a>(x, from_dim, to_dim)</p></td>
+<td><p>Move dimensions of a tensor to new positions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.pad.html#compyute.pad" title="compyute.pad"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pad</span></code></a>(x, padding)</p></td>
+<td><p>Returns a padded tensor using zero padding.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.pad_to_shape.html#compyute.pad_to_shape" title="compyute.pad_to_shape"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pad_to_shape</span></code></a>(x, shape)</p></td>
+<td><p>Returns a padded tensor using zero padding that matches a specified shape.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.permute.html#compyute.permute" title="compyute.permute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">permute</span></code></a>(x, dims)</p></td>
+<td><p>Permutes a tensor's dimensions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.pooling1d.html#compyute.pooling1d" title="compyute.pooling1d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pooling1d</span></code></a>(x, window_size[, stride])</p></td>
+<td><p>Returns a windowed view of a tensor across the last dim.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.pooling2d.html#compyute.pooling2d" title="compyute.pooling2d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pooling2d</span></code></a>(x, window_size[, stride])</p></td>
+<td><p>Returns a windowed view of a tensor across the last two dimensions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.repeat1d.html#compyute.repeat1d" title="compyute.repeat1d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">repeat1d</span></code></a>(x, n)</p></td>
+<td><p>Repeat elements of a tensor along the last dimension.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.repeat2d.html#compyute.repeat2d" title="compyute.repeat2d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">repeat2d</span></code></a>(x, n)</p></td>
+<td><p>Repeat elements of a tensor along the last two dimensions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.reshape.html#compyute.reshape" title="compyute.reshape"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reshape</span></code></a>(x, shape)</p></td>
+<td><p>Returns a new view of the tensor of a given shape.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.split.html#compyute.split" title="compyute.split"><code class="xref py py-obj docutils literal notranslate"><span class="pre">split</span></code></a>(x, splits[, dim])</p></td>
+<td><p>Returns a list of new tensors by splitting the tensor.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.squeeze.html#compyute.squeeze" title="compyute.squeeze"><code class="xref py py-obj docutils literal notranslate"><span class="pre">squeeze</span></code></a>(x)</p></td>
+<td><p>Returns a tensor with removed dimensions where <code class="docutils literal notranslate"><span class="pre">dim=1</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.stack.html#compyute.stack" title="compyute.stack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stack</span></code></a>(tensors[, dim])</p></td>
+<td><p>Returns a new tensor by stacking a sequence of tensors along a given dimension.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.tile.html#compyute.tile" title="compyute.tile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tile</span></code></a>(x, n_repeats, dim)</p></td>
+<td><p>Repeat elements of a tensor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.transpose.html#compyute.transpose" title="compyute.transpose"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transpose</span></code></a>(x, dim1, dim2)</p></td>
+<td><p>Transposes a tensor by swapping two dimensions.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="selecting-operations">
+<h3>Selecting Operations<a class="headerlink" href="#selecting-operations" title="Link to this heading">#</a></h3>
+<p>Functions that return a subset of a tensor.</p>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.argmax.html#compyute.argmax" title="compyute.argmax"><code class="xref py py-obj docutils literal notranslate"><span class="pre">argmax</span></code></a>(x[, dim, keepdims])</p></td>
+<td><p>Returns the indices of maximum values along a given dim.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.get_diagonal.html#compyute.get_diagonal" title="compyute.get_diagonal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_diagonal</span></code></a>(x[, d])</p></td>
+<td><p>Extract a diagonal or construct a diagonal tensor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.max.html#compyute.max" title="compyute.max"><code class="xref py py-obj docutils literal notranslate"><span class="pre">max</span></code></a>(x[, dim, keepdims])</p></td>
+<td><p>Computes the maximum of tensor elements over a given dim.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.maximum.html#compyute.maximum" title="compyute.maximum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">maximum</span></code></a>(x1, x2)</p></td>
+<td><p>Computes the element-wise maximum of two tensors or a tensor and a scalar.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.mean.html#compyute.mean" title="compyute.mean"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mean</span></code></a>(x[, dim, keepdims])</p></td>
+<td><p>Computes the mean of tensor elements over given dimensions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.min.html#compyute.min" title="compyute.min"><code class="xref py py-obj docutils literal notranslate"><span class="pre">min</span></code></a>(x[, dim, keepdims])</p></td>
+<td><p>Computes the minimum of tensor elements over a given dim.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.minimum.html#compyute.minimum" title="compyute.minimum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minimum</span></code></a>(x1, x2)</p></td>
+<td><p>Computes the element-wise minimum of two tensors or a tensor and a scalar.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.get_diagonal.html#compyute.get_diagonal" title="compyute.get_diagonal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_diagonal</span></code></a>(x[, d])</p></td>
+<td><p>Extract a diagonal or construct a diagonal tensor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.tril.html#compyute.tril" title="compyute.tril"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tril</span></code></a>(x[, diag_index])</p></td>
+<td><p>Returns the lower triangle of a tensor below the diagonal of the last two dimensions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.triu.html#compyute.triu" title="compyute.triu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">triu</span></code></a>(x[, diag_index])</p></td>
+<td><p>Returns the upper triangle of a tensor above the diagonal of the last two dimensions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.unique.html#compyute.unique" title="compyute.unique"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unique</span></code></a>(x)</p></td>
+<td><p>Returns the unique ordered values of the tensor.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="data-types">
+<h2>Data Types<a class="headerlink" href="#data-types" title="Link to this heading">#</a></h2>
+<p>Available data types are:</p>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.bool_.html#compyute.bool_" title="compyute.bool_"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool_</span></code></a></p></td>
+<td><p>Boolean.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.int8.html#compyute.int8" title="compyute.int8"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int8</span></code></a></p></td>
+<td><p>Signed 8 bit integer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.int16.html#compyute.int16" title="compyute.int16"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int16</span></code></a></p></td>
+<td><p>Signed 16 bit integer.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.int32.html#compyute.int32" title="compyute.int32"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int32</span></code></a></p></td>
+<td><p>Signed 32 bit integer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.int64.html#compyute.int64" title="compyute.int64"><code class="xref py py-obj docutils literal notranslate"><span class="pre">int64</span></code></a></p></td>
+<td><p>Signed 64 bit integer.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.float16.html#compyute.float16" title="compyute.float16"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float16</span></code></a></p></td>
+<td><p>16 bit floating point.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.float32.html#compyute.float32" title="compyute.float32"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float32</span></code></a></p></td>
+<td><p>32 bit floating point.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.float64.html#compyute.float64" title="compyute.float64"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float64</span></code></a></p></td>
+<td><p>64 bit floating point.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.complex64.html#compyute.complex64" title="compyute.complex64"><code class="xref py py-obj docutils literal notranslate"><span class="pre">complex64</span></code></a></p></td>
+<td><p>Complex 64 bit floating point.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.complex128.html#compyute.complex128" title="compyute.complex128"><code class="xref py py-obj docutils literal notranslate"><span class="pre">complex128</span></code></a></p></td>
+<td><p>Complex 128 bit floating point.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Utilities:</p>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.set_default_dtype.html#compyute.set_default_dtype" title="compyute.set_default_dtype"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_default_dtype</span></code></a>(dtype)</p></td>
+<td><p>Sets the default data type for new tensors.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.use_dtype.html#compyute.use_dtype" title="compyute.use_dtype"><code class="xref py py-obj docutils literal notranslate"><span class="pre">use_dtype</span></code></a>(dtype)</p></td>
+<td><p>Context manager to set the default dtype for new tensors.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="devices">
+<h2>Devices<a class="headerlink" href="#devices" title="Link to this heading">#</a></h2>
+<p>Available devices are:</p>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.cpu.html#compyute.cpu" title="compyute.cpu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cpu</span></code></a></p></td>
+<td><p>CPU device.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.cuda.html#compyute.cuda" title="compyute.cuda"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cuda</span></code></a></p></td>
+<td><p>GPU device.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Utilities:</p>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.Device.html#compyute.Device" title="compyute.Device"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Device</span></code></a>(t[, index])</p></td>
+<td><p>Device base class.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.set_default_device.html#compyute.set_default_device" title="compyute.set_default_device"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_default_device</span></code></a>(device)</p></td>
+<td><p>Sets the default device for new tensors.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.use_device.html#compyute.use_device" title="compyute.use_device"><code class="xref py py-obj docutils literal notranslate"><span class="pre">use_device</span></code></a>(device)</p></td>
+<td><p>Context manager to set the default device for new tensors.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="utility-functions">
+<h2>Utility Functions<a class="headerlink" href="#utility-functions" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.save.html#compyute.save" title="compyute.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code></a>(obj, filepath)</p></td>
+<td><p>Saves an object to a binary file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.load.html#compyute.load" title="compyute.load"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load</span></code></a>(filepath)</p></td>
+<td><p>Loads an object from a binary file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute/compyute.set_debug_mode.html#compyute.set_debug_mode" title="compyute.set_debug_mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_debug_mode</span></code></a>(active)</p></td>
+<td><p>Sets the debug mode of Compyute.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute/compyute.debug.html#compyute.debug" title="compyute.debug"><code class="xref py py-obj docutils literal notranslate"><span class="pre">debug</span></code></a>()</p></td>
+<td><p>Context manager to activate debug mode.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="constants">
+<h2>Constants<a class="headerlink" href="#constants" title="Link to this heading">#</a></h2>
+<dl class="py data">
+<dt class="sig sig-object py" id="compyute.newaxis">
+<span class="sig-prename descclassname"><span class="pre">compyute.</span></span><span class="sig-name descname"><span class="pre">newaxis</span></span><a class="headerlink" href="#compyute.newaxis" title="Link to this definition">#</a></dt>
+<dd><p>A convenient alias for None, useful for indexing arrays.</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Compyute reference</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../_generated/compyute/compyute.tensor.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">compyute.tensor</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tensors">Tensors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tensor-operations">Tensor Operations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-and-combining-operations">Creating and Combining Operations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unary-operations">Unary Operations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multinary-operations">Multinary Operations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reducing-operations">Reducing Operations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shape-operations">Shape Operations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-operations">Selecting Operations</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types">Data Types</a><ul class="nav section-nav flex-column">
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#devices">Devices</a><ul class="nav section-nav flex-column">
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#utility-functions">Utility Functions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constants">Constants</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#compyute.newaxis"><code class="docutils literal notranslate"><span class="pre">newaxis</span></code></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/reference/compyute.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2022-2024, Daniel Kofler.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

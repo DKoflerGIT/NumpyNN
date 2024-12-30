@@ -1,0 +1,6 @@
+﻿compyute.max
+============
+
+.. currentmodule:: compyute
+
+.. autofunction:: max

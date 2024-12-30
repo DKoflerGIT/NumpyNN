@@ -1,0 +1,6 @@
+compyute.nn.Reshape.to\_device
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Reshape.to_device

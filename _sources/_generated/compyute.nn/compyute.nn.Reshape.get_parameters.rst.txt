@@ -1,0 +1,6 @@
+compyute.nn.Reshape.get\_parameters
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Reshape.get_parameters

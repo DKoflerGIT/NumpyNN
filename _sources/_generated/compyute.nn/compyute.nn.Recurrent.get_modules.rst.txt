@@ -1,0 +1,6 @@
+compyute.nn.Recurrent.get\_modules
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Recurrent.get_modules

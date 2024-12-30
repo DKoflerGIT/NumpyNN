@@ -1,0 +1,6 @@
+compyute.nn.Embedding.load\_state\_dict
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Embedding.load_state_dict

@@ -1,0 +1,6 @@
+compyute.Tensor.std
+===================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.std

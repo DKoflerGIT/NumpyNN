@@ -1,0 +1,6 @@
+compyute.nn.trainer.callbacks.ExponentialLrScheduler.\_\_init\_\_
+=================================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. automethod:: ExponentialLrScheduler.__init__

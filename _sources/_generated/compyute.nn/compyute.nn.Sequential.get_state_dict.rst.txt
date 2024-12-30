@@ -1,0 +1,6 @@
+compyute.nn.Sequential.get\_state\_dict
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sequential.get_state_dict

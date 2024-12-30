@@ -1,0 +1,6 @@
+compyute.nn.ParallelConcat.to\_type
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelConcat.to_type

@@ -1,0 +1,6 @@
+compyute.nn.AvgPooling2D.get\_buffers
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: AvgPooling2D.get_buffers

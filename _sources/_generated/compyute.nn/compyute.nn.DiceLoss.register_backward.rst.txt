@@ -1,0 +1,6 @@
+compyute.nn.DiceLoss.register\_backward
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: DiceLoss.register_backward

@@ -1,0 +1,6 @@
+compyute.nn.Parameter.transpose
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.transpose

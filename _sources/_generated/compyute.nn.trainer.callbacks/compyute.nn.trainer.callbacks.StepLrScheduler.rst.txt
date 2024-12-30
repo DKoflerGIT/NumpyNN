@@ -1,0 +1,28 @@
+﻿compyute.nn.trainer.callbacks.StepLrScheduler
+=============================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. autoclass:: StepLrScheduler
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~StepLrScheduler.__init__
+        ~StepLrScheduler.on_epoch_end
+        ~StepLrScheduler.on_epoch_start
+        ~StepLrScheduler.on_run_end
+        ~StepLrScheduler.on_run_start
+        ~StepLrScheduler.on_step_end
+        ~StepLrScheduler.on_step_start
+    
+    
+
+
+    
+    
+    

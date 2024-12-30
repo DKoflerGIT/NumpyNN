@@ -1,0 +1,6 @@
+compyute.nn.SiLU.register\_forward
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: SiLU.register_forward

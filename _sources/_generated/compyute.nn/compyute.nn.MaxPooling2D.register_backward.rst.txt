@@ -1,0 +1,6 @@
+compyute.nn.MaxPooling2D.register\_backward
+===========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: MaxPooling2D.register_backward

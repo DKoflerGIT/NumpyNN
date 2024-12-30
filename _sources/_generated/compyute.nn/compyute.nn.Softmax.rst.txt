@@ -1,0 +1,48 @@
+﻿compyute.nn.Softmax
+===================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Softmax
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Softmax.__init__
+        ~Softmax.backward
+        ~Softmax.clean
+        ~Softmax.forward
+        ~Softmax.get_buffers
+        ~Softmax.get_modules
+        ~Softmax.get_parameters
+        ~Softmax.get_state_dict
+        ~Softmax.inference
+        ~Softmax.load_state_dict
+        ~Softmax.register_backward
+        ~Softmax.register_forward
+        ~Softmax.to_device
+        ~Softmax.to_type
+        ~Softmax.training
+        ~Softmax.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Softmax.device
+        ~Softmax.dtype
+        ~Softmax.is_training
+        ~Softmax.n_modules
+        ~Softmax.retain_values
+        ~Softmax.trainable
+    
+    

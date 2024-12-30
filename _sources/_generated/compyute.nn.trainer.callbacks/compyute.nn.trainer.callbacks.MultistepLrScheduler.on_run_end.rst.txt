@@ -1,0 +1,6 @@
+compyute.nn.trainer.callbacks.MultistepLrScheduler.on\_run\_end
+===============================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. automethod:: MultistepLrScheduler.on_run_end

@@ -1,0 +1,6 @@
+compyute.nn.Linear.forward
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Linear.forward

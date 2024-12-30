@@ -1,0 +1,6 @@
+﻿compyute.nn.utils.get\_module\_summary
+======================================
+
+.. currentmodule:: compyute.nn.utils
+
+.. autofunction:: get_module_summary

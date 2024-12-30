@@ -1,0 +1,30 @@
+﻿compyute.Device
+===============
+
+.. currentmodule:: compyute
+
+.. autoclass:: Device
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Device.__init__
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Device.index
+        ~Device.name
+        ~Device.t
+    
+    

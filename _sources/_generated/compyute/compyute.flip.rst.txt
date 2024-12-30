@@ -1,0 +1,6 @@
+﻿compyute.flip
+=============
+
+.. currentmodule:: compyute
+
+.. autofunction:: flip

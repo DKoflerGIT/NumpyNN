@@ -1,0 +1,6 @@
+compyute.nn.SiLU.clean
+======================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: SiLU.clean

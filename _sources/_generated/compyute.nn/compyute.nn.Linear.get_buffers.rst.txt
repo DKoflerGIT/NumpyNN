@@ -1,0 +1,6 @@
+compyute.nn.Linear.get\_buffers
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Linear.get_buffers

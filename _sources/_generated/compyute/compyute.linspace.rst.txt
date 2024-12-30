@@ -1,0 +1,6 @@
+﻿compyute.linspace
+=================
+
+.. currentmodule:: compyute
+
+.. autofunction:: linspace

@@ -1,0 +1,48 @@
+﻿compyute.nn.Conv1D
+==================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Conv1D
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Conv1D.__init__
+        ~Conv1D.backward
+        ~Conv1D.clean
+        ~Conv1D.forward
+        ~Conv1D.get_buffers
+        ~Conv1D.get_modules
+        ~Conv1D.get_parameters
+        ~Conv1D.get_state_dict
+        ~Conv1D.inference
+        ~Conv1D.load_state_dict
+        ~Conv1D.register_backward
+        ~Conv1D.register_forward
+        ~Conv1D.to_device
+        ~Conv1D.to_type
+        ~Conv1D.training
+        ~Conv1D.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Conv1D.device
+        ~Conv1D.dtype
+        ~Conv1D.is_training
+        ~Conv1D.n_modules
+        ~Conv1D.retain_values
+        ~Conv1D.trainable
+    
+    

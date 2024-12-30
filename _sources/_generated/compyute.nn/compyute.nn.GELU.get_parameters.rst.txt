@@ -1,0 +1,6 @@
+compyute.nn.GELU.get\_parameters
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GELU.get_parameters

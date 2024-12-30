@@ -1,0 +1,6 @@
+compyute.nn.Parameter.min
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.min

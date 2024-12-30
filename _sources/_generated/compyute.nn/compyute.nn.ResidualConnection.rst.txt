@@ -1,0 +1,48 @@
+﻿compyute.nn.ResidualConnection
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: ResidualConnection
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~ResidualConnection.__init__
+        ~ResidualConnection.backward
+        ~ResidualConnection.clean
+        ~ResidualConnection.forward
+        ~ResidualConnection.get_buffers
+        ~ResidualConnection.get_modules
+        ~ResidualConnection.get_parameters
+        ~ResidualConnection.get_state_dict
+        ~ResidualConnection.inference
+        ~ResidualConnection.load_state_dict
+        ~ResidualConnection.register_backward
+        ~ResidualConnection.register_forward
+        ~ResidualConnection.to_device
+        ~ResidualConnection.to_type
+        ~ResidualConnection.training
+        ~ResidualConnection.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~ResidualConnection.device
+        ~ResidualConnection.dtype
+        ~ResidualConnection.is_training
+        ~ResidualConnection.n_modules
+        ~ResidualConnection.retain_values
+        ~ResidualConnection.trainable
+    
+    

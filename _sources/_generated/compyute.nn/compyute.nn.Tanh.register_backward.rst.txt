@@ -1,0 +1,6 @@
+compyute.nn.Tanh.register\_backward
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Tanh.register_backward

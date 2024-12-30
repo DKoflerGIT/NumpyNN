@@ -1,0 +1,6 @@
+compyute.nn.optimizers.SGD.step
+===============================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: SGD.step

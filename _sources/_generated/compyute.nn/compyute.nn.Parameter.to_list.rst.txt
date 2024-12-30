@@ -1,0 +1,6 @@
+compyute.nn.Parameter.to\_list
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.to_list

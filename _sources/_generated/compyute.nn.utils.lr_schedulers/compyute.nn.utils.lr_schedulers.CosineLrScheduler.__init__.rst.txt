@@ -1,0 +1,6 @@
+compyute.nn.utils.lr\_schedulers.CosineLrScheduler.\_\_init\_\_
+===============================================================
+
+.. currentmodule:: compyute.nn.utils.lr_schedulers
+
+.. automethod:: CosineLrScheduler.__init__

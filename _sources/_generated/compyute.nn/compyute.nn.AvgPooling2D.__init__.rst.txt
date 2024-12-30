@@ -1,0 +1,6 @@
+compyute.nn.AvgPooling2D.\_\_init\_\_
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: AvgPooling2D.__init__

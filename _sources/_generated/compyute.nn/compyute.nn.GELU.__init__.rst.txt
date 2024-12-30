@@ -1,0 +1,6 @@
+compyute.nn.GELU.\_\_init\_\_
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GELU.__init__

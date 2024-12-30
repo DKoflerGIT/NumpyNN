@@ -1,0 +1,6 @@
+﻿compyute.norm
+=============
+
+.. currentmodule:: compyute
+
+.. autofunction:: norm

@@ -1,0 +1,6 @@
+compyute.nn.ResidualConnection.clean
+====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ResidualConnection.clean

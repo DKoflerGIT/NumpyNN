@@ -1,0 +1,6 @@
+compyute.nn.Function.forward
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Function.forward

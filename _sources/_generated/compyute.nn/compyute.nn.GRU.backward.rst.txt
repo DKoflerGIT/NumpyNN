@@ -1,0 +1,6 @@
+compyute.nn.GRU.backward
+========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GRU.backward

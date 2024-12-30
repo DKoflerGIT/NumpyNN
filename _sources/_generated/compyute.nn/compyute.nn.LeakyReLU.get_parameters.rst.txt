@@ -1,0 +1,6 @@
+compyute.nn.LeakyReLU.get\_parameters
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LeakyReLU.get_parameters

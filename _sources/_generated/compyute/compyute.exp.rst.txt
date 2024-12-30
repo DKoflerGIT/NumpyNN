@@ -1,0 +1,6 @@
+﻿compyute.exp
+============
+
+.. currentmodule:: compyute
+
+.. autofunction:: exp

@@ -1,0 +1,6 @@
+compyute.nn.Softmax.get\_parameters
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Softmax.get_parameters

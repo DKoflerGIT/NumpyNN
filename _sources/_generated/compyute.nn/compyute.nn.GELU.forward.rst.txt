@@ -1,0 +1,6 @@
+compyute.nn.GELU.forward
+========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GELU.forward

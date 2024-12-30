@@ -1,0 +1,6 @@
+compyute.nn.FastGELU.get\_parameters
+====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: FastGELU.get_parameters

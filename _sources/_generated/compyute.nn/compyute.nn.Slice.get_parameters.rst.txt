@@ -1,0 +1,6 @@
+compyute.nn.Slice.get\_parameters
+=================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Slice.get_parameters

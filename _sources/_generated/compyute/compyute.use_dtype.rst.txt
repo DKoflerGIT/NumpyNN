@@ -1,0 +1,6 @@
+﻿compyute.use\_dtype
+===================
+
+.. currentmodule:: compyute
+
+.. autofunction:: use_dtype

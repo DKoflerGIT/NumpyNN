@@ -1,0 +1,6 @@
+compyute.nn.R2.\_\_init\_\_
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: R2.__init__

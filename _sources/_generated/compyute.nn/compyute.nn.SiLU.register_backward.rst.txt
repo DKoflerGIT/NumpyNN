@@ -1,0 +1,6 @@
+compyute.nn.SiLU.register\_backward
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: SiLU.register_backward

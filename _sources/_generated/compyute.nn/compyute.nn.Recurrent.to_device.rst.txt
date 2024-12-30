@@ -1,0 +1,6 @@
+compyute.nn.Recurrent.to\_device
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Recurrent.to_device

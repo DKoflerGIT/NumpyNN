@@ -1,0 +1,6 @@
+compyute.nn.GELU.get\_modules
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GELU.get_modules

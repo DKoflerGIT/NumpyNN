@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.sigmoid
+==============================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: sigmoid

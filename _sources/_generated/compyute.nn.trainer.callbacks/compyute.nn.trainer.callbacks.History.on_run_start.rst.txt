@@ -1,0 +1,6 @@
+compyute.nn.trainer.callbacks.History.on\_run\_start
+====================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. automethod:: History.on_run_start

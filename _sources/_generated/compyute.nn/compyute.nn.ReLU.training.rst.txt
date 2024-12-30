@@ -1,0 +1,6 @@
+compyute.nn.ReLU.training
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ReLU.training

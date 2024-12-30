@@ -1,0 +1,6 @@
+compyute.nn.Module.training
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Module.training

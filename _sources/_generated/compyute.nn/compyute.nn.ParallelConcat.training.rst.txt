@@ -1,0 +1,6 @@
+compyute.nn.ParallelConcat.training
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelConcat.training

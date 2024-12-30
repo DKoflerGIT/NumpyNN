@@ -1,0 +1,48 @@
+﻿compyute.nn.FastGELU
+====================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: FastGELU
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~FastGELU.__init__
+        ~FastGELU.backward
+        ~FastGELU.clean
+        ~FastGELU.forward
+        ~FastGELU.get_buffers
+        ~FastGELU.get_modules
+        ~FastGELU.get_parameters
+        ~FastGELU.get_state_dict
+        ~FastGELU.inference
+        ~FastGELU.load_state_dict
+        ~FastGELU.register_backward
+        ~FastGELU.register_forward
+        ~FastGELU.to_device
+        ~FastGELU.to_type
+        ~FastGELU.training
+        ~FastGELU.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~FastGELU.device
+        ~FastGELU.dtype
+        ~FastGELU.is_training
+        ~FastGELU.n_modules
+        ~FastGELU.retain_values
+        ~FastGELU.trainable
+    
+    

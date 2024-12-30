@@ -1,0 +1,6 @@
+compyute.nn.AvgPooling2D.backward
+=================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: AvgPooling2D.backward

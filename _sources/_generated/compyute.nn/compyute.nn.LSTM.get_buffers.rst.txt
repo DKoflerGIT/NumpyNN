@@ -1,0 +1,6 @@
+compyute.nn.LSTM.get\_buffers
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LSTM.get_buffers

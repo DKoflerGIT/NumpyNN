@@ -1,0 +1,6 @@
+compyute.nn.LayerNorm.update\_parameter\_grad
+=============================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LayerNorm.update_parameter_grad

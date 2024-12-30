@@ -1,0 +1,6 @@
+compyute.nn.Parameter.to\_contiguous
+====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.to_contiguous

@@ -1,0 +1,6 @@
+compyute.nn.Sigmoid.register\_forward
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sigmoid.register_forward

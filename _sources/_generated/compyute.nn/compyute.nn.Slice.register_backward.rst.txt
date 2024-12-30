@@ -1,0 +1,6 @@
+compyute.nn.Slice.register\_backward
+====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Slice.register_backward

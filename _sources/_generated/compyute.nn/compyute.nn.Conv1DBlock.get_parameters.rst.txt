@@ -1,0 +1,6 @@
+compyute.nn.Conv1DBlock.get\_parameters
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv1DBlock.get_parameters

@@ -1,0 +1,6 @@
+compyute.nn.RMSNorm.get\_parameters
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: RMSNorm.get_parameters

@@ -1,0 +1,6 @@
+compyute.nn.ModuleList.pop
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ModuleList.pop

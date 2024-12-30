@@ -1,0 +1,6 @@
+compyute.nn.Sequential.clean
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sequential.clean

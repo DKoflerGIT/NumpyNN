@@ -1,0 +1,6 @@
+compyute.nn.Sigmoid.\_\_init\_\_
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sigmoid.__init__

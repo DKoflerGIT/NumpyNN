@@ -1,0 +1,6 @@
+compyute.nn.Reshape.register\_forward
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Reshape.register_forward

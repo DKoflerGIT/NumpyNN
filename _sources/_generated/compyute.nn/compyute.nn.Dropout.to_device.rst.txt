@@ -1,0 +1,6 @@
+compyute.nn.Dropout.to\_device
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Dropout.to_device

@@ -1,0 +1,6 @@
+﻿compyute.argmax
+===============
+
+.. currentmodule:: compyute
+
+.. autofunction:: argmax

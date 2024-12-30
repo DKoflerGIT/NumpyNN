@@ -1,0 +1,6 @@
+compyute.nn.Embedding.clean
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Embedding.clean

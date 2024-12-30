@@ -1,0 +1,6 @@
+compyute.nn.Parameter.max
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.max

@@ -1,0 +1,6 @@
+compyute.nn.Identity.training
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Identity.training

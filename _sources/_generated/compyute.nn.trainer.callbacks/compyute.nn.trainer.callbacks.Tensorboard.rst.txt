@@ -1,0 +1,28 @@
+﻿compyute.nn.trainer.callbacks.Tensorboard
+=========================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. autoclass:: Tensorboard
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Tensorboard.__init__
+        ~Tensorboard.on_epoch_end
+        ~Tensorboard.on_epoch_start
+        ~Tensorboard.on_run_end
+        ~Tensorboard.on_run_start
+        ~Tensorboard.on_step_end
+        ~Tensorboard.on_step_start
+    
+    
+
+
+    
+    
+    

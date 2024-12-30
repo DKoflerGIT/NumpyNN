@@ -1,0 +1,6 @@
+compyute.nn.Dropout.clean
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Dropout.clean

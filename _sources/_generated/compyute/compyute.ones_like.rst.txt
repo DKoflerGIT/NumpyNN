@@ -1,0 +1,6 @@
+﻿compyute.ones\_like
+===================
+
+.. currentmodule:: compyute
+
+.. autofunction:: ones_like

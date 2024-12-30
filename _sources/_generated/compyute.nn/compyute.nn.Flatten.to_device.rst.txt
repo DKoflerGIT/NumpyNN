@@ -1,0 +1,6 @@
+compyute.nn.Flatten.to\_device
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Flatten.to_device

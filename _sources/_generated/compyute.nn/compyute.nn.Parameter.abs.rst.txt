@@ -1,0 +1,6 @@
+compyute.nn.Parameter.abs
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.abs

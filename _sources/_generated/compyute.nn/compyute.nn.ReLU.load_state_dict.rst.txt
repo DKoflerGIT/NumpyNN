@@ -1,0 +1,6 @@
+compyute.nn.ReLU.load\_state\_dict
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ReLU.load_state_dict

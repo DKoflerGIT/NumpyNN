@@ -1,0 +1,6 @@
+compyute.nn.FastGELU.\_\_init\_\_
+=================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: FastGELU.__init__

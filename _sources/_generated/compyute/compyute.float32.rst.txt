@@ -1,0 +1,6 @@
+﻿compyute.float32
+================
+
+.. currentmodule:: compyute
+
+.. autodata:: float32

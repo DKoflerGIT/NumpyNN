@@ -1,0 +1,6 @@
+﻿compyute.tile
+=============
+
+.. currentmodule:: compyute
+
+.. autofunction:: tile

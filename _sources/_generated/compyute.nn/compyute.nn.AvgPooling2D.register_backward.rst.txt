@@ -1,0 +1,6 @@
+compyute.nn.AvgPooling2D.register\_backward
+===========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: AvgPooling2D.register_backward

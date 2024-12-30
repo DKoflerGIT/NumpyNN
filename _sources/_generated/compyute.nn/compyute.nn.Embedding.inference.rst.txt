@@ -1,0 +1,6 @@
+compyute.nn.Embedding.inference
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Embedding.inference

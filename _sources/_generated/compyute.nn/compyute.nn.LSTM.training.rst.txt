@@ -1,0 +1,6 @@
+compyute.nn.LSTM.training
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LSTM.training

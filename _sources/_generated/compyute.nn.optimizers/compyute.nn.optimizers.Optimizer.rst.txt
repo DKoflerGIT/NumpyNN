@@ -1,0 +1,27 @@
+﻿compyute.nn.optimizers.Optimizer
+================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. autoclass:: Optimizer
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Optimizer.__init__
+        ~Optimizer.get_state_dict
+        ~Optimizer.load_state_dict
+        ~Optimizer.reset_grads
+        ~Optimizer.set_parameters
+        ~Optimizer.step
+    
+    
+
+
+    
+    
+    

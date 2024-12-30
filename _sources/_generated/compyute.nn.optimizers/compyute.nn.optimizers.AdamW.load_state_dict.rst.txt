@@ -1,0 +1,6 @@
+compyute.nn.optimizers.AdamW.load\_state\_dict
+==============================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: AdamW.load_state_dict

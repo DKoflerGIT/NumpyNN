@@ -1,0 +1,6 @@
+compyute.nn.Softmax.training
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Softmax.training

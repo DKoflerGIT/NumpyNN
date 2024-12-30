@@ -1,0 +1,6 @@
+compyute.nn.Parameter.to\_cpu
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.to_cpu

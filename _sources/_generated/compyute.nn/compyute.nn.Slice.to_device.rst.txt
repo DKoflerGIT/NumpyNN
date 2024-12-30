@@ -1,0 +1,6 @@
+compyute.nn.Slice.to\_device
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Slice.to_device

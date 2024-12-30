@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.tanh
+===========================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: tanh

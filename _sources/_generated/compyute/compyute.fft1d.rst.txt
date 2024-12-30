@@ -1,0 +1,6 @@
+﻿compyute.fft1d
+==============
+
+.. currentmodule:: compyute
+
+.. autofunction:: fft1d

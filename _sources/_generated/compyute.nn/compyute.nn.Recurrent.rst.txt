@@ -1,0 +1,48 @@
+﻿compyute.nn.Recurrent
+=====================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Recurrent
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Recurrent.__init__
+        ~Recurrent.backward
+        ~Recurrent.clean
+        ~Recurrent.forward
+        ~Recurrent.get_buffers
+        ~Recurrent.get_modules
+        ~Recurrent.get_parameters
+        ~Recurrent.get_state_dict
+        ~Recurrent.inference
+        ~Recurrent.load_state_dict
+        ~Recurrent.register_backward
+        ~Recurrent.register_forward
+        ~Recurrent.to_device
+        ~Recurrent.to_type
+        ~Recurrent.training
+        ~Recurrent.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Recurrent.device
+        ~Recurrent.dtype
+        ~Recurrent.is_training
+        ~Recurrent.n_modules
+        ~Recurrent.retain_values
+        ~Recurrent.trainable
+    
+    

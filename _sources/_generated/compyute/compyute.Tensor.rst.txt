@@ -1,0 +1,72 @@
+﻿compyute.Tensor
+===============
+
+.. currentmodule:: compyute
+
+.. autoclass:: Tensor
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Tensor.__init__
+        ~Tensor.abs
+        ~Tensor.all
+        ~Tensor.any
+        ~Tensor.argmax
+        ~Tensor.copy
+        ~Tensor.imag
+        ~Tensor.item
+        ~Tensor.ito_device
+        ~Tensor.ito_type
+        ~Tensor.max
+        ~Tensor.mean
+        ~Tensor.min
+        ~Tensor.permute
+        ~Tensor.real
+        ~Tensor.squeeze
+        ~Tensor.std
+        ~Tensor.sum
+        ~Tensor.to_complex
+        ~Tensor.to_contiguous
+        ~Tensor.to_cpu
+        ~Tensor.to_cuda
+        ~Tensor.to_device
+        ~Tensor.to_double
+        ~Tensor.to_float
+        ~Tensor.to_half
+        ~Tensor.to_int
+        ~Tensor.to_list
+        ~Tensor.to_long
+        ~Tensor.to_numpy
+        ~Tensor.to_type
+        ~Tensor.transpose
+        ~Tensor.var
+        ~Tensor.view
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Tensor.data
+        ~Tensor.grad
+        ~Tensor.T
+        ~Tensor.contiguous
+        ~Tensor.device
+        ~Tensor.dtype
+        ~Tensor.nbytes
+        ~Tensor.ndim
+        ~Tensor.ptr
+        ~Tensor.shape
+        ~Tensor.size
+        ~Tensor.strides
+    
+    

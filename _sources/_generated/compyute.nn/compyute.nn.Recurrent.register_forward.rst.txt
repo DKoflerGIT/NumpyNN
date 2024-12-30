@@ -1,0 +1,6 @@
+compyute.nn.Recurrent.register\_forward
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Recurrent.register_forward

@@ -1,0 +1,6 @@
+﻿compyute.stack
+==============
+
+.. currentmodule:: compyute
+
+.. autofunction:: stack

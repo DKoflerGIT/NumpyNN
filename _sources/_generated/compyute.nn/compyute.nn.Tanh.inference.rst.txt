@@ -1,0 +1,6 @@
+compyute.nn.Tanh.inference
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Tanh.inference

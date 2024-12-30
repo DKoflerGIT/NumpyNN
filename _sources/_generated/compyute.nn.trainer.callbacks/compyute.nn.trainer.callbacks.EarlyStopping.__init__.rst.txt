@@ -1,0 +1,6 @@
+compyute.nn.trainer.callbacks.EarlyStopping.\_\_init\_\_
+========================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. automethod:: EarlyStopping.__init__

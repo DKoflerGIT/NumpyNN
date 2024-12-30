@@ -1,0 +1,6 @@
+compyute.nn.Conv1D.get\_buffers
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv1D.get_buffers

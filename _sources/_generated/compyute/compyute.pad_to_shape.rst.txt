@@ -1,0 +1,6 @@
+﻿compyute.pad\_to\_shape
+=======================
+
+.. currentmodule:: compyute
+
+.. autofunction:: pad_to_shape

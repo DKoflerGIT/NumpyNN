@@ -1,0 +1,6 @@
+compyute.nn.Parameter.to\_type
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.to_type

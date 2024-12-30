@@ -1,0 +1,6 @@
+compyute.nn.Conv2D.get\_parameters
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv2D.get_parameters

@@ -1,0 +1,6 @@
+compyute.nn.Identity.to\_device
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Identity.to_device

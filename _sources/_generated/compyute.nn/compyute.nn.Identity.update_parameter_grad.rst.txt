@@ -1,0 +1,6 @@
+compyute.nn.Identity.update\_parameter\_grad
+============================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Identity.update_parameter_grad

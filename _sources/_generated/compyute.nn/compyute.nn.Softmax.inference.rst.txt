@@ -1,0 +1,6 @@
+compyute.nn.Softmax.inference
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Softmax.inference

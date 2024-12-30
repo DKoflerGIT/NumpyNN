@@ -1,0 +1,6 @@
+compyute.nn.Softmax.backward
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Softmax.backward

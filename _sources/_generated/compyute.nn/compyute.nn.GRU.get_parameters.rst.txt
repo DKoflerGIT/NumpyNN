@@ -1,0 +1,6 @@
+compyute.nn.GRU.get\_parameters
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GRU.get_parameters

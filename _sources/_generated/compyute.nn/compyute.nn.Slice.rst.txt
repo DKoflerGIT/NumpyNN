@@ -1,0 +1,48 @@
+﻿compyute.nn.Slice
+=================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Slice
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Slice.__init__
+        ~Slice.backward
+        ~Slice.clean
+        ~Slice.forward
+        ~Slice.get_buffers
+        ~Slice.get_modules
+        ~Slice.get_parameters
+        ~Slice.get_state_dict
+        ~Slice.inference
+        ~Slice.load_state_dict
+        ~Slice.register_backward
+        ~Slice.register_forward
+        ~Slice.to_device
+        ~Slice.to_type
+        ~Slice.training
+        ~Slice.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Slice.device
+        ~Slice.dtype
+        ~Slice.is_training
+        ~Slice.n_modules
+        ~Slice.retain_values
+        ~Slice.trainable
+    
+    

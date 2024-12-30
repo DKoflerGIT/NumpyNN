@@ -1,0 +1,6 @@
+﻿compyute.load
+=============
+
+.. currentmodule:: compyute
+
+.. autofunction:: load

@@ -1,0 +1,6 @@
+compyute.nn.DiceLoss.register\_forward
+======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: DiceLoss.register_forward

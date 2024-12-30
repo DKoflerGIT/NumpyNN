@@ -1,0 +1,6 @@
+compyute.nn.optimizers.SGD.load\_state\_dict
+============================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: SGD.load_state_dict

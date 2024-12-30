@@ -1,0 +1,6 @@
+﻿compyute.split
+==============
+
+.. currentmodule:: compyute
+
+.. autofunction:: split

@@ -1,0 +1,6 @@
+compyute.nn.Upsample2D.get\_buffers
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Upsample2D.get_buffers

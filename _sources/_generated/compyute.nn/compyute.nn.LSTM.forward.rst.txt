@@ -1,0 +1,6 @@
+compyute.nn.LSTM.forward
+========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LSTM.forward

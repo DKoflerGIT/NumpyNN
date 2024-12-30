@@ -1,0 +1,72 @@
+﻿compyute.nn.Buffer
+==================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Buffer
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Buffer.__init__
+        ~Buffer.abs
+        ~Buffer.all
+        ~Buffer.any
+        ~Buffer.argmax
+        ~Buffer.copy
+        ~Buffer.imag
+        ~Buffer.item
+        ~Buffer.ito_device
+        ~Buffer.ito_type
+        ~Buffer.max
+        ~Buffer.mean
+        ~Buffer.min
+        ~Buffer.permute
+        ~Buffer.real
+        ~Buffer.squeeze
+        ~Buffer.std
+        ~Buffer.sum
+        ~Buffer.to_complex
+        ~Buffer.to_contiguous
+        ~Buffer.to_cpu
+        ~Buffer.to_cuda
+        ~Buffer.to_device
+        ~Buffer.to_double
+        ~Buffer.to_float
+        ~Buffer.to_half
+        ~Buffer.to_int
+        ~Buffer.to_list
+        ~Buffer.to_long
+        ~Buffer.to_numpy
+        ~Buffer.to_type
+        ~Buffer.transpose
+        ~Buffer.var
+        ~Buffer.view
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Buffer.data
+        ~Buffer.grad
+        ~Buffer.T
+        ~Buffer.contiguous
+        ~Buffer.device
+        ~Buffer.dtype
+        ~Buffer.nbytes
+        ~Buffer.ndim
+        ~Buffer.ptr
+        ~Buffer.shape
+        ~Buffer.size
+        ~Buffer.strides
+    
+    

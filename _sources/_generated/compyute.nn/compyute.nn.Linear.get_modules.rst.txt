@@ -1,0 +1,6 @@
+compyute.nn.Linear.get\_modules
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Linear.get_modules

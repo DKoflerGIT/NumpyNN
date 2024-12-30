@@ -1,0 +1,6 @@
+compyute.nn.SiLU.get\_modules
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: SiLU.get_modules

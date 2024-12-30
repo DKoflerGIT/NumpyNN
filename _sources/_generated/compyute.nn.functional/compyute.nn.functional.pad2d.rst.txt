@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.pad2d
+============================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: pad2d

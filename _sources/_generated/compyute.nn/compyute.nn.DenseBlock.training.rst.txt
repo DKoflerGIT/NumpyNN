@@ -1,0 +1,6 @@
+compyute.nn.DenseBlock.training
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: DenseBlock.training

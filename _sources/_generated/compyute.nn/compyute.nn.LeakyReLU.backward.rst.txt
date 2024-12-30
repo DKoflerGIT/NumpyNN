@@ -1,0 +1,6 @@
+compyute.nn.LeakyReLU.backward
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LeakyReLU.backward

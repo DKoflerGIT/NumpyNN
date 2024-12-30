@@ -1,0 +1,28 @@
+﻿compyute.nn.trainer.callbacks.EarlyStopping
+===========================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. autoclass:: EarlyStopping
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~EarlyStopping.__init__
+        ~EarlyStopping.on_epoch_end
+        ~EarlyStopping.on_epoch_start
+        ~EarlyStopping.on_run_end
+        ~EarlyStopping.on_run_start
+        ~EarlyStopping.on_step_end
+        ~EarlyStopping.on_step_start
+    
+    
+
+
+    
+    
+    

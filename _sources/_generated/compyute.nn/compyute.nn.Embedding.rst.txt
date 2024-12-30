@@ -1,0 +1,48 @@
+﻿compyute.nn.Embedding
+=====================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Embedding
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Embedding.__init__
+        ~Embedding.backward
+        ~Embedding.clean
+        ~Embedding.forward
+        ~Embedding.get_buffers
+        ~Embedding.get_modules
+        ~Embedding.get_parameters
+        ~Embedding.get_state_dict
+        ~Embedding.inference
+        ~Embedding.load_state_dict
+        ~Embedding.register_backward
+        ~Embedding.register_forward
+        ~Embedding.to_device
+        ~Embedding.to_type
+        ~Embedding.training
+        ~Embedding.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Embedding.device
+        ~Embedding.dtype
+        ~Embedding.is_training
+        ~Embedding.n_modules
+        ~Embedding.retain_values
+        ~Embedding.trainable
+    
+    

@@ -1,0 +1,6 @@
+compyute.nn.BatchNorm2D.\_\_init\_\_
+====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: BatchNorm2D.__init__

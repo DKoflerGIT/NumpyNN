@@ -1,0 +1,6 @@
+﻿compyute.abs
+============
+
+.. currentmodule:: compyute
+
+.. autofunction:: abs

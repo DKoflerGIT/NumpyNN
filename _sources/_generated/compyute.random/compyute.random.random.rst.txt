@@ -1,0 +1,6 @@
+﻿compyute.random.random
+======================
+
+.. currentmodule:: compyute.random
+
+.. autofunction:: random

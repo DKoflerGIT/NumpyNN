@@ -1,0 +1,6 @@
+compyute.nn.Buffer.mean
+=======================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.mean

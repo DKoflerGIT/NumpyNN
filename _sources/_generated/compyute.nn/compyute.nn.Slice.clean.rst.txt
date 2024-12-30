@@ -1,0 +1,6 @@
+compyute.nn.Slice.clean
+=======================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Slice.clean

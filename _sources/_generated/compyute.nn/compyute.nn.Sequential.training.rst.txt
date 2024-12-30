@@ -1,0 +1,6 @@
+compyute.nn.Sequential.training
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sequential.training

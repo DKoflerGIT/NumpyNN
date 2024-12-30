@@ -1,0 +1,6 @@
+compyute.nn.ModuleList.insert
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ModuleList.insert

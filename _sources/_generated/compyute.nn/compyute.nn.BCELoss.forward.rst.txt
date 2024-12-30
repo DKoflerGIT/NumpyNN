@@ -1,0 +1,6 @@
+compyute.nn.BCELoss.forward
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: BCELoss.forward

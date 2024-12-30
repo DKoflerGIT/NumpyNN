@@ -1,0 +1,6 @@
+compyute.nn.AvgPooling2D.to\_device
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: AvgPooling2D.to_device

@@ -1,0 +1,6 @@
+compyute.nn.ResidualConnection.\_\_init\_\_
+===========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ResidualConnection.__init__

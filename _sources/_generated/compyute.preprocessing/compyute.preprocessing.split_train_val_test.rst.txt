@@ -1,0 +1,6 @@
+﻿compyute.preprocessing.split\_train\_val\_test
+==============================================
+
+.. currentmodule:: compyute.preprocessing
+
+.. autofunction:: split_train_val_test

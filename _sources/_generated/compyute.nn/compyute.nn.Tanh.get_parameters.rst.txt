@@ -1,0 +1,6 @@
+compyute.nn.Tanh.get\_parameters
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Tanh.get_parameters

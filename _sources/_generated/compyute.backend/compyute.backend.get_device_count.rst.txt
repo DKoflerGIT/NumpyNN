@@ -1,0 +1,6 @@
+﻿compyute.backend.get\_device\_count
+===================================
+
+.. currentmodule:: compyute.backend
+
+.. autofunction:: get_device_count

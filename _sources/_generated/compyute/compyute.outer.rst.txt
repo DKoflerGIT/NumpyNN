@@ -1,0 +1,6 @@
+﻿compyute.outer
+==============
+
+.. currentmodule:: compyute
+
+.. autofunction:: outer

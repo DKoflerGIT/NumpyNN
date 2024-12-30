@@ -1,0 +1,6 @@
+﻿compyute.transpose
+==================
+
+.. currentmodule:: compyute
+
+.. autofunction:: transpose

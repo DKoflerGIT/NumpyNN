@@ -1,0 +1,6 @@
+compyute.nn.LayerNorm.backward
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LayerNorm.backward

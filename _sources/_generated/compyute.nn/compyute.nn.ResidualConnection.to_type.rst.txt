@@ -1,0 +1,6 @@
+compyute.nn.ResidualConnection.to\_type
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ResidualConnection.to_type

@@ -1,0 +1,6 @@
+compyute.nn.optimizers.Optimizer.step
+=====================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: Optimizer.step

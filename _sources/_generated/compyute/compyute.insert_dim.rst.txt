@@ -1,0 +1,6 @@
+﻿compyute.insert\_dim
+====================
+
+.. currentmodule:: compyute
+
+.. autofunction:: insert_dim

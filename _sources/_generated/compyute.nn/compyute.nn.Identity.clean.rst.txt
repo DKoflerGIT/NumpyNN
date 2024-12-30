@@ -1,0 +1,6 @@
+compyute.nn.Identity.clean
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Identity.clean

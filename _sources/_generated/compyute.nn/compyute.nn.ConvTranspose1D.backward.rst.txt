@@ -1,0 +1,6 @@
+compyute.nn.ConvTranspose1D.backward
+====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ConvTranspose1D.backward

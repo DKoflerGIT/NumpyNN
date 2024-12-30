@@ -1,0 +1,6 @@
+﻿compyute.clip
+=============
+
+.. currentmodule:: compyute
+
+.. autofunction:: clip

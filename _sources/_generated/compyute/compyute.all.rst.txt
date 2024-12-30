@@ -1,0 +1,6 @@
+﻿compyute.all
+============
+
+.. currentmodule:: compyute
+
+.. autofunction:: all

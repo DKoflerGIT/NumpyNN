@@ -1,0 +1,6 @@
+compyute.nn.ParallelConcat.update\_parameter\_grad
+==================================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelConcat.update_parameter_grad

@@ -1,0 +1,6 @@
+compyute.Tensor.abs
+===================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.abs

@@ -1,0 +1,6 @@
+compyute.Tensor.all
+===================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.all

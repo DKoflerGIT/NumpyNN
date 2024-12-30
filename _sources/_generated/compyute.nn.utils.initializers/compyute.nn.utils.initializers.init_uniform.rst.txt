@@ -1,0 +1,6 @@
+﻿compyute.nn.utils.initializers.init\_uniform
+============================================
+
+.. currentmodule:: compyute.nn.utils.initializers
+
+.. autofunction:: init_uniform

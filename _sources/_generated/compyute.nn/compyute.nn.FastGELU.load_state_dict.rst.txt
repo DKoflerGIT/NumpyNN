@@ -1,0 +1,6 @@
+compyute.nn.FastGELU.load\_state\_dict
+======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: FastGELU.load_state_dict

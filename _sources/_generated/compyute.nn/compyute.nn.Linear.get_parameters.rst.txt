@@ -1,0 +1,6 @@
+compyute.nn.Linear.get\_parameters
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Linear.get_parameters

@@ -1,0 +1,6 @@
+compyute.nn.MSELoss.\_\_init\_\_
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: MSELoss.__init__

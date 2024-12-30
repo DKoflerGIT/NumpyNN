@@ -1,0 +1,6 @@
+compyute.nn.Conv1DBlock.training
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv1DBlock.training

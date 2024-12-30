@@ -1,0 +1,6 @@
+compyute.nn.BatchNorm1D.forward
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: BatchNorm1D.forward

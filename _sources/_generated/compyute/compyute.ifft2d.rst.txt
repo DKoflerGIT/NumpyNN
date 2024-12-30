@@ -1,0 +1,6 @@
+﻿compyute.ifft2d
+===============
+
+.. currentmodule:: compyute
+
+.. autofunction:: ifft2d

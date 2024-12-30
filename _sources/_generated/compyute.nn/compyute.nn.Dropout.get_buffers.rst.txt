@@ -1,0 +1,6 @@
+compyute.nn.Dropout.get\_buffers
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Dropout.get_buffers

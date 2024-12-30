@@ -1,0 +1,6 @@
+compyute.nn.Conv2D.backward
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv2D.backward

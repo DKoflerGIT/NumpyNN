@@ -1,0 +1,6 @@
+compyute.nn.RMSNorm.forward
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: RMSNorm.forward

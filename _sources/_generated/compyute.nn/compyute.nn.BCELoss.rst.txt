@@ -1,0 +1,26 @@
+﻿compyute.nn.BCELoss
+===================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: BCELoss
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~BCELoss.__init__
+        ~BCELoss.backward
+        ~BCELoss.forward
+        ~BCELoss.register_backward
+        ~BCELoss.register_forward
+    
+    
+
+
+    
+    
+    

@@ -1,0 +1,6 @@
+compyute.nn.Tanh.load\_state\_dict
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Tanh.load_state_dict

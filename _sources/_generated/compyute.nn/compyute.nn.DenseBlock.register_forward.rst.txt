@@ -1,0 +1,6 @@
+compyute.nn.DenseBlock.register\_forward
+========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: DenseBlock.register_forward

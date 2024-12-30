@@ -1,0 +1,48 @@
+﻿compyute.nn.Sigmoid
+===================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Sigmoid
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Sigmoid.__init__
+        ~Sigmoid.backward
+        ~Sigmoid.clean
+        ~Sigmoid.forward
+        ~Sigmoid.get_buffers
+        ~Sigmoid.get_modules
+        ~Sigmoid.get_parameters
+        ~Sigmoid.get_state_dict
+        ~Sigmoid.inference
+        ~Sigmoid.load_state_dict
+        ~Sigmoid.register_backward
+        ~Sigmoid.register_forward
+        ~Sigmoid.to_device
+        ~Sigmoid.to_type
+        ~Sigmoid.training
+        ~Sigmoid.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Sigmoid.device
+        ~Sigmoid.dtype
+        ~Sigmoid.is_training
+        ~Sigmoid.n_modules
+        ~Sigmoid.retain_values
+        ~Sigmoid.trainable
+    
+    

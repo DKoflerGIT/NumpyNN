@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.avgpooling2d
+===================================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: avgpooling2d

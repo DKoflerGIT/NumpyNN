@@ -1,0 +1,6 @@
+compyute.nn.ConvTranspose2D.to\_device
+======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ConvTranspose2D.to_device

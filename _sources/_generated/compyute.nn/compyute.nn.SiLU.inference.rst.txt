@@ -1,0 +1,6 @@
+compyute.nn.SiLU.inference
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: SiLU.inference

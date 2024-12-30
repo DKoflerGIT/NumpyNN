@@ -1,0 +1,6 @@
+compyute.nn.optimizers.AdamW.\_\_init\_\_
+=========================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: AdamW.__init__

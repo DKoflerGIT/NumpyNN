@@ -1,0 +1,6 @@
+compyute.nn.Conv1D.to\_type
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv1D.to_type

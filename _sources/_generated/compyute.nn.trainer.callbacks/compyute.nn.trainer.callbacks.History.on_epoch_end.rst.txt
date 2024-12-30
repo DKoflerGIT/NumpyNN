@@ -1,0 +1,6 @@
+compyute.nn.trainer.callbacks.History.on\_epoch\_end
+====================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. automethod:: History.on_epoch_end

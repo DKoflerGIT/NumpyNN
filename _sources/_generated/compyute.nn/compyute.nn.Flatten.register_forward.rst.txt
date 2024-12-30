@@ -1,0 +1,6 @@
+compyute.nn.Flatten.register\_forward
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Flatten.register_forward

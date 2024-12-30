@@ -1,0 +1,6 @@
+compyute.nn.FastGELU.update\_parameter\_grad
+============================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: FastGELU.update_parameter_grad

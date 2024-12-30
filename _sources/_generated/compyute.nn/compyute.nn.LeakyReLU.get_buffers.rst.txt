@@ -1,0 +1,6 @@
+compyute.nn.LeakyReLU.get\_buffers
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LeakyReLU.get_buffers

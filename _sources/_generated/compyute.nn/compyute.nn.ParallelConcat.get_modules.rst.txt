@@ -1,0 +1,6 @@
+compyute.nn.ParallelConcat.get\_modules
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelConcat.get_modules

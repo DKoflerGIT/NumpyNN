@@ -1,0 +1,6 @@
+compyute.nn.Flatten.\_\_init\_\_
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Flatten.__init__

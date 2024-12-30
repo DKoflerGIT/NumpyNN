@@ -1,0 +1,48 @@
+﻿compyute.nn.Module
+==================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Module
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Module.__init__
+        ~Module.backward
+        ~Module.clean
+        ~Module.forward
+        ~Module.get_buffers
+        ~Module.get_modules
+        ~Module.get_parameters
+        ~Module.get_state_dict
+        ~Module.inference
+        ~Module.load_state_dict
+        ~Module.register_backward
+        ~Module.register_forward
+        ~Module.to_device
+        ~Module.to_type
+        ~Module.training
+        ~Module.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Module.device
+        ~Module.dtype
+        ~Module.is_training
+        ~Module.n_modules
+        ~Module.retain_values
+        ~Module.trainable
+    
+    

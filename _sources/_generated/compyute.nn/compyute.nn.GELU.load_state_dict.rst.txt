@@ -1,0 +1,6 @@
+compyute.nn.GELU.load\_state\_dict
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GELU.load_state_dict

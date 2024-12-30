@@ -1,0 +1,6 @@
+compyute.nn.Conv2D.update\_parameter\_grad
+==========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv2D.update_parameter_grad

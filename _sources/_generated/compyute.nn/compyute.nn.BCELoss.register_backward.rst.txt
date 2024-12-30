@@ -1,0 +1,6 @@
+compyute.nn.BCELoss.register\_backward
+======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: BCELoss.register_backward

@@ -1,0 +1,6 @@
+compyute.nn.Recurrent.update\_parameter\_grad
+=============================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Recurrent.update_parameter_grad

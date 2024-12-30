@@ -1,0 +1,6 @@
+compyute.nn.Parameter.real
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.real

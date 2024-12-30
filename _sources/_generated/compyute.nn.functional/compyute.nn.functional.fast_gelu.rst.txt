@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.fast\_gelu
+=================================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: fast_gelu

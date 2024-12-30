@@ -1,0 +1,6 @@
+compyute.nn.LSTM.\_\_init\_\_
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LSTM.__init__

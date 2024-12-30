@@ -1,0 +1,6 @@
+compyute.nn.LeakyReLU.register\_forward
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LeakyReLU.register_forward

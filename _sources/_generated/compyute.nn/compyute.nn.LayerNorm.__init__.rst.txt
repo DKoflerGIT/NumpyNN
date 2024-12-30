@@ -1,0 +1,6 @@
+compyute.nn.LayerNorm.\_\_init\_\_
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LayerNorm.__init__

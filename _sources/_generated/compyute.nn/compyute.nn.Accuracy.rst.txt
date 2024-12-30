@@ -1,0 +1,22 @@
+﻿compyute.nn.Accuracy
+====================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Accuracy
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Accuracy.__init__
+    
+    
+
+
+    
+    
+    

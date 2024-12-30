@@ -1,0 +1,48 @@
+﻿compyute.nn.Dropout
+===================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Dropout
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Dropout.__init__
+        ~Dropout.backward
+        ~Dropout.clean
+        ~Dropout.forward
+        ~Dropout.get_buffers
+        ~Dropout.get_modules
+        ~Dropout.get_parameters
+        ~Dropout.get_state_dict
+        ~Dropout.inference
+        ~Dropout.load_state_dict
+        ~Dropout.register_backward
+        ~Dropout.register_forward
+        ~Dropout.to_device
+        ~Dropout.to_type
+        ~Dropout.training
+        ~Dropout.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Dropout.device
+        ~Dropout.dtype
+        ~Dropout.is_training
+        ~Dropout.n_modules
+        ~Dropout.retain_values
+        ~Dropout.trainable
+    
+    

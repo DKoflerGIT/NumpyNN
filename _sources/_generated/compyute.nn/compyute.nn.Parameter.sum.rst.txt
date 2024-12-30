@@ -1,0 +1,6 @@
+compyute.nn.Parameter.sum
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.sum

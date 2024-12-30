@@ -1,0 +1,6 @@
+compyute.nn.LayerNorm.load\_state\_dict
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LayerNorm.load_state_dict

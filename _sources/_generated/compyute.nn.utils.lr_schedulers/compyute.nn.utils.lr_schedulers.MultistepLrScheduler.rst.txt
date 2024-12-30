@@ -1,0 +1,23 @@
+﻿compyute.nn.utils.lr\_schedulers.MultistepLrScheduler
+=====================================================
+
+.. currentmodule:: compyute.nn.utils.lr_schedulers
+
+.. autoclass:: MultistepLrScheduler
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~MultistepLrScheduler.__init__
+        ~MultistepLrScheduler.step
+    
+    
+
+
+    
+    
+    

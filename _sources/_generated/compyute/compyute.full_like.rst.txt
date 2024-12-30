@@ -1,0 +1,6 @@
+﻿compyute.full\_like
+===================
+
+.. currentmodule:: compyute
+
+.. autofunction:: full_like

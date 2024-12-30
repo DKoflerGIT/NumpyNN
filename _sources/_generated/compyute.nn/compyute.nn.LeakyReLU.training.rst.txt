@@ -1,0 +1,6 @@
+compyute.nn.LeakyReLU.training
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LeakyReLU.training

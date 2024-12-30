@@ -1,0 +1,6 @@
+compyute.nn.Tanh.get\_buffers
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Tanh.get_buffers

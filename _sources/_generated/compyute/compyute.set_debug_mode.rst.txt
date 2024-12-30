@@ -1,0 +1,6 @@
+﻿compyute.set\_debug\_mode
+=========================
+
+.. currentmodule:: compyute
+
+.. autofunction:: set_debug_mode

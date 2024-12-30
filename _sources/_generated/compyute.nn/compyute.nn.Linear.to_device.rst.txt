@@ -1,0 +1,6 @@
+compyute.nn.Linear.to\_device
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Linear.to_device

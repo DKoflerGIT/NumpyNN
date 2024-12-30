@@ -1,0 +1,6 @@
+compyute.nn.Function.\_\_init\_\_
+=================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Function.__init__

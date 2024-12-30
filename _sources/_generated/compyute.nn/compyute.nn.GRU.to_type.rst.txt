@@ -1,0 +1,6 @@
+compyute.nn.GRU.to\_type
+========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GRU.to_type

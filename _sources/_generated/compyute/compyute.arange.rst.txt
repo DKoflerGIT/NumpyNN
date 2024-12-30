@@ -1,0 +1,6 @@
+﻿compyute.arange
+===============
+
+.. currentmodule:: compyute
+
+.. autofunction:: arange

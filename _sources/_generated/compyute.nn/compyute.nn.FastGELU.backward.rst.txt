@@ -1,0 +1,6 @@
+compyute.nn.FastGELU.backward
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: FastGELU.backward

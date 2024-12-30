@@ -1,0 +1,6 @@
+compyute.nn.Recurrent.\_\_init\_\_
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Recurrent.__init__

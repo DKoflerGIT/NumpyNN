@@ -1,0 +1,6 @@
+compyute.Tensor.ito\_device
+===========================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.ito_device

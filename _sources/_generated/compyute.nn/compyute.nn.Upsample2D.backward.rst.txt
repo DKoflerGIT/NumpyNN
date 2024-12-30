@@ -1,0 +1,6 @@
+compyute.nn.Upsample2D.backward
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Upsample2D.backward

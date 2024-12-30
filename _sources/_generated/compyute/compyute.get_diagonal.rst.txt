@@ -1,0 +1,6 @@
+﻿compyute.get\_diagonal
+======================
+
+.. currentmodule:: compyute
+
+.. autofunction:: get_diagonal

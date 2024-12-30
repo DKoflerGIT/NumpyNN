@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.dice\_loss
+=================================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: dice_loss

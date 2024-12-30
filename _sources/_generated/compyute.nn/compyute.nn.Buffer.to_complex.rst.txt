@@ -1,0 +1,6 @@
+compyute.nn.Buffer.to\_complex
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.to_complex

@@ -1,0 +1,6 @@
+compyute.nn.Accuracy.\_\_init\_\_
+=================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Accuracy.__init__

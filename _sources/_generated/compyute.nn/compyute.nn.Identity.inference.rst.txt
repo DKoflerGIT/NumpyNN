@@ -1,0 +1,6 @@
+compyute.nn.Identity.inference
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Identity.inference

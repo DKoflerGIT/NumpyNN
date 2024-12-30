@@ -1,0 +1,6 @@
+compyute.nn.Buffer.ito\_type
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.ito_type

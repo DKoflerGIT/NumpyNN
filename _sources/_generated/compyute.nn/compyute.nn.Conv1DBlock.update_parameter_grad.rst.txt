@@ -1,0 +1,6 @@
+compyute.nn.Conv1DBlock.update\_parameter\_grad
+===============================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv1DBlock.update_parameter_grad

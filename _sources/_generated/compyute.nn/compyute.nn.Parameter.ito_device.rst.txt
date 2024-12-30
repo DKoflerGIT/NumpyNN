@@ -1,0 +1,6 @@
+compyute.nn.Parameter.ito\_device
+=================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.ito_device

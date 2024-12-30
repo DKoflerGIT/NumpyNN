@@ -1,0 +1,6 @@
+compyute.nn.optimizers.NAdam.load\_state\_dict
+==============================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: NAdam.load_state_dict

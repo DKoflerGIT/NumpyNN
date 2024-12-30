@@ -1,0 +1,6 @@
+﻿compyute.unique
+===============
+
+.. currentmodule:: compyute
+
+.. autofunction:: unique

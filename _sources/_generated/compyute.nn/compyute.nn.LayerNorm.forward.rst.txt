@@ -1,0 +1,6 @@
+compyute.nn.LayerNorm.forward
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LayerNorm.forward

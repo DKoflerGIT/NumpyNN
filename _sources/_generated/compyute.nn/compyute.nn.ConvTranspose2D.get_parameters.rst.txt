@@ -1,0 +1,6 @@
+compyute.nn.ConvTranspose2D.get\_parameters
+===========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ConvTranspose2D.get_parameters

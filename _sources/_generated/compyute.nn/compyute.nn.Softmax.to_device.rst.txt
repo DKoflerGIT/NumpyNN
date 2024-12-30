@@ -1,0 +1,6 @@
+compyute.nn.Softmax.to\_device
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Softmax.to_device

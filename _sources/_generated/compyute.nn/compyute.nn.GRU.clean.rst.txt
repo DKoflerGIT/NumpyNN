@@ -1,0 +1,6 @@
+compyute.nn.GRU.clean
+=====================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GRU.clean

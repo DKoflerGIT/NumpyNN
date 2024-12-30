@@ -1,0 +1,6 @@
+compyute.nn.ParallelAdd.inference
+=================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelAdd.inference

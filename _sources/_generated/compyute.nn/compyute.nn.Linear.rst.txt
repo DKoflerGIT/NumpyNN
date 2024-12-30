@@ -1,0 +1,48 @@
+﻿compyute.nn.Linear
+==================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Linear
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Linear.__init__
+        ~Linear.backward
+        ~Linear.clean
+        ~Linear.forward
+        ~Linear.get_buffers
+        ~Linear.get_modules
+        ~Linear.get_parameters
+        ~Linear.get_state_dict
+        ~Linear.inference
+        ~Linear.load_state_dict
+        ~Linear.register_backward
+        ~Linear.register_forward
+        ~Linear.to_device
+        ~Linear.to_type
+        ~Linear.training
+        ~Linear.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Linear.device
+        ~Linear.dtype
+        ~Linear.is_training
+        ~Linear.n_modules
+        ~Linear.retain_values
+        ~Linear.trainable
+    
+    

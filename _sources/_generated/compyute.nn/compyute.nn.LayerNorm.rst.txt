@@ -1,0 +1,48 @@
+﻿compyute.nn.LayerNorm
+=====================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: LayerNorm
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~LayerNorm.__init__
+        ~LayerNorm.backward
+        ~LayerNorm.clean
+        ~LayerNorm.forward
+        ~LayerNorm.get_buffers
+        ~LayerNorm.get_modules
+        ~LayerNorm.get_parameters
+        ~LayerNorm.get_state_dict
+        ~LayerNorm.inference
+        ~LayerNorm.load_state_dict
+        ~LayerNorm.register_backward
+        ~LayerNorm.register_forward
+        ~LayerNorm.to_device
+        ~LayerNorm.to_type
+        ~LayerNorm.training
+        ~LayerNorm.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~LayerNorm.device
+        ~LayerNorm.dtype
+        ~LayerNorm.is_training
+        ~LayerNorm.n_modules
+        ~LayerNorm.retain_values
+        ~LayerNorm.trainable
+    
+    

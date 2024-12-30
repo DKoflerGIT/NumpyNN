@@ -1,0 +1,6 @@
+compyute.nn.ResidualConnection.inference
+========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ResidualConnection.inference

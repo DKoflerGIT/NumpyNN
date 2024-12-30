@@ -1,0 +1,6 @@
+compyute.nn.BatchNorm2D.register\_backward
+==========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: BatchNorm2D.register_backward

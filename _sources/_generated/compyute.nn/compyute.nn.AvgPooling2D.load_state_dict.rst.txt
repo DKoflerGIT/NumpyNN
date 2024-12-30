@@ -1,0 +1,6 @@
+compyute.nn.AvgPooling2D.load\_state\_dict
+==========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: AvgPooling2D.load_state_dict

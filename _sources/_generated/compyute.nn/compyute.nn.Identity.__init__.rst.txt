@@ -1,0 +1,6 @@
+compyute.nn.Identity.\_\_init\_\_
+=================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Identity.__init__

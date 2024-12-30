@@ -1,0 +1,6 @@
+compyute.Tensor.permute
+=======================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.permute

@@ -1,0 +1,6 @@
+compyute.nn.Slice.get\_buffers
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Slice.get_buffers

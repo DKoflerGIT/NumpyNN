@@ -1,0 +1,6 @@
+compyute.nn.trainer.callbacks.Callback.on\_step\_start
+======================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. automethod:: Callback.on_step_start

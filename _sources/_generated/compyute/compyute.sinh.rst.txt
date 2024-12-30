@@ -1,0 +1,6 @@
+﻿compyute.sinh
+=============
+
+.. currentmodule:: compyute
+
+.. autofunction:: sinh

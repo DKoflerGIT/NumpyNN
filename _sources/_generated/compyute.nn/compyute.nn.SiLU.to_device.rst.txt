@@ -1,0 +1,6 @@
+compyute.nn.SiLU.to\_device
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: SiLU.to_device

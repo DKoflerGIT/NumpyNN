@@ -1,0 +1,6 @@
+﻿compyute.inner
+==============
+
+.. currentmodule:: compyute
+
+.. autofunction:: inner

@@ -1,0 +1,6 @@
+compyute.nn.Softmax.\_\_init\_\_
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Softmax.__init__

@@ -1,0 +1,6 @@
+compyute.nn.trainer.callbacks.ProgressBar.on\_run\_start
+========================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. automethod:: ProgressBar.on_run_start

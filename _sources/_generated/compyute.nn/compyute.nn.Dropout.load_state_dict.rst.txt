@@ -1,0 +1,6 @@
+compyute.nn.Dropout.load\_state\_dict
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Dropout.load_state_dict

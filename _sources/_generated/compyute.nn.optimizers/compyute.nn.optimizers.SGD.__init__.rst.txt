@@ -1,0 +1,6 @@
+compyute.nn.optimizers.SGD.\_\_init\_\_
+=======================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: SGD.__init__

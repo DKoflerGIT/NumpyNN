@@ -1,0 +1,6 @@
+﻿compyute.is\_nan
+================
+
+.. currentmodule:: compyute
+
+.. autofunction:: is_nan

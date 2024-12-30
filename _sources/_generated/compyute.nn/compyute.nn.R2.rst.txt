@@ -1,0 +1,22 @@
+﻿compyute.nn.R2
+==============
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: R2
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~R2.__init__
+    
+    
+
+
+    
+    
+    

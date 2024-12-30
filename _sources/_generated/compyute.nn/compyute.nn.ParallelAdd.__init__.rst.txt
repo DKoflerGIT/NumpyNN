@@ -1,0 +1,6 @@
+compyute.nn.ParallelAdd.\_\_init\_\_
+====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelAdd.__init__

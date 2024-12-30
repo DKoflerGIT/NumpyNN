@@ -1,0 +1,6 @@
+compyute.nn.LSTM.get\_modules
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LSTM.get_modules

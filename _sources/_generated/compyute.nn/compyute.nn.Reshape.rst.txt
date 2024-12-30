@@ -1,0 +1,48 @@
+﻿compyute.nn.Reshape
+===================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Reshape
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Reshape.__init__
+        ~Reshape.backward
+        ~Reshape.clean
+        ~Reshape.forward
+        ~Reshape.get_buffers
+        ~Reshape.get_modules
+        ~Reshape.get_parameters
+        ~Reshape.get_state_dict
+        ~Reshape.inference
+        ~Reshape.load_state_dict
+        ~Reshape.register_backward
+        ~Reshape.register_forward
+        ~Reshape.to_device
+        ~Reshape.to_type
+        ~Reshape.training
+        ~Reshape.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Reshape.device
+        ~Reshape.dtype
+        ~Reshape.is_training
+        ~Reshape.n_modules
+        ~Reshape.retain_values
+        ~Reshape.trainable
+    
+    

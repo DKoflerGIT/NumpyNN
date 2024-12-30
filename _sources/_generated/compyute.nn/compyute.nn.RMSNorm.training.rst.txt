@@ -1,0 +1,6 @@
+compyute.nn.RMSNorm.training
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: RMSNorm.training

@@ -1,0 +1,6 @@
+﻿compyute.preprocessing.standardize
+==================================
+
+.. currentmodule:: compyute.preprocessing
+
+.. autofunction:: standardize

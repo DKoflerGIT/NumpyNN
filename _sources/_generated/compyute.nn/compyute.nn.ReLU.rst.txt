@@ -1,0 +1,48 @@
+﻿compyute.nn.ReLU
+================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: ReLU
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~ReLU.__init__
+        ~ReLU.backward
+        ~ReLU.clean
+        ~ReLU.forward
+        ~ReLU.get_buffers
+        ~ReLU.get_modules
+        ~ReLU.get_parameters
+        ~ReLU.get_state_dict
+        ~ReLU.inference
+        ~ReLU.load_state_dict
+        ~ReLU.register_backward
+        ~ReLU.register_forward
+        ~ReLU.to_device
+        ~ReLU.to_type
+        ~ReLU.training
+        ~ReLU.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~ReLU.device
+        ~ReLU.dtype
+        ~ReLU.is_training
+        ~ReLU.n_modules
+        ~ReLU.retain_values
+        ~ReLU.trainable
+    
+    

@@ -1,0 +1,6 @@
+compyute.nn.Sequential.register\_backward
+=========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sequential.register_backward

@@ -1,0 +1,6 @@
+compyute.nn.ParallelAdd.get\_modules
+====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelAdd.get_modules

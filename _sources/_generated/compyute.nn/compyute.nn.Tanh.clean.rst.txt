@@ -1,0 +1,6 @@
+compyute.nn.Tanh.clean
+======================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Tanh.clean

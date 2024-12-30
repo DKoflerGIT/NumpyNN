@@ -1,0 +1,6 @@
+compyute.nn.ResidualConnection.get\_state\_dict
+===============================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ResidualConnection.get_state_dict

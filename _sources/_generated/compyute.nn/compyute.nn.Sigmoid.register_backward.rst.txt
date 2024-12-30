@@ -1,0 +1,6 @@
+compyute.nn.Sigmoid.register\_backward
+======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sigmoid.register_backward

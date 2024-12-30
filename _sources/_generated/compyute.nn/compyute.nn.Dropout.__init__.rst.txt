@@ -1,0 +1,6 @@
+compyute.nn.Dropout.\_\_init\_\_
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Dropout.__init__

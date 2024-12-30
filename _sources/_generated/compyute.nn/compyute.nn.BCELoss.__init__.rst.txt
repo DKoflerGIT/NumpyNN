@@ -1,0 +1,6 @@
+compyute.nn.BCELoss.\_\_init\_\_
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: BCELoss.__init__

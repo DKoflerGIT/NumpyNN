@@ -1,0 +1,6 @@
+compyute.nn.FastGELU.training
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: FastGELU.training

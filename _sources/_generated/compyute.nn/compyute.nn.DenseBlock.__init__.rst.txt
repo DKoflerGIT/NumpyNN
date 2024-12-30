@@ -1,0 +1,6 @@
+compyute.nn.DenseBlock.\_\_init\_\_
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: DenseBlock.__init__

@@ -1,0 +1,6 @@
+compyute.nn.ModuleList.count
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ModuleList.count

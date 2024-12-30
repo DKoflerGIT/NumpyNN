@@ -1,0 +1,6 @@
+compyute.nn.ParallelAdd.to\_type
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelAdd.to_type

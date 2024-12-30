@@ -1,0 +1,6 @@
+﻿compyute.flatten
+================
+
+.. currentmodule:: compyute
+
+.. autofunction:: flatten

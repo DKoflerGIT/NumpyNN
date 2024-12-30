@@ -1,0 +1,6 @@
+compyute.nn.ResidualConnection.backward
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ResidualConnection.backward

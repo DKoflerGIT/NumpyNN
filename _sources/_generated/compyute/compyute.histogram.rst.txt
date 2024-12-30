@@ -1,0 +1,6 @@
+﻿compyute.histogram
+==================
+
+.. currentmodule:: compyute
+
+.. autofunction:: histogram

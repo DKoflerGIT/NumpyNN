@@ -1,0 +1,6 @@
+compyute.nn.Softmax.update\_parameter\_grad
+===========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Softmax.update_parameter_grad

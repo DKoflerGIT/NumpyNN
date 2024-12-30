@@ -1,0 +1,2878 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" data-theme="light">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index &#8212; Compyute v0.1.8 Manual</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=22607128"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
+    <link rel="index" title="Index" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.1.8" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Compyute v0.1.8 Manual</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="reference/index.html">
+    API reference
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/dakofler/Compyute" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="reference/index.html">
+    API reference
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/dakofler/Compyute" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none"></div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+
+<h1 id="index">Index</h1>
+
+<div class="genindex-jumpbox">
+ <a href="#_"><strong>_</strong></a>
+ | <a href="#A"><strong>A</strong></a>
+ | <a href="#B"><strong>B</strong></a>
+ | <a href="#C"><strong>C</strong></a>
+ | <a href="#D"><strong>D</strong></a>
+ | <a href="#E"><strong>E</strong></a>
+ | <a href="#F"><strong>F</strong></a>
+ | <a href="#G"><strong>G</strong></a>
+ | <a href="#H"><strong>H</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#L"><strong>L</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#N"><strong>N</strong></a>
+ | <a href="#O"><strong>O</strong></a>
+ | <a href="#P"><strong>P</strong></a>
+ | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
+ | <a href="#U"><strong>U</strong></a>
+ | <a href="#V"><strong>V</strong></a>
+ | <a href="#Z"><strong>Z</strong></a>
+ 
+</div>
+<h2 id="_">_</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute/compyute.Device.__init__.html#compyute.Device.__init__">__init__() (compyute.Device method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Accuracy.__init__.html#compyute.nn.Accuracy.__init__">(compyute.nn.Accuracy method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.AvgPooling2D.__init__.html#compyute.nn.AvgPooling2D.__init__">(compyute.nn.AvgPooling2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm1D.__init__.html#compyute.nn.BatchNorm1D.__init__">(compyute.nn.BatchNorm1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm2D.__init__.html#compyute.nn.BatchNorm2D.__init__">(compyute.nn.BatchNorm2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BCELoss.__init__.html#compyute.nn.BCELoss.__init__">(compyute.nn.BCELoss method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Buffer.__init__.html#compyute.nn.Buffer.__init__">(compyute.nn.Buffer method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1D.__init__.html#compyute.nn.Conv1D.__init__">(compyute.nn.Conv1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.__init__.html#compyute.nn.Conv1DBlock.__init__">(compyute.nn.Conv1DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2D.__init__.html#compyute.nn.Conv2D.__init__">(compyute.nn.Conv2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.__init__.html#compyute.nn.Conv2DBlock.__init__">(compyute.nn.Conv2DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose1D.__init__.html#compyute.nn.ConvTranspose1D.__init__">(compyute.nn.ConvTranspose1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose2D.__init__.html#compyute.nn.ConvTranspose2D.__init__">(compyute.nn.ConvTranspose2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.CrossEntropyLoss.__init__.html#compyute.nn.CrossEntropyLoss.__init__">(compyute.nn.CrossEntropyLoss method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.__init__.html#compyute.nn.DenseBlock.__init__">(compyute.nn.DenseBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DiceLoss.__init__.html#compyute.nn.DiceLoss.__init__">(compyute.nn.DiceLoss method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Dropout.__init__.html#compyute.nn.Dropout.__init__">(compyute.nn.Dropout method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Embedding.__init__.html#compyute.nn.Embedding.__init__">(compyute.nn.Embedding method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FastGELU.__init__.html#compyute.nn.FastGELU.__init__">(compyute.nn.FastGELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Flatten.__init__.html#compyute.nn.Flatten.__init__">(compyute.nn.Flatten method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Function.__init__.html#compyute.nn.Function.__init__">(compyute.nn.Function method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FunctionContext.__init__.html#compyute.nn.FunctionContext.__init__">(compyute.nn.FunctionContext method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GELU.__init__.html#compyute.nn.GELU.__init__">(compyute.nn.GELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GRU.__init__.html#compyute.nn.GRU.__init__">(compyute.nn.GRU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Identity.__init__.html#compyute.nn.Identity.__init__">(compyute.nn.Identity method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LayerNorm.__init__.html#compyute.nn.LayerNorm.__init__">(compyute.nn.LayerNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LeakyReLU.__init__.html#compyute.nn.LeakyReLU.__init__">(compyute.nn.LeakyReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Linear.__init__.html#compyute.nn.Linear.__init__">(compyute.nn.Linear method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Loss.__init__.html#compyute.nn.Loss.__init__">(compyute.nn.Loss method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LSTM.__init__.html#compyute.nn.LSTM.__init__">(compyute.nn.LSTM method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MaxPooling2D.__init__.html#compyute.nn.MaxPooling2D.__init__">(compyute.nn.MaxPooling2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Metric.__init__.html#compyute.nn.Metric.__init__">(compyute.nn.Metric method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Module.__init__.html#compyute.nn.Module.__init__">(compyute.nn.Module method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ModuleList.__init__.html#compyute.nn.ModuleList.__init__">(compyute.nn.ModuleList method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MSELoss.__init__.html#compyute.nn.MSELoss.__init__">(compyute.nn.MSELoss method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.Adam.__init__.html#compyute.nn.optimizers.Adam.__init__">(compyute.nn.optimizers.Adam method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.AdamW.__init__.html#compyute.nn.optimizers.AdamW.__init__">(compyute.nn.optimizers.AdamW method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.NAdam.__init__.html#compyute.nn.optimizers.NAdam.__init__">(compyute.nn.optimizers.NAdam method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.Optimizer.__init__.html#compyute.nn.optimizers.Optimizer.__init__">(compyute.nn.optimizers.Optimizer method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.SGD.__init__.html#compyute.nn.optimizers.SGD.__init__">(compyute.nn.optimizers.SGD method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelAdd.__init__.html#compyute.nn.ParallelAdd.__init__">(compyute.nn.ParallelAdd method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelConcat.__init__.html#compyute.nn.ParallelConcat.__init__">(compyute.nn.ParallelConcat method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.__init__.html#compyute.nn.Parameter.__init__">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.R2.__init__.html#compyute.nn.R2.__init__">(compyute.nn.R2 method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Recurrent.__init__.html#compyute.nn.Recurrent.__init__">(compyute.nn.Recurrent method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ReLU.__init__.html#compyute.nn.ReLU.__init__">(compyute.nn.ReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Reshape.__init__.html#compyute.nn.Reshape.__init__">(compyute.nn.Reshape method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ResidualConnection.__init__.html#compyute.nn.ResidualConnection.__init__">(compyute.nn.ResidualConnection method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.RMSNorm.__init__.html#compyute.nn.RMSNorm.__init__">(compyute.nn.RMSNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sequential.__init__.html#compyute.nn.Sequential.__init__">(compyute.nn.Sequential method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sigmoid.__init__.html#compyute.nn.Sigmoid.__init__">(compyute.nn.Sigmoid method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.SiLU.__init__.html#compyute.nn.SiLU.__init__">(compyute.nn.SiLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Slice.__init__.html#compyute.nn.Slice.__init__">(compyute.nn.Slice method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Softmax.__init__.html#compyute.nn.Softmax.__init__">(compyute.nn.Softmax method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Tanh.__init__.html#compyute.nn.Tanh.__init__">(compyute.nn.Tanh method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.AdaptiveLrScheduler.__init__.html#compyute.nn.trainer.callbacks.AdaptiveLrScheduler.__init__">(compyute.nn.trainer.callbacks.AdaptiveLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.Callback.__init__.html#compyute.nn.trainer.callbacks.Callback.__init__">(compyute.nn.trainer.callbacks.Callback method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.CosineLrScheduler.__init__.html#compyute.nn.trainer.callbacks.CosineLrScheduler.__init__">(compyute.nn.trainer.callbacks.CosineLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.EarlyStopping.__init__.html#compyute.nn.trainer.callbacks.EarlyStopping.__init__">(compyute.nn.trainer.callbacks.EarlyStopping method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.ExponentialLrScheduler.__init__.html#compyute.nn.trainer.callbacks.ExponentialLrScheduler.__init__">(compyute.nn.trainer.callbacks.ExponentialLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.History.__init__.html#compyute.nn.trainer.callbacks.History.__init__">(compyute.nn.trainer.callbacks.History method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.MultistepLrScheduler.__init__.html#compyute.nn.trainer.callbacks.MultistepLrScheduler.__init__">(compyute.nn.trainer.callbacks.MultistepLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.ProgressBar.__init__.html#compyute.nn.trainer.callbacks.ProgressBar.__init__">(compyute.nn.trainer.callbacks.ProgressBar method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.StepLrScheduler.__init__.html#compyute.nn.trainer.callbacks.StepLrScheduler.__init__">(compyute.nn.trainer.callbacks.StepLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.Tensorboard.__init__.html#compyute.nn.trainer.callbacks.Tensorboard.__init__">(compyute.nn.trainer.callbacks.Tensorboard method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer/compyute.nn.trainer.Trainer.__init__.html#compyute.nn.trainer.Trainer.__init__">(compyute.nn.trainer.Trainer method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Upsample2D.__init__.html#compyute.nn.Upsample2D.__init__">(compyute.nn.Upsample2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.utils/compyute.nn.utils.Dataloader.__init__.html#compyute.nn.utils.Dataloader.__init__">(compyute.nn.utils.Dataloader method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.AdaptiveLrScheduler.__init__.html#compyute.nn.utils.lr_schedulers.AdaptiveLrScheduler.__init__">(compyute.nn.utils.lr_schedulers.AdaptiveLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.CosineLrScheduler.__init__.html#compyute.nn.utils.lr_schedulers.CosineLrScheduler.__init__">(compyute.nn.utils.lr_schedulers.CosineLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.ExponentialLrScheduler.__init__.html#compyute.nn.utils.lr_schedulers.ExponentialLrScheduler.__init__">(compyute.nn.utils.lr_schedulers.ExponentialLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.LrScheduler.__init__.html#compyute.nn.utils.lr_schedulers.LrScheduler.__init__">(compyute.nn.utils.lr_schedulers.LrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.MultistepLrScheduler.__init__.html#compyute.nn.utils.lr_schedulers.MultistepLrScheduler.__init__">(compyute.nn.utils.lr_schedulers.MultistepLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.StepLrScheduler.__init__.html#compyute.nn.utils.lr_schedulers.StepLrScheduler.__init__">(compyute.nn.utils.lr_schedulers.StepLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.__init__.html#compyute.Tensor.__init__">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="A">A</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.abs.html#compyute.nn.Buffer.abs">abs() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.abs.html#compyute.nn.Parameter.abs">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.abs.html#compyute.Tensor.abs">(compyute.Tensor method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.abs.html#compyute.abs">(in module compyute)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Accuracy.html#compyute.nn.Accuracy">Accuracy (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.accuracy_score.html#compyute.nn.functional.accuracy_score">accuracy_score() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.Adam.html#compyute.nn.optimizers.Adam">Adam (class in compyute.nn.optimizers)</a>
+</li>
+      <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.AdamW.html#compyute.nn.optimizers.AdamW">AdamW (class in compyute.nn.optimizers)</a>
+</li>
+      <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.AdaptiveLrScheduler.html#compyute.nn.trainer.callbacks.AdaptiveLrScheduler">AdaptiveLrScheduler (class in compyute.nn.trainer.callbacks)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.AdaptiveLrScheduler.html#compyute.nn.utils.lr_schedulers.AdaptiveLrScheduler">(class in compyute.nn.utils.lr_schedulers)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.add.html#compyute.nn.Conv1DBlock.add">add() (compyute.nn.Conv1DBlock method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.add.html#compyute.nn.Conv2DBlock.add">(compyute.nn.Conv2DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.add.html#compyute.nn.DenseBlock.add">(compyute.nn.DenseBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FunctionContext.add.html#compyute.nn.FunctionContext.add">(compyute.nn.FunctionContext method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sequential.add.html#compyute.nn.Sequential.add">(compyute.nn.Sequential method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.all.html#compyute.nn.Buffer.all">all() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.all.html#compyute.nn.Parameter.all">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.all.html#compyute.Tensor.all">(compyute.Tensor method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.all.html#compyute.all">(in module compyute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute/compyute.allclose.html#compyute.allclose">allclose() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.any.html#compyute.nn.Buffer.any">any() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.any.html#compyute.nn.Parameter.any">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.any.html#compyute.Tensor.any">(compyute.Tensor method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.any.html#compyute.any">(in module compyute)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.ModuleList.append.html#compyute.nn.ModuleList.append">append() (compyute.nn.ModuleList method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute/compyute.append.html#compyute.append">(in module compyute)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute/compyute.arange.html#compyute.arange">arange() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.argmax.html#compyute.nn.Buffer.argmax">argmax() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.argmax.html#compyute.nn.Parameter.argmax">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.argmax.html#compyute.Tensor.argmax">(compyute.Tensor method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.argmax.html#compyute.argmax">(in module compyute)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.AvgPooling2D.html#compyute.nn.AvgPooling2D">AvgPooling2D (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.avgpooling2d.html#compyute.nn.functional.avgpooling2d">avgpooling2d() (in module compyute.nn.functional)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="B">B</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn/compyute.nn.AvgPooling2D.backward.html#compyute.nn.AvgPooling2D.backward">backward() (compyute.nn.AvgPooling2D method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm1D.backward.html#compyute.nn.BatchNorm1D.backward">(compyute.nn.BatchNorm1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm2D.backward.html#compyute.nn.BatchNorm2D.backward">(compyute.nn.BatchNorm2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BCELoss.backward.html#compyute.nn.BCELoss.backward">(compyute.nn.BCELoss method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1D.backward.html#compyute.nn.Conv1D.backward">(compyute.nn.Conv1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.backward.html#compyute.nn.Conv1DBlock.backward">(compyute.nn.Conv1DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2D.backward.html#compyute.nn.Conv2D.backward">(compyute.nn.Conv2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.backward.html#compyute.nn.Conv2DBlock.backward">(compyute.nn.Conv2DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose1D.backward.html#compyute.nn.ConvTranspose1D.backward">(compyute.nn.ConvTranspose1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose2D.backward.html#compyute.nn.ConvTranspose2D.backward">(compyute.nn.ConvTranspose2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.CrossEntropyLoss.backward.html#compyute.nn.CrossEntropyLoss.backward">(compyute.nn.CrossEntropyLoss method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.backward.html#compyute.nn.DenseBlock.backward">(compyute.nn.DenseBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DiceLoss.backward.html#compyute.nn.DiceLoss.backward">(compyute.nn.DiceLoss method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Dropout.backward.html#compyute.nn.Dropout.backward">(compyute.nn.Dropout method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Embedding.backward.html#compyute.nn.Embedding.backward">(compyute.nn.Embedding method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FastGELU.backward.html#compyute.nn.FastGELU.backward">(compyute.nn.FastGELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Flatten.backward.html#compyute.nn.Flatten.backward">(compyute.nn.Flatten method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Function.backward.html#compyute.nn.Function.backward">(compyute.nn.Function static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GELU.backward.html#compyute.nn.GELU.backward">(compyute.nn.GELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GRU.backward.html#compyute.nn.GRU.backward">(compyute.nn.GRU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Identity.backward.html#compyute.nn.Identity.backward">(compyute.nn.Identity method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LayerNorm.backward.html#compyute.nn.LayerNorm.backward">(compyute.nn.LayerNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LeakyReLU.backward.html#compyute.nn.LeakyReLU.backward">(compyute.nn.LeakyReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Linear.backward.html#compyute.nn.Linear.backward">(compyute.nn.Linear method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Loss.backward.html#compyute.nn.Loss.backward">(compyute.nn.Loss method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LSTM.backward.html#compyute.nn.LSTM.backward">(compyute.nn.LSTM method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MaxPooling2D.backward.html#compyute.nn.MaxPooling2D.backward">(compyute.nn.MaxPooling2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Module.backward.html#compyute.nn.Module.backward">(compyute.nn.Module method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MSELoss.backward.html#compyute.nn.MSELoss.backward">(compyute.nn.MSELoss method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelAdd.backward.html#compyute.nn.ParallelAdd.backward">(compyute.nn.ParallelAdd method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelConcat.backward.html#compyute.nn.ParallelConcat.backward">(compyute.nn.ParallelConcat method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Recurrent.backward.html#compyute.nn.Recurrent.backward">(compyute.nn.Recurrent method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ReLU.backward.html#compyute.nn.ReLU.backward">(compyute.nn.ReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Reshape.backward.html#compyute.nn.Reshape.backward">(compyute.nn.Reshape method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ResidualConnection.backward.html#compyute.nn.ResidualConnection.backward">(compyute.nn.ResidualConnection method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.RMSNorm.backward.html#compyute.nn.RMSNorm.backward">(compyute.nn.RMSNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sequential.backward.html#compyute.nn.Sequential.backward">(compyute.nn.Sequential method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sigmoid.backward.html#compyute.nn.Sigmoid.backward">(compyute.nn.Sigmoid method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.SiLU.backward.html#compyute.nn.SiLU.backward">(compyute.nn.SiLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Slice.backward.html#compyute.nn.Slice.backward">(compyute.nn.Slice method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Softmax.backward.html#compyute.nn.Softmax.backward">(compyute.nn.Softmax method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Tanh.backward.html#compyute.nn.Tanh.backward">(compyute.nn.Tanh method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Upsample2D.backward.html#compyute.nn.Upsample2D.backward">(compyute.nn.Upsample2D method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn.utils/compyute.nn.utils.batched.html#compyute.nn.utils.batched">batched() (in module compyute.nn.utils)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm1D.html#compyute.nn.BatchNorm1D">BatchNorm1D (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.batchnorm1d.html#compyute.nn.functional.batchnorm1d">batchnorm1d() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm2D.html#compyute.nn.BatchNorm2D">BatchNorm2D (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.batchnorm2d.html#compyute.nn.functional.batchnorm2d">batchnorm2d() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.bce_loss.html#compyute.nn.functional.bce_loss">bce_loss() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.BCELoss.html#compyute.nn.BCELoss">BCELoss (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.bool_.html#compyute.bool_">bool_ (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.broadcast_to.html#compyute.broadcast_to">broadcast_to() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.html#compyute.nn.Buffer">Buffer (class in compyute.nn)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.Callback.html#compyute.nn.trainer.callbacks.Callback">Callback (class in compyute.nn.trainer.callbacks)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.AvgPooling2D.clean.html#compyute.nn.AvgPooling2D.clean">clean() (compyute.nn.AvgPooling2D method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm1D.clean.html#compyute.nn.BatchNorm1D.clean">(compyute.nn.BatchNorm1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm2D.clean.html#compyute.nn.BatchNorm2D.clean">(compyute.nn.BatchNorm2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1D.clean.html#compyute.nn.Conv1D.clean">(compyute.nn.Conv1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.clean.html#compyute.nn.Conv1DBlock.clean">(compyute.nn.Conv1DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2D.clean.html#compyute.nn.Conv2D.clean">(compyute.nn.Conv2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.clean.html#compyute.nn.Conv2DBlock.clean">(compyute.nn.Conv2DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose1D.clean.html#compyute.nn.ConvTranspose1D.clean">(compyute.nn.ConvTranspose1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose2D.clean.html#compyute.nn.ConvTranspose2D.clean">(compyute.nn.ConvTranspose2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.clean.html#compyute.nn.DenseBlock.clean">(compyute.nn.DenseBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Dropout.clean.html#compyute.nn.Dropout.clean">(compyute.nn.Dropout method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Embedding.clean.html#compyute.nn.Embedding.clean">(compyute.nn.Embedding method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FastGELU.clean.html#compyute.nn.FastGELU.clean">(compyute.nn.FastGELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Flatten.clean.html#compyute.nn.Flatten.clean">(compyute.nn.Flatten method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GELU.clean.html#compyute.nn.GELU.clean">(compyute.nn.GELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GRU.clean.html#compyute.nn.GRU.clean">(compyute.nn.GRU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Identity.clean.html#compyute.nn.Identity.clean">(compyute.nn.Identity method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LayerNorm.clean.html#compyute.nn.LayerNorm.clean">(compyute.nn.LayerNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LeakyReLU.clean.html#compyute.nn.LeakyReLU.clean">(compyute.nn.LeakyReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Linear.clean.html#compyute.nn.Linear.clean">(compyute.nn.Linear method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LSTM.clean.html#compyute.nn.LSTM.clean">(compyute.nn.LSTM method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MaxPooling2D.clean.html#compyute.nn.MaxPooling2D.clean">(compyute.nn.MaxPooling2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Module.clean.html#compyute.nn.Module.clean">(compyute.nn.Module method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelAdd.clean.html#compyute.nn.ParallelAdd.clean">(compyute.nn.ParallelAdd method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelConcat.clean.html#compyute.nn.ParallelConcat.clean">(compyute.nn.ParallelConcat method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Recurrent.clean.html#compyute.nn.Recurrent.clean">(compyute.nn.Recurrent method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ReLU.clean.html#compyute.nn.ReLU.clean">(compyute.nn.ReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Reshape.clean.html#compyute.nn.Reshape.clean">(compyute.nn.Reshape method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ResidualConnection.clean.html#compyute.nn.ResidualConnection.clean">(compyute.nn.ResidualConnection method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.RMSNorm.clean.html#compyute.nn.RMSNorm.clean">(compyute.nn.RMSNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sequential.clean.html#compyute.nn.Sequential.clean">(compyute.nn.Sequential method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sigmoid.clean.html#compyute.nn.Sigmoid.clean">(compyute.nn.Sigmoid method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.SiLU.clean.html#compyute.nn.SiLU.clean">(compyute.nn.SiLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Slice.clean.html#compyute.nn.Slice.clean">(compyute.nn.Slice method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Softmax.clean.html#compyute.nn.Softmax.clean">(compyute.nn.Softmax method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Tanh.clean.html#compyute.nn.Tanh.clean">(compyute.nn.Tanh method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Upsample2D.clean.html#compyute.nn.Upsample2D.clean">(compyute.nn.Upsample2D method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn/compyute.nn.ModuleList.clear.html#compyute.nn.ModuleList.clear">clear() (compyute.nn.ModuleList method)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.clip.html#compyute.clip">clip() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn.utils/compyute.nn.utils.clip_grad_norm.html#compyute.nn.utils.clip_grad_norm">clip_grad_norm() (in module compyute.nn.utils)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.complex128.html#compyute.complex128">complex128 (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.complex64.html#compyute.complex64">complex64 (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.concat.html#compyute.concat">concat() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Conv1D.html#compyute.nn.Conv1D">Conv1D (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.conv1d.html#compyute.nn.functional.conv1d">conv1d() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.html#compyute.nn.Conv1DBlock">Conv1DBlock (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Conv2D.html#compyute.nn.Conv2D">Conv2D (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.conv2d.html#compyute.nn.functional.conv2d">conv2d() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.html#compyute.nn.Conv2DBlock">Conv2DBlock (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.conv_transpose1d.html#compyute.nn.functional.conv_transpose1d">conv_transpose1d() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.conv_transpose2d.html#compyute.nn.functional.conv_transpose2d">conv_transpose2d() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.convolve1d_fft.html#compyute.convolve1d_fft">convolve1d_fft() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.convolve2d_fft.html#compyute.convolve2d_fft">convolve2d_fft() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose1D.html#compyute.nn.ConvTranspose1D">ConvTranspose1D (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose2D.html#compyute.nn.ConvTranspose2D">ConvTranspose2D (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.copy.html#compyute.nn.Buffer.copy">copy() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.ModuleList.copy.html#compyute.nn.ModuleList.copy">(compyute.nn.ModuleList method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.copy.html#compyute.nn.Parameter.copy">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.copy.html#compyute.Tensor.copy">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute/compyute.cos.html#compyute.cos">cos() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.cosh.html#compyute.cosh">cosh() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.CosineLrScheduler.html#compyute.nn.trainer.callbacks.CosineLrScheduler">CosineLrScheduler (class in compyute.nn.trainer.callbacks)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.CosineLrScheduler.html#compyute.nn.utils.lr_schedulers.CosineLrScheduler">(class in compyute.nn.utils.lr_schedulers)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.ModuleList.count.html#compyute.nn.ModuleList.count">count() (compyute.nn.ModuleList method)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.cpu.html#compyute.cpu">cpu (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.cross_entropy_loss.html#compyute.nn.functional.cross_entropy_loss">cross_entropy_loss() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.CrossEntropyLoss.html#compyute.nn.CrossEntropyLoss">CrossEntropyLoss (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.cuda.html#compyute.cuda">cuda (in module compyute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="D">D</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn.utils/compyute.nn.utils.Dataloader.html#compyute.nn.utils.Dataloader">Dataloader (class in compyute.nn.utils)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.debug.html#compyute.debug">debug() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.html#compyute.nn.DenseBlock">DenseBlock (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.Device.html#compyute.Device">Device (class in compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.diagonal.html#compyute.diagonal">diagonal() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.dice_loss.html#compyute.nn.functional.dice_loss">dice_loss() (in module compyute.nn.functional)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn/compyute.nn.DiceLoss.html#compyute.nn.DiceLoss">DiceLoss (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.dilate1d.html#compyute.nn.functional.dilate1d">dilate1d() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.dilate2d.html#compyute.nn.functional.dilate2d">dilate2d() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.dot.html#compyute.dot">dot() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Dropout.html#compyute.nn.Dropout">Dropout (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.dropout.html#compyute.nn.functional.dropout">dropout() (in module compyute.nn.functional)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="E">E</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.EarlyStopping.html#compyute.nn.trainer.callbacks.EarlyStopping">EarlyStopping (class in compyute.nn.trainer.callbacks)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.einsum.html#compyute.einsum">einsum() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Embedding.html#compyute.nn.Embedding">Embedding (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.embedding.html#compyute.nn.functional.embedding">embedding() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.empty.html#compyute.empty">empty() (in module compyute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute/compyute.empty_like.html#compyute.empty_like">empty_like() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn.trainer/compyute.nn.trainer.Trainer.evaluate_model.html#compyute.nn.trainer.Trainer.evaluate_model">evaluate_model() (compyute.nn.trainer.Trainer method)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.exp.html#compyute.exp">exp() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.ExponentialLrScheduler.html#compyute.nn.trainer.callbacks.ExponentialLrScheduler">ExponentialLrScheduler (class in compyute.nn.trainer.callbacks)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.ExponentialLrScheduler.html#compyute.nn.utils.lr_schedulers.ExponentialLrScheduler">(class in compyute.nn.utils.lr_schedulers)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.ModuleList.extend.html#compyute.nn.ModuleList.extend">extend() (compyute.nn.ModuleList method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="F">F</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.fast_gelu.html#compyute.nn.functional.fast_gelu">fast_gelu() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.FastGELU.html#compyute.nn.FastGELU">FastGELU (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.fft1d.html#compyute.fft1d">fft1d() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.fft2d.html#compyute.fft2d">fft2d() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Flatten.html#compyute.nn.Flatten">Flatten (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.flatten.html#compyute.flatten">flatten() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.flip.html#compyute.flip">flip() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.float16.html#compyute.float16">float16 (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.float32.html#compyute.float32">float32 (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.float64.html#compyute.float64">float64 (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.AvgPooling2D.forward.html#compyute.nn.AvgPooling2D.forward">forward() (compyute.nn.AvgPooling2D method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm1D.forward.html#compyute.nn.BatchNorm1D.forward">(compyute.nn.BatchNorm1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm2D.forward.html#compyute.nn.BatchNorm2D.forward">(compyute.nn.BatchNorm2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BCELoss.forward.html#compyute.nn.BCELoss.forward">(compyute.nn.BCELoss method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1D.forward.html#compyute.nn.Conv1D.forward">(compyute.nn.Conv1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.forward.html#compyute.nn.Conv1DBlock.forward">(compyute.nn.Conv1DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2D.forward.html#compyute.nn.Conv2D.forward">(compyute.nn.Conv2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.forward.html#compyute.nn.Conv2DBlock.forward">(compyute.nn.Conv2DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose1D.forward.html#compyute.nn.ConvTranspose1D.forward">(compyute.nn.ConvTranspose1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose2D.forward.html#compyute.nn.ConvTranspose2D.forward">(compyute.nn.ConvTranspose2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.CrossEntropyLoss.forward.html#compyute.nn.CrossEntropyLoss.forward">(compyute.nn.CrossEntropyLoss method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.forward.html#compyute.nn.DenseBlock.forward">(compyute.nn.DenseBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DiceLoss.forward.html#compyute.nn.DiceLoss.forward">(compyute.nn.DiceLoss method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Dropout.forward.html#compyute.nn.Dropout.forward">(compyute.nn.Dropout method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Embedding.forward.html#compyute.nn.Embedding.forward">(compyute.nn.Embedding method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FastGELU.forward.html#compyute.nn.FastGELU.forward">(compyute.nn.FastGELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Flatten.forward.html#compyute.nn.Flatten.forward">(compyute.nn.Flatten method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Function.forward.html#compyute.nn.Function.forward">(compyute.nn.Function static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GELU.forward.html#compyute.nn.GELU.forward">(compyute.nn.GELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GRU.forward.html#compyute.nn.GRU.forward">(compyute.nn.GRU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Identity.forward.html#compyute.nn.Identity.forward">(compyute.nn.Identity method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LayerNorm.forward.html#compyute.nn.LayerNorm.forward">(compyute.nn.LayerNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LeakyReLU.forward.html#compyute.nn.LeakyReLU.forward">(compyute.nn.LeakyReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Linear.forward.html#compyute.nn.Linear.forward">(compyute.nn.Linear method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Loss.forward.html#compyute.nn.Loss.forward">(compyute.nn.Loss method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LSTM.forward.html#compyute.nn.LSTM.forward">(compyute.nn.LSTM method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MaxPooling2D.forward.html#compyute.nn.MaxPooling2D.forward">(compyute.nn.MaxPooling2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Module.forward.html#compyute.nn.Module.forward">(compyute.nn.Module method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MSELoss.forward.html#compyute.nn.MSELoss.forward">(compyute.nn.MSELoss method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelAdd.forward.html#compyute.nn.ParallelAdd.forward">(compyute.nn.ParallelAdd method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelConcat.forward.html#compyute.nn.ParallelConcat.forward">(compyute.nn.ParallelConcat method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Recurrent.forward.html#compyute.nn.Recurrent.forward">(compyute.nn.Recurrent method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ReLU.forward.html#compyute.nn.ReLU.forward">(compyute.nn.ReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Reshape.forward.html#compyute.nn.Reshape.forward">(compyute.nn.Reshape method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ResidualConnection.forward.html#compyute.nn.ResidualConnection.forward">(compyute.nn.ResidualConnection method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.RMSNorm.forward.html#compyute.nn.RMSNorm.forward">(compyute.nn.RMSNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sequential.forward.html#compyute.nn.Sequential.forward">(compyute.nn.Sequential method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sigmoid.forward.html#compyute.nn.Sigmoid.forward">(compyute.nn.Sigmoid method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.SiLU.forward.html#compyute.nn.SiLU.forward">(compyute.nn.SiLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Slice.forward.html#compyute.nn.Slice.forward">(compyute.nn.Slice method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Softmax.forward.html#compyute.nn.Softmax.forward">(compyute.nn.Softmax method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Tanh.forward.html#compyute.nn.Tanh.forward">(compyute.nn.Tanh method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Upsample2D.forward.html#compyute.nn.Upsample2D.forward">(compyute.nn.Upsample2D method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.backend/compyute.backend.free_memory.html#compyute.backend.free_memory">free_memory() (in module compyute.backend)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.full.html#compyute.full">full() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.full_like.html#compyute.full_like">full_like() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Function.html#compyute.nn.Function">Function (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.FunctionContext.html#compyute.nn.FunctionContext">FunctionContext (class in compyute.nn)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn/compyute.nn.GELU.html#compyute.nn.GELU">GELU (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.gelu.html#compyute.nn.functional.gelu">gelu() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.FunctionContext.get.html#compyute.nn.FunctionContext.get">get() (compyute.nn.FunctionContext method)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.AvgPooling2D.get_buffers.html#compyute.nn.AvgPooling2D.get_buffers">get_buffers() (compyute.nn.AvgPooling2D method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm1D.get_buffers.html#compyute.nn.BatchNorm1D.get_buffers">(compyute.nn.BatchNorm1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm2D.get_buffers.html#compyute.nn.BatchNorm2D.get_buffers">(compyute.nn.BatchNorm2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1D.get_buffers.html#compyute.nn.Conv1D.get_buffers">(compyute.nn.Conv1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.get_buffers.html#compyute.nn.Conv1DBlock.get_buffers">(compyute.nn.Conv1DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2D.get_buffers.html#compyute.nn.Conv2D.get_buffers">(compyute.nn.Conv2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.get_buffers.html#compyute.nn.Conv2DBlock.get_buffers">(compyute.nn.Conv2DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose1D.get_buffers.html#compyute.nn.ConvTranspose1D.get_buffers">(compyute.nn.ConvTranspose1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose2D.get_buffers.html#compyute.nn.ConvTranspose2D.get_buffers">(compyute.nn.ConvTranspose2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.get_buffers.html#compyute.nn.DenseBlock.get_buffers">(compyute.nn.DenseBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Dropout.get_buffers.html#compyute.nn.Dropout.get_buffers">(compyute.nn.Dropout method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Embedding.get_buffers.html#compyute.nn.Embedding.get_buffers">(compyute.nn.Embedding method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FastGELU.get_buffers.html#compyute.nn.FastGELU.get_buffers">(compyute.nn.FastGELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Flatten.get_buffers.html#compyute.nn.Flatten.get_buffers">(compyute.nn.Flatten method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GELU.get_buffers.html#compyute.nn.GELU.get_buffers">(compyute.nn.GELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GRU.get_buffers.html#compyute.nn.GRU.get_buffers">(compyute.nn.GRU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Identity.get_buffers.html#compyute.nn.Identity.get_buffers">(compyute.nn.Identity method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LayerNorm.get_buffers.html#compyute.nn.LayerNorm.get_buffers">(compyute.nn.LayerNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LeakyReLU.get_buffers.html#compyute.nn.LeakyReLU.get_buffers">(compyute.nn.LeakyReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Linear.get_buffers.html#compyute.nn.Linear.get_buffers">(compyute.nn.Linear method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LSTM.get_buffers.html#compyute.nn.LSTM.get_buffers">(compyute.nn.LSTM method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MaxPooling2D.get_buffers.html#compyute.nn.MaxPooling2D.get_buffers">(compyute.nn.MaxPooling2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Module.get_buffers.html#compyute.nn.Module.get_buffers">(compyute.nn.Module method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelAdd.get_buffers.html#compyute.nn.ParallelAdd.get_buffers">(compyute.nn.ParallelAdd method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelConcat.get_buffers.html#compyute.nn.ParallelConcat.get_buffers">(compyute.nn.ParallelConcat method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Recurrent.get_buffers.html#compyute.nn.Recurrent.get_buffers">(compyute.nn.Recurrent method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ReLU.get_buffers.html#compyute.nn.ReLU.get_buffers">(compyute.nn.ReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Reshape.get_buffers.html#compyute.nn.Reshape.get_buffers">(compyute.nn.Reshape method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ResidualConnection.get_buffers.html#compyute.nn.ResidualConnection.get_buffers">(compyute.nn.ResidualConnection method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.RMSNorm.get_buffers.html#compyute.nn.RMSNorm.get_buffers">(compyute.nn.RMSNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sequential.get_buffers.html#compyute.nn.Sequential.get_buffers">(compyute.nn.Sequential method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sigmoid.get_buffers.html#compyute.nn.Sigmoid.get_buffers">(compyute.nn.Sigmoid method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.SiLU.get_buffers.html#compyute.nn.SiLU.get_buffers">(compyute.nn.SiLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Slice.get_buffers.html#compyute.nn.Slice.get_buffers">(compyute.nn.Slice method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Softmax.get_buffers.html#compyute.nn.Softmax.get_buffers">(compyute.nn.Softmax method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Tanh.get_buffers.html#compyute.nn.Tanh.get_buffers">(compyute.nn.Tanh method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Upsample2D.get_buffers.html#compyute.nn.Upsample2D.get_buffers">(compyute.nn.Upsample2D method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.backend/compyute.backend.get_device_count.html#compyute.backend.get_device_count">get_device_count() (in module compyute.backend)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.get_diagonal.html#compyute.get_diagonal">get_diagonal() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn.utils/compyute.nn.utils.get_module_summary.html#compyute.nn.utils.get_module_summary">get_module_summary() (in module compyute.nn.utils)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.AvgPooling2D.get_modules.html#compyute.nn.AvgPooling2D.get_modules">get_modules() (compyute.nn.AvgPooling2D method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm1D.get_modules.html#compyute.nn.BatchNorm1D.get_modules">(compyute.nn.BatchNorm1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm2D.get_modules.html#compyute.nn.BatchNorm2D.get_modules">(compyute.nn.BatchNorm2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1D.get_modules.html#compyute.nn.Conv1D.get_modules">(compyute.nn.Conv1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.get_modules.html#compyute.nn.Conv1DBlock.get_modules">(compyute.nn.Conv1DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2D.get_modules.html#compyute.nn.Conv2D.get_modules">(compyute.nn.Conv2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.get_modules.html#compyute.nn.Conv2DBlock.get_modules">(compyute.nn.Conv2DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose1D.get_modules.html#compyute.nn.ConvTranspose1D.get_modules">(compyute.nn.ConvTranspose1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose2D.get_modules.html#compyute.nn.ConvTranspose2D.get_modules">(compyute.nn.ConvTranspose2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.get_modules.html#compyute.nn.DenseBlock.get_modules">(compyute.nn.DenseBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Dropout.get_modules.html#compyute.nn.Dropout.get_modules">(compyute.nn.Dropout method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Embedding.get_modules.html#compyute.nn.Embedding.get_modules">(compyute.nn.Embedding method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FastGELU.get_modules.html#compyute.nn.FastGELU.get_modules">(compyute.nn.FastGELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Flatten.get_modules.html#compyute.nn.Flatten.get_modules">(compyute.nn.Flatten method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GELU.get_modules.html#compyute.nn.GELU.get_modules">(compyute.nn.GELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GRU.get_modules.html#compyute.nn.GRU.get_modules">(compyute.nn.GRU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Identity.get_modules.html#compyute.nn.Identity.get_modules">(compyute.nn.Identity method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LayerNorm.get_modules.html#compyute.nn.LayerNorm.get_modules">(compyute.nn.LayerNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LeakyReLU.get_modules.html#compyute.nn.LeakyReLU.get_modules">(compyute.nn.LeakyReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Linear.get_modules.html#compyute.nn.Linear.get_modules">(compyute.nn.Linear method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LSTM.get_modules.html#compyute.nn.LSTM.get_modules">(compyute.nn.LSTM method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MaxPooling2D.get_modules.html#compyute.nn.MaxPooling2D.get_modules">(compyute.nn.MaxPooling2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Module.get_modules.html#compyute.nn.Module.get_modules">(compyute.nn.Module method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelAdd.get_modules.html#compyute.nn.ParallelAdd.get_modules">(compyute.nn.ParallelAdd method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelConcat.get_modules.html#compyute.nn.ParallelConcat.get_modules">(compyute.nn.ParallelConcat method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Recurrent.get_modules.html#compyute.nn.Recurrent.get_modules">(compyute.nn.Recurrent method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ReLU.get_modules.html#compyute.nn.ReLU.get_modules">(compyute.nn.ReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Reshape.get_modules.html#compyute.nn.Reshape.get_modules">(compyute.nn.Reshape method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ResidualConnection.get_modules.html#compyute.nn.ResidualConnection.get_modules">(compyute.nn.ResidualConnection method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.RMSNorm.get_modules.html#compyute.nn.RMSNorm.get_modules">(compyute.nn.RMSNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sequential.get_modules.html#compyute.nn.Sequential.get_modules">(compyute.nn.Sequential method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sigmoid.get_modules.html#compyute.nn.Sigmoid.get_modules">(compyute.nn.Sigmoid method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.SiLU.get_modules.html#compyute.nn.SiLU.get_modules">(compyute.nn.SiLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Slice.get_modules.html#compyute.nn.Slice.get_modules">(compyute.nn.Slice method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Softmax.get_modules.html#compyute.nn.Softmax.get_modules">(compyute.nn.Softmax method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Tanh.get_modules.html#compyute.nn.Tanh.get_modules">(compyute.nn.Tanh method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Upsample2D.get_modules.html#compyute.nn.Upsample2D.get_modules">(compyute.nn.Upsample2D method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.AvgPooling2D.get_parameters.html#compyute.nn.AvgPooling2D.get_parameters">get_parameters() (compyute.nn.AvgPooling2D method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm1D.get_parameters.html#compyute.nn.BatchNorm1D.get_parameters">(compyute.nn.BatchNorm1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm2D.get_parameters.html#compyute.nn.BatchNorm2D.get_parameters">(compyute.nn.BatchNorm2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1D.get_parameters.html#compyute.nn.Conv1D.get_parameters">(compyute.nn.Conv1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.get_parameters.html#compyute.nn.Conv1DBlock.get_parameters">(compyute.nn.Conv1DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2D.get_parameters.html#compyute.nn.Conv2D.get_parameters">(compyute.nn.Conv2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.get_parameters.html#compyute.nn.Conv2DBlock.get_parameters">(compyute.nn.Conv2DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose1D.get_parameters.html#compyute.nn.ConvTranspose1D.get_parameters">(compyute.nn.ConvTranspose1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose2D.get_parameters.html#compyute.nn.ConvTranspose2D.get_parameters">(compyute.nn.ConvTranspose2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.get_parameters.html#compyute.nn.DenseBlock.get_parameters">(compyute.nn.DenseBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Dropout.get_parameters.html#compyute.nn.Dropout.get_parameters">(compyute.nn.Dropout method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Embedding.get_parameters.html#compyute.nn.Embedding.get_parameters">(compyute.nn.Embedding method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FastGELU.get_parameters.html#compyute.nn.FastGELU.get_parameters">(compyute.nn.FastGELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Flatten.get_parameters.html#compyute.nn.Flatten.get_parameters">(compyute.nn.Flatten method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GELU.get_parameters.html#compyute.nn.GELU.get_parameters">(compyute.nn.GELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GRU.get_parameters.html#compyute.nn.GRU.get_parameters">(compyute.nn.GRU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Identity.get_parameters.html#compyute.nn.Identity.get_parameters">(compyute.nn.Identity method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LayerNorm.get_parameters.html#compyute.nn.LayerNorm.get_parameters">(compyute.nn.LayerNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LeakyReLU.get_parameters.html#compyute.nn.LeakyReLU.get_parameters">(compyute.nn.LeakyReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Linear.get_parameters.html#compyute.nn.Linear.get_parameters">(compyute.nn.Linear method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LSTM.get_parameters.html#compyute.nn.LSTM.get_parameters">(compyute.nn.LSTM method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MaxPooling2D.get_parameters.html#compyute.nn.MaxPooling2D.get_parameters">(compyute.nn.MaxPooling2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Module.get_parameters.html#compyute.nn.Module.get_parameters">(compyute.nn.Module method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelAdd.get_parameters.html#compyute.nn.ParallelAdd.get_parameters">(compyute.nn.ParallelAdd method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelConcat.get_parameters.html#compyute.nn.ParallelConcat.get_parameters">(compyute.nn.ParallelConcat method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Recurrent.get_parameters.html#compyute.nn.Recurrent.get_parameters">(compyute.nn.Recurrent method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ReLU.get_parameters.html#compyute.nn.ReLU.get_parameters">(compyute.nn.ReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Reshape.get_parameters.html#compyute.nn.Reshape.get_parameters">(compyute.nn.Reshape method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ResidualConnection.get_parameters.html#compyute.nn.ResidualConnection.get_parameters">(compyute.nn.ResidualConnection method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.RMSNorm.get_parameters.html#compyute.nn.RMSNorm.get_parameters">(compyute.nn.RMSNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sequential.get_parameters.html#compyute.nn.Sequential.get_parameters">(compyute.nn.Sequential method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sigmoid.get_parameters.html#compyute.nn.Sigmoid.get_parameters">(compyute.nn.Sigmoid method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.SiLU.get_parameters.html#compyute.nn.SiLU.get_parameters">(compyute.nn.SiLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Slice.get_parameters.html#compyute.nn.Slice.get_parameters">(compyute.nn.Slice method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Softmax.get_parameters.html#compyute.nn.Softmax.get_parameters">(compyute.nn.Softmax method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Tanh.get_parameters.html#compyute.nn.Tanh.get_parameters">(compyute.nn.Tanh method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Upsample2D.get_parameters.html#compyute.nn.Upsample2D.get_parameters">(compyute.nn.Upsample2D method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn/compyute.nn.AvgPooling2D.get_state_dict.html#compyute.nn.AvgPooling2D.get_state_dict">get_state_dict() (compyute.nn.AvgPooling2D method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm1D.get_state_dict.html#compyute.nn.BatchNorm1D.get_state_dict">(compyute.nn.BatchNorm1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm2D.get_state_dict.html#compyute.nn.BatchNorm2D.get_state_dict">(compyute.nn.BatchNorm2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1D.get_state_dict.html#compyute.nn.Conv1D.get_state_dict">(compyute.nn.Conv1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.get_state_dict.html#compyute.nn.Conv1DBlock.get_state_dict">(compyute.nn.Conv1DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2D.get_state_dict.html#compyute.nn.Conv2D.get_state_dict">(compyute.nn.Conv2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.get_state_dict.html#compyute.nn.Conv2DBlock.get_state_dict">(compyute.nn.Conv2DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose1D.get_state_dict.html#compyute.nn.ConvTranspose1D.get_state_dict">(compyute.nn.ConvTranspose1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose2D.get_state_dict.html#compyute.nn.ConvTranspose2D.get_state_dict">(compyute.nn.ConvTranspose2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.get_state_dict.html#compyute.nn.DenseBlock.get_state_dict">(compyute.nn.DenseBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Dropout.get_state_dict.html#compyute.nn.Dropout.get_state_dict">(compyute.nn.Dropout method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Embedding.get_state_dict.html#compyute.nn.Embedding.get_state_dict">(compyute.nn.Embedding method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FastGELU.get_state_dict.html#compyute.nn.FastGELU.get_state_dict">(compyute.nn.FastGELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Flatten.get_state_dict.html#compyute.nn.Flatten.get_state_dict">(compyute.nn.Flatten method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GELU.get_state_dict.html#compyute.nn.GELU.get_state_dict">(compyute.nn.GELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GRU.get_state_dict.html#compyute.nn.GRU.get_state_dict">(compyute.nn.GRU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Identity.get_state_dict.html#compyute.nn.Identity.get_state_dict">(compyute.nn.Identity method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LayerNorm.get_state_dict.html#compyute.nn.LayerNorm.get_state_dict">(compyute.nn.LayerNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LeakyReLU.get_state_dict.html#compyute.nn.LeakyReLU.get_state_dict">(compyute.nn.LeakyReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Linear.get_state_dict.html#compyute.nn.Linear.get_state_dict">(compyute.nn.Linear method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LSTM.get_state_dict.html#compyute.nn.LSTM.get_state_dict">(compyute.nn.LSTM method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MaxPooling2D.get_state_dict.html#compyute.nn.MaxPooling2D.get_state_dict">(compyute.nn.MaxPooling2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Module.get_state_dict.html#compyute.nn.Module.get_state_dict">(compyute.nn.Module method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.Adam.get_state_dict.html#compyute.nn.optimizers.Adam.get_state_dict">(compyute.nn.optimizers.Adam method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.AdamW.get_state_dict.html#compyute.nn.optimizers.AdamW.get_state_dict">(compyute.nn.optimizers.AdamW method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.NAdam.get_state_dict.html#compyute.nn.optimizers.NAdam.get_state_dict">(compyute.nn.optimizers.NAdam method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.Optimizer.get_state_dict.html#compyute.nn.optimizers.Optimizer.get_state_dict">(compyute.nn.optimizers.Optimizer method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.SGD.get_state_dict.html#compyute.nn.optimizers.SGD.get_state_dict">(compyute.nn.optimizers.SGD method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelAdd.get_state_dict.html#compyute.nn.ParallelAdd.get_state_dict">(compyute.nn.ParallelAdd method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelConcat.get_state_dict.html#compyute.nn.ParallelConcat.get_state_dict">(compyute.nn.ParallelConcat method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Recurrent.get_state_dict.html#compyute.nn.Recurrent.get_state_dict">(compyute.nn.Recurrent method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ReLU.get_state_dict.html#compyute.nn.ReLU.get_state_dict">(compyute.nn.ReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Reshape.get_state_dict.html#compyute.nn.Reshape.get_state_dict">(compyute.nn.Reshape method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ResidualConnection.get_state_dict.html#compyute.nn.ResidualConnection.get_state_dict">(compyute.nn.ResidualConnection method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.RMSNorm.get_state_dict.html#compyute.nn.RMSNorm.get_state_dict">(compyute.nn.RMSNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sequential.get_state_dict.html#compyute.nn.Sequential.get_state_dict">(compyute.nn.Sequential method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sigmoid.get_state_dict.html#compyute.nn.Sigmoid.get_state_dict">(compyute.nn.Sigmoid method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.SiLU.get_state_dict.html#compyute.nn.SiLU.get_state_dict">(compyute.nn.SiLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Slice.get_state_dict.html#compyute.nn.Slice.get_state_dict">(compyute.nn.Slice method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Softmax.get_state_dict.html#compyute.nn.Softmax.get_state_dict">(compyute.nn.Softmax method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Tanh.get_state_dict.html#compyute.nn.Tanh.get_state_dict">(compyute.nn.Tanh method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Upsample2D.get_state_dict.html#compyute.nn.Upsample2D.get_state_dict">(compyute.nn.Upsample2D method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.backend/compyute.backend.gpu_available.html#compyute.backend.gpu_available">gpu_available() (in module compyute.backend)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.GRU.html#compyute.nn.GRU">GRU (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.gru.html#compyute.nn.functional.gru">gru() (in module compyute.nn.functional)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="H">H</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute/compyute.histogram.html#compyute.histogram">histogram() (in module compyute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.History.html#compyute.nn.trainer.callbacks.History">History (class in compyute.nn.trainer.callbacks)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn/compyute.nn.Identity.html#compyute.nn.Identity">Identity (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.identity.html#compyute.identity">identity() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.ifft1d.html#compyute.ifft1d">ifft1d() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.ifft2d.html#compyute.ifft2d">ifft2d() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.imag.html#compyute.nn.Buffer.imag">imag() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.imag.html#compyute.nn.Parameter.imag">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.imag.html#compyute.Tensor.imag">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.ModuleList.index.html#compyute.nn.ModuleList.index">index() (compyute.nn.ModuleList method)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.AvgPooling2D.inference.html#compyute.nn.AvgPooling2D.inference">inference() (compyute.nn.AvgPooling2D method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm1D.inference.html#compyute.nn.BatchNorm1D.inference">(compyute.nn.BatchNorm1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm2D.inference.html#compyute.nn.BatchNorm2D.inference">(compyute.nn.BatchNorm2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1D.inference.html#compyute.nn.Conv1D.inference">(compyute.nn.Conv1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.inference.html#compyute.nn.Conv1DBlock.inference">(compyute.nn.Conv1DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2D.inference.html#compyute.nn.Conv2D.inference">(compyute.nn.Conv2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.inference.html#compyute.nn.Conv2DBlock.inference">(compyute.nn.Conv2DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose1D.inference.html#compyute.nn.ConvTranspose1D.inference">(compyute.nn.ConvTranspose1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose2D.inference.html#compyute.nn.ConvTranspose2D.inference">(compyute.nn.ConvTranspose2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.inference.html#compyute.nn.DenseBlock.inference">(compyute.nn.DenseBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Dropout.inference.html#compyute.nn.Dropout.inference">(compyute.nn.Dropout method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Embedding.inference.html#compyute.nn.Embedding.inference">(compyute.nn.Embedding method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FastGELU.inference.html#compyute.nn.FastGELU.inference">(compyute.nn.FastGELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Flatten.inference.html#compyute.nn.Flatten.inference">(compyute.nn.Flatten method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GELU.inference.html#compyute.nn.GELU.inference">(compyute.nn.GELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GRU.inference.html#compyute.nn.GRU.inference">(compyute.nn.GRU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Identity.inference.html#compyute.nn.Identity.inference">(compyute.nn.Identity method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LayerNorm.inference.html#compyute.nn.LayerNorm.inference">(compyute.nn.LayerNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LeakyReLU.inference.html#compyute.nn.LeakyReLU.inference">(compyute.nn.LeakyReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Linear.inference.html#compyute.nn.Linear.inference">(compyute.nn.Linear method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LSTM.inference.html#compyute.nn.LSTM.inference">(compyute.nn.LSTM method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MaxPooling2D.inference.html#compyute.nn.MaxPooling2D.inference">(compyute.nn.MaxPooling2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Module.inference.html#compyute.nn.Module.inference">(compyute.nn.Module method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelAdd.inference.html#compyute.nn.ParallelAdd.inference">(compyute.nn.ParallelAdd method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelConcat.inference.html#compyute.nn.ParallelConcat.inference">(compyute.nn.ParallelConcat method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Recurrent.inference.html#compyute.nn.Recurrent.inference">(compyute.nn.Recurrent method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ReLU.inference.html#compyute.nn.ReLU.inference">(compyute.nn.ReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Reshape.inference.html#compyute.nn.Reshape.inference">(compyute.nn.Reshape method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ResidualConnection.inference.html#compyute.nn.ResidualConnection.inference">(compyute.nn.ResidualConnection method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.RMSNorm.inference.html#compyute.nn.RMSNorm.inference">(compyute.nn.RMSNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sequential.inference.html#compyute.nn.Sequential.inference">(compyute.nn.Sequential method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sigmoid.inference.html#compyute.nn.Sigmoid.inference">(compyute.nn.Sigmoid method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.SiLU.inference.html#compyute.nn.SiLU.inference">(compyute.nn.SiLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Slice.inference.html#compyute.nn.Slice.inference">(compyute.nn.Slice method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Softmax.inference.html#compyute.nn.Softmax.inference">(compyute.nn.Softmax method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Tanh.inference.html#compyute.nn.Tanh.inference">(compyute.nn.Tanh method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Upsample2D.inference.html#compyute.nn.Upsample2D.inference">(compyute.nn.Upsample2D method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn.utils.initializers/compyute.nn.utils.initializers.init_kaiming_normal.html#compyute.nn.utils.initializers.init_kaiming_normal">init_kaiming_normal() (in module compyute.nn.utils.initializers)</a>
+</li>
+      <li><a href="_generated/compyute.nn.utils.initializers/compyute.nn.utils.initializers.init_kaiming_uniform.html#compyute.nn.utils.initializers.init_kaiming_uniform">init_kaiming_uniform() (in module compyute.nn.utils.initializers)</a>
+</li>
+      <li><a href="_generated/compyute.nn.utils.initializers/compyute.nn.utils.initializers.init_normal.html#compyute.nn.utils.initializers.init_normal">init_normal() (in module compyute.nn.utils.initializers)</a>
+</li>
+      <li><a href="_generated/compyute.nn.utils.initializers/compyute.nn.utils.initializers.init_ones.html#compyute.nn.utils.initializers.init_ones">init_ones() (in module compyute.nn.utils.initializers)</a>
+</li>
+      <li><a href="_generated/compyute.nn.utils.initializers/compyute.nn.utils.initializers.init_uniform.html#compyute.nn.utils.initializers.init_uniform">init_uniform() (in module compyute.nn.utils.initializers)</a>
+</li>
+      <li><a href="_generated/compyute.nn.utils.initializers/compyute.nn.utils.initializers.init_xavier_normal.html#compyute.nn.utils.initializers.init_xavier_normal">init_xavier_normal() (in module compyute.nn.utils.initializers)</a>
+</li>
+      <li><a href="_generated/compyute.nn.utils.initializers/compyute.nn.utils.initializers.init_xavier_uniform.html#compyute.nn.utils.initializers.init_xavier_uniform">init_xavier_uniform() (in module compyute.nn.utils.initializers)</a>
+</li>
+      <li><a href="_generated/compyute.nn.utils.initializers/compyute.nn.utils.initializers.init_zeros.html#compyute.nn.utils.initializers.init_zeros">init_zeros() (in module compyute.nn.utils.initializers)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.inner.html#compyute.inner">inner() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.ModuleList.insert.html#compyute.nn.ModuleList.insert">insert() (compyute.nn.ModuleList method)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.insert_dim.html#compyute.insert_dim">insert_dim() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.int16.html#compyute.int16">int16 (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.int32.html#compyute.int32">int32 (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.int64.html#compyute.int64">int64 (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.int8.html#compyute.int8">int8 (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.is_nan.html#compyute.is_nan">is_nan() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.item.html#compyute.nn.Buffer.item">item() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.item.html#compyute.nn.Parameter.item">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.item.html#compyute.Tensor.item">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.ito_device.html#compyute.nn.Buffer.ito_device">ito_device() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.ito_device.html#compyute.nn.Parameter.ito_device">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.ito_device.html#compyute.Tensor.ito_device">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.ito_type.html#compyute.nn.Buffer.ito_type">ito_type() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.ito_type.html#compyute.nn.Parameter.ito_type">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.ito_type.html#compyute.Tensor.ito_type">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="L">L</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn/compyute.nn.LayerNorm.html#compyute.nn.LayerNorm">LayerNorm (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.layernorm.html#compyute.nn.functional.layernorm">layernorm() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.leaky_relu.html#compyute.nn.functional.leaky_relu">leaky_relu() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.LeakyReLU.html#compyute.nn.LeakyReLU">LeakyReLU (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Linear.html#compyute.nn.Linear">Linear (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.linear.html#compyute.nn.functional.linear">linear() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.linspace.html#compyute.linspace">linspace() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.load.html#compyute.load">load() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.AvgPooling2D.load_state_dict.html#compyute.nn.AvgPooling2D.load_state_dict">load_state_dict() (compyute.nn.AvgPooling2D method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm1D.load_state_dict.html#compyute.nn.BatchNorm1D.load_state_dict">(compyute.nn.BatchNorm1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm2D.load_state_dict.html#compyute.nn.BatchNorm2D.load_state_dict">(compyute.nn.BatchNorm2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1D.load_state_dict.html#compyute.nn.Conv1D.load_state_dict">(compyute.nn.Conv1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.load_state_dict.html#compyute.nn.Conv1DBlock.load_state_dict">(compyute.nn.Conv1DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2D.load_state_dict.html#compyute.nn.Conv2D.load_state_dict">(compyute.nn.Conv2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.load_state_dict.html#compyute.nn.Conv2DBlock.load_state_dict">(compyute.nn.Conv2DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose1D.load_state_dict.html#compyute.nn.ConvTranspose1D.load_state_dict">(compyute.nn.ConvTranspose1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose2D.load_state_dict.html#compyute.nn.ConvTranspose2D.load_state_dict">(compyute.nn.ConvTranspose2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.load_state_dict.html#compyute.nn.DenseBlock.load_state_dict">(compyute.nn.DenseBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Dropout.load_state_dict.html#compyute.nn.Dropout.load_state_dict">(compyute.nn.Dropout method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Embedding.load_state_dict.html#compyute.nn.Embedding.load_state_dict">(compyute.nn.Embedding method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FastGELU.load_state_dict.html#compyute.nn.FastGELU.load_state_dict">(compyute.nn.FastGELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Flatten.load_state_dict.html#compyute.nn.Flatten.load_state_dict">(compyute.nn.Flatten method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GELU.load_state_dict.html#compyute.nn.GELU.load_state_dict">(compyute.nn.GELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GRU.load_state_dict.html#compyute.nn.GRU.load_state_dict">(compyute.nn.GRU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Identity.load_state_dict.html#compyute.nn.Identity.load_state_dict">(compyute.nn.Identity method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LayerNorm.load_state_dict.html#compyute.nn.LayerNorm.load_state_dict">(compyute.nn.LayerNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LeakyReLU.load_state_dict.html#compyute.nn.LeakyReLU.load_state_dict">(compyute.nn.LeakyReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Linear.load_state_dict.html#compyute.nn.Linear.load_state_dict">(compyute.nn.Linear method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LSTM.load_state_dict.html#compyute.nn.LSTM.load_state_dict">(compyute.nn.LSTM method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MaxPooling2D.load_state_dict.html#compyute.nn.MaxPooling2D.load_state_dict">(compyute.nn.MaxPooling2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Module.load_state_dict.html#compyute.nn.Module.load_state_dict">(compyute.nn.Module method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.Adam.load_state_dict.html#compyute.nn.optimizers.Adam.load_state_dict">(compyute.nn.optimizers.Adam method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.AdamW.load_state_dict.html#compyute.nn.optimizers.AdamW.load_state_dict">(compyute.nn.optimizers.AdamW method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.NAdam.load_state_dict.html#compyute.nn.optimizers.NAdam.load_state_dict">(compyute.nn.optimizers.NAdam method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.Optimizer.load_state_dict.html#compyute.nn.optimizers.Optimizer.load_state_dict">(compyute.nn.optimizers.Optimizer method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.SGD.load_state_dict.html#compyute.nn.optimizers.SGD.load_state_dict">(compyute.nn.optimizers.SGD method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelAdd.load_state_dict.html#compyute.nn.ParallelAdd.load_state_dict">(compyute.nn.ParallelAdd method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelConcat.load_state_dict.html#compyute.nn.ParallelConcat.load_state_dict">(compyute.nn.ParallelConcat method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Recurrent.load_state_dict.html#compyute.nn.Recurrent.load_state_dict">(compyute.nn.Recurrent method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ReLU.load_state_dict.html#compyute.nn.ReLU.load_state_dict">(compyute.nn.ReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Reshape.load_state_dict.html#compyute.nn.Reshape.load_state_dict">(compyute.nn.Reshape method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ResidualConnection.load_state_dict.html#compyute.nn.ResidualConnection.load_state_dict">(compyute.nn.ResidualConnection method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.RMSNorm.load_state_dict.html#compyute.nn.RMSNorm.load_state_dict">(compyute.nn.RMSNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sequential.load_state_dict.html#compyute.nn.Sequential.load_state_dict">(compyute.nn.Sequential method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sigmoid.load_state_dict.html#compyute.nn.Sigmoid.load_state_dict">(compyute.nn.Sigmoid method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.SiLU.load_state_dict.html#compyute.nn.SiLU.load_state_dict">(compyute.nn.SiLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Slice.load_state_dict.html#compyute.nn.Slice.load_state_dict">(compyute.nn.Slice method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Softmax.load_state_dict.html#compyute.nn.Softmax.load_state_dict">(compyute.nn.Softmax method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Tanh.load_state_dict.html#compyute.nn.Tanh.load_state_dict">(compyute.nn.Tanh method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Upsample2D.load_state_dict.html#compyute.nn.Upsample2D.load_state_dict">(compyute.nn.Upsample2D method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute/compyute.log.html#compyute.log">log() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.log10.html#compyute.log10">log10() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.log2.html#compyute.log2">log2() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Loss.html#compyute.nn.Loss">Loss (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.LrScheduler.html#compyute.nn.utils.lr_schedulers.LrScheduler">LrScheduler (class in compyute.nn.utils.lr_schedulers)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.LSTM.html#compyute.nn.LSTM">LSTM (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.lstm.html#compyute.nn.functional.lstm">lstm() (in module compyute.nn.functional)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.max.html#compyute.nn.Buffer.max">max() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.max.html#compyute.nn.Parameter.max">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.max.html#compyute.Tensor.max">(compyute.Tensor method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.max.html#compyute.max">(in module compyute)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute/compyute.maximum.html#compyute.maximum">maximum() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.MaxPooling2D.html#compyute.nn.MaxPooling2D">MaxPooling2D (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.maxpooling2d.html#compyute.nn.functional.maxpooling2d">maxpooling2d() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.mean.html#compyute.nn.Buffer.mean">mean() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.mean.html#compyute.nn.Parameter.mean">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.mean.html#compyute.Tensor.mean">(compyute.Tensor method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.mean.html#compyute.mean">(in module compyute)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Metric.html#compyute.nn.Metric">Metric (class in compyute.nn)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.min.html#compyute.nn.Buffer.min">min() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.min.html#compyute.nn.Parameter.min">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.min.html#compyute.Tensor.min">(compyute.Tensor method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.min.html#compyute.min">(in module compyute)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute/compyute.minimum.html#compyute.minimum">minimum() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Module.html#compyute.nn.Module">Module (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.ModuleList.html#compyute.nn.ModuleList">ModuleList (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.movedim.html#compyute.movedim">movedim() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.mse_loss.html#compyute.nn.functional.mse_loss">mse_loss() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.MSELoss.html#compyute.nn.MSELoss">MSELoss (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.random/compyute.random.multinomial.html#compyute.random.multinomial">multinomial() (in module compyute.random)</a>
+</li>
+      <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.MultistepLrScheduler.html#compyute.nn.trainer.callbacks.MultistepLrScheduler">MultistepLrScheduler (class in compyute.nn.trainer.callbacks)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.MultistepLrScheduler.html#compyute.nn.utils.lr_schedulers.MultistepLrScheduler">(class in compyute.nn.utils.lr_schedulers)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="N">N</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.NAdam.html#compyute.nn.optimizers.NAdam">NAdam (class in compyute.nn.optimizers)</a>
+</li>
+      <li><a href="reference/compyute.html#compyute.newaxis">newaxis (in module compyute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute/compyute.norm.html#compyute.norm">norm() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.random/compyute.random.normal.html#compyute.random.normal">normal() (in module compyute.random)</a>
+</li>
+      <li><a href="_generated/compyute.preprocessing/compyute.preprocessing.normalize.html#compyute.preprocessing.normalize">normalize() (in module compyute.preprocessing)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="O">O</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.AdaptiveLrScheduler.on_epoch_end.html#compyute.nn.trainer.callbacks.AdaptiveLrScheduler.on_epoch_end">on_epoch_end() (compyute.nn.trainer.callbacks.AdaptiveLrScheduler method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.Callback.on_epoch_end.html#compyute.nn.trainer.callbacks.Callback.on_epoch_end">(compyute.nn.trainer.callbacks.Callback method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.CosineLrScheduler.on_epoch_end.html#compyute.nn.trainer.callbacks.CosineLrScheduler.on_epoch_end">(compyute.nn.trainer.callbacks.CosineLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.EarlyStopping.on_epoch_end.html#compyute.nn.trainer.callbacks.EarlyStopping.on_epoch_end">(compyute.nn.trainer.callbacks.EarlyStopping method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.ExponentialLrScheduler.on_epoch_end.html#compyute.nn.trainer.callbacks.ExponentialLrScheduler.on_epoch_end">(compyute.nn.trainer.callbacks.ExponentialLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.History.on_epoch_end.html#compyute.nn.trainer.callbacks.History.on_epoch_end">(compyute.nn.trainer.callbacks.History method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.MultistepLrScheduler.on_epoch_end.html#compyute.nn.trainer.callbacks.MultistepLrScheduler.on_epoch_end">(compyute.nn.trainer.callbacks.MultistepLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.ProgressBar.on_epoch_end.html#compyute.nn.trainer.callbacks.ProgressBar.on_epoch_end">(compyute.nn.trainer.callbacks.ProgressBar method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.StepLrScheduler.on_epoch_end.html#compyute.nn.trainer.callbacks.StepLrScheduler.on_epoch_end">(compyute.nn.trainer.callbacks.StepLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.Tensorboard.on_epoch_end.html#compyute.nn.trainer.callbacks.Tensorboard.on_epoch_end">(compyute.nn.trainer.callbacks.Tensorboard method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.AdaptiveLrScheduler.on_epoch_start.html#compyute.nn.trainer.callbacks.AdaptiveLrScheduler.on_epoch_start">on_epoch_start() (compyute.nn.trainer.callbacks.AdaptiveLrScheduler method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.Callback.on_epoch_start.html#compyute.nn.trainer.callbacks.Callback.on_epoch_start">(compyute.nn.trainer.callbacks.Callback method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.CosineLrScheduler.on_epoch_start.html#compyute.nn.trainer.callbacks.CosineLrScheduler.on_epoch_start">(compyute.nn.trainer.callbacks.CosineLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.EarlyStopping.on_epoch_start.html#compyute.nn.trainer.callbacks.EarlyStopping.on_epoch_start">(compyute.nn.trainer.callbacks.EarlyStopping method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.ExponentialLrScheduler.on_epoch_start.html#compyute.nn.trainer.callbacks.ExponentialLrScheduler.on_epoch_start">(compyute.nn.trainer.callbacks.ExponentialLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.History.on_epoch_start.html#compyute.nn.trainer.callbacks.History.on_epoch_start">(compyute.nn.trainer.callbacks.History method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.MultistepLrScheduler.on_epoch_start.html#compyute.nn.trainer.callbacks.MultistepLrScheduler.on_epoch_start">(compyute.nn.trainer.callbacks.MultistepLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.ProgressBar.on_epoch_start.html#compyute.nn.trainer.callbacks.ProgressBar.on_epoch_start">(compyute.nn.trainer.callbacks.ProgressBar method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.StepLrScheduler.on_epoch_start.html#compyute.nn.trainer.callbacks.StepLrScheduler.on_epoch_start">(compyute.nn.trainer.callbacks.StepLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.Tensorboard.on_epoch_start.html#compyute.nn.trainer.callbacks.Tensorboard.on_epoch_start">(compyute.nn.trainer.callbacks.Tensorboard method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.AdaptiveLrScheduler.on_run_end.html#compyute.nn.trainer.callbacks.AdaptiveLrScheduler.on_run_end">on_run_end() (compyute.nn.trainer.callbacks.AdaptiveLrScheduler method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.Callback.on_run_end.html#compyute.nn.trainer.callbacks.Callback.on_run_end">(compyute.nn.trainer.callbacks.Callback method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.CosineLrScheduler.on_run_end.html#compyute.nn.trainer.callbacks.CosineLrScheduler.on_run_end">(compyute.nn.trainer.callbacks.CosineLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.EarlyStopping.on_run_end.html#compyute.nn.trainer.callbacks.EarlyStopping.on_run_end">(compyute.nn.trainer.callbacks.EarlyStopping method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.ExponentialLrScheduler.on_run_end.html#compyute.nn.trainer.callbacks.ExponentialLrScheduler.on_run_end">(compyute.nn.trainer.callbacks.ExponentialLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.History.on_run_end.html#compyute.nn.trainer.callbacks.History.on_run_end">(compyute.nn.trainer.callbacks.History method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.MultistepLrScheduler.on_run_end.html#compyute.nn.trainer.callbacks.MultistepLrScheduler.on_run_end">(compyute.nn.trainer.callbacks.MultistepLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.ProgressBar.on_run_end.html#compyute.nn.trainer.callbacks.ProgressBar.on_run_end">(compyute.nn.trainer.callbacks.ProgressBar method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.StepLrScheduler.on_run_end.html#compyute.nn.trainer.callbacks.StepLrScheduler.on_run_end">(compyute.nn.trainer.callbacks.StepLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.Tensorboard.on_run_end.html#compyute.nn.trainer.callbacks.Tensorboard.on_run_end">(compyute.nn.trainer.callbacks.Tensorboard method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.AdaptiveLrScheduler.on_run_start.html#compyute.nn.trainer.callbacks.AdaptiveLrScheduler.on_run_start">on_run_start() (compyute.nn.trainer.callbacks.AdaptiveLrScheduler method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.Callback.on_run_start.html#compyute.nn.trainer.callbacks.Callback.on_run_start">(compyute.nn.trainer.callbacks.Callback method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.CosineLrScheduler.on_run_start.html#compyute.nn.trainer.callbacks.CosineLrScheduler.on_run_start">(compyute.nn.trainer.callbacks.CosineLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.EarlyStopping.on_run_start.html#compyute.nn.trainer.callbacks.EarlyStopping.on_run_start">(compyute.nn.trainer.callbacks.EarlyStopping method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.ExponentialLrScheduler.on_run_start.html#compyute.nn.trainer.callbacks.ExponentialLrScheduler.on_run_start">(compyute.nn.trainer.callbacks.ExponentialLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.History.on_run_start.html#compyute.nn.trainer.callbacks.History.on_run_start">(compyute.nn.trainer.callbacks.History method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.MultistepLrScheduler.on_run_start.html#compyute.nn.trainer.callbacks.MultistepLrScheduler.on_run_start">(compyute.nn.trainer.callbacks.MultistepLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.ProgressBar.on_run_start.html#compyute.nn.trainer.callbacks.ProgressBar.on_run_start">(compyute.nn.trainer.callbacks.ProgressBar method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.StepLrScheduler.on_run_start.html#compyute.nn.trainer.callbacks.StepLrScheduler.on_run_start">(compyute.nn.trainer.callbacks.StepLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.Tensorboard.on_run_start.html#compyute.nn.trainer.callbacks.Tensorboard.on_run_start">(compyute.nn.trainer.callbacks.Tensorboard method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.AdaptiveLrScheduler.on_step_end.html#compyute.nn.trainer.callbacks.AdaptiveLrScheduler.on_step_end">on_step_end() (compyute.nn.trainer.callbacks.AdaptiveLrScheduler method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.Callback.on_step_end.html#compyute.nn.trainer.callbacks.Callback.on_step_end">(compyute.nn.trainer.callbacks.Callback method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.CosineLrScheduler.on_step_end.html#compyute.nn.trainer.callbacks.CosineLrScheduler.on_step_end">(compyute.nn.trainer.callbacks.CosineLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.EarlyStopping.on_step_end.html#compyute.nn.trainer.callbacks.EarlyStopping.on_step_end">(compyute.nn.trainer.callbacks.EarlyStopping method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.ExponentialLrScheduler.on_step_end.html#compyute.nn.trainer.callbacks.ExponentialLrScheduler.on_step_end">(compyute.nn.trainer.callbacks.ExponentialLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.History.on_step_end.html#compyute.nn.trainer.callbacks.History.on_step_end">(compyute.nn.trainer.callbacks.History method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.MultistepLrScheduler.on_step_end.html#compyute.nn.trainer.callbacks.MultistepLrScheduler.on_step_end">(compyute.nn.trainer.callbacks.MultistepLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.ProgressBar.on_step_end.html#compyute.nn.trainer.callbacks.ProgressBar.on_step_end">(compyute.nn.trainer.callbacks.ProgressBar method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.StepLrScheduler.on_step_end.html#compyute.nn.trainer.callbacks.StepLrScheduler.on_step_end">(compyute.nn.trainer.callbacks.StepLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.Tensorboard.on_step_end.html#compyute.nn.trainer.callbacks.Tensorboard.on_step_end">(compyute.nn.trainer.callbacks.Tensorboard method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.AdaptiveLrScheduler.on_step_start.html#compyute.nn.trainer.callbacks.AdaptiveLrScheduler.on_step_start">on_step_start() (compyute.nn.trainer.callbacks.AdaptiveLrScheduler method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.Callback.on_step_start.html#compyute.nn.trainer.callbacks.Callback.on_step_start">(compyute.nn.trainer.callbacks.Callback method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.CosineLrScheduler.on_step_start.html#compyute.nn.trainer.callbacks.CosineLrScheduler.on_step_start">(compyute.nn.trainer.callbacks.CosineLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.EarlyStopping.on_step_start.html#compyute.nn.trainer.callbacks.EarlyStopping.on_step_start">(compyute.nn.trainer.callbacks.EarlyStopping method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.ExponentialLrScheduler.on_step_start.html#compyute.nn.trainer.callbacks.ExponentialLrScheduler.on_step_start">(compyute.nn.trainer.callbacks.ExponentialLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.History.on_step_start.html#compyute.nn.trainer.callbacks.History.on_step_start">(compyute.nn.trainer.callbacks.History method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.MultistepLrScheduler.on_step_start.html#compyute.nn.trainer.callbacks.MultistepLrScheduler.on_step_start">(compyute.nn.trainer.callbacks.MultistepLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.ProgressBar.on_step_start.html#compyute.nn.trainer.callbacks.ProgressBar.on_step_start">(compyute.nn.trainer.callbacks.ProgressBar method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.StepLrScheduler.on_step_start.html#compyute.nn.trainer.callbacks.StepLrScheduler.on_step_start">(compyute.nn.trainer.callbacks.StepLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.Tensorboard.on_step_start.html#compyute.nn.trainer.callbacks.Tensorboard.on_step_start">(compyute.nn.trainer.callbacks.Tensorboard method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.preprocessing/compyute.preprocessing.one_hot_encode.html#compyute.preprocessing.one_hot_encode">one_hot_encode() (in module compyute.preprocessing)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.ones.html#compyute.ones">ones() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.ones_like.html#compyute.ones_like">ones_like() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.Optimizer.html#compyute.nn.optimizers.Optimizer">Optimizer (class in compyute.nn.optimizers)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.outer.html#compyute.outer">outer() (in module compyute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="P">P</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute/compyute.pad.html#compyute.pad">pad() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.pad1d.html#compyute.nn.functional.pad1d">pad1d() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.pad2d.html#compyute.nn.functional.pad2d">pad2d() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.pad_to_shape.html#compyute.pad_to_shape">pad_to_shape() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.ParallelAdd.html#compyute.nn.ParallelAdd">ParallelAdd (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.ParallelConcat.html#compyute.nn.ParallelConcat">ParallelConcat (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Parameter.html#compyute.nn.Parameter">Parameter (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.random/compyute.random.permutation.html#compyute.random.permutation">permutation() (in module compyute.random)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.permute.html#compyute.nn.Buffer.permute">permute() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.permute.html#compyute.nn.Parameter.permute">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.permute.html#compyute.Tensor.permute">(compyute.Tensor method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.permute.html#compyute.permute">(in module compyute)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute/compyute.pooling1d.html#compyute.pooling1d">pooling1d() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.pooling2d.html#compyute.pooling2d">pooling2d() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.ModuleList.pop.html#compyute.nn.ModuleList.pop">pop() (compyute.nn.ModuleList method)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.prod.html#compyute.prod">prod() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.ProgressBar.html#compyute.nn.trainer.callbacks.ProgressBar">ProgressBar (class in compyute.nn.trainer.callbacks)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn/compyute.nn.R2.html#compyute.nn.R2">R2 (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.r2_score.html#compyute.nn.functional.r2_score">r2_score() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.random/compyute.random.random.html#compyute.random.random">random() (in module compyute.random)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.real.html#compyute.nn.Buffer.real">real() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.real.html#compyute.nn.Parameter.real">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.real.html#compyute.Tensor.real">(compyute.Tensor method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.real.html#compyute.real">(in module compyute)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Recurrent.html#compyute.nn.Recurrent">Recurrent (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.recurrent.html#compyute.nn.functional.recurrent">recurrent() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.AvgPooling2D.register_backward.html#compyute.nn.AvgPooling2D.register_backward">register_backward() (compyute.nn.AvgPooling2D static method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm1D.register_backward.html#compyute.nn.BatchNorm1D.register_backward">(compyute.nn.BatchNorm1D static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm2D.register_backward.html#compyute.nn.BatchNorm2D.register_backward">(compyute.nn.BatchNorm2D static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BCELoss.register_backward.html#compyute.nn.BCELoss.register_backward">(compyute.nn.BCELoss static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1D.register_backward.html#compyute.nn.Conv1D.register_backward">(compyute.nn.Conv1D static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.register_backward.html#compyute.nn.Conv1DBlock.register_backward">(compyute.nn.Conv1DBlock static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2D.register_backward.html#compyute.nn.Conv2D.register_backward">(compyute.nn.Conv2D static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.register_backward.html#compyute.nn.Conv2DBlock.register_backward">(compyute.nn.Conv2DBlock static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose1D.register_backward.html#compyute.nn.ConvTranspose1D.register_backward">(compyute.nn.ConvTranspose1D static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose2D.register_backward.html#compyute.nn.ConvTranspose2D.register_backward">(compyute.nn.ConvTranspose2D static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.CrossEntropyLoss.register_backward.html#compyute.nn.CrossEntropyLoss.register_backward">(compyute.nn.CrossEntropyLoss static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.register_backward.html#compyute.nn.DenseBlock.register_backward">(compyute.nn.DenseBlock static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DiceLoss.register_backward.html#compyute.nn.DiceLoss.register_backward">(compyute.nn.DiceLoss static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Dropout.register_backward.html#compyute.nn.Dropout.register_backward">(compyute.nn.Dropout static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Embedding.register_backward.html#compyute.nn.Embedding.register_backward">(compyute.nn.Embedding static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FastGELU.register_backward.html#compyute.nn.FastGELU.register_backward">(compyute.nn.FastGELU static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Flatten.register_backward.html#compyute.nn.Flatten.register_backward">(compyute.nn.Flatten static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GELU.register_backward.html#compyute.nn.GELU.register_backward">(compyute.nn.GELU static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GRU.register_backward.html#compyute.nn.GRU.register_backward">(compyute.nn.GRU static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Identity.register_backward.html#compyute.nn.Identity.register_backward">(compyute.nn.Identity static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LayerNorm.register_backward.html#compyute.nn.LayerNorm.register_backward">(compyute.nn.LayerNorm static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LeakyReLU.register_backward.html#compyute.nn.LeakyReLU.register_backward">(compyute.nn.LeakyReLU static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Linear.register_backward.html#compyute.nn.Linear.register_backward">(compyute.nn.Linear static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Loss.register_backward.html#compyute.nn.Loss.register_backward">(compyute.nn.Loss static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LSTM.register_backward.html#compyute.nn.LSTM.register_backward">(compyute.nn.LSTM static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MaxPooling2D.register_backward.html#compyute.nn.MaxPooling2D.register_backward">(compyute.nn.MaxPooling2D static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Module.register_backward.html#compyute.nn.Module.register_backward">(compyute.nn.Module static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MSELoss.register_backward.html#compyute.nn.MSELoss.register_backward">(compyute.nn.MSELoss static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelAdd.register_backward.html#compyute.nn.ParallelAdd.register_backward">(compyute.nn.ParallelAdd static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelConcat.register_backward.html#compyute.nn.ParallelConcat.register_backward">(compyute.nn.ParallelConcat static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Recurrent.register_backward.html#compyute.nn.Recurrent.register_backward">(compyute.nn.Recurrent static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ReLU.register_backward.html#compyute.nn.ReLU.register_backward">(compyute.nn.ReLU static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Reshape.register_backward.html#compyute.nn.Reshape.register_backward">(compyute.nn.Reshape static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ResidualConnection.register_backward.html#compyute.nn.ResidualConnection.register_backward">(compyute.nn.ResidualConnection static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.RMSNorm.register_backward.html#compyute.nn.RMSNorm.register_backward">(compyute.nn.RMSNorm static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sequential.register_backward.html#compyute.nn.Sequential.register_backward">(compyute.nn.Sequential static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sigmoid.register_backward.html#compyute.nn.Sigmoid.register_backward">(compyute.nn.Sigmoid static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.SiLU.register_backward.html#compyute.nn.SiLU.register_backward">(compyute.nn.SiLU static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Slice.register_backward.html#compyute.nn.Slice.register_backward">(compyute.nn.Slice static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Softmax.register_backward.html#compyute.nn.Softmax.register_backward">(compyute.nn.Softmax static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Tanh.register_backward.html#compyute.nn.Tanh.register_backward">(compyute.nn.Tanh static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Upsample2D.register_backward.html#compyute.nn.Upsample2D.register_backward">(compyute.nn.Upsample2D static method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.AvgPooling2D.register_forward.html#compyute.nn.AvgPooling2D.register_forward">register_forward() (compyute.nn.AvgPooling2D static method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm1D.register_forward.html#compyute.nn.BatchNorm1D.register_forward">(compyute.nn.BatchNorm1D static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm2D.register_forward.html#compyute.nn.BatchNorm2D.register_forward">(compyute.nn.BatchNorm2D static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BCELoss.register_forward.html#compyute.nn.BCELoss.register_forward">(compyute.nn.BCELoss static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1D.register_forward.html#compyute.nn.Conv1D.register_forward">(compyute.nn.Conv1D static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.register_forward.html#compyute.nn.Conv1DBlock.register_forward">(compyute.nn.Conv1DBlock static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2D.register_forward.html#compyute.nn.Conv2D.register_forward">(compyute.nn.Conv2D static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.register_forward.html#compyute.nn.Conv2DBlock.register_forward">(compyute.nn.Conv2DBlock static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose1D.register_forward.html#compyute.nn.ConvTranspose1D.register_forward">(compyute.nn.ConvTranspose1D static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose2D.register_forward.html#compyute.nn.ConvTranspose2D.register_forward">(compyute.nn.ConvTranspose2D static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.CrossEntropyLoss.register_forward.html#compyute.nn.CrossEntropyLoss.register_forward">(compyute.nn.CrossEntropyLoss static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.register_forward.html#compyute.nn.DenseBlock.register_forward">(compyute.nn.DenseBlock static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DiceLoss.register_forward.html#compyute.nn.DiceLoss.register_forward">(compyute.nn.DiceLoss static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Dropout.register_forward.html#compyute.nn.Dropout.register_forward">(compyute.nn.Dropout static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Embedding.register_forward.html#compyute.nn.Embedding.register_forward">(compyute.nn.Embedding static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FastGELU.register_forward.html#compyute.nn.FastGELU.register_forward">(compyute.nn.FastGELU static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Flatten.register_forward.html#compyute.nn.Flatten.register_forward">(compyute.nn.Flatten static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GELU.register_forward.html#compyute.nn.GELU.register_forward">(compyute.nn.GELU static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GRU.register_forward.html#compyute.nn.GRU.register_forward">(compyute.nn.GRU static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Identity.register_forward.html#compyute.nn.Identity.register_forward">(compyute.nn.Identity static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LayerNorm.register_forward.html#compyute.nn.LayerNorm.register_forward">(compyute.nn.LayerNorm static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LeakyReLU.register_forward.html#compyute.nn.LeakyReLU.register_forward">(compyute.nn.LeakyReLU static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Linear.register_forward.html#compyute.nn.Linear.register_forward">(compyute.nn.Linear static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Loss.register_forward.html#compyute.nn.Loss.register_forward">(compyute.nn.Loss static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LSTM.register_forward.html#compyute.nn.LSTM.register_forward">(compyute.nn.LSTM static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MaxPooling2D.register_forward.html#compyute.nn.MaxPooling2D.register_forward">(compyute.nn.MaxPooling2D static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Module.register_forward.html#compyute.nn.Module.register_forward">(compyute.nn.Module static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MSELoss.register_forward.html#compyute.nn.MSELoss.register_forward">(compyute.nn.MSELoss static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelAdd.register_forward.html#compyute.nn.ParallelAdd.register_forward">(compyute.nn.ParallelAdd static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelConcat.register_forward.html#compyute.nn.ParallelConcat.register_forward">(compyute.nn.ParallelConcat static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Recurrent.register_forward.html#compyute.nn.Recurrent.register_forward">(compyute.nn.Recurrent static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ReLU.register_forward.html#compyute.nn.ReLU.register_forward">(compyute.nn.ReLU static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Reshape.register_forward.html#compyute.nn.Reshape.register_forward">(compyute.nn.Reshape static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ResidualConnection.register_forward.html#compyute.nn.ResidualConnection.register_forward">(compyute.nn.ResidualConnection static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.RMSNorm.register_forward.html#compyute.nn.RMSNorm.register_forward">(compyute.nn.RMSNorm static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sequential.register_forward.html#compyute.nn.Sequential.register_forward">(compyute.nn.Sequential static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sigmoid.register_forward.html#compyute.nn.Sigmoid.register_forward">(compyute.nn.Sigmoid static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.SiLU.register_forward.html#compyute.nn.SiLU.register_forward">(compyute.nn.SiLU static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Slice.register_forward.html#compyute.nn.Slice.register_forward">(compyute.nn.Slice static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Softmax.register_forward.html#compyute.nn.Softmax.register_forward">(compyute.nn.Softmax static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Tanh.register_forward.html#compyute.nn.Tanh.register_forward">(compyute.nn.Tanh static method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Upsample2D.register_forward.html#compyute.nn.Upsample2D.register_forward">(compyute.nn.Upsample2D static method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn/compyute.nn.ReLU.html#compyute.nn.ReLU">ReLU (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.relu.html#compyute.nn.functional.relu">relu() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.ModuleList.remove.html#compyute.nn.ModuleList.remove">remove() (compyute.nn.ModuleList method)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.repeat1d.html#compyute.repeat1d">repeat1d() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.repeat2d.html#compyute.repeat2d">repeat2d() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.Adam.reset_grads.html#compyute.nn.optimizers.Adam.reset_grads">reset_grads() (compyute.nn.optimizers.Adam method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.AdamW.reset_grads.html#compyute.nn.optimizers.AdamW.reset_grads">(compyute.nn.optimizers.AdamW method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.NAdam.reset_grads.html#compyute.nn.optimizers.NAdam.reset_grads">(compyute.nn.optimizers.NAdam method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.Optimizer.reset_grads.html#compyute.nn.optimizers.Optimizer.reset_grads">(compyute.nn.optimizers.Optimizer method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.SGD.reset_grads.html#compyute.nn.optimizers.SGD.reset_grads">(compyute.nn.optimizers.SGD method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Reshape.html#compyute.nn.Reshape">Reshape (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.reshape.html#compyute.reshape">reshape() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.ResidualConnection.html#compyute.nn.ResidualConnection">ResidualConnection (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.ModuleList.reverse.html#compyute.nn.ModuleList.reverse">reverse() (compyute.nn.ModuleList method)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.RMSNorm.html#compyute.nn.RMSNorm">RMSNorm (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.rmsnorm.html#compyute.nn.functional.rmsnorm">rmsnorm() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.round.html#compyute.round">round() (in module compyute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute/compyute.save.html#compyute.save">save() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.sech.html#compyute.sech">sech() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Sequential.html#compyute.nn.Sequential">Sequential (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.set_debug_mode.html#compyute.set_debug_mode">set_debug_mode() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.set_default_device.html#compyute.set_default_device">set_default_device() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.set_default_dtype.html#compyute.set_default_dtype">set_default_dtype() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.Adam.set_parameters.html#compyute.nn.optimizers.Adam.set_parameters">set_parameters() (compyute.nn.optimizers.Adam method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.AdamW.set_parameters.html#compyute.nn.optimizers.AdamW.set_parameters">(compyute.nn.optimizers.AdamW method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.NAdam.set_parameters.html#compyute.nn.optimizers.NAdam.set_parameters">(compyute.nn.optimizers.NAdam method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.Optimizer.set_parameters.html#compyute.nn.optimizers.Optimizer.set_parameters">(compyute.nn.optimizers.Optimizer method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.SGD.set_parameters.html#compyute.nn.optimizers.SGD.set_parameters">(compyute.nn.optimizers.SGD method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.random/compyute.random.set_seed.html#compyute.random.set_seed">set_seed() (in module compyute.random)</a>
+</li>
+      <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.SGD.html#compyute.nn.optimizers.SGD">SGD (class in compyute.nn.optimizers)</a>
+</li>
+      <li><a href="_generated/compyute.random/compyute.random.shuffle.html#compyute.random.shuffle">shuffle() (in module compyute.random)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Sigmoid.html#compyute.nn.Sigmoid">Sigmoid (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.sigmoid.html#compyute.nn.functional.sigmoid">sigmoid() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.SiLU.html#compyute.nn.SiLU">SiLU (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.silu.html#compyute.nn.functional.silu">silu() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.sin.html#compyute.sin">sin() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.sinh.html#compyute.sinh">sinh() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Slice.html#compyute.nn.Slice">Slice (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Softmax.html#compyute.nn.Softmax">Softmax (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.softmax.html#compyute.nn.functional.softmax">softmax() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.ModuleList.sort.html#compyute.nn.ModuleList.sort">sort() (compyute.nn.ModuleList method)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.split.html#compyute.split">split() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.preprocessing/compyute.preprocessing.split_train_val_test.html#compyute.preprocessing.split_train_val_test">split_train_val_test() (in module compyute.preprocessing)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.sqrt.html#compyute.sqrt">sqrt() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.squeeze.html#compyute.nn.Buffer.squeeze">squeeze() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.squeeze.html#compyute.nn.Parameter.squeeze">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.squeeze.html#compyute.Tensor.squeeze">(compyute.Tensor method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.squeeze.html#compyute.squeeze">(in module compyute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute/compyute.stack.html#compyute.stack">stack() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.preprocessing/compyute.preprocessing.standardize.html#compyute.preprocessing.standardize">standardize() (in module compyute.preprocessing)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.std.html#compyute.nn.Buffer.std">std() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.std.html#compyute.nn.Parameter.std">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.std.html#compyute.Tensor.std">(compyute.Tensor method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.std.html#compyute.std">(in module compyute)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.Adam.step.html#compyute.nn.optimizers.Adam.step">step() (compyute.nn.optimizers.Adam method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.AdamW.step.html#compyute.nn.optimizers.AdamW.step">(compyute.nn.optimizers.AdamW method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.NAdam.step.html#compyute.nn.optimizers.NAdam.step">(compyute.nn.optimizers.NAdam method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.Optimizer.step.html#compyute.nn.optimizers.Optimizer.step">(compyute.nn.optimizers.Optimizer method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.optimizers/compyute.nn.optimizers.SGD.step.html#compyute.nn.optimizers.SGD.step">(compyute.nn.optimizers.SGD method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.AdaptiveLrScheduler.step.html#compyute.nn.utils.lr_schedulers.AdaptiveLrScheduler.step">(compyute.nn.utils.lr_schedulers.AdaptiveLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.CosineLrScheduler.step.html#compyute.nn.utils.lr_schedulers.CosineLrScheduler.step">(compyute.nn.utils.lr_schedulers.CosineLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.ExponentialLrScheduler.step.html#compyute.nn.utils.lr_schedulers.ExponentialLrScheduler.step">(compyute.nn.utils.lr_schedulers.ExponentialLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.LrScheduler.step.html#compyute.nn.utils.lr_schedulers.LrScheduler.step">(compyute.nn.utils.lr_schedulers.LrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.MultistepLrScheduler.step.html#compyute.nn.utils.lr_schedulers.MultistepLrScheduler.step">(compyute.nn.utils.lr_schedulers.MultistepLrScheduler method)</a>
+</li>
+        <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.StepLrScheduler.step.html#compyute.nn.utils.lr_schedulers.StepLrScheduler.step">(compyute.nn.utils.lr_schedulers.StepLrScheduler method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.StepLrScheduler.html#compyute.nn.trainer.callbacks.StepLrScheduler">StepLrScheduler (class in compyute.nn.trainer.callbacks)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn.utils.lr_schedulers/compyute.nn.utils.lr_schedulers.StepLrScheduler.html#compyute.nn.utils.lr_schedulers.StepLrScheduler">(class in compyute.nn.utils.lr_schedulers)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.sum.html#compyute.nn.Buffer.sum">sum() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.sum.html#compyute.nn.Parameter.sum">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.sum.html#compyute.Tensor.sum">(compyute.Tensor method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.sum.html#compyute.sum">(in module compyute)</a>
+</li>
+      </ul></li>
+      <li><a href="reference/compyute.nn.utils.tensorboard.html#compyute.nn.utils.tensorboard.SummaryWriter">SummaryWriter (class in compyute.nn.utils.tensorboard)</a>
+</li>
+      <li><a href="_generated/compyute.backend/compyute.backend.synchronize.html#compyute.backend.synchronize">synchronize() (in module compyute.backend)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute/compyute.tan.html#compyute.tan">tan() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Tanh.html#compyute.nn.Tanh">Tanh (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.tanh.html#compyute.tanh">tanh() (in module compyute)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.tanh.html#compyute.nn.functional.tanh">(in module compyute.nn.functional)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute/compyute.Tensor.html#compyute.Tensor">Tensor (class in compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.tensor.html#compyute.tensor">tensor() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn.trainer.callbacks/compyute.nn.trainer.callbacks.Tensorboard.html#compyute.nn.trainer.callbacks.Tensorboard">Tensorboard (class in compyute.nn.trainer.callbacks)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.tensorprod.html#compyute.tensorprod">tensorprod() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.tensorsum.html#compyute.tensorsum">tensorsum() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.tile.html#compyute.tile">tile() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.to_complex.html#compyute.nn.Buffer.to_complex">to_complex() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.to_complex.html#compyute.nn.Parameter.to_complex">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.to_complex.html#compyute.Tensor.to_complex">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.to_contiguous.html#compyute.nn.Buffer.to_contiguous">to_contiguous() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.to_contiguous.html#compyute.nn.Parameter.to_contiguous">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.to_contiguous.html#compyute.Tensor.to_contiguous">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.to_cpu.html#compyute.nn.Buffer.to_cpu">to_cpu() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.to_cpu.html#compyute.nn.Parameter.to_cpu">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.to_cpu.html#compyute.Tensor.to_cpu">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.to_cuda.html#compyute.nn.Buffer.to_cuda">to_cuda() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.to_cuda.html#compyute.nn.Parameter.to_cuda">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.to_cuda.html#compyute.Tensor.to_cuda">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.AvgPooling2D.to_device.html#compyute.nn.AvgPooling2D.to_device">to_device() (compyute.nn.AvgPooling2D method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm1D.to_device.html#compyute.nn.BatchNorm1D.to_device">(compyute.nn.BatchNorm1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm2D.to_device.html#compyute.nn.BatchNorm2D.to_device">(compyute.nn.BatchNorm2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Buffer.to_device.html#compyute.nn.Buffer.to_device">(compyute.nn.Buffer method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1D.to_device.html#compyute.nn.Conv1D.to_device">(compyute.nn.Conv1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.to_device.html#compyute.nn.Conv1DBlock.to_device">(compyute.nn.Conv1DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2D.to_device.html#compyute.nn.Conv2D.to_device">(compyute.nn.Conv2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.to_device.html#compyute.nn.Conv2DBlock.to_device">(compyute.nn.Conv2DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose1D.to_device.html#compyute.nn.ConvTranspose1D.to_device">(compyute.nn.ConvTranspose1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose2D.to_device.html#compyute.nn.ConvTranspose2D.to_device">(compyute.nn.ConvTranspose2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.to_device.html#compyute.nn.DenseBlock.to_device">(compyute.nn.DenseBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Dropout.to_device.html#compyute.nn.Dropout.to_device">(compyute.nn.Dropout method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Embedding.to_device.html#compyute.nn.Embedding.to_device">(compyute.nn.Embedding method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FastGELU.to_device.html#compyute.nn.FastGELU.to_device">(compyute.nn.FastGELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Flatten.to_device.html#compyute.nn.Flatten.to_device">(compyute.nn.Flatten method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GELU.to_device.html#compyute.nn.GELU.to_device">(compyute.nn.GELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GRU.to_device.html#compyute.nn.GRU.to_device">(compyute.nn.GRU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Identity.to_device.html#compyute.nn.Identity.to_device">(compyute.nn.Identity method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LayerNorm.to_device.html#compyute.nn.LayerNorm.to_device">(compyute.nn.LayerNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LeakyReLU.to_device.html#compyute.nn.LeakyReLU.to_device">(compyute.nn.LeakyReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Linear.to_device.html#compyute.nn.Linear.to_device">(compyute.nn.Linear method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LSTM.to_device.html#compyute.nn.LSTM.to_device">(compyute.nn.LSTM method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MaxPooling2D.to_device.html#compyute.nn.MaxPooling2D.to_device">(compyute.nn.MaxPooling2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Module.to_device.html#compyute.nn.Module.to_device">(compyute.nn.Module method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelAdd.to_device.html#compyute.nn.ParallelAdd.to_device">(compyute.nn.ParallelAdd method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelConcat.to_device.html#compyute.nn.ParallelConcat.to_device">(compyute.nn.ParallelConcat method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.to_device.html#compyute.nn.Parameter.to_device">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Recurrent.to_device.html#compyute.nn.Recurrent.to_device">(compyute.nn.Recurrent method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ReLU.to_device.html#compyute.nn.ReLU.to_device">(compyute.nn.ReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Reshape.to_device.html#compyute.nn.Reshape.to_device">(compyute.nn.Reshape method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ResidualConnection.to_device.html#compyute.nn.ResidualConnection.to_device">(compyute.nn.ResidualConnection method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.RMSNorm.to_device.html#compyute.nn.RMSNorm.to_device">(compyute.nn.RMSNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sequential.to_device.html#compyute.nn.Sequential.to_device">(compyute.nn.Sequential method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sigmoid.to_device.html#compyute.nn.Sigmoid.to_device">(compyute.nn.Sigmoid method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.SiLU.to_device.html#compyute.nn.SiLU.to_device">(compyute.nn.SiLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Slice.to_device.html#compyute.nn.Slice.to_device">(compyute.nn.Slice method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Softmax.to_device.html#compyute.nn.Softmax.to_device">(compyute.nn.Softmax method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Tanh.to_device.html#compyute.nn.Tanh.to_device">(compyute.nn.Tanh method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Upsample2D.to_device.html#compyute.nn.Upsample2D.to_device">(compyute.nn.Upsample2D method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.to_device.html#compyute.Tensor.to_device">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.to_double.html#compyute.nn.Buffer.to_double">to_double() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.to_double.html#compyute.nn.Parameter.to_double">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.to_double.html#compyute.Tensor.to_double">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.to_float.html#compyute.nn.Buffer.to_float">to_float() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.to_float.html#compyute.nn.Parameter.to_float">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.to_float.html#compyute.Tensor.to_float">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.to_half.html#compyute.nn.Buffer.to_half">to_half() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.to_half.html#compyute.nn.Parameter.to_half">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.to_half.html#compyute.Tensor.to_half">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.to_int.html#compyute.nn.Buffer.to_int">to_int() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.to_int.html#compyute.nn.Parameter.to_int">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.to_int.html#compyute.Tensor.to_int">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.to_list.html#compyute.nn.Buffer.to_list">to_list() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.to_list.html#compyute.nn.Parameter.to_list">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.to_list.html#compyute.Tensor.to_list">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.to_long.html#compyute.nn.Buffer.to_long">to_long() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.to_long.html#compyute.nn.Parameter.to_long">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.to_long.html#compyute.Tensor.to_long">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.to_numpy.html#compyute.nn.Buffer.to_numpy">to_numpy() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.to_numpy.html#compyute.nn.Parameter.to_numpy">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.to_numpy.html#compyute.Tensor.to_numpy">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.AvgPooling2D.to_type.html#compyute.nn.AvgPooling2D.to_type">to_type() (compyute.nn.AvgPooling2D method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm1D.to_type.html#compyute.nn.BatchNorm1D.to_type">(compyute.nn.BatchNorm1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm2D.to_type.html#compyute.nn.BatchNorm2D.to_type">(compyute.nn.BatchNorm2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Buffer.to_type.html#compyute.nn.Buffer.to_type">(compyute.nn.Buffer method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1D.to_type.html#compyute.nn.Conv1D.to_type">(compyute.nn.Conv1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.to_type.html#compyute.nn.Conv1DBlock.to_type">(compyute.nn.Conv1DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2D.to_type.html#compyute.nn.Conv2D.to_type">(compyute.nn.Conv2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.to_type.html#compyute.nn.Conv2DBlock.to_type">(compyute.nn.Conv2DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose1D.to_type.html#compyute.nn.ConvTranspose1D.to_type">(compyute.nn.ConvTranspose1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose2D.to_type.html#compyute.nn.ConvTranspose2D.to_type">(compyute.nn.ConvTranspose2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.to_type.html#compyute.nn.DenseBlock.to_type">(compyute.nn.DenseBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Dropout.to_type.html#compyute.nn.Dropout.to_type">(compyute.nn.Dropout method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Embedding.to_type.html#compyute.nn.Embedding.to_type">(compyute.nn.Embedding method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FastGELU.to_type.html#compyute.nn.FastGELU.to_type">(compyute.nn.FastGELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Flatten.to_type.html#compyute.nn.Flatten.to_type">(compyute.nn.Flatten method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GELU.to_type.html#compyute.nn.GELU.to_type">(compyute.nn.GELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GRU.to_type.html#compyute.nn.GRU.to_type">(compyute.nn.GRU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Identity.to_type.html#compyute.nn.Identity.to_type">(compyute.nn.Identity method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LayerNorm.to_type.html#compyute.nn.LayerNorm.to_type">(compyute.nn.LayerNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LeakyReLU.to_type.html#compyute.nn.LeakyReLU.to_type">(compyute.nn.LeakyReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Linear.to_type.html#compyute.nn.Linear.to_type">(compyute.nn.Linear method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LSTM.to_type.html#compyute.nn.LSTM.to_type">(compyute.nn.LSTM method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MaxPooling2D.to_type.html#compyute.nn.MaxPooling2D.to_type">(compyute.nn.MaxPooling2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Module.to_type.html#compyute.nn.Module.to_type">(compyute.nn.Module method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelAdd.to_type.html#compyute.nn.ParallelAdd.to_type">(compyute.nn.ParallelAdd method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelConcat.to_type.html#compyute.nn.ParallelConcat.to_type">(compyute.nn.ParallelConcat method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.to_type.html#compyute.nn.Parameter.to_type">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Recurrent.to_type.html#compyute.nn.Recurrent.to_type">(compyute.nn.Recurrent method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ReLU.to_type.html#compyute.nn.ReLU.to_type">(compyute.nn.ReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Reshape.to_type.html#compyute.nn.Reshape.to_type">(compyute.nn.Reshape method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ResidualConnection.to_type.html#compyute.nn.ResidualConnection.to_type">(compyute.nn.ResidualConnection method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.RMSNorm.to_type.html#compyute.nn.RMSNorm.to_type">(compyute.nn.RMSNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sequential.to_type.html#compyute.nn.Sequential.to_type">(compyute.nn.Sequential method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sigmoid.to_type.html#compyute.nn.Sigmoid.to_type">(compyute.nn.Sigmoid method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.SiLU.to_type.html#compyute.nn.SiLU.to_type">(compyute.nn.SiLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Slice.to_type.html#compyute.nn.Slice.to_type">(compyute.nn.Slice method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Softmax.to_type.html#compyute.nn.Softmax.to_type">(compyute.nn.Softmax method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Tanh.to_type.html#compyute.nn.Tanh.to_type">(compyute.nn.Tanh method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Upsample2D.to_type.html#compyute.nn.Upsample2D.to_type">(compyute.nn.Upsample2D method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.to_type.html#compyute.Tensor.to_type">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn.trainer/compyute.nn.trainer.Trainer.train.html#compyute.nn.trainer.Trainer.train">train() (compyute.nn.trainer.Trainer method)</a>
+</li>
+      <li><a href="_generated/compyute.nn.trainer/compyute.nn.trainer.Trainer.html#compyute.nn.trainer.Trainer">Trainer (class in compyute.nn.trainer)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.AvgPooling2D.training.html#compyute.nn.AvgPooling2D.training">training() (compyute.nn.AvgPooling2D method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm1D.training.html#compyute.nn.BatchNorm1D.training">(compyute.nn.BatchNorm1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm2D.training.html#compyute.nn.BatchNorm2D.training">(compyute.nn.BatchNorm2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1D.training.html#compyute.nn.Conv1D.training">(compyute.nn.Conv1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.training.html#compyute.nn.Conv1DBlock.training">(compyute.nn.Conv1DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2D.training.html#compyute.nn.Conv2D.training">(compyute.nn.Conv2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.training.html#compyute.nn.Conv2DBlock.training">(compyute.nn.Conv2DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose1D.training.html#compyute.nn.ConvTranspose1D.training">(compyute.nn.ConvTranspose1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose2D.training.html#compyute.nn.ConvTranspose2D.training">(compyute.nn.ConvTranspose2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.training.html#compyute.nn.DenseBlock.training">(compyute.nn.DenseBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Dropout.training.html#compyute.nn.Dropout.training">(compyute.nn.Dropout method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Embedding.training.html#compyute.nn.Embedding.training">(compyute.nn.Embedding method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FastGELU.training.html#compyute.nn.FastGELU.training">(compyute.nn.FastGELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Flatten.training.html#compyute.nn.Flatten.training">(compyute.nn.Flatten method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GELU.training.html#compyute.nn.GELU.training">(compyute.nn.GELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GRU.training.html#compyute.nn.GRU.training">(compyute.nn.GRU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Identity.training.html#compyute.nn.Identity.training">(compyute.nn.Identity method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LayerNorm.training.html#compyute.nn.LayerNorm.training">(compyute.nn.LayerNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LeakyReLU.training.html#compyute.nn.LeakyReLU.training">(compyute.nn.LeakyReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Linear.training.html#compyute.nn.Linear.training">(compyute.nn.Linear method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LSTM.training.html#compyute.nn.LSTM.training">(compyute.nn.LSTM method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MaxPooling2D.training.html#compyute.nn.MaxPooling2D.training">(compyute.nn.MaxPooling2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Module.training.html#compyute.nn.Module.training">(compyute.nn.Module method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelAdd.training.html#compyute.nn.ParallelAdd.training">(compyute.nn.ParallelAdd method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelConcat.training.html#compyute.nn.ParallelConcat.training">(compyute.nn.ParallelConcat method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Recurrent.training.html#compyute.nn.Recurrent.training">(compyute.nn.Recurrent method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ReLU.training.html#compyute.nn.ReLU.training">(compyute.nn.ReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Reshape.training.html#compyute.nn.Reshape.training">(compyute.nn.Reshape method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ResidualConnection.training.html#compyute.nn.ResidualConnection.training">(compyute.nn.ResidualConnection method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.RMSNorm.training.html#compyute.nn.RMSNorm.training">(compyute.nn.RMSNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sequential.training.html#compyute.nn.Sequential.training">(compyute.nn.Sequential method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sigmoid.training.html#compyute.nn.Sigmoid.training">(compyute.nn.Sigmoid method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.SiLU.training.html#compyute.nn.SiLU.training">(compyute.nn.SiLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Slice.training.html#compyute.nn.Slice.training">(compyute.nn.Slice method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Softmax.training.html#compyute.nn.Softmax.training">(compyute.nn.Softmax method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Tanh.training.html#compyute.nn.Tanh.training">(compyute.nn.Tanh method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Upsample2D.training.html#compyute.nn.Upsample2D.training">(compyute.nn.Upsample2D method)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.transpose.html#compyute.nn.Buffer.transpose">transpose() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.transpose.html#compyute.nn.Parameter.transpose">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.transpose.html#compyute.Tensor.transpose">(compyute.Tensor method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.transpose.html#compyute.transpose">(in module compyute)</a>
+</li>
+      </ul></li>
+      <li><a href="_generated/compyute/compyute.tril.html#compyute.tril">tril() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.triu.html#compyute.triu">triu() (in module compyute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="U">U</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.random/compyute.random.uniform.html#compyute.random.uniform">uniform() (in module compyute.random)</a>
+</li>
+      <li><a href="_generated/compyute.random/compyute.random.uniform_int.html#compyute.random.uniform_int">uniform_int() (in module compyute.random)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.unique.html#compyute.unique">unique() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute.nn/compyute.nn.AvgPooling2D.update_parameter_grad.html#compyute.nn.AvgPooling2D.update_parameter_grad">update_parameter_grad() (compyute.nn.AvgPooling2D method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm1D.update_parameter_grad.html#compyute.nn.BatchNorm1D.update_parameter_grad">(compyute.nn.BatchNorm1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.BatchNorm2D.update_parameter_grad.html#compyute.nn.BatchNorm2D.update_parameter_grad">(compyute.nn.BatchNorm2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1D.update_parameter_grad.html#compyute.nn.Conv1D.update_parameter_grad">(compyute.nn.Conv1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv1DBlock.update_parameter_grad.html#compyute.nn.Conv1DBlock.update_parameter_grad">(compyute.nn.Conv1DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2D.update_parameter_grad.html#compyute.nn.Conv2D.update_parameter_grad">(compyute.nn.Conv2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Conv2DBlock.update_parameter_grad.html#compyute.nn.Conv2DBlock.update_parameter_grad">(compyute.nn.Conv2DBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose1D.update_parameter_grad.html#compyute.nn.ConvTranspose1D.update_parameter_grad">(compyute.nn.ConvTranspose1D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ConvTranspose2D.update_parameter_grad.html#compyute.nn.ConvTranspose2D.update_parameter_grad">(compyute.nn.ConvTranspose2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.DenseBlock.update_parameter_grad.html#compyute.nn.DenseBlock.update_parameter_grad">(compyute.nn.DenseBlock method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Dropout.update_parameter_grad.html#compyute.nn.Dropout.update_parameter_grad">(compyute.nn.Dropout method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Embedding.update_parameter_grad.html#compyute.nn.Embedding.update_parameter_grad">(compyute.nn.Embedding method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.FastGELU.update_parameter_grad.html#compyute.nn.FastGELU.update_parameter_grad">(compyute.nn.FastGELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Flatten.update_parameter_grad.html#compyute.nn.Flatten.update_parameter_grad">(compyute.nn.Flatten method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GELU.update_parameter_grad.html#compyute.nn.GELU.update_parameter_grad">(compyute.nn.GELU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.GRU.update_parameter_grad.html#compyute.nn.GRU.update_parameter_grad">(compyute.nn.GRU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Identity.update_parameter_grad.html#compyute.nn.Identity.update_parameter_grad">(compyute.nn.Identity method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LayerNorm.update_parameter_grad.html#compyute.nn.LayerNorm.update_parameter_grad">(compyute.nn.LayerNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LeakyReLU.update_parameter_grad.html#compyute.nn.LeakyReLU.update_parameter_grad">(compyute.nn.LeakyReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Linear.update_parameter_grad.html#compyute.nn.Linear.update_parameter_grad">(compyute.nn.Linear method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.LSTM.update_parameter_grad.html#compyute.nn.LSTM.update_parameter_grad">(compyute.nn.LSTM method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.MaxPooling2D.update_parameter_grad.html#compyute.nn.MaxPooling2D.update_parameter_grad">(compyute.nn.MaxPooling2D method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Module.update_parameter_grad.html#compyute.nn.Module.update_parameter_grad">(compyute.nn.Module method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelAdd.update_parameter_grad.html#compyute.nn.ParallelAdd.update_parameter_grad">(compyute.nn.ParallelAdd method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ParallelConcat.update_parameter_grad.html#compyute.nn.ParallelConcat.update_parameter_grad">(compyute.nn.ParallelConcat method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Recurrent.update_parameter_grad.html#compyute.nn.Recurrent.update_parameter_grad">(compyute.nn.Recurrent method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ReLU.update_parameter_grad.html#compyute.nn.ReLU.update_parameter_grad">(compyute.nn.ReLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Reshape.update_parameter_grad.html#compyute.nn.Reshape.update_parameter_grad">(compyute.nn.Reshape method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.ResidualConnection.update_parameter_grad.html#compyute.nn.ResidualConnection.update_parameter_grad">(compyute.nn.ResidualConnection method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.RMSNorm.update_parameter_grad.html#compyute.nn.RMSNorm.update_parameter_grad">(compyute.nn.RMSNorm method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sequential.update_parameter_grad.html#compyute.nn.Sequential.update_parameter_grad">(compyute.nn.Sequential method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Sigmoid.update_parameter_grad.html#compyute.nn.Sigmoid.update_parameter_grad">(compyute.nn.Sigmoid method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.SiLU.update_parameter_grad.html#compyute.nn.SiLU.update_parameter_grad">(compyute.nn.SiLU method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Slice.update_parameter_grad.html#compyute.nn.Slice.update_parameter_grad">(compyute.nn.Slice method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Softmax.update_parameter_grad.html#compyute.nn.Softmax.update_parameter_grad">(compyute.nn.Softmax method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Tanh.update_parameter_grad.html#compyute.nn.Tanh.update_parameter_grad">(compyute.nn.Tanh method)</a>
+</li>
+        <li><a href="_generated/compyute.nn/compyute.nn.Upsample2D.update_parameter_grad.html#compyute.nn.Upsample2D.update_parameter_grad">(compyute.nn.Upsample2D method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn/compyute.nn.Upsample2D.html#compyute.nn.Upsample2D">Upsample2D (class in compyute.nn)</a>
+</li>
+      <li><a href="_generated/compyute.nn.functional/compyute.nn.functional.upsample2d.html#compyute.nn.functional.upsample2d">upsample2d() (in module compyute.nn.functional)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.use_device.html#compyute.use_device">use_device() (in module compyute)</a>
+</li>
+      <li><a href="_generated/compyute/compyute.use_dtype.html#compyute.use_dtype">use_dtype() (in module compyute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="V">V</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.var.html#compyute.nn.Buffer.var">var() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.var.html#compyute.nn.Parameter.var">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.var.html#compyute.Tensor.var">(compyute.Tensor method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.var.html#compyute.var">(in module compyute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute.nn/compyute.nn.Buffer.view.html#compyute.nn.Buffer.view">view() (compyute.nn.Buffer method)</a>
+
+      <ul>
+        <li><a href="_generated/compyute.nn/compyute.nn.Parameter.view.html#compyute.nn.Parameter.view">(compyute.nn.Parameter method)</a>
+</li>
+        <li><a href="_generated/compyute/compyute.Tensor.view.html#compyute.Tensor.view">(compyute.Tensor method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="Z">Z</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute/compyute.zeros.html#compyute.zeros">zeros() (in module compyute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_generated/compyute/compyute.zeros_like.html#compyute.zeros_like">zeros_like() (in module compyute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2022-2024, Daniel Kofler.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

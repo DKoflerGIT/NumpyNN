@@ -1,0 +1,6 @@
+compyute.nn.Sequential.\_\_init\_\_
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sequential.__init__

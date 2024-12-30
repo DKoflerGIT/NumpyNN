@@ -1,0 +1,6 @@
+﻿compyute.random.multinomial
+===========================
+
+.. currentmodule:: compyute.random
+
+.. autofunction:: multinomial

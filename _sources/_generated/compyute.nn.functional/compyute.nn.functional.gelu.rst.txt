@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.gelu
+===========================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: gelu

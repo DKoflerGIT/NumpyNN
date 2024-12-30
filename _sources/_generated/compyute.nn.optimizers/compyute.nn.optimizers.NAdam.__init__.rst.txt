@@ -1,0 +1,6 @@
+compyute.nn.optimizers.NAdam.\_\_init\_\_
+=========================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: NAdam.__init__

@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.bce\_loss
+================================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: bce_loss

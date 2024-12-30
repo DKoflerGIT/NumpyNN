@@ -1,0 +1,6 @@
+compyute.nn.Flatten.get\_parameters
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Flatten.get_parameters

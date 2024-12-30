@@ -1,0 +1,6 @@
+compyute.nn.Sequential.backward
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sequential.backward

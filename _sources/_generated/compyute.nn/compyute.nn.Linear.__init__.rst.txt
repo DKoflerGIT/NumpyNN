@@ -1,0 +1,6 @@
+compyute.nn.Linear.\_\_init\_\_
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Linear.__init__

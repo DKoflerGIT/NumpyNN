@@ -1,0 +1,6 @@
+﻿compyute.preprocessing.one\_hot\_encode
+=======================================
+
+.. currentmodule:: compyute.preprocessing
+
+.. autofunction:: one_hot_encode

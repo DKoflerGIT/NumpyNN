@@ -1,0 +1,6 @@
+compyute.nn.Sequential.update\_parameter\_grad
+==============================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sequential.update_parameter_grad

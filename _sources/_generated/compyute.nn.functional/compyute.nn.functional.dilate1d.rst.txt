@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.dilate1d
+===============================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: dilate1d

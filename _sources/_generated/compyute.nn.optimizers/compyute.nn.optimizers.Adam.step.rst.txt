@@ -1,0 +1,6 @@
+compyute.nn.optimizers.Adam.step
+================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: Adam.step

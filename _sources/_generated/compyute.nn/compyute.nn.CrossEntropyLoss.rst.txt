@@ -1,0 +1,26 @@
+﻿compyute.nn.CrossEntropyLoss
+============================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: CrossEntropyLoss
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~CrossEntropyLoss.__init__
+        ~CrossEntropyLoss.backward
+        ~CrossEntropyLoss.forward
+        ~CrossEntropyLoss.register_backward
+        ~CrossEntropyLoss.register_forward
+    
+    
+
+
+    
+    
+    

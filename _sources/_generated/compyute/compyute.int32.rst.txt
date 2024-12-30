@@ -1,0 +1,6 @@
+﻿compyute.int32
+==============
+
+.. currentmodule:: compyute
+
+.. autodata:: int32

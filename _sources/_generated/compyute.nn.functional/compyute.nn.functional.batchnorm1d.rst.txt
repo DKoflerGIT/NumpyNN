@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.batchnorm1d
+==================================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: batchnorm1d

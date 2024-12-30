@@ -1,0 +1,6 @@
+compyute.nn.Conv1DBlock.add
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv1DBlock.add

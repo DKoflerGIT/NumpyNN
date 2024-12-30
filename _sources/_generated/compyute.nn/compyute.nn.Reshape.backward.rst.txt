@@ -1,0 +1,6 @@
+compyute.nn.Reshape.backward
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Reshape.backward

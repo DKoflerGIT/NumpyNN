@@ -1,0 +1,6 @@
+compyute.nn.Softmax.register\_forward
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Softmax.register_forward

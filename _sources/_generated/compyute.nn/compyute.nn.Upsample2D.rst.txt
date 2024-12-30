@@ -1,0 +1,48 @@
+﻿compyute.nn.Upsample2D
+======================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Upsample2D
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Upsample2D.__init__
+        ~Upsample2D.backward
+        ~Upsample2D.clean
+        ~Upsample2D.forward
+        ~Upsample2D.get_buffers
+        ~Upsample2D.get_modules
+        ~Upsample2D.get_parameters
+        ~Upsample2D.get_state_dict
+        ~Upsample2D.inference
+        ~Upsample2D.load_state_dict
+        ~Upsample2D.register_backward
+        ~Upsample2D.register_forward
+        ~Upsample2D.to_device
+        ~Upsample2D.to_type
+        ~Upsample2D.training
+        ~Upsample2D.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Upsample2D.device
+        ~Upsample2D.dtype
+        ~Upsample2D.is_training
+        ~Upsample2D.n_modules
+        ~Upsample2D.retain_values
+        ~Upsample2D.trainable
+    
+    

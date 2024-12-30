@@ -1,0 +1,6 @@
+compyute.nn.trainer.callbacks.CosineLrScheduler.on\_step\_end
+=============================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. automethod:: CosineLrScheduler.on_step_end

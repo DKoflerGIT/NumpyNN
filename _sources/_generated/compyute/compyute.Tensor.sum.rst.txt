@@ -1,0 +1,6 @@
+compyute.Tensor.sum
+===================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.sum

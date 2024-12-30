@@ -1,0 +1,6 @@
+compyute.nn.trainer.Trainer.evaluate\_model
+===========================================
+
+.. currentmodule:: compyute.nn.trainer
+
+.. automethod:: Trainer.evaluate_model

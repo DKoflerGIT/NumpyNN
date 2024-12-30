@@ -1,0 +1,6 @@
+compyute.nn.Recurrent.forward
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Recurrent.forward

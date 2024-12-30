@@ -1,0 +1,6 @@
+﻿compyute.dot
+============
+
+.. currentmodule:: compyute
+
+.. autofunction:: dot

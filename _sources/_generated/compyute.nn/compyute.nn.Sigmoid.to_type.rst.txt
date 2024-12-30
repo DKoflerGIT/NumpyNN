@@ -1,0 +1,6 @@
+compyute.nn.Sigmoid.to\_type
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sigmoid.to_type

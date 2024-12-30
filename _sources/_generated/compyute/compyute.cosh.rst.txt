@@ -1,0 +1,6 @@
+﻿compyute.cosh
+=============
+
+.. currentmodule:: compyute
+
+.. autofunction:: cosh

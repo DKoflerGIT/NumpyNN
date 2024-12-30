@@ -1,0 +1,6 @@
+compyute.nn.Sigmoid.load\_state\_dict
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sigmoid.load_state_dict

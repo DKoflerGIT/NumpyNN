@@ -1,0 +1,6 @@
+﻿compyute.random.normal
+======================
+
+.. currentmodule:: compyute.random
+
+.. autofunction:: normal

@@ -1,0 +1,6 @@
+compyute.nn.Loss.\_\_init\_\_
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Loss.__init__

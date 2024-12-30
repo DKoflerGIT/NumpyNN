@@ -1,0 +1,6 @@
+compyute.nn.DenseBlock.load\_state\_dict
+========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: DenseBlock.load_state_dict

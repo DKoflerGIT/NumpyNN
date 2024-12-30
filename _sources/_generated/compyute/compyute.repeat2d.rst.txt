@@ -1,0 +1,6 @@
+﻿compyute.repeat2d
+=================
+
+.. currentmodule:: compyute
+
+.. autofunction:: repeat2d

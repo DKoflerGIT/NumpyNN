@@ -1,0 +1,6 @@
+﻿compyute.random.shuffle
+=======================
+
+.. currentmodule:: compyute.random
+
+.. autofunction:: shuffle

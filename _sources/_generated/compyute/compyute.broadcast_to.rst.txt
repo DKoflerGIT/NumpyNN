@@ -1,0 +1,6 @@
+﻿compyute.broadcast\_to
+======================
+
+.. currentmodule:: compyute
+
+.. autofunction:: broadcast_to

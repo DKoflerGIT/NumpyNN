@@ -1,0 +1,6 @@
+﻿compyute.permute
+================
+
+.. currentmodule:: compyute
+
+.. autofunction:: permute

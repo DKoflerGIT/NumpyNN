@@ -1,0 +1,6 @@
+compyute.nn.Flatten.to\_type
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Flatten.to_type

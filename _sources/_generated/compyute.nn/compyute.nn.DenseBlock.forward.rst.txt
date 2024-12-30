@@ -1,0 +1,6 @@
+compyute.nn.DenseBlock.forward
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: DenseBlock.forward

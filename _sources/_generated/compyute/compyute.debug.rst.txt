@@ -1,0 +1,6 @@
+﻿compyute.debug
+==============
+
+.. currentmodule:: compyute
+
+.. autofunction:: debug

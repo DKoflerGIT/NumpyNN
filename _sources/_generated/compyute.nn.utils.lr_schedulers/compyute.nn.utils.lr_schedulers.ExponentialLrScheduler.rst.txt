@@ -1,0 +1,23 @@
+﻿compyute.nn.utils.lr\_schedulers.ExponentialLrScheduler
+=======================================================
+
+.. currentmodule:: compyute.nn.utils.lr_schedulers
+
+.. autoclass:: ExponentialLrScheduler
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~ExponentialLrScheduler.__init__
+        ~ExponentialLrScheduler.step
+    
+    
+
+
+    
+    
+    

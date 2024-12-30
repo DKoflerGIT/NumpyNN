@@ -1,0 +1,6 @@
+compyute.nn.Embedding.forward
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Embedding.forward

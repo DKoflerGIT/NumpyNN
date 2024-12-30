@@ -1,0 +1,6 @@
+compyute.nn.optimizers.SGD.get\_state\_dict
+===========================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: SGD.get_state_dict

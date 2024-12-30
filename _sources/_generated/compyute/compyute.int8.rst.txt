@@ -1,0 +1,6 @@
+﻿compyute.int8
+=============
+
+.. currentmodule:: compyute
+
+.. autodata:: int8

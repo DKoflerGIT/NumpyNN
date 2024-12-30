@@ -1,0 +1,48 @@
+﻿compyute.nn.BatchNorm1D
+=======================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: BatchNorm1D
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~BatchNorm1D.__init__
+        ~BatchNorm1D.backward
+        ~BatchNorm1D.clean
+        ~BatchNorm1D.forward
+        ~BatchNorm1D.get_buffers
+        ~BatchNorm1D.get_modules
+        ~BatchNorm1D.get_parameters
+        ~BatchNorm1D.get_state_dict
+        ~BatchNorm1D.inference
+        ~BatchNorm1D.load_state_dict
+        ~BatchNorm1D.register_backward
+        ~BatchNorm1D.register_forward
+        ~BatchNorm1D.to_device
+        ~BatchNorm1D.to_type
+        ~BatchNorm1D.training
+        ~BatchNorm1D.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~BatchNorm1D.device
+        ~BatchNorm1D.dtype
+        ~BatchNorm1D.is_training
+        ~BatchNorm1D.n_modules
+        ~BatchNorm1D.retain_values
+        ~BatchNorm1D.trainable
+    
+    

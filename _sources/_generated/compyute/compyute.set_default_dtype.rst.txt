@@ -1,0 +1,6 @@
+﻿compyute.set\_default\_dtype
+============================
+
+.. currentmodule:: compyute
+
+.. autofunction:: set_default_dtype

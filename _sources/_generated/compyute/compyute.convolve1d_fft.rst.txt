@@ -1,0 +1,6 @@
+﻿compyute.convolve1d\_fft
+========================
+
+.. currentmodule:: compyute
+
+.. autofunction:: convolve1d_fft

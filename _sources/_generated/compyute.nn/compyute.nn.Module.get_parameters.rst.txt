@@ -1,0 +1,6 @@
+compyute.nn.Module.get\_parameters
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Module.get_parameters

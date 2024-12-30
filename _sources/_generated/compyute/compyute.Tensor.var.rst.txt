@@ -1,0 +1,6 @@
+compyute.Tensor.var
+===================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.var

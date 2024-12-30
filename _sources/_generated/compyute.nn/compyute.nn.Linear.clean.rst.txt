@@ -1,0 +1,6 @@
+compyute.nn.Linear.clean
+========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Linear.clean

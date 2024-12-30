@@ -1,0 +1,6 @@
+﻿compyute.random.uniform\_int
+============================
+
+.. currentmodule:: compyute.random
+
+.. autofunction:: uniform_int

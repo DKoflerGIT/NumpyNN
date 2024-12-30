@@ -1,0 +1,6 @@
+compyute.nn.RMSNorm.to\_device
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: RMSNorm.to_device

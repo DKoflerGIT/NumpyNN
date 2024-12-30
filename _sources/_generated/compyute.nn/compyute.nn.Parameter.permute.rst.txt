@@ -1,0 +1,6 @@
+compyute.nn.Parameter.permute
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.permute

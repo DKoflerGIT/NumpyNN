@@ -1,0 +1,6 @@
+compyute.nn.ConvTranspose2D.inference
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ConvTranspose2D.inference

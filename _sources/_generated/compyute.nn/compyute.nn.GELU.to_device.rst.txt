@@ -1,0 +1,6 @@
+compyute.nn.GELU.to\_device
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GELU.to_device

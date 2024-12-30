@@ -1,0 +1,6 @@
+compyute.nn.Slice.backward
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Slice.backward

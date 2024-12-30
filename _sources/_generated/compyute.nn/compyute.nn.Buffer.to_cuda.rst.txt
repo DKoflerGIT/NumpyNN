@@ -1,0 +1,6 @@
+compyute.nn.Buffer.to\_cuda
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.to_cuda

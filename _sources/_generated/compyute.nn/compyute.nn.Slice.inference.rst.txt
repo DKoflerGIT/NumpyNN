@@ -1,0 +1,6 @@
+compyute.nn.Slice.inference
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Slice.inference

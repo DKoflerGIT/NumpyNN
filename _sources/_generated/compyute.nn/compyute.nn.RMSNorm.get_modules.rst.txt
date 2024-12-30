@@ -1,0 +1,6 @@
+compyute.nn.RMSNorm.get\_modules
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: RMSNorm.get_modules

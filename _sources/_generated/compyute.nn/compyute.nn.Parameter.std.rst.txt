@@ -1,0 +1,6 @@
+compyute.nn.Parameter.std
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.std

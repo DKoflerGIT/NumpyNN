@@ -1,0 +1,6 @@
+﻿compyute.tan
+============
+
+.. currentmodule:: compyute
+
+.. autofunction:: tan

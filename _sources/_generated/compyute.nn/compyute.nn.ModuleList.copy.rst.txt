@@ -1,0 +1,6 @@
+compyute.nn.ModuleList.copy
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ModuleList.copy

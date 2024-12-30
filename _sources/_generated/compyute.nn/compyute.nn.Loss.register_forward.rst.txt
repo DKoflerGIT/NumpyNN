@@ -1,0 +1,6 @@
+compyute.nn.Loss.register\_forward
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Loss.register_forward

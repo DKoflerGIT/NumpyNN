@@ -1,0 +1,6 @@
+compyute.nn.LayerNorm.get\_state\_dict
+======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LayerNorm.get_state_dict

@@ -1,0 +1,6 @@
+compyute.nn.Slice.forward
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Slice.forward

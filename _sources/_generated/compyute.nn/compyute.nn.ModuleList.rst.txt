@@ -1,0 +1,33 @@
+﻿compyute.nn.ModuleList
+======================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: ModuleList
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~ModuleList.__init__
+        ~ModuleList.append
+        ~ModuleList.clear
+        ~ModuleList.copy
+        ~ModuleList.count
+        ~ModuleList.extend
+        ~ModuleList.index
+        ~ModuleList.insert
+        ~ModuleList.pop
+        ~ModuleList.remove
+        ~ModuleList.reverse
+        ~ModuleList.sort
+    
+    
+
+
+    
+    
+    

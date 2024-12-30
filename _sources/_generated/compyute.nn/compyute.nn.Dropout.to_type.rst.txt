@@ -1,0 +1,6 @@
+compyute.nn.Dropout.to\_type
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Dropout.to_type

@@ -1,0 +1,6 @@
+compyute.nn.Reshape.get\_modules
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Reshape.get_modules

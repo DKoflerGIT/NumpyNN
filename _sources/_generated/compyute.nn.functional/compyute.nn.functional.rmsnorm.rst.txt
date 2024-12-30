@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.rmsnorm
+==============================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: rmsnorm

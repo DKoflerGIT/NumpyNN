@@ -1,0 +1,6 @@
+compyute.nn.Reshape.\_\_init\_\_
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Reshape.__init__

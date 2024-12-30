@@ -1,0 +1,6 @@
+compyute.Tensor.ito\_type
+=========================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.ito_type

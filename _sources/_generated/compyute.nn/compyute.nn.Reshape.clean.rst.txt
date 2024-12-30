@@ -1,0 +1,6 @@
+compyute.nn.Reshape.clean
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Reshape.clean

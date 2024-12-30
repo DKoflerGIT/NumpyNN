@@ -1,0 +1,6 @@
+compyute.Tensor.view
+====================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.view

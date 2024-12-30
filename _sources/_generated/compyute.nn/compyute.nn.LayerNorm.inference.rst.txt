@@ -1,0 +1,6 @@
+compyute.nn.LayerNorm.inference
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LayerNorm.inference

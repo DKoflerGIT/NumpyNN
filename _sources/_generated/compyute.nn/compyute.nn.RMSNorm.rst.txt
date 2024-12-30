@@ -1,0 +1,48 @@
+﻿compyute.nn.RMSNorm
+===================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: RMSNorm
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~RMSNorm.__init__
+        ~RMSNorm.backward
+        ~RMSNorm.clean
+        ~RMSNorm.forward
+        ~RMSNorm.get_buffers
+        ~RMSNorm.get_modules
+        ~RMSNorm.get_parameters
+        ~RMSNorm.get_state_dict
+        ~RMSNorm.inference
+        ~RMSNorm.load_state_dict
+        ~RMSNorm.register_backward
+        ~RMSNorm.register_forward
+        ~RMSNorm.to_device
+        ~RMSNorm.to_type
+        ~RMSNorm.training
+        ~RMSNorm.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~RMSNorm.device
+        ~RMSNorm.dtype
+        ~RMSNorm.is_training
+        ~RMSNorm.n_modules
+        ~RMSNorm.retain_values
+        ~RMSNorm.trainable
+    
+    

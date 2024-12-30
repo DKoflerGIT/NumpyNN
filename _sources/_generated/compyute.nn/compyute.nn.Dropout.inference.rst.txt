@@ -1,0 +1,6 @@
+compyute.nn.Dropout.inference
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Dropout.inference

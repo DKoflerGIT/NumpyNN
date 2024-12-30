@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.upsample2d
+=================================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: upsample2d

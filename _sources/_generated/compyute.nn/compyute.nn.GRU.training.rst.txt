@@ -1,0 +1,6 @@
+compyute.nn.GRU.training
+========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GRU.training

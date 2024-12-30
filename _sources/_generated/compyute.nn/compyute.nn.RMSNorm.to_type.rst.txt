@@ -1,0 +1,6 @@
+compyute.nn.RMSNorm.to\_type
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: RMSNorm.to_type

@@ -1,0 +1,6 @@
+compyute.nn.Reshape.inference
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Reshape.inference

@@ -1,0 +1,6 @@
+compyute.nn.Sigmoid.get\_buffers
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sigmoid.get_buffers

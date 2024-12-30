@@ -1,0 +1,6 @@
+compyute.nn.Parameter.copy
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.copy

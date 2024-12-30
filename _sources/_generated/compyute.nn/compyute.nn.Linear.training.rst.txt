@@ -1,0 +1,6 @@
+compyute.nn.Linear.training
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Linear.training

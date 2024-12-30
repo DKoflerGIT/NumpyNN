@@ -1,0 +1,6 @@
+compyute.nn.ParallelAdd.load\_state\_dict
+=========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelAdd.load_state_dict

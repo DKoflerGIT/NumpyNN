@@ -1,0 +1,6 @@
+compyute.nn.Module.register\_forward
+====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Module.register_forward

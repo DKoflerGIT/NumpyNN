@@ -1,0 +1,6 @@
+compyute.nn.optimizers.Optimizer.load\_state\_dict
+==================================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: Optimizer.load_state_dict

@@ -1,0 +1,6 @@
+compyute.nn.ModuleList.\_\_init\_\_
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ModuleList.__init__

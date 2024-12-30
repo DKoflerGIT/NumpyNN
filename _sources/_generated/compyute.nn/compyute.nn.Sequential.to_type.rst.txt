@@ -1,0 +1,6 @@
+compyute.nn.Sequential.to\_type
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sequential.to_type

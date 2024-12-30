@@ -1,0 +1,6 @@
+compyute.nn.Sigmoid.forward
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sigmoid.forward

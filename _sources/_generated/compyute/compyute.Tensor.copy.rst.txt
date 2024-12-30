@@ -1,0 +1,6 @@
+compyute.Tensor.copy
+====================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.copy

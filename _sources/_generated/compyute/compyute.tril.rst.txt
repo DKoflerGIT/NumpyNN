@@ -1,0 +1,6 @@
+﻿compyute.tril
+=============
+
+.. currentmodule:: compyute
+
+.. autofunction:: tril

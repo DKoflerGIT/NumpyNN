@@ -1,0 +1,6 @@
+compyute.nn.Softmax.clean
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Softmax.clean

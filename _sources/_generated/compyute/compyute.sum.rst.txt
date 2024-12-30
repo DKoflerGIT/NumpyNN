@@ -1,0 +1,6 @@
+﻿compyute.sum
+============
+
+.. currentmodule:: compyute
+
+.. autofunction:: sum

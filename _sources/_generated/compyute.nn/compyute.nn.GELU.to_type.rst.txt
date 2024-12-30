@@ -1,0 +1,6 @@
+compyute.nn.GELU.to\_type
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GELU.to_type

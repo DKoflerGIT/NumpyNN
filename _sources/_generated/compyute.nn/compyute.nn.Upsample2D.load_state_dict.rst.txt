@@ -1,0 +1,6 @@
+compyute.nn.Upsample2D.load\_state\_dict
+========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Upsample2D.load_state_dict

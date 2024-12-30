@@ -1,0 +1,6 @@
+compyute.nn.GRU.\_\_init\_\_
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GRU.__init__

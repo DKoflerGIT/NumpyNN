@@ -1,0 +1,6 @@
+﻿compyute.preprocessing.normalize
+================================
+
+.. currentmodule:: compyute.preprocessing
+
+.. autofunction:: normalize

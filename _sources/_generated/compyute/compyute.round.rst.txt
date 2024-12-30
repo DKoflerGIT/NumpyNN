@@ -1,0 +1,6 @@
+﻿compyute.round
+==============
+
+.. currentmodule:: compyute
+
+.. autofunction:: round

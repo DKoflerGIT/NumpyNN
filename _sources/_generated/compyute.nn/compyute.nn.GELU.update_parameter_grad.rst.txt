@@ -1,0 +1,6 @@
+compyute.nn.GELU.update\_parameter\_grad
+========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GELU.update_parameter_grad

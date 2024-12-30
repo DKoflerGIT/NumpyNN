@@ -1,0 +1,6 @@
+﻿compyute.movedim
+================
+
+.. currentmodule:: compyute
+
+.. autofunction:: movedim

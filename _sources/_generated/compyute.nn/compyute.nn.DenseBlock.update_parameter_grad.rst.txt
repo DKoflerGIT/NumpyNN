@@ -1,0 +1,6 @@
+compyute.nn.DenseBlock.update\_parameter\_grad
+==============================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: DenseBlock.update_parameter_grad

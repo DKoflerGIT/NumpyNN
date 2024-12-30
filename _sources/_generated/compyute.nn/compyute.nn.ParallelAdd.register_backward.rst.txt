@@ -1,0 +1,6 @@
+compyute.nn.ParallelAdd.register\_backward
+==========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelAdd.register_backward

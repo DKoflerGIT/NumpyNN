@@ -1,0 +1,23 @@
+﻿compyute.nn.utils.lr\_schedulers.AdaptiveLrScheduler
+====================================================
+
+.. currentmodule:: compyute.nn.utils.lr_schedulers
+
+.. autoclass:: AdaptiveLrScheduler
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~AdaptiveLrScheduler.__init__
+        ~AdaptiveLrScheduler.step
+    
+    
+
+
+    
+    
+    

@@ -1,0 +1,6 @@
+compyute.nn.ResidualConnection.training
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ResidualConnection.training

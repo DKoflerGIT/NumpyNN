@@ -1,0 +1,6 @@
+compyute.nn.LSTM.to\_device
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LSTM.to_device

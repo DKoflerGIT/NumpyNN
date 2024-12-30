@@ -1,0 +1,6 @@
+compyute.nn.ConvTranspose1D.register\_forward
+=============================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ConvTranspose1D.register_forward

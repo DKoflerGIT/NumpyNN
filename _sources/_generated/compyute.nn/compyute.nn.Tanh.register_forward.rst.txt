@@ -1,0 +1,6 @@
+compyute.nn.Tanh.register\_forward
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Tanh.register_forward

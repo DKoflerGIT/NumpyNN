@@ -1,0 +1,24 @@
+﻿compyute.nn.Function
+====================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Function
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Function.__init__
+        ~Function.backward
+        ~Function.forward
+    
+    
+
+
+    
+    
+    

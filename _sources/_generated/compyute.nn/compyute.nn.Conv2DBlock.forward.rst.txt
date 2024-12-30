@@ -1,0 +1,6 @@
+compyute.nn.Conv2DBlock.forward
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv2DBlock.forward

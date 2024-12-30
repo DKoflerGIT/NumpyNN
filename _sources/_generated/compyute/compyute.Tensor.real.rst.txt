@@ -1,0 +1,6 @@
+compyute.Tensor.real
+====================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.real

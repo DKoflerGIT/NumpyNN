@@ -1,0 +1,6 @@
+compyute.nn.Upsample2D.training
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Upsample2D.training

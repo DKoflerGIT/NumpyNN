@@ -1,0 +1,72 @@
+﻿compyute.nn.Parameter
+=====================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Parameter
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Parameter.__init__
+        ~Parameter.abs
+        ~Parameter.all
+        ~Parameter.any
+        ~Parameter.argmax
+        ~Parameter.copy
+        ~Parameter.imag
+        ~Parameter.item
+        ~Parameter.ito_device
+        ~Parameter.ito_type
+        ~Parameter.max
+        ~Parameter.mean
+        ~Parameter.min
+        ~Parameter.permute
+        ~Parameter.real
+        ~Parameter.squeeze
+        ~Parameter.std
+        ~Parameter.sum
+        ~Parameter.to_complex
+        ~Parameter.to_contiguous
+        ~Parameter.to_cpu
+        ~Parameter.to_cuda
+        ~Parameter.to_device
+        ~Parameter.to_double
+        ~Parameter.to_float
+        ~Parameter.to_half
+        ~Parameter.to_int
+        ~Parameter.to_list
+        ~Parameter.to_long
+        ~Parameter.to_numpy
+        ~Parameter.to_type
+        ~Parameter.transpose
+        ~Parameter.var
+        ~Parameter.view
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Parameter.data
+        ~Parameter.grad
+        ~Parameter.T
+        ~Parameter.contiguous
+        ~Parameter.device
+        ~Parameter.dtype
+        ~Parameter.nbytes
+        ~Parameter.ndim
+        ~Parameter.ptr
+        ~Parameter.shape
+        ~Parameter.size
+        ~Parameter.strides
+    
+    

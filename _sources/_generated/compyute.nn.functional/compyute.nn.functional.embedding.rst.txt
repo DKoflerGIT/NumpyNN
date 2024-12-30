@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.embedding
+================================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: embedding

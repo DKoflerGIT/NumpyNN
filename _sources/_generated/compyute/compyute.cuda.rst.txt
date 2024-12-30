@@ -1,0 +1,6 @@
+﻿compyute.cuda
+=============
+
+.. currentmodule:: compyute
+
+.. autodata:: cuda

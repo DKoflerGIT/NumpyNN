@@ -1,0 +1,6 @@
+compyute.nn.GRU.get\_buffers
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GRU.get_buffers

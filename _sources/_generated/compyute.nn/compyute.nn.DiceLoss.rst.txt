@@ -1,0 +1,26 @@
+﻿compyute.nn.DiceLoss
+====================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: DiceLoss
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~DiceLoss.__init__
+        ~DiceLoss.backward
+        ~DiceLoss.forward
+        ~DiceLoss.register_backward
+        ~DiceLoss.register_forward
+    
+    
+
+
+    
+    
+    

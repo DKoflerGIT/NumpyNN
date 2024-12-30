@@ -1,0 +1,6 @@
+compyute.nn.MSELoss.backward
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: MSELoss.backward

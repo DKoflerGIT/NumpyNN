@@ -1,0 +1,6 @@
+compyute.nn.FunctionContext.get
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: FunctionContext.get

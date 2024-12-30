@@ -1,0 +1,6 @@
+compyute.nn.ParallelAdd.forward
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelAdd.forward

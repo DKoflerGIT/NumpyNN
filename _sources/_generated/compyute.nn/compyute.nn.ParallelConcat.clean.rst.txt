@@ -1,0 +1,6 @@
+compyute.nn.ParallelConcat.clean
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelConcat.clean

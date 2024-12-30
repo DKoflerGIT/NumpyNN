@@ -1,0 +1,6 @@
+compyute.nn.SiLU.forward
+========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: SiLU.forward

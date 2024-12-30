@@ -1,0 +1,30 @@
+﻿compyute.nn.FunctionContext
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: FunctionContext
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~FunctionContext.__init__
+        ~FunctionContext.add
+        ~FunctionContext.get
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~FunctionContext.context
+    
+    

@@ -1,0 +1,6 @@
+compyute.nn.Embedding.register\_forward
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Embedding.register_forward

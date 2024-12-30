@@ -1,0 +1,6 @@
+compyute.nn.Parameter.to\_complex
+=================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.to_complex

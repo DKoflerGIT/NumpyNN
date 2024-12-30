@@ -1,0 +1,6 @@
+﻿compyute.sech
+=============
+
+.. currentmodule:: compyute
+
+.. autofunction:: sech

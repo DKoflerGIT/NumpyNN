@@ -1,0 +1,6 @@
+compyute.nn.Embedding.get\_modules
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Embedding.get_modules

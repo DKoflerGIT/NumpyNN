@@ -1,0 +1,6 @@
+compyute.nn.Softmax.forward
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Softmax.forward

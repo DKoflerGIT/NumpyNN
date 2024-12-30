@@ -1,0 +1,6 @@
+﻿compyute.real
+=============
+
+.. currentmodule:: compyute
+
+.. autofunction:: real

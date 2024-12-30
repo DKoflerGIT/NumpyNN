@@ -1,0 +1,6 @@
+compyute.nn.optimizers.AdamW.reset\_grads
+=========================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: AdamW.reset_grads

@@ -1,0 +1,6 @@
+compyute.nn.LSTM.to\_type
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LSTM.to_type

@@ -1,0 +1,49 @@
+﻿compyute.nn.Conv2DBlock
+=======================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Conv2DBlock
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Conv2DBlock.__init__
+        ~Conv2DBlock.add
+        ~Conv2DBlock.backward
+        ~Conv2DBlock.clean
+        ~Conv2DBlock.forward
+        ~Conv2DBlock.get_buffers
+        ~Conv2DBlock.get_modules
+        ~Conv2DBlock.get_parameters
+        ~Conv2DBlock.get_state_dict
+        ~Conv2DBlock.inference
+        ~Conv2DBlock.load_state_dict
+        ~Conv2DBlock.register_backward
+        ~Conv2DBlock.register_forward
+        ~Conv2DBlock.to_device
+        ~Conv2DBlock.to_type
+        ~Conv2DBlock.training
+        ~Conv2DBlock.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Conv2DBlock.device
+        ~Conv2DBlock.dtype
+        ~Conv2DBlock.is_training
+        ~Conv2DBlock.n_modules
+        ~Conv2DBlock.retain_values
+        ~Conv2DBlock.trainable
+    
+    

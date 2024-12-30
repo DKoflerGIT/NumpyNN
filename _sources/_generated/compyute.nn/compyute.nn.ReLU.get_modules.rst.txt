@@ -1,0 +1,6 @@
+compyute.nn.ReLU.get\_modules
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ReLU.get_modules

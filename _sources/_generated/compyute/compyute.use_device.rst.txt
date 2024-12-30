@@ -1,0 +1,6 @@
+﻿compyute.use\_device
+====================
+
+.. currentmodule:: compyute
+
+.. autofunction:: use_device

@@ -1,0 +1,6 @@
+compyute.nn.MaxPooling2D.\_\_init\_\_
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: MaxPooling2D.__init__

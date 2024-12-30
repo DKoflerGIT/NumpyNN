@@ -1,0 +1,48 @@
+﻿compyute.nn.LSTM
+================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: LSTM
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~LSTM.__init__
+        ~LSTM.backward
+        ~LSTM.clean
+        ~LSTM.forward
+        ~LSTM.get_buffers
+        ~LSTM.get_modules
+        ~LSTM.get_parameters
+        ~LSTM.get_state_dict
+        ~LSTM.inference
+        ~LSTM.load_state_dict
+        ~LSTM.register_backward
+        ~LSTM.register_forward
+        ~LSTM.to_device
+        ~LSTM.to_type
+        ~LSTM.training
+        ~LSTM.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~LSTM.device
+        ~LSTM.dtype
+        ~LSTM.is_training
+        ~LSTM.n_modules
+        ~LSTM.retain_values
+        ~LSTM.trainable
+    
+    

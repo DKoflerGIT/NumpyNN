@@ -1,0 +1,6 @@
+compyute.nn.MSELoss.register\_forward
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: MSELoss.register_forward

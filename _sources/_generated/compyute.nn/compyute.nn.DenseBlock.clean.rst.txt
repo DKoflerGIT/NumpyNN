@@ -1,0 +1,6 @@
+compyute.nn.DenseBlock.clean
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: DenseBlock.clean

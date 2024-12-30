@@ -1,0 +1,6 @@
+compyute.nn.FastGELU.clean
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: FastGELU.clean

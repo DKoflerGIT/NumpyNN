@@ -1,0 +1,6 @@
+compyute.nn.Linear.update\_parameter\_grad
+==========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Linear.update_parameter_grad

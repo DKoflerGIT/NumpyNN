@@ -1,0 +1,6 @@
+compyute.nn.utils.lr\_schedulers.LrScheduler.step
+=================================================
+
+.. currentmodule:: compyute.nn.utils.lr_schedulers
+
+.. automethod:: LrScheduler.step

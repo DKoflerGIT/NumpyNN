@@ -1,0 +1,6 @@
+compyute.nn.Sequential.register\_forward
+========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sequential.register_forward

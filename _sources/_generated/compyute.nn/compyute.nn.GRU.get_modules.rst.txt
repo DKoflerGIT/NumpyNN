@@ -1,0 +1,6 @@
+compyute.nn.GRU.get\_modules
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GRU.get_modules

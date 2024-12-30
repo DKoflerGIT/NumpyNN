@@ -1,0 +1,6 @@
+compyute.nn.Buffer.argmax
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.argmax

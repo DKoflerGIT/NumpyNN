@@ -1,0 +1,6 @@
+compyute.nn.GRU.to\_device
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GRU.to_device

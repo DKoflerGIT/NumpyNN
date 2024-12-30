@@ -1,0 +1,6 @@
+compyute.nn.Buffer.std
+======================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.std

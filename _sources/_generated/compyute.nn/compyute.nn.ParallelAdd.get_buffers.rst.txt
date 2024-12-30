@@ -1,0 +1,6 @@
+compyute.nn.ParallelAdd.get\_buffers
+====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelAdd.get_buffers

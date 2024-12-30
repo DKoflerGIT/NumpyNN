@@ -1,0 +1,804 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" data-theme="light">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>compyute.nn &#8212; Compyute v0.1.8 Manual</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=22607128"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/compyute.nn';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="compyute.nn.Function" href="../_generated/compyute.nn/compyute.nn.Function.html" />
+    <link rel="prev" title="compyute.backend.synchronize" href="../_generated/compyute.backend/compyute.backend.synchronize.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.1.8" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Compyute v0.1.8 Manual</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    API reference
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/dakofler/Compyute" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    API reference
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/dakofler/Compyute" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Python API</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="compyute.html">compyute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.backend.html">compyute.backend</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">compyute.nn</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Function.html">compyute.nn.Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.FunctionContext.html">compyute.nn.FunctionContext</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Loss.html">compyute.nn.Loss</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.BCELoss.html">compyute.nn.BCELoss</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.CrossEntropyLoss.html">compyute.nn.CrossEntropyLoss</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.MSELoss.html">compyute.nn.MSELoss</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.DiceLoss.html">compyute.nn.DiceLoss</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Metric.html">compyute.nn.Metric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Accuracy.html">compyute.nn.Accuracy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.R2.html">compyute.nn.R2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Module.html">compyute.nn.Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Identity.html">compyute.nn.Identity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.ModuleList.html">compyute.nn.ModuleList</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.ReLU.html">compyute.nn.ReLU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.LeakyReLU.html">compyute.nn.LeakyReLU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.GELU.html">compyute.nn.GELU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.FastGELU.html">compyute.nn.FastGELU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Sigmoid.html">compyute.nn.Sigmoid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.SiLU.html">compyute.nn.SiLU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Softmax.html">compyute.nn.Softmax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Tanh.html">compyute.nn.Tanh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Conv1DBlock.html">compyute.nn.Conv1DBlock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Conv2DBlock.html">compyute.nn.Conv2DBlock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.DenseBlock.html">compyute.nn.DenseBlock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Sequential.html">compyute.nn.Sequential</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.ParallelConcat.html">compyute.nn.ParallelConcat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.ParallelAdd.html">compyute.nn.ParallelAdd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.ResidualConnection.html">compyute.nn.ResidualConnection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Conv1D.html">compyute.nn.Conv1D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Conv2D.html">compyute.nn.Conv2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.ConvTranspose1D.html">compyute.nn.ConvTranspose1D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.ConvTranspose2D.html">compyute.nn.ConvTranspose2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Embedding.html">compyute.nn.Embedding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Linear.html">compyute.nn.Linear</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.BatchNorm1D.html">compyute.nn.BatchNorm1D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.BatchNorm2D.html">compyute.nn.BatchNorm2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.LayerNorm.html">compyute.nn.LayerNorm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.RMSNorm.html">compyute.nn.RMSNorm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.MaxPooling2D.html">compyute.nn.MaxPooling2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.AvgPooling2D.html">compyute.nn.AvgPooling2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Upsample2D.html">compyute.nn.Upsample2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.GRU.html">compyute.nn.GRU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.LSTM.html">compyute.nn.LSTM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Recurrent.html">compyute.nn.Recurrent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Dropout.html">compyute.nn.Dropout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Flatten.html">compyute.nn.Flatten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Reshape.html">compyute.nn.Reshape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Slice.html">compyute.nn.Slice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Parameter.html">compyute.nn.Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Buffer.html">compyute.nn.Buffer</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.nn.functional.html">compyute.nn.functional</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.nn.optimizers.html">compyute.nn.optimizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.nn.trainer.html">compyute.nn.trainer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.nn.trainer.callbacks.html">compyute.nn.trainer.callbacks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.nn.utils.html">compyute.nn.utils</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.nn.utils.initializers.html">compyute.nn.utils.initializers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.nn.utils.lr_schedulers.html">compyute.nn.utils.lr_schedulers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.nn.utils.tensorboard.html">compyute.nn.utils.tensorboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.preprocessing.html">compyute.preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compyute.random.html">compyute.random</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Compyute reference</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">compyute.nn</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="compyute-nn">
+<h1>compyute.nn<a class="headerlink" href="#compyute-nn" title="Link to this heading">#</a></h1>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Function.html#compyute.nn.Function" title="compyute.nn.Function"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Function</span></code></a>()</p></td>
+<td><p>Neural network function base class.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.FunctionContext.html#compyute.nn.FunctionContext" title="compyute.nn.FunctionContext"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FunctionContext</span></code></a>()</p></td>
+<td><p>Cache for context data that needs to be cached for gradient computation.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="losses">
+<span id="id1"></span><h2>Losses<a class="headerlink" href="#losses" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Loss.html#compyute.nn.Loss" title="compyute.nn.Loss"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Loss</span></code></a>()</p></td>
+<td><p>Loss base class.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.BCELoss.html#compyute.nn.BCELoss" title="compyute.nn.BCELoss"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BCELoss</span></code></a>()</p></td>
+<td><p>Computes the binary cross entropy loss from logits.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.CrossEntropyLoss.html#compyute.nn.CrossEntropyLoss" title="compyute.nn.CrossEntropyLoss"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CrossEntropyLoss</span></code></a>()</p></td>
+<td><p>Computes the cross entropy loss from logits.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.MSELoss.html#compyute.nn.MSELoss" title="compyute.nn.MSELoss"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MSELoss</span></code></a>()</p></td>
+<td><p>Computes the mean squared error loss.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.DiceLoss.html#compyute.nn.DiceLoss" title="compyute.nn.DiceLoss"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DiceLoss</span></code></a>()</p></td>
+<td><p>Computes the dice loss from logits as described by <a class="reference external" href="https://arxiv.org/pdf/1606.04797">Milletari et al., 2016</a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="metrics">
+<span id="id2"></span><h2>Metrics<a class="headerlink" href="#metrics" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Metric.html#compyute.nn.Metric" title="compyute.nn.Metric"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Metric</span></code></a>()</p></td>
+<td><p>Metric base class.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Accuracy.html#compyute.nn.Accuracy" title="compyute.nn.Accuracy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Accuracy</span></code></a>()</p></td>
+<td><p>Computes the accuracy score.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.R2.html#compyute.nn.R2" title="compyute.nn.R2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">R2</span></code></a>([eps])</p></td>
+<td><p>Computes the coefficient of determination (R2 score).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="modules">
+<span id="id3"></span><h2>Modules<a class="headerlink" href="#modules" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Module.html#compyute.nn.Module" title="compyute.nn.Module"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Module</span></code></a>([label])</p></td>
+<td><p>Neural network base module.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Identity.html#compyute.nn.Identity" title="compyute.nn.Identity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Identity</span></code></a>([label])</p></td>
+<td><p>Identity module that just forwards inputs and gradients.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.ModuleList.html#compyute.nn.ModuleList" title="compyute.nn.ModuleList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModuleList</span></code></a>(modules)</p></td>
+<td><p>List of modules.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="activations">
+<span id="id4"></span><h3>Activations<a class="headerlink" href="#activations" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.ReLU.html#compyute.nn.ReLU" title="compyute.nn.ReLU"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReLU</span></code></a>([label])</p></td>
+<td><p>Applies the Rectified Linear Unit activation function to an input tensor.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.LeakyReLU.html#compyute.nn.LeakyReLU" title="compyute.nn.LeakyReLU"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LeakyReLU</span></code></a>([alpha, label])</p></td>
+<td><p>Leaky ReLu activation function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.GELU.html#compyute.nn.GELU" title="compyute.nn.GELU"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GELU</span></code></a>([label])</p></td>
+<td><p>Gaussian Error Linear Unit activation function (using the <span class="math notranslate nohighlight">\(tanh\)</span> approximation) as described by <a class="reference external" href="https://arxiv.org/pdf/1606.08415">Hendrycks et al., 2016</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.FastGELU.html#compyute.nn.FastGELU" title="compyute.nn.FastGELU"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FastGELU</span></code></a>([label])</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Sigmoid.html#compyute.nn.Sigmoid" title="compyute.nn.Sigmoid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sigmoid</span></code></a>([label])</p></td>
+<td><p>Sigmoid activation function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.SiLU.html#compyute.nn.SiLU" title="compyute.nn.SiLU"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SiLU</span></code></a>([label])</p></td>
+<td><p>Sigmoid Linear Unit activation function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Softmax.html#compyute.nn.Softmax" title="compyute.nn.Softmax"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Softmax</span></code></a>([label])</p></td>
+<td><p>Softmax activation function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Tanh.html#compyute.nn.Tanh" title="compyute.nn.Tanh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Tanh</span></code></a>([label])</p></td>
+<td><p>Tanh activation function.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="blocks">
+<h3>Blocks<a class="headerlink" href="#blocks" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Conv1DBlock.html#compyute.nn.Conv1DBlock" title="compyute.nn.Conv1DBlock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Conv1DBlock</span></code></a>(in_channels, out_channels, ...)</p></td>
+<td><p>Convolution block containing a 1D convolutional layer, followed by an optional batch normalization and an activation function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Conv2DBlock.html#compyute.nn.Conv2DBlock" title="compyute.nn.Conv2DBlock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Conv2DBlock</span></code></a>(in_channels, out_channels, ...)</p></td>
+<td><p>Convolution block containing a 2D convolutional layer, followed by an optional batch normalization and an activation function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.DenseBlock.html#compyute.nn.DenseBlock" title="compyute.nn.DenseBlock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DenseBlock</span></code></a>(in_channels, out_channels, activation)</p></td>
+<td><p>Dense neural network block containing a linear transformation layer and an activation function.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="containers">
+<h3>Containers<a class="headerlink" href="#containers" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Sequential.html#compyute.nn.Sequential" title="compyute.nn.Sequential"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Sequential</span></code></a>(*modules[, label])</p></td>
+<td><p>Container that processes modules sequentially.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.ParallelConcat.html#compyute.nn.ParallelConcat" title="compyute.nn.ParallelConcat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParallelConcat</span></code></a>(*modules[, concat_dim, label])</p></td>
+<td><p>Container that processes modules in parallel and concatenates their outputs.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.ParallelAdd.html#compyute.nn.ParallelAdd" title="compyute.nn.ParallelAdd"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParallelAdd</span></code></a>(*modules[, label])</p></td>
+<td><p>Container that processes modules in parallel and sums their outputs element-wise.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.ResidualConnection.html#compyute.nn.ResidualConnection" title="compyute.nn.ResidualConnection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ResidualConnection</span></code></a>(*modules[, ...])</p></td>
+<td><p>Residual container implementing a residual connection around a block of modules.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="convolution">
+<h3>Convolution<a class="headerlink" href="#convolution" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Conv1D.html#compyute.nn.Conv1D" title="compyute.nn.Conv1D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Conv1D</span></code></a>(in_channels, out_channels, kernel_size)</p></td>
+<td><p>Applies a 1D convolution to the input for feature extraction.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Conv2D.html#compyute.nn.Conv2D" title="compyute.nn.Conv2D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Conv2D</span></code></a>(in_channels, out_channels, kernel_size)</p></td>
+<td><p>Applies a 2D convolution to the input for feature extraction.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.ConvTranspose1D.html#compyute.nn.ConvTranspose1D" title="compyute.nn.ConvTranspose1D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConvTranspose1D</span></code></a>(in_channels, out_channels, ...)</p></td>
+<td><p>Applies a 1D transposed convolution to the input for upsampling as descirbed by <a class="reference external" href="https://openaccess.thecvf.com/content_cvpr_2015/papers/Long_Fully_Convolutional_Networks_2015_CVPR_paper.pdf">Long et al., 2015</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.ConvTranspose2D.html#compyute.nn.ConvTranspose2D" title="compyute.nn.ConvTranspose2D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConvTranspose2D</span></code></a>(in_channels, out_channels, ...)</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="embedding">
+<h3>Embedding<a class="headerlink" href="#embedding" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Embedding.html#compyute.nn.Embedding" title="compyute.nn.Embedding"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Embedding</span></code></a>(n_embeds, embed_dim[, label])</p></td>
+<td><p>Lookup embedding layer.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="linear">
+<h3>Linear<a class="headerlink" href="#linear" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Linear.html#compyute.nn.Linear" title="compyute.nn.Linear"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Linear</span></code></a>(in_channels, out_channels[, bias, label])</p></td>
+<td><p>Applies a linear transformation to the input.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="normalizations">
+<h3>Normalizations<a class="headerlink" href="#normalizations" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.BatchNorm1D.html#compyute.nn.BatchNorm1D" title="compyute.nn.BatchNorm1D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BatchNorm1D</span></code></a>(channels[, eps, m, label])</p></td>
+<td><p>Implements Batch Normalization as described by <a class="reference external" href="https://asvk.cs.msu.ru/~sveta/%D1%80%D0%B5%D1%84%D0%B5%D1%80%D0%B0%D1%82/batch_normalization.pdf">Ioffe et al., 2015</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.BatchNorm2D.html#compyute.nn.BatchNorm2D" title="compyute.nn.BatchNorm2D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BatchNorm2D</span></code></a>(channels[, eps, m, label])</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.LayerNorm.html#compyute.nn.LayerNorm" title="compyute.nn.LayerNorm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LayerNorm</span></code></a>(normalized_shape[, eps, label])</p></td>
+<td><p>Implements Layer Normalization as described by <a class="reference external" href="https://arxiv.org/pdf/1607.06450">Ba et al., 2016</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.RMSNorm.html#compyute.nn.RMSNorm" title="compyute.nn.RMSNorm"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RMSNorm</span></code></a>(normalized_shape[, eps, label])</p></td>
+<td><p>Implements Root Mean Square Layer Normalization as described by <a class="reference external" href="https://proceedings.neurips.cc/paper/2019/file/1e8a19426224ca89e83cef47f1e7f53b-Paper.pdf">Zhang et al., 2019</a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="pooling">
+<h3>Pooling<a class="headerlink" href="#pooling" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.MaxPooling2D.html#compyute.nn.MaxPooling2D" title="compyute.nn.MaxPooling2D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxPooling2D</span></code></a>([kernel_size, label])</p></td>
+<td><p>Pooling layer used for downsampling where the maximum value within the pooling window is used.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.AvgPooling2D.html#compyute.nn.AvgPooling2D" title="compyute.nn.AvgPooling2D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AvgPooling2D</span></code></a>([kernel_size, label])</p></td>
+<td><p>Pooling layer used for downsampling where the average value within the pooling window is used.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Upsample2D.html#compyute.nn.Upsample2D" title="compyute.nn.Upsample2D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Upsample2D</span></code></a>([scaling, target_shape, label])</p></td>
+<td><p>Layer used for upsamling by repeating values over the last two dimensions.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="recurrent">
+<h3>Recurrent<a class="headerlink" href="#recurrent" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.GRU.html#compyute.nn.GRU" title="compyute.nn.GRU"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GRU</span></code></a>(in_channels, h_channels[, bias, ...])</p></td>
+<td><p>Gated Recurrent Unit module as described by <a class="reference external" href="https://arxiv.org/pdf/1406.1078">Cho et al., 2014</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.LSTM.html#compyute.nn.LSTM" title="compyute.nn.LSTM"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LSTM</span></code></a>(in_channels, h_channels[, bias, ...])</p></td>
+<td><p>Long Short-Term Memory module as described by <a class="reference external" href="https://www.bioinf.jku.at/publications/older/2604.pdf">Hochreiter et al., 1997</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Recurrent.html#compyute.nn.Recurrent" title="compyute.nn.Recurrent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Recurrent</span></code></a>(in_channels, h_channels[, bias, ...])</p></td>
+<td><p>Elman Recurrent module.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="regularization">
+<h3>Regularization<a class="headerlink" href="#regularization" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Dropout.html#compyute.nn.Dropout" title="compyute.nn.Dropout"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dropout</span></code></a>([p, label])</p></td>
+<td><p>Dropout layer used for regularization as described by <a class="reference external" href="https://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf?utm_content=buffer79b43&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer">Srivastava et al., 2019</a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="shape">
+<h3>Shape<a class="headerlink" href="#shape" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Flatten.html#compyute.nn.Flatten" title="compyute.nn.Flatten"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Flatten</span></code></a>([label])</p></td>
+<td><p>Flattes tensors not including the batch dimension.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Reshape.html#compyute.nn.Reshape" title="compyute.nn.Reshape"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Reshape</span></code></a>(shape[, label])</p></td>
+<td><p>Reshapes tensors.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Slice.html#compyute.nn.Slice" title="compyute.nn.Slice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Slice</span></code></a>(slice[, label])</p></td>
+<td><p>Slices tensors.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="parameter-and-buffer">
+<h2>Parameter and Buffer<a class="headerlink" href="#parameter-and-buffer" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Parameter.html#compyute.nn.Parameter" title="compyute.nn.Parameter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Parameter</span></code></a>(data)</p></td>
+<td><p>Trainable neural network parameter.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../_generated/compyute.nn/compyute.nn.Buffer.html#compyute.nn.Buffer" title="compyute.nn.Buffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Buffer</span></code></a>(data)</p></td>
+<td><p>Neural network buffer variable.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../_generated/compyute.backend/compyute.backend.synchronize.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">compyute.backend.synchronize</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../_generated/compyute.nn/compyute.nn.Function.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">compyute.nn.Function</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#losses">Losses</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metrics">Metrics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modules">Modules</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#activations">Activations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#blocks">Blocks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#containers">Containers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convolution">Convolution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#embedding">Embedding</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear">Linear</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normalizations">Normalizations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pooling">Pooling</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recurrent">Recurrent</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regularization">Regularization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shape">Shape</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parameter-and-buffer">Parameter and Buffer</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/reference/compyute.nn.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2022-2024, Daniel Kofler.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

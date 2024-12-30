@@ -1,0 +1,6 @@
+compyute.nn.Function.backward
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Function.backward

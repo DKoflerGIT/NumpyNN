@@ -1,0 +1,6 @@
+compyute.nn.optimizers.NAdam.step
+=================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: NAdam.step

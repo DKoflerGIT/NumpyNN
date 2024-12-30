@@ -1,0 +1,6 @@
+﻿compyute.backend.synchronize
+============================
+
+.. currentmodule:: compyute.backend
+
+.. autofunction:: synchronize

@@ -1,0 +1,6 @@
+compyute.nn.Softmax.get\_buffers
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Softmax.get_buffers

@@ -1,0 +1,6 @@
+﻿compyute.fft2d
+==============
+
+.. currentmodule:: compyute
+
+.. autofunction:: fft2d

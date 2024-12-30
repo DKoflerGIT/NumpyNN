@@ -1,0 +1,6 @@
+﻿compyute.zeros\_like
+====================
+
+.. currentmodule:: compyute
+
+.. autofunction:: zeros_like

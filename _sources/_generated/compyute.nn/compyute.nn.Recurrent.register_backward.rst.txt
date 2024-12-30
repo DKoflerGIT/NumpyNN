@@ -1,0 +1,6 @@
+compyute.nn.Recurrent.register\_backward
+========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Recurrent.register_backward

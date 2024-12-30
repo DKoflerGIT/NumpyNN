@@ -1,0 +1,6 @@
+﻿compyute.nn.utils.batched
+=========================
+
+.. currentmodule:: compyute.nn.utils
+
+.. autofunction:: batched

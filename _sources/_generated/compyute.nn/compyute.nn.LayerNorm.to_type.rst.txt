@@ -1,0 +1,6 @@
+compyute.nn.LayerNorm.to\_type
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LayerNorm.to_type

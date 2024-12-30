@@ -1,0 +1,6 @@
+compyute.nn.Embedding.update\_parameter\_grad
+=============================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Embedding.update_parameter_grad

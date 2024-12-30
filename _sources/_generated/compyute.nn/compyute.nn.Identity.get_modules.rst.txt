@@ -1,0 +1,6 @@
+compyute.nn.Identity.get\_modules
+=================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Identity.get_modules

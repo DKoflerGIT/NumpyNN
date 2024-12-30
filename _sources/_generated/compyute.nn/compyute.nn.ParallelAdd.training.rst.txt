@@ -1,0 +1,6 @@
+compyute.nn.ParallelAdd.training
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelAdd.training

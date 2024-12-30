@@ -1,0 +1,6 @@
+compyute.nn.Identity.get\_buffers
+=================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Identity.get_buffers

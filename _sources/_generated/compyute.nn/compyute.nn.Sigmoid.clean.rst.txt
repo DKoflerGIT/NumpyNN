@@ -1,0 +1,6 @@
+compyute.nn.Sigmoid.clean
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sigmoid.clean

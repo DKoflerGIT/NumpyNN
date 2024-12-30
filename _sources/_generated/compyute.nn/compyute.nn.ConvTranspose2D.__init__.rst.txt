@@ -1,0 +1,6 @@
+compyute.nn.ConvTranspose2D.\_\_init\_\_
+========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ConvTranspose2D.__init__

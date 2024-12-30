@@ -1,0 +1,27 @@
+﻿compyute.nn.optimizers.SGD
+==========================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. autoclass:: SGD
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~SGD.__init__
+        ~SGD.get_state_dict
+        ~SGD.load_state_dict
+        ~SGD.reset_grads
+        ~SGD.set_parameters
+        ~SGD.step
+    
+    
+
+
+    
+    
+    

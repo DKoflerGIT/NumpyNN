@@ -1,0 +1,48 @@
+﻿compyute.nn.Flatten
+===================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Flatten
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Flatten.__init__
+        ~Flatten.backward
+        ~Flatten.clean
+        ~Flatten.forward
+        ~Flatten.get_buffers
+        ~Flatten.get_modules
+        ~Flatten.get_parameters
+        ~Flatten.get_state_dict
+        ~Flatten.inference
+        ~Flatten.load_state_dict
+        ~Flatten.register_backward
+        ~Flatten.register_forward
+        ~Flatten.to_device
+        ~Flatten.to_type
+        ~Flatten.training
+        ~Flatten.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Flatten.device
+        ~Flatten.dtype
+        ~Flatten.is_training
+        ~Flatten.n_modules
+        ~Flatten.retain_values
+        ~Flatten.trainable
+    
+    

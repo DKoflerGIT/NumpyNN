@@ -1,0 +1,6 @@
+compyute.nn.Parameter.to\_double
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.to_double

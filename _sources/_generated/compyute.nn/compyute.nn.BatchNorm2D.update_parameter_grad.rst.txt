@@ -1,0 +1,6 @@
+compyute.nn.BatchNorm2D.update\_parameter\_grad
+===============================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: BatchNorm2D.update_parameter_grad

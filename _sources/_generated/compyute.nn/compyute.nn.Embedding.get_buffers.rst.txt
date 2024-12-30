@@ -1,0 +1,6 @@
+compyute.nn.Embedding.get\_buffers
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Embedding.get_buffers

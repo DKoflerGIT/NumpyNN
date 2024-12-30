@@ -1,0 +1,6 @@
+compyute.nn.Parameter.ito\_type
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.ito_type

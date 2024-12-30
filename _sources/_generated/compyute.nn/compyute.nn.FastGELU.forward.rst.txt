@@ -1,0 +1,6 @@
+compyute.nn.FastGELU.forward
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: FastGELU.forward

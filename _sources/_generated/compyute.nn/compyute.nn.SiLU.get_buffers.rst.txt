@@ -1,0 +1,6 @@
+compyute.nn.SiLU.get\_buffers
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: SiLU.get_buffers

@@ -1,0 +1,6 @@
+compyute.nn.Embedding.to\_type
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Embedding.to_type

@@ -1,0 +1,6 @@
+compyute.nn.ModuleList.sort
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ModuleList.sort

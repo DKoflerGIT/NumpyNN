@@ -1,0 +1,6 @@
+compyute.nn.Conv1DBlock.to\_device
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv1DBlock.to_device

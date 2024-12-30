@@ -1,0 +1,6 @@
+compyute.nn.Tanh.to\_device
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Tanh.to_device

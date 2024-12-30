@@ -1,0 +1,6 @@
+compyute.nn.GRU.forward
+=======================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GRU.forward

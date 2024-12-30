@@ -1,0 +1,6 @@
+compyute.nn.Slice.register\_forward
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Slice.register_forward

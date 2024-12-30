@@ -1,0 +1,6 @@
+compyute.nn.trainer.callbacks.EarlyStopping.on\_epoch\_end
+==========================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. automethod:: EarlyStopping.on_epoch_end

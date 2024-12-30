@@ -1,0 +1,6 @@
+compyute.nn.Upsample2D.\_\_init\_\_
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Upsample2D.__init__

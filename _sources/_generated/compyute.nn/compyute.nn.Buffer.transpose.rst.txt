@@ -1,0 +1,6 @@
+compyute.nn.Buffer.transpose
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.transpose

@@ -1,0 +1,6 @@
+compyute.nn.LSTM.clean
+======================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LSTM.clean

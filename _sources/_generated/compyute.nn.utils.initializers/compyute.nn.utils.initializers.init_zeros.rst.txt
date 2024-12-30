@@ -1,0 +1,6 @@
+﻿compyute.nn.utils.initializers.init\_zeros
+==========================================
+
+.. currentmodule:: compyute.nn.utils.initializers
+
+.. autofunction:: init_zeros

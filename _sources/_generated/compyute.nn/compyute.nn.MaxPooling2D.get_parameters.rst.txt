@@ -1,0 +1,6 @@
+compyute.nn.MaxPooling2D.get\_parameters
+========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: MaxPooling2D.get_parameters

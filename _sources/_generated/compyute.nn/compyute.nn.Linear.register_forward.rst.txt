@@ -1,0 +1,6 @@
+compyute.nn.Linear.register\_forward
+====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Linear.register_forward

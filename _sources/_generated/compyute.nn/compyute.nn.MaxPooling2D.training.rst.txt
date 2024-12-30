@@ -1,0 +1,6 @@
+compyute.nn.MaxPooling2D.training
+=================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: MaxPooling2D.training

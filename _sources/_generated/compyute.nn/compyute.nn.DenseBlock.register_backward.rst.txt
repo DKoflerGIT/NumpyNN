@@ -1,0 +1,6 @@
+compyute.nn.DenseBlock.register\_backward
+=========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: DenseBlock.register_backward

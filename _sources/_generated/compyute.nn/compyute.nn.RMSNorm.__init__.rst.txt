@@ -1,0 +1,6 @@
+compyute.nn.RMSNorm.\_\_init\_\_
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: RMSNorm.__init__

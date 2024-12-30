@@ -1,0 +1,6 @@
+compyute.nn.Metric.\_\_init\_\_
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Metric.__init__

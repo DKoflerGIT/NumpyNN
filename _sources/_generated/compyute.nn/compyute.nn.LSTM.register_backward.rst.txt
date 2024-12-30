@@ -1,0 +1,6 @@
+compyute.nn.LSTM.register\_backward
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LSTM.register_backward

@@ -1,0 +1,6 @@
+compyute.nn.ParallelAdd.to\_device
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelAdd.to_device

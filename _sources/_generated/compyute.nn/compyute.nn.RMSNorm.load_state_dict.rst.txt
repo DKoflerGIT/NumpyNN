@@ -1,0 +1,6 @@
+compyute.nn.RMSNorm.load\_state\_dict
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: RMSNorm.load_state_dict

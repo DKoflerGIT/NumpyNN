@@ -1,0 +1,6 @@
+compyute.nn.LeakyReLU.to\_device
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LeakyReLU.to_device

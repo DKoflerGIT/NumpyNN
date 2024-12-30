@@ -1,0 +1,6 @@
+compyute.nn.LayerNorm.register\_backward
+========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LayerNorm.register_backward

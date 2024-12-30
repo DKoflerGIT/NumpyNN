@@ -1,0 +1,6 @@
+compyute.nn.Tanh.backward
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Tanh.backward

@@ -1,0 +1,6 @@
+compyute.nn.Buffer.to\_type
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.to_type

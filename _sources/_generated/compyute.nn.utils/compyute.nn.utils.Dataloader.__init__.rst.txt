@@ -1,0 +1,6 @@
+compyute.nn.utils.Dataloader.\_\_init\_\_
+=========================================
+
+.. currentmodule:: compyute.nn.utils
+
+.. automethod:: Dataloader.__init__

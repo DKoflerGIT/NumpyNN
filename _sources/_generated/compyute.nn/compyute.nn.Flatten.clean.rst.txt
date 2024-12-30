@@ -1,0 +1,6 @@
+compyute.nn.Flatten.clean
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Flatten.clean

@@ -1,0 +1,6 @@
+compyute.nn.trainer.callbacks.CosineLrScheduler.on\_epoch\_start
+================================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. automethod:: CosineLrScheduler.on_epoch_start

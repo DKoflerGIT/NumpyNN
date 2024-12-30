@@ -1,0 +1,6 @@
+compyute.nn.Sequential.get\_buffers
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sequential.get_buffers

@@ -1,0 +1,6 @@
+compyute.nn.GRU.inference
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GRU.inference

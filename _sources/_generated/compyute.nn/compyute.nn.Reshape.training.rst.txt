@@ -1,0 +1,6 @@
+compyute.nn.Reshape.training
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Reshape.training

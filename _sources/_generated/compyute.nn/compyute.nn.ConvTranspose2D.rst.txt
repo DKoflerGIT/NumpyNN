@@ -1,0 +1,48 @@
+﻿compyute.nn.ConvTranspose2D
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: ConvTranspose2D
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~ConvTranspose2D.__init__
+        ~ConvTranspose2D.backward
+        ~ConvTranspose2D.clean
+        ~ConvTranspose2D.forward
+        ~ConvTranspose2D.get_buffers
+        ~ConvTranspose2D.get_modules
+        ~ConvTranspose2D.get_parameters
+        ~ConvTranspose2D.get_state_dict
+        ~ConvTranspose2D.inference
+        ~ConvTranspose2D.load_state_dict
+        ~ConvTranspose2D.register_backward
+        ~ConvTranspose2D.register_forward
+        ~ConvTranspose2D.to_device
+        ~ConvTranspose2D.to_type
+        ~ConvTranspose2D.training
+        ~ConvTranspose2D.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~ConvTranspose2D.device
+        ~ConvTranspose2D.dtype
+        ~ConvTranspose2D.is_training
+        ~ConvTranspose2D.n_modules
+        ~ConvTranspose2D.retain_values
+        ~ConvTranspose2D.trainable
+    
+    

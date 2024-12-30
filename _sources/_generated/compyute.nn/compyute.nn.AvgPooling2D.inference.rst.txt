@@ -1,0 +1,6 @@
+compyute.nn.AvgPooling2D.inference
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: AvgPooling2D.inference

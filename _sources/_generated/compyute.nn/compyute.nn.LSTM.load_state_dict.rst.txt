@@ -1,0 +1,6 @@
+compyute.nn.LSTM.load\_state\_dict
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LSTM.load_state_dict

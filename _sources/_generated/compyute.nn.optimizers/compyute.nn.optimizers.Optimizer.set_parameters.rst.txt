@@ -1,0 +1,6 @@
+compyute.nn.optimizers.Optimizer.set\_parameters
+================================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: Optimizer.set_parameters

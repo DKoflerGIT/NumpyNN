@@ -1,0 +1,6 @@
+compyute.nn.Recurrent.to\_type
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Recurrent.to_type

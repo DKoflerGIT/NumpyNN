@@ -1,0 +1,6 @@
+compyute.Tensor.to\_numpy
+=========================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.to_numpy

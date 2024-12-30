@@ -1,0 +1,6 @@
+﻿compyute.set\_default\_device
+=============================
+
+.. currentmodule:: compyute
+
+.. autofunction:: set_default_device

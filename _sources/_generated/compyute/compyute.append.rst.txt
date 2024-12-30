@@ -1,0 +1,6 @@
+﻿compyute.append
+===============
+
+.. currentmodule:: compyute
+
+.. autofunction:: append

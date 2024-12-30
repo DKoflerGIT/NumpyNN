@@ -1,0 +1,6 @@
+compyute.nn.ParallelConcat.register\_forward
+============================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelConcat.register_forward

@@ -1,0 +1,6 @@
+compyute.nn.Parameter.item
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Parameter.item

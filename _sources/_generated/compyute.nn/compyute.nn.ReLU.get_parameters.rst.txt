@@ -1,0 +1,6 @@
+compyute.nn.ReLU.get\_parameters
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ReLU.get_parameters

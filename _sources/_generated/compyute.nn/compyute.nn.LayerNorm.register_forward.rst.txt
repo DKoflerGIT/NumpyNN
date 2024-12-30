@@ -1,0 +1,6 @@
+compyute.nn.LayerNorm.register\_forward
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LayerNorm.register_forward

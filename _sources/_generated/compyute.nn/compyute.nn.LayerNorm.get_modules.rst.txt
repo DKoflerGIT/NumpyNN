@@ -1,0 +1,6 @@
+compyute.nn.LayerNorm.get\_modules
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LayerNorm.get_modules

@@ -1,0 +1,6 @@
+compyute.nn.Upsample2D.clean
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Upsample2D.clean

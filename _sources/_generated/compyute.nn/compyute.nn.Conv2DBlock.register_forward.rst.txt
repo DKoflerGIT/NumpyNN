@@ -1,0 +1,6 @@
+compyute.nn.Conv2DBlock.register\_forward
+=========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv2DBlock.register_forward

@@ -1,0 +1,6 @@
+compyute.nn.Embedding.\_\_init\_\_
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Embedding.__init__

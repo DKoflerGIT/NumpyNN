@@ -1,0 +1,6 @@
+compyute.nn.Slice.\_\_init\_\_
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Slice.__init__

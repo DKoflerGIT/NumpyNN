@@ -1,0 +1,48 @@
+﻿compyute.nn.MaxPooling2D
+========================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: MaxPooling2D
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~MaxPooling2D.__init__
+        ~MaxPooling2D.backward
+        ~MaxPooling2D.clean
+        ~MaxPooling2D.forward
+        ~MaxPooling2D.get_buffers
+        ~MaxPooling2D.get_modules
+        ~MaxPooling2D.get_parameters
+        ~MaxPooling2D.get_state_dict
+        ~MaxPooling2D.inference
+        ~MaxPooling2D.load_state_dict
+        ~MaxPooling2D.register_backward
+        ~MaxPooling2D.register_forward
+        ~MaxPooling2D.to_device
+        ~MaxPooling2D.to_type
+        ~MaxPooling2D.training
+        ~MaxPooling2D.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~MaxPooling2D.device
+        ~MaxPooling2D.dtype
+        ~MaxPooling2D.is_training
+        ~MaxPooling2D.n_modules
+        ~MaxPooling2D.retain_values
+        ~MaxPooling2D.trainable
+    
+    

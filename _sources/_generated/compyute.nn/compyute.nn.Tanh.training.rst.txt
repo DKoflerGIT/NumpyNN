@@ -1,0 +1,6 @@
+compyute.nn.Tanh.training
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Tanh.training

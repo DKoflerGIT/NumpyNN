@@ -1,0 +1,6 @@
+﻿compyute.concat
+===============
+
+.. currentmodule:: compyute
+
+.. autofunction:: concat

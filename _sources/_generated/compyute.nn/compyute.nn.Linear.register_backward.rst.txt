@@ -1,0 +1,6 @@
+compyute.nn.Linear.register\_backward
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Linear.register_backward

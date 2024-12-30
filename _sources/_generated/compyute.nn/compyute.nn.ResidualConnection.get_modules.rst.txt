@@ -1,0 +1,6 @@
+compyute.nn.ResidualConnection.get\_modules
+===========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ResidualConnection.get_modules

@@ -1,0 +1,6 @@
+compyute.nn.Sigmoid.get\_parameters
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sigmoid.get_parameters

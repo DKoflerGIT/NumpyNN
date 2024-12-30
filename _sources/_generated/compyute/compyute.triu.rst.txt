@@ -1,0 +1,6 @@
+﻿compyute.triu
+=============
+
+.. currentmodule:: compyute
+
+.. autofunction:: triu

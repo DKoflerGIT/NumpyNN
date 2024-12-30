@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.softmax
+==============================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: softmax

@@ -1,0 +1,6 @@
+﻿compyute.einsum
+===============
+
+.. currentmodule:: compyute
+
+.. autofunction:: einsum

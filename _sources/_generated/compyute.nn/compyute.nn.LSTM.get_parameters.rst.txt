@@ -1,0 +1,6 @@
+compyute.nn.LSTM.get\_parameters
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LSTM.get_parameters

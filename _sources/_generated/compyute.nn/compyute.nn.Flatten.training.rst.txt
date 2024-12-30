@@ -1,0 +1,6 @@
+compyute.nn.Flatten.training
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Flatten.training

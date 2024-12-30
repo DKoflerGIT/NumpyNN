@@ -1,0 +1,6 @@
+compyute.nn.Recurrent.clean
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Recurrent.clean

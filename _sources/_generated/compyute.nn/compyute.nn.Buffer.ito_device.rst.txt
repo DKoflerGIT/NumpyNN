@@ -1,0 +1,6 @@
+compyute.nn.Buffer.ito\_device
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.ito_device

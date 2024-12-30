@@ -1,0 +1,6 @@
+compyute.nn.GRU.get\_state\_dict
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GRU.get_state_dict

@@ -1,0 +1,6 @@
+compyute.nn.Sequential.inference
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sequential.inference

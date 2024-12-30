@@ -1,0 +1,6 @@
+compyute.nn.RMSNorm.update\_parameter\_grad
+===========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: RMSNorm.update_parameter_grad

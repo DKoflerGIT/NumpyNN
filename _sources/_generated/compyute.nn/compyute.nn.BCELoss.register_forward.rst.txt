@@ -1,0 +1,6 @@
+compyute.nn.BCELoss.register\_forward
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: BCELoss.register_forward

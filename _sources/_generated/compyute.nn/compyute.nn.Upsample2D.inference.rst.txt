@@ -1,0 +1,6 @@
+compyute.nn.Upsample2D.inference
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Upsample2D.inference

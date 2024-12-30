@@ -1,0 +1,48 @@
+﻿compyute.nn.GRU
+===============
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: GRU
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~GRU.__init__
+        ~GRU.backward
+        ~GRU.clean
+        ~GRU.forward
+        ~GRU.get_buffers
+        ~GRU.get_modules
+        ~GRU.get_parameters
+        ~GRU.get_state_dict
+        ~GRU.inference
+        ~GRU.load_state_dict
+        ~GRU.register_backward
+        ~GRU.register_forward
+        ~GRU.to_device
+        ~GRU.to_type
+        ~GRU.training
+        ~GRU.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~GRU.device
+        ~GRU.dtype
+        ~GRU.is_training
+        ~GRU.n_modules
+        ~GRU.retain_values
+        ~GRU.trainable
+    
+    

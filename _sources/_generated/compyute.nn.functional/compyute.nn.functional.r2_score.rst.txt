@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.r2\_score
+================================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: r2_score

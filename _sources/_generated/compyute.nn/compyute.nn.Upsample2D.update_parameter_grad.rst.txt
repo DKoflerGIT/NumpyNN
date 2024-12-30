@@ -1,0 +1,6 @@
+compyute.nn.Upsample2D.update\_parameter\_grad
+==============================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Upsample2D.update_parameter_grad

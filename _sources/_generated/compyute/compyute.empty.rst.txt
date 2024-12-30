@@ -1,0 +1,6 @@
+﻿compyute.empty
+==============
+
+.. currentmodule:: compyute
+
+.. autofunction:: empty

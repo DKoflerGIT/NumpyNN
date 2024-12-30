@@ -1,0 +1,6 @@
+compyute.nn.BatchNorm1D.load\_state\_dict
+=========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: BatchNorm1D.load_state_dict

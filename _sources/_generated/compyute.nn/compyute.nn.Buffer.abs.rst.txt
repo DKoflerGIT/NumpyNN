@@ -1,0 +1,6 @@
+compyute.nn.Buffer.abs
+======================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.abs

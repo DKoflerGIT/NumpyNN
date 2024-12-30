@@ -1,0 +1,6 @@
+compyute.nn.ReLU.\_\_init\_\_
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ReLU.__init__

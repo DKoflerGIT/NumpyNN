@@ -1,0 +1,6 @@
+compyute.nn.FastGELU.to\_device
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: FastGELU.to_device

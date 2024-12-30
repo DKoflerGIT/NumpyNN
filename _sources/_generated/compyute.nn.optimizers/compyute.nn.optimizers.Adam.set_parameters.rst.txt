@@ -1,0 +1,6 @@
+compyute.nn.optimizers.Adam.set\_parameters
+===========================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: Adam.set_parameters

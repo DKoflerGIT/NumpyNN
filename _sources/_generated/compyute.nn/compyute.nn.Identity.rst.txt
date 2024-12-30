@@ -1,0 +1,48 @@
+﻿compyute.nn.Identity
+====================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Identity
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Identity.__init__
+        ~Identity.backward
+        ~Identity.clean
+        ~Identity.forward
+        ~Identity.get_buffers
+        ~Identity.get_modules
+        ~Identity.get_parameters
+        ~Identity.get_state_dict
+        ~Identity.inference
+        ~Identity.load_state_dict
+        ~Identity.register_backward
+        ~Identity.register_forward
+        ~Identity.to_device
+        ~Identity.to_type
+        ~Identity.training
+        ~Identity.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~Identity.device
+        ~Identity.dtype
+        ~Identity.is_training
+        ~Identity.n_modules
+        ~Identity.retain_values
+        ~Identity.trainable
+    
+    

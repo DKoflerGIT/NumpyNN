@@ -1,0 +1,6 @@
+﻿compyute.sin
+============
+
+.. currentmodule:: compyute
+
+.. autofunction:: sin

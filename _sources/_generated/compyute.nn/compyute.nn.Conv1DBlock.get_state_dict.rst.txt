@@ -1,0 +1,6 @@
+compyute.nn.Conv1DBlock.get\_state\_dict
+========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv1DBlock.get_state_dict

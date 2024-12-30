@@ -1,0 +1,6 @@
+compyute.nn.FastGELU.inference
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: FastGELU.inference

@@ -1,0 +1,6 @@
+compyute.nn.Slice.to\_type
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Slice.to_type

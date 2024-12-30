@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.relu
+===========================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: relu

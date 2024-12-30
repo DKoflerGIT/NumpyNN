@@ -1,0 +1,6 @@
+﻿compyute.var
+============
+
+.. currentmodule:: compyute
+
+.. autofunction:: var

@@ -1,0 +1,6 @@
+compyute.nn.ReLU.to\_type
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ReLU.to_type

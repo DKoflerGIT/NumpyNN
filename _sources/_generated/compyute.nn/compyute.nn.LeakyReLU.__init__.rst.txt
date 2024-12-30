@@ -1,0 +1,6 @@
+compyute.nn.LeakyReLU.\_\_init\_\_
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LeakyReLU.__init__

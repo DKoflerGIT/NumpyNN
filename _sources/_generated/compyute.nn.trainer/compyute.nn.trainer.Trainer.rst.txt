@@ -1,0 +1,24 @@
+﻿compyute.nn.trainer.Trainer
+===========================
+
+.. currentmodule:: compyute.nn.trainer
+
+.. autoclass:: Trainer
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Trainer.__init__
+        ~Trainer.evaluate_model
+        ~Trainer.train
+    
+    
+
+
+    
+    
+    

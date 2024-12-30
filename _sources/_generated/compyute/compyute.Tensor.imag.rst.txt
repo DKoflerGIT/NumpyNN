@@ -1,0 +1,6 @@
+compyute.Tensor.imag
+====================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.imag

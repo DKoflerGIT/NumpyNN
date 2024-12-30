@@ -1,0 +1,6 @@
+compyute.nn.Identity.register\_backward
+=======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Identity.register_backward

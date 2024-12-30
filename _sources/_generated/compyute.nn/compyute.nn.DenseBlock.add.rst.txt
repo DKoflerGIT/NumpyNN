@@ -1,0 +1,6 @@
+compyute.nn.DenseBlock.add
+==========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: DenseBlock.add

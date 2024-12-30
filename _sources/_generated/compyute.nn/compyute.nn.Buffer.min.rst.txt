@@ -1,0 +1,6 @@
+compyute.nn.Buffer.min
+======================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.min

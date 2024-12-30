@@ -1,0 +1,6 @@
+compyute.nn.ModuleList.reverse
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ModuleList.reverse

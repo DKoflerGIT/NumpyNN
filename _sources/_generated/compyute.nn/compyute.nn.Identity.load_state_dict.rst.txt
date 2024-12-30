@@ -1,0 +1,6 @@
+compyute.nn.Identity.load\_state\_dict
+======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Identity.load_state_dict

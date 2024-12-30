@@ -1,0 +1,6 @@
+compyute.nn.Identity.register\_forward
+======================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Identity.register_forward

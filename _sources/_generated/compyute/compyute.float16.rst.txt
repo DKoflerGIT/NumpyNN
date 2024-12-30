@@ -1,0 +1,6 @@
+﻿compyute.float16
+================
+
+.. currentmodule:: compyute
+
+.. autodata:: float16

@@ -1,0 +1,6 @@
+compyute.nn.SiLU.load\_state\_dict
+==================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: SiLU.load_state_dict

@@ -1,0 +1,6 @@
+compyute.nn.RMSNorm.get\_buffers
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: RMSNorm.get_buffers

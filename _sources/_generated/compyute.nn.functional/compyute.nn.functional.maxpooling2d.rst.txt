@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.maxpooling2d
+===================================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: maxpooling2d

@@ -1,0 +1,6 @@
+compyute.nn.Buffer.sum
+======================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.sum

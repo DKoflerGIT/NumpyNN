@@ -1,0 +1,6 @@
+compyute.nn.Dropout.update\_parameter\_grad
+===========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Dropout.update_parameter_grad

@@ -1,0 +1,27 @@
+﻿compyute.nn.optimizers.Adam
+===========================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. autoclass:: Adam
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Adam.__init__
+        ~Adam.get_state_dict
+        ~Adam.load_state_dict
+        ~Adam.reset_grads
+        ~Adam.set_parameters
+        ~Adam.step
+    
+    
+
+
+    
+    
+    

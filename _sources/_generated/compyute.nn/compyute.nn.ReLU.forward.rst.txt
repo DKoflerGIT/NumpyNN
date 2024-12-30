@@ -1,0 +1,6 @@
+compyute.nn.ReLU.forward
+========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ReLU.forward

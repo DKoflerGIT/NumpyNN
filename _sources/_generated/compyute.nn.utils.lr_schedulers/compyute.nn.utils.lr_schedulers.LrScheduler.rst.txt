@@ -1,0 +1,23 @@
+﻿compyute.nn.utils.lr\_schedulers.LrScheduler
+============================================
+
+.. currentmodule:: compyute.nn.utils.lr_schedulers
+
+.. autoclass:: LrScheduler
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~LrScheduler.__init__
+        ~LrScheduler.step
+    
+    
+
+
+    
+    
+    

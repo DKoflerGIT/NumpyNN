@@ -1,0 +1,6 @@
+compyute.nn.Buffer.copy
+=======================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.copy

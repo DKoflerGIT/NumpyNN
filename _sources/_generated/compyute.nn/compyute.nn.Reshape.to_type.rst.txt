@@ -1,0 +1,6 @@
+compyute.nn.Reshape.to\_type
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Reshape.to_type

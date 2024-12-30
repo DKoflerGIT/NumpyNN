@@ -1,0 +1,6 @@
+compyute.nn.ReLU.backward
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ReLU.backward

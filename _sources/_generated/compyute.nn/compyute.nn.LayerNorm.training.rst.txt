@@ -1,0 +1,6 @@
+compyute.nn.LayerNorm.training
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LayerNorm.training

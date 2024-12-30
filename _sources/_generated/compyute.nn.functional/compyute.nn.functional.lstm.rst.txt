@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.lstm
+===========================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: lstm

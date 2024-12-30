@@ -1,0 +1,6 @@
+compyute.nn.LeakyReLU.clean
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LeakyReLU.clean

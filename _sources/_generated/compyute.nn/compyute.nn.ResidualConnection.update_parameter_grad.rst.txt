@@ -1,0 +1,6 @@
+compyute.nn.ResidualConnection.update\_parameter\_grad
+======================================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ResidualConnection.update_parameter_grad

@@ -1,0 +1,6 @@
+compyute.nn.LSTM.backward
+=========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LSTM.backward

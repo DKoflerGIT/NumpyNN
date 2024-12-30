@@ -1,0 +1,6 @@
+compyute.nn.RMSNorm.inference
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: RMSNorm.inference

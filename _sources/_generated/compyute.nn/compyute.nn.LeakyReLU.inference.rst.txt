@@ -1,0 +1,6 @@
+compyute.nn.LeakyReLU.inference
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LeakyReLU.inference

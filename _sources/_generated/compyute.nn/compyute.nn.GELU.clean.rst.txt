@@ -1,0 +1,6 @@
+compyute.nn.GELU.clean
+======================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: GELU.clean

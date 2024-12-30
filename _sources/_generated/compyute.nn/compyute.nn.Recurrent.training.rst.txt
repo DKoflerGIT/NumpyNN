@@ -1,0 +1,6 @@
+compyute.nn.Recurrent.training
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Recurrent.training

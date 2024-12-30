@@ -1,0 +1,6 @@
+compyute.nn.BatchNorm1D.inference
+=================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: BatchNorm1D.inference

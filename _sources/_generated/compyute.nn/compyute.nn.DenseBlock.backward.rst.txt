@@ -1,0 +1,6 @@
+compyute.nn.DenseBlock.backward
+===============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: DenseBlock.backward

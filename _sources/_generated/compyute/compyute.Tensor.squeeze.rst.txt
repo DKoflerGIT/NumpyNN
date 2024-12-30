@@ -1,0 +1,6 @@
+compyute.Tensor.squeeze
+=======================
+
+.. currentmodule:: compyute
+
+.. automethod:: Tensor.squeeze

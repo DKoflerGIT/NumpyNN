@@ -1,0 +1,6 @@
+compyute.nn.trainer.callbacks.ExponentialLrScheduler.on\_epoch\_end
+===================================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. automethod:: ExponentialLrScheduler.on_epoch_end

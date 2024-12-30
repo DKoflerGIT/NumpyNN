@@ -1,0 +1,6 @@
+compyute.nn.Softmax.to\_type
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Softmax.to_type

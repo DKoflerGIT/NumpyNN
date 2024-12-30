@@ -1,0 +1,6 @@
+compyute.nn.optimizers.SGD.set\_parameters
+==========================================
+
+.. currentmodule:: compyute.nn.optimizers
+
+.. automethod:: SGD.set_parameters

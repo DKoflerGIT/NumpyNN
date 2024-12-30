@@ -1,0 +1,6 @@
+compyute.nn.Embedding.backward
+==============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Embedding.backward

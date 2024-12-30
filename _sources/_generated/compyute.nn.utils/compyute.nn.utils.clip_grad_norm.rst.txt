@@ -1,0 +1,6 @@
+﻿compyute.nn.utils.clip\_grad\_norm
+==================================
+
+.. currentmodule:: compyute.nn.utils
+
+.. autofunction:: clip_grad_norm

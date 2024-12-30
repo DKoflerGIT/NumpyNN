@@ -1,0 +1,48 @@
+﻿compyute.nn.AvgPooling2D
+========================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: AvgPooling2D
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~AvgPooling2D.__init__
+        ~AvgPooling2D.backward
+        ~AvgPooling2D.clean
+        ~AvgPooling2D.forward
+        ~AvgPooling2D.get_buffers
+        ~AvgPooling2D.get_modules
+        ~AvgPooling2D.get_parameters
+        ~AvgPooling2D.get_state_dict
+        ~AvgPooling2D.inference
+        ~AvgPooling2D.load_state_dict
+        ~AvgPooling2D.register_backward
+        ~AvgPooling2D.register_forward
+        ~AvgPooling2D.to_device
+        ~AvgPooling2D.to_type
+        ~AvgPooling2D.training
+        ~AvgPooling2D.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~AvgPooling2D.device
+        ~AvgPooling2D.dtype
+        ~AvgPooling2D.is_training
+        ~AvgPooling2D.n_modules
+        ~AvgPooling2D.retain_values
+        ~AvgPooling2D.trainable
+    
+    

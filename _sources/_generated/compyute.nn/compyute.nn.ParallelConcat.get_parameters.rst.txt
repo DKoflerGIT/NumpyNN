@@ -1,0 +1,6 @@
+compyute.nn.ParallelConcat.get\_parameters
+==========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelConcat.get_parameters

@@ -1,0 +1,6 @@
+compyute.nn.ModuleList.index
+============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ModuleList.index

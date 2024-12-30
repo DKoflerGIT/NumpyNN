@@ -1,0 +1,6 @@
+﻿compyute.empty\_like
+====================
+
+.. currentmodule:: compyute
+
+.. autofunction:: empty_like

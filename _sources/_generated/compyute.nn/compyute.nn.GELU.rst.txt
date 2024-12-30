@@ -1,0 +1,48 @@
+﻿compyute.nn.GELU
+================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: GELU
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~GELU.__init__
+        ~GELU.backward
+        ~GELU.clean
+        ~GELU.forward
+        ~GELU.get_buffers
+        ~GELU.get_modules
+        ~GELU.get_parameters
+        ~GELU.get_state_dict
+        ~GELU.inference
+        ~GELU.load_state_dict
+        ~GELU.register_backward
+        ~GELU.register_forward
+        ~GELU.to_device
+        ~GELU.to_type
+        ~GELU.training
+        ~GELU.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~GELU.device
+        ~GELU.dtype
+        ~GELU.is_training
+        ~GELU.n_modules
+        ~GELU.retain_values
+        ~GELU.trainable
+    
+    

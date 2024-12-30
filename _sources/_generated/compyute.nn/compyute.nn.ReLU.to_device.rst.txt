@@ -1,0 +1,6 @@
+compyute.nn.ReLU.to\_device
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ReLU.to_device

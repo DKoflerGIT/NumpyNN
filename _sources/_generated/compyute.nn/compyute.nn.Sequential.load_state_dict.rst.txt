@@ -1,0 +1,6 @@
+compyute.nn.Sequential.load\_state\_dict
+========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sequential.load_state_dict

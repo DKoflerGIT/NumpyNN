@@ -1,0 +1,6 @@
+compyute.nn.trainer.callbacks.ProgressBar.on\_epoch\_end
+========================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. automethod:: ProgressBar.on_epoch_end

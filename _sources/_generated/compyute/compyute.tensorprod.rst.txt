@@ -1,0 +1,6 @@
+﻿compyute.tensorprod
+===================
+
+.. currentmodule:: compyute
+
+.. autofunction:: tensorprod

@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.layernorm
+================================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: layernorm

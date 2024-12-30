@@ -1,0 +1,6 @@
+compyute.nn.Flatten.inference
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Flatten.inference

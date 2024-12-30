@@ -1,0 +1,6 @@
+compyute.nn.Conv1DBlock.clean
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Conv1DBlock.clean

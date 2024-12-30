@@ -1,0 +1,6 @@
+compyute.nn.Tanh.get\_modules
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Tanh.get_modules

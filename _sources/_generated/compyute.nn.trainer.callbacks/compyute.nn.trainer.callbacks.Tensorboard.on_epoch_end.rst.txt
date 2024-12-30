@@ -1,0 +1,6 @@
+compyute.nn.trainer.callbacks.Tensorboard.on\_epoch\_end
+========================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. automethod:: Tensorboard.on_epoch_end

@@ -1,0 +1,6 @@
+﻿compyute.std
+============
+
+.. currentmodule:: compyute
+
+.. autofunction:: std

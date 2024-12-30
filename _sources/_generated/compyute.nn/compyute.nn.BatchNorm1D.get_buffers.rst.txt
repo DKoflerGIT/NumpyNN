@@ -1,0 +1,6 @@
+compyute.nn.BatchNorm1D.get\_buffers
+====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: BatchNorm1D.get_buffers

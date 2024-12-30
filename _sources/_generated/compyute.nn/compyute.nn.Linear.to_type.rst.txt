@@ -1,0 +1,6 @@
+compyute.nn.Linear.to\_type
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Linear.to_type

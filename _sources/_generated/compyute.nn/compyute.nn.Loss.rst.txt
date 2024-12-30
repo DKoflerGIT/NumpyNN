@@ -1,0 +1,26 @@
+﻿compyute.nn.Loss
+================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: Loss
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~Loss.__init__
+        ~Loss.backward
+        ~Loss.forward
+        ~Loss.register_backward
+        ~Loss.register_forward
+    
+    
+
+
+    
+    
+    

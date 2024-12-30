@@ -1,0 +1,6 @@
+compyute.nn.Sequential.get\_modules
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sequential.get_modules

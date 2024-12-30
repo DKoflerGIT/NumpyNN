@@ -1,0 +1,6 @@
+﻿compyute.nn.functional.dilate2d
+===============================
+
+.. currentmodule:: compyute.nn.functional
+
+.. autofunction:: dilate2d

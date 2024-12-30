@@ -1,0 +1,6 @@
+compyute.nn.ParallelConcat.get\_state\_dict
+===========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ParallelConcat.get_state_dict

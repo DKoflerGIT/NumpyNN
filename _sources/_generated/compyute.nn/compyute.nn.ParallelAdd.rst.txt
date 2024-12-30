@@ -1,0 +1,48 @@
+﻿compyute.nn.ParallelAdd
+=======================
+
+.. currentmodule:: compyute.nn
+
+.. autoclass:: ParallelAdd
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~ParallelAdd.__init__
+        ~ParallelAdd.backward
+        ~ParallelAdd.clean
+        ~ParallelAdd.forward
+        ~ParallelAdd.get_buffers
+        ~ParallelAdd.get_modules
+        ~ParallelAdd.get_parameters
+        ~ParallelAdd.get_state_dict
+        ~ParallelAdd.inference
+        ~ParallelAdd.load_state_dict
+        ~ParallelAdd.register_backward
+        ~ParallelAdd.register_forward
+        ~ParallelAdd.to_device
+        ~ParallelAdd.to_type
+        ~ParallelAdd.training
+        ~ParallelAdd.update_parameter_grad
+    
+    
+
+
+    
+    
+    .. rubric:: Attributes
+
+    .. autosummary::
+    
+        ~ParallelAdd.device
+        ~ParallelAdd.dtype
+        ~ParallelAdd.is_training
+        ~ParallelAdd.n_modules
+        ~ParallelAdd.retain_values
+        ~ParallelAdd.trainable
+    
+    

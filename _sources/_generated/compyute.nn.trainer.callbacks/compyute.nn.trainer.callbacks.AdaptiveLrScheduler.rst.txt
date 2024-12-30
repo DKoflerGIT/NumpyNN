@@ -1,0 +1,28 @@
+﻿compyute.nn.trainer.callbacks.AdaptiveLrScheduler
+=================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. autoclass:: AdaptiveLrScheduler
+
+    
+    
+    .. rubric:: Methods
+
+    .. autosummary::
+        :toctree:
+    
+        ~AdaptiveLrScheduler.__init__
+        ~AdaptiveLrScheduler.on_epoch_end
+        ~AdaptiveLrScheduler.on_epoch_start
+        ~AdaptiveLrScheduler.on_run_end
+        ~AdaptiveLrScheduler.on_run_start
+        ~AdaptiveLrScheduler.on_step_end
+        ~AdaptiveLrScheduler.on_step_start
+    
+    
+
+
+    
+    
+    

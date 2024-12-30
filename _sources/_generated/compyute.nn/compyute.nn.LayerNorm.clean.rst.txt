@@ -1,0 +1,6 @@
+compyute.nn.LayerNorm.clean
+===========================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: LayerNorm.clean

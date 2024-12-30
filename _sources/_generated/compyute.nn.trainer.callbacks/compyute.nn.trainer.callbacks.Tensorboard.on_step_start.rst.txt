@@ -1,0 +1,6 @@
+compyute.nn.trainer.callbacks.Tensorboard.on\_step\_start
+=========================================================
+
+.. currentmodule:: compyute.nn.trainer.callbacks
+
+.. automethod:: Tensorboard.on_step_start

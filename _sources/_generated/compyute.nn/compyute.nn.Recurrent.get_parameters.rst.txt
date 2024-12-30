@@ -1,0 +1,6 @@
+compyute.nn.Recurrent.get\_parameters
+=====================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Recurrent.get_parameters

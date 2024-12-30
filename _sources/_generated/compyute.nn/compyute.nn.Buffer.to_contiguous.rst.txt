@@ -1,0 +1,6 @@
+compyute.nn.Buffer.to\_contiguous
+=================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Buffer.to_contiguous

@@ -1,0 +1,6 @@
+compyute.nn.Module.to\_device
+=============================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Module.to_device

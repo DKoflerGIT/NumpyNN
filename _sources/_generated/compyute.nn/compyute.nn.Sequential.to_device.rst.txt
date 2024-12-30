@@ -1,0 +1,6 @@
+compyute.nn.Sequential.to\_device
+=================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Sequential.to_device

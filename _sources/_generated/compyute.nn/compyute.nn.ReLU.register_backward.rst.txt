@@ -1,0 +1,6 @@
+compyute.nn.ReLU.register\_backward
+===================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: ReLU.register_backward

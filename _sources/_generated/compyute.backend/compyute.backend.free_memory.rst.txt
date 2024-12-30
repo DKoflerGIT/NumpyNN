@@ -1,0 +1,6 @@
+﻿compyute.backend.free\_memory
+=============================
+
+.. currentmodule:: compyute.backend
+
+.. autofunction:: free_memory

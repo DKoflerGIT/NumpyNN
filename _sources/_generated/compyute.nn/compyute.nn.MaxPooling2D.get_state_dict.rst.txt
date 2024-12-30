@@ -1,0 +1,6 @@
+compyute.nn.MaxPooling2D.get\_state\_dict
+=========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: MaxPooling2D.get_state_dict

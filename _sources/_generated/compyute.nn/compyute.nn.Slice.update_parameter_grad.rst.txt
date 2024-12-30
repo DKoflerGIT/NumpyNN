@@ -1,0 +1,6 @@
+compyute.nn.Slice.update\_parameter\_grad
+=========================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: Slice.update_parameter_grad

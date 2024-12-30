@@ -1,0 +1,6 @@
+compyute.nn.BatchNorm2D.backward
+================================
+
+.. currentmodule:: compyute.nn
+
+.. automethod:: BatchNorm2D.backward
