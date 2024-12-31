@@ -317,7 +317,7 @@ class Module(ABC):
         @wraps(fwd_fn)
         def wrapper(m: Module, x: Tensor) -> Tensor:
 
-            m.function_ctx.context.clear()
+            m.function_ctx.clear()
 
             if get_debug_mode():
                 dt = time.perf_counter()

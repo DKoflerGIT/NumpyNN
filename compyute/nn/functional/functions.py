@@ -27,6 +27,10 @@ class FunctionContext:
             return items[0]
         return items
 
+    def clear(self) -> None:
+        """Empties the context cache."""
+        self.context.clear()
+
 
 class PseudoContext(FunctionContext):
     """Pseudo context that does not cache anything."""
