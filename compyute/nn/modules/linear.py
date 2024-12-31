@@ -56,7 +56,7 @@ class Linear(Module):
         self.bias = bias
 
         # init parameters
-        k = 1.0 / math.sqrt(self.in_channels)
+        k = 1.0 / math.sqrt(in_channels)
         self.w = Parameter(uniform((out_channels, in_channels), -k, k))
         self.b = None if not bias else Parameter(uniform((out_channels,), -k, k))
 

@@ -65,7 +65,7 @@ class Recurrent(Module):
         self.activation = activation
 
         # init parameters
-        k = 1.0 / math.sqrt(self.h_channels)
+        k = 1.0 / math.sqrt(h_channels)
         self.w_i = Parameter(uniform((h_channels, in_channels), -k, k))
         self.b_i = Parameter(uniform((h_channels,), -k, k))
         self.w_h = Parameter(uniform((h_channels, h_channels), -k, k))
@@ -156,7 +156,7 @@ class LSTM(Module):
         self.activation = activation
 
         # init parameters
-        k = 1.0 / math.sqrt(self.h_channels)
+        k = 1.0 / math.sqrt(h_channels)
         self.w_i = Parameter(uniform((4 * h_channels, in_channels), -k, k))
         self.b_i = None if not bias else Parameter(uniform((4 * h_channels,), -k, k))
         self.w_h = Parameter(uniform((4 * h_channels, h_channels), -k, k))
@@ -245,7 +245,7 @@ class GRU(Module):
         self.activation = activation
 
         # init parameters
-        k = 1.0 / math.sqrt(self.h_channels)
+        k = 1.0 / math.sqrt(h_channels)
         self.w_i = Parameter(uniform((h_channels, in_channels), -k, k))
         self.b_i = None if not bias else Parameter(uniform((h_channels,), -k, k))
         self.w_h = Parameter(uniform((h_channels, h_channels), -k, k))

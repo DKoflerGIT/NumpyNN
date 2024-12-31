@@ -96,7 +96,7 @@ class Conv1D(Module):
         self.bias = bias
 
         # init parameters
-        k = 1.0 / math.sqrt(self.in_channels * self.kernel_size)
+        k = 1.0 / math.sqrt(in_channels * kernel_size)
         w_shape = (out_channels, in_channels, kernel_size)
         self.w = Parameter(uniform(w_shape, -k, k))
         self.b = None if not bias else Parameter(uniform((out_channels,), -k, k))
@@ -191,7 +191,7 @@ class Conv2D(Module):
         self.bias = bias
 
         # init parameters
-        k = 1.0 / math.sqrt(self.in_channels * self.kernel_size * self.kernel_size)
+        k = 1.0 / math.sqrt(in_channels * kernel_size * kernel_size)
         w_shape = (out_channels, in_channels, kernel_size, kernel_size)
         self.w = Parameter(uniform(w_shape, -k, k))
         self.b = None if not bias else Parameter(uniform((out_channels,), -k, k))
@@ -280,7 +280,7 @@ class ConvTranspose1D(Module):
         self.bias = bias
 
         # init parameters
-        k = 1.0 / math.sqrt(self.in_channels * self.kernel_size * self.kernel_size)
+        k = 1.0 / math.sqrt(in_channels * kernel_size * kernel_size)
         w_shape = (out_channels, in_channels, kernel_size, kernel_size)
         self.w = Parameter(uniform(w_shape, -k, k))
         self.b = None if not bias else Parameter(uniform((out_channels,), -k, k))
@@ -371,7 +371,7 @@ class ConvTranspose2D(Module):
         self.bias = bias
 
         # init parameters
-        k = 1.0 / math.sqrt(self.in_channels * self.kernel_size * self.kernel_size)
+        k = 1.0 / math.sqrt(in_channels * kernel_size * kernel_size)
         w_shape = (out_channels, in_channels, kernel_size, kernel_size)
         self.w = Parameter(uniform(w_shape, -k, k))
         self.b = None if not bias else Parameter(uniform((out_channels,), -k, k))
