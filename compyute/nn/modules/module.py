@@ -389,12 +389,12 @@ class Module(ABC):
         self, parameter: Optional[Parameter], grad: Optional[Tensor]
     ) -> None:
         """Updates the parameter gradients."""
-        if not (self.trainable and parameter and grad):
+        if not self.trainable or not parameter:
             return
-        if parameter.grad is None:
+        if not parameter.grad:
             parameter.grad = grad
         else:
-            parameter.grad += grad  # for gradient accumulation
+            parameter.grad += grad  # accumulate gradients
 
 
 class Identity(Module):
