@@ -49,10 +49,10 @@ class Embedding(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return EmbeddingFunction.forward(self.function_ctx, x, self.w)
+        return EmbeddingFunction.forward(self.ctx, x, self.w)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        dw = EmbeddingFunction.backward(self.function_ctx, dy)
+        dw = EmbeddingFunction.backward(self.ctx, dy)
         self.update_parameter_grad(self.w, dw)
         return empty((0,))

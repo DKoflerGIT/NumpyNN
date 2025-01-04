@@ -27,8 +27,8 @@ class Dropout(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return DropoutFunction.forward(self.function_ctx, x, self.p, self._is_training)
+        return DropoutFunction.forward(self.ctx, x, self.p, self._is_training)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return DropoutFunction.backward(self.function_ctx, dy)
+        return DropoutFunction.backward(self.ctx, dy)

@@ -42,11 +42,11 @@ class GELU(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return GELUFunction.forward(self.function_ctx, x)
+        return GELUFunction.forward(self.ctx, x)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return GELUFunction.backward(self.function_ctx, dy)
+        return GELUFunction.backward(self.ctx, dy)
 
 
 class FastGELU(Module):
@@ -64,11 +64,11 @@ class FastGELU(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return FastGELUFunction.forward(self.function_ctx, x)
+        return FastGELUFunction.forward(self.ctx, x)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return FastGELUFunction.backward(self.function_ctx, dy)
+        return FastGELUFunction.backward(self.ctx, dy)
 
 
 class LeakyReLU(Module):
@@ -91,11 +91,11 @@ class LeakyReLU(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return LeakyReLUFunction.forward(self.function_ctx, x, self.alpha)
+        return LeakyReLUFunction.forward(self.ctx, x, self.alpha)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return LeakyReLUFunction.backward(self.function_ctx, dy)
+        return LeakyReLUFunction.backward(self.ctx, dy)
 
 
 class ReLU(Module):
@@ -113,11 +113,11 @@ class ReLU(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return ReLUFunction.forward(self.function_ctx, x)
+        return ReLUFunction.forward(self.ctx, x)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return ReLUFunction.backward(self.function_ctx, dy)
+        return ReLUFunction.backward(self.ctx, dy)
 
 
 class Sigmoid(Module):
@@ -134,11 +134,11 @@ class Sigmoid(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return SigmoidFunction.forward(self.function_ctx, x)
+        return SigmoidFunction.forward(self.ctx, x)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return SigmoidFunction.backward(self.function_ctx, dy)
+        return SigmoidFunction.backward(self.ctx, dy)
 
 
 class SiLU(Module):
@@ -155,11 +155,11 @@ class SiLU(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return SiLUFunction.forward(self.function_ctx, x)
+        return SiLUFunction.forward(self.ctx, x)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return SiLUFunction.backward(self.function_ctx, dy)
+        return SiLUFunction.backward(self.ctx, dy)
 
 
 class Softmax(Module):
@@ -176,11 +176,11 @@ class Softmax(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return SoftmaxFunction.forward(self.function_ctx, x, -1)
+        return SoftmaxFunction.forward(self.ctx, x, -1)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return SoftmaxFunction.backward(self.function_ctx, dy)
+        return SoftmaxFunction.backward(self.ctx, dy)
 
 
 class Tanh(Module):
@@ -197,11 +197,11 @@ class Tanh(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return TanhFunction.forward(self.function_ctx, x)
+        return TanhFunction.forward(self.ctx, x)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return TanhFunction.backward(self.function_ctx, dy)
+        return TanhFunction.backward(self.ctx, dy)
 
 
 ActivationLike: TypeAlias = Literal[

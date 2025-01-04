@@ -74,7 +74,7 @@ class Recurrent(Module):
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
         return RecurrentFunction.forward(
-            self.function_ctx,
+            self.ctx,
             x,
             self.w_i,
             self.b_i,
@@ -85,7 +85,7 @@ class Recurrent(Module):
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        dx, dw_i, db_i, dw_h, db_h = RecurrentFunction.backward(self.function_ctx, dy)
+        dx, dw_i, db_i, dw_h, db_h = RecurrentFunction.backward(self.ctx, dy)
         self.update_parameter_grad(self.w_i, dw_i)
         self.update_parameter_grad(self.b_i, db_i)
         self.update_parameter_grad(self.w_h, dw_h)
@@ -165,7 +165,7 @@ class LSTM(Module):
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
         return LSTMFunction.forward(
-            self.function_ctx,
+            self.ctx,
             x,
             self.w_i,
             self.b_i,
@@ -176,7 +176,7 @@ class LSTM(Module):
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        dx, dw_i, db_i, dw_h, db_h = LSTMFunction.backward(self.function_ctx, dy)
+        dx, dw_i, db_i, dw_h, db_h = LSTMFunction.backward(self.ctx, dy)
         self.update_parameter_grad(self.w_i, dw_i)
         self.update_parameter_grad(self.b_i, db_i)
         self.update_parameter_grad(self.w_h, dw_h)
@@ -254,7 +254,7 @@ class GRU(Module):
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
         return GRUFunction.forward(
-            self.function_ctx,
+            self.ctx,
             x,
             self.w_i,
             self.b_i,
@@ -265,7 +265,7 @@ class GRU(Module):
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        dx, dw_i, db_i, dw_h, db_h = GRUFunction.backward(self.function_ctx, dy)
+        dx, dw_i, db_i, dw_h, db_h = GRUFunction.backward(self.ctx, dy)
         self.update_parameter_grad(self.w_i, dw_i)
         self.update_parameter_grad(self.b_i, db_i)
         self.update_parameter_grad(self.w_h, dw_h)

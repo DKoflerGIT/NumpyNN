@@ -31,7 +31,7 @@ class Module(ABC):
 
     def __init__(self, label: Optional[str] = None) -> None:
         self.label = label or self.__class__.__name__
-        self.function_ctx = FunctionContext()
+        self.ctx = FunctionContext()
         self.x: Optional[Tensor] = None
         self.y: Optional[Tensor] = None
         self._is_training = True
@@ -121,7 +121,7 @@ class Module(ABC):
     def training(self) -> None:
         """Puts the module in training mode."""
         self._is_training = True
-        self.function_ctx = FunctionContext()
+        self.ctx = FunctionContext()
 
         for module in self.get_modules(recursive=False):
             module.training()
@@ -129,7 +129,7 @@ class Module(ABC):
     def inference(self) -> None:
         """Puts the module in inference mode."""
         self._is_training = False
-        self.function_ctx = PseudoContext()
+        self.ctx = PseudoContext()
 
         for module in self.get_modules(recursive=False):
             module.inference()
@@ -317,7 +317,7 @@ class Module(ABC):
         @wraps(fwd_fn)
         def wrapper(m: Module, x: Tensor) -> Tensor:
 
-            m.function_ctx.clear()
+            m.ctx.clear()
 
             if get_debug_mode():
                 dt = time.perf_counter()
@@ -355,7 +355,7 @@ class Module(ABC):
                 dx = bwd_fn(m, dy)
 
             assert not is_nan(dx).any().item(), "NaNs detected in " + repr(m)
-            assert not m.function_ctx.context, "Context memory leak in " + repr(m)
+            assert not m.ctx.context, "Context memory leak in " + repr(m)
 
             if m.retain_values and m.x and m.y:
                 m.x.grad = dx
@@ -373,7 +373,7 @@ class Module(ABC):
         force : bool, optional
             Whether to force clean and ignore ``retain_values``. Defaults to ``False``.
         """
-        self.function_ctx.context.clear()
+        self.ctx.context.clear()
 
         if not self._retain_values or force:
             self.x = self.y = None

@@ -72,7 +72,7 @@ class BatchNorm1D(Module):
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
         y, rmean, rvar = BatchNorm1DFunction.forward(
-            self.function_ctx,
+            self.ctx,
             x,
             self.rmean,
             self.rvar,
@@ -87,7 +87,7 @@ class BatchNorm1D(Module):
         return y
 
     def backward(self, dy: Tensor) -> Tensor:
-        dx, dw, db = BatchNorm1DFunction.backward(self.function_ctx, dy)
+        dx, dw, db = BatchNorm1DFunction.backward(self.ctx, dy)
         self.update_parameter_grad(self.w, dw)
         self.update_parameter_grad(self.b, db)
         return dx
@@ -150,7 +150,7 @@ class BatchNorm2D(Module):
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
         y, rmean, rvar = BatchNorm2DFunction.forward(
-            self.function_ctx,
+            self.ctx,
             x,
             self.rmean,
             self.rvar,
@@ -165,7 +165,7 @@ class BatchNorm2D(Module):
         return y
 
     def backward(self, dy: Tensor) -> Tensor:
-        dx, dw, db = BatchNorm2DFunction.backward(self.function_ctx, dy)
+        dx, dw, db = BatchNorm2DFunction.backward(self.ctx, dy)
         self.update_parameter_grad(self.w, dw)
         self.update_parameter_grad(self.b, db)
         return dx
@@ -217,10 +217,10 @@ class LayerNorm(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return LayerNormFunction.forward(self.function_ctx, x, self.w, self.b, self.eps)
+        return LayerNormFunction.forward(self.ctx, x, self.w, self.b, self.eps)
 
     def backward(self, dy: Tensor) -> Tensor:
-        dx, dw, db = LayerNormFunction.backward(self.function_ctx, dy)
+        dx, dw, db = LayerNormFunction.backward(self.ctx, dy)
         self.update_parameter_grad(self.w, dw)
         self.update_parameter_grad(self.b, db)
         return dx
@@ -269,10 +269,10 @@ class RMSNorm(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return RMSNormFunction.forward(self.function_ctx, x, self.w, self.eps)
+        return RMSNormFunction.forward(self.ctx, x, self.w, self.eps)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        dx, dw = RMSNormFunction.backward(self.function_ctx, dy)
+        dx, dw = RMSNormFunction.backward(self.ctx, dy)
         self.update_parameter_grad(self.w, dw)
         return dx

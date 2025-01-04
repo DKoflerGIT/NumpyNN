@@ -62,11 +62,11 @@ class Linear(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return LinearFunction.forward(self.function_ctx, x, self.w, self.b)
+        return LinearFunction.forward(self.ctx, x, self.w, self.b)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        dx, dw, db = LinearFunction.backward(self.function_ctx, dy)
+        dx, dw, db = LinearFunction.backward(self.ctx, dy)
         self.update_parameter_grad(self.w, dw)
         self.update_parameter_grad(self.b, db)
         return dx

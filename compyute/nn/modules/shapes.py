@@ -20,11 +20,11 @@ class Flatten(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return FlattenFunction.forward(self.function_ctx, x)
+        return FlattenFunction.forward(self.ctx, x)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return FlattenFunction.backward(self.function_ctx, dy)
+        return FlattenFunction.backward(self.ctx, dy)
 
 
 class Reshape(Module):
@@ -44,11 +44,11 @@ class Reshape(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return ReshapeFunction.forward(self.function_ctx, x, self.shape)
+        return ReshapeFunction.forward(self.ctx, x, self.shape)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return ReshapeFunction.backward(self.function_ctx, dy)
+        return ReshapeFunction.backward(self.ctx, dy)
 
 
 class Slice(Module):
@@ -68,11 +68,11 @@ class Slice(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return SliceFunction.forward(self.function_ctx, x, self.slice)
+        return SliceFunction.forward(self.ctx, x, self.slice)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return SliceFunction.backward(self.function_ctx, dy)
+        return SliceFunction.backward(self.ctx, dy)
 
 
 def _parse_slices(slice_str: str) -> tuple[slice | int, ...]:

@@ -37,13 +37,11 @@ class Upsample2D(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return Upsample2DFunction.forward(
-            self.function_ctx, x, self.scaling, self.target_shape
-        )
+        return Upsample2DFunction.forward(self.ctx, x, self.scaling, self.target_shape)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return Upsample2DFunction.backward(self.function_ctx, dy)
+        return Upsample2DFunction.backward(self.ctx, dy)
 
 
 class MaxPooling2D(Module):
@@ -62,11 +60,11 @@ class MaxPooling2D(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return MaxPooling2DFunction.forward(self.function_ctx, x, self.kernel_size)
+        return MaxPooling2DFunction.forward(self.ctx, x, self.kernel_size)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return MaxPooling2DFunction.backward(self.function_ctx, dy)
+        return MaxPooling2DFunction.backward(self.ctx, dy)
 
 
 class AvgPooling2D(Module):
@@ -85,8 +83,8 @@ class AvgPooling2D(Module):
 
     @Module.register_forward
     def forward(self, x: Tensor) -> Tensor:
-        return AvgPooling2DFunction.forward(self.function_ctx, x, self.kernel_size)
+        return AvgPooling2DFunction.forward(self.ctx, x, self.kernel_size)
 
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
-        return AvgPooling2DFunction.backward(self.function_ctx, dy)
+        return AvgPooling2DFunction.backward(self.ctx, dy)
