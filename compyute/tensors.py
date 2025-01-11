@@ -87,8 +87,6 @@ class Tensor:
         Data to initialize the tensor. Must be a NumPy array or CuPy array.
     """
 
-    __slots__ = "data", "grad", "_iterator"
-
     def __init__(self, data: ArrayLike) -> None:
         self.data = data
         self.grad: Optional[Tensor] = None
@@ -176,11 +174,11 @@ class Tensor:
     def __getitem__(self, key: Any) -> Tensor:
         if isinstance(key, tuple):
             return Tensor(self.data[key])
-        key = to_arraylike(key)
+        key = unpack(key)
         return Tensor(self.data[key])
 
     def __setitem__(self, key: Any, value: Tensor | ScalarLike) -> None:
-        self.data[to_arraylike(key)] = to_arraylike(value)
+        self.data[unpack(key)] = unpack(value)
 
     def __iter__(self) -> Tensor:
         self._iterator = 0
@@ -194,63 +192,63 @@ class Tensor:
         return y
 
     def __add__(self, other: Tensor | ScalarLike) -> Tensor:
-        return Tensor(self.data + to_arraylike(other))
+        return Tensor(self.data + unpack(other))
 
     def __radd__(self, other: Optional[ScalarLike]) -> Tensor:
         return Tensor(self.data + other)
 
     def __iadd__(self, other: Tensor | ScalarLike) -> Tensor:
-        self.data += to_arraylike(other)
+        self.data += unpack(other)
         return self
 
     def __sub__(self, other: Tensor | ScalarLike) -> Tensor:
-        return Tensor(self.data - to_arraylike(other))
+        return Tensor(self.data - unpack(other))
 
     def __rsub__(self, other: ScalarLike) -> Tensor:
         return Tensor(other - self.data)
 
     def __isub__(self, other: Tensor | ScalarLike) -> Tensor:
-        self.data -= to_arraylike(other)
+        self.data -= unpack(other)
         return self
 
     def __mul__(self, other: Tensor | ScalarLike) -> Tensor:
-        return Tensor(self.data * to_arraylike(other))
+        return Tensor(self.data * unpack(other))
 
     def __rmul__(self, other: ScalarLike) -> Tensor:
         return Tensor(other * self.data)
 
     def __imul__(self, other: Tensor | ScalarLike) -> Tensor:
-        self.data *= to_arraylike(other)
+        self.data *= unpack(other)
         return self
 
     def __truediv__(self, other: Tensor | ScalarLike) -> Tensor:
-        return Tensor(self.data / to_arraylike(other))
+        return Tensor(self.data / unpack(other))
 
     def __rtruediv__(self, other: ScalarLike) -> Tensor:
         return Tensor(other / self.data)
 
     def __itruediv__(self, other: Tensor | ScalarLike) -> Tensor:
-        self.data /= to_arraylike(other)
+        self.data /= unpack(other)
         return self
 
     def __floordiv__(self, other: Tensor | ScalarLike) -> Tensor:
-        return Tensor(self.data // to_arraylike(other))
+        return Tensor(self.data // unpack(other))
 
     def __rfloordiv__(self, other: ScalarLike) -> Tensor:
         return Tensor(other // self.data)
 
     def __ifloordiv__(self, other: Tensor | ScalarLike) -> Tensor:
-        self.data //= to_arraylike(other)
+        self.data //= unpack(other)
         return self
 
     def __pow__(self, other: Tensor | ScalarLike) -> Tensor:
-        return Tensor(self.data ** to_arraylike(other))
+        return Tensor(self.data ** unpack(other))
 
     def __rpow__(self, other: ScalarLike) -> Tensor:
         return Tensor(other**self.data)
 
     def __ipow__(self, other: Tensor | ScalarLike) -> Tensor:
-        self.data **= to_arraylike(other)
+        self.data **= unpack(other)
         return self
 
     def __mod__(self, other: int) -> Tensor:
@@ -273,22 +271,22 @@ class Tensor:
         return Tensor(self.data @ other.data)
 
     def __lt__(self, other: Tensor | ScalarLike) -> Tensor:
-        return Tensor(self.data < to_arraylike(other))
+        return Tensor(self.data < unpack(other))
 
     def __gt__(self, other: Tensor | ScalarLike) -> Tensor:
-        return Tensor(self.data > to_arraylike(other))
+        return Tensor(self.data > unpack(other))
 
     def __le__(self, other: Tensor | ScalarLike) -> Tensor:
-        return Tensor(self.data <= to_arraylike(other))
+        return Tensor(self.data <= unpack(other))
 
     def __ge__(self, other: Tensor | ScalarLike) -> Tensor:
-        return Tensor(self.data >= to_arraylike(other))
+        return Tensor(self.data >= unpack(other))
 
     def __eq__(self, other: Any) -> Any:
-        return Tensor(self.data == to_arraylike(other))  # type: ignore
+        return Tensor(self.data == unpack(other))  # type: ignore
 
     def __ne__(self, other: Any) -> Any:
-        return Tensor(self.data != to_arraylike(other))  # type: ignore
+        return Tensor(self.data != unpack(other))  # type: ignore
 
     def __len__(self) -> int:
         return self.shape[0]
@@ -679,8 +677,6 @@ class Tensor:
         return Tensor(self.data.var(dim, ddof=ddof, keepdims=keepdims))
 
 
-def to_arraylike(value: Any) -> ArrayLike | ScalarLike:
+def unpack(value: Any) -> ArrayLike | ScalarLike:
     """Converts a value to an array like."""
-    if isinstance(value, Tensor):
-        return value.data
-    return value
+    return value.data if isinstance(value, Tensor) else value

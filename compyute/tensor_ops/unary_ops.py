@@ -2,7 +2,7 @@
 
 from typing import Optional
 
-from ..tensors import ShapeLike, Tensor, to_arraylike
+from ..tensors import ShapeLike, Tensor, unpack
 
 __all__ = [
     "abs",
@@ -265,7 +265,7 @@ def histogram(
     Tensor
         Tensor containing the bin edges.
     """
-    b = to_arraylike(bins)
+    b = unpack(bins)
     w = weights.data if weights is not None else None
     hist, bin_edges = x.device.module.histogram(
         x.data, b, binrange, density=density, weights=w

@@ -29,7 +29,6 @@ class Sequential(Module):
         super().__init__(label)
         if not modules:
             raise EmptyContainerError()
-
         self.layers = ModuleList(modules)
 
     def add(self, module: Module) -> None:

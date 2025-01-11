@@ -2,7 +2,7 @@
 
 from typing import Optional
 
-from ..tensors import DimLike, ShapeError, Tensor, to_arraylike
+from ..tensors import DimLike, ShapeError, Tensor, unpack
 from ..typing import ScalarLike
 
 __all__ = [
@@ -101,7 +101,7 @@ def maximum(x1: Tensor, x2: Tensor | ScalarLike) -> Tensor:
     Tensor
         Tensor containing the element-wise maximum.
     """
-    return Tensor(x1.device.module.maximum(x1.data, to_arraylike(x2)))
+    return Tensor(x1.device.module.maximum(x1.data, unpack(x2)))
 
 
 def min(x: Tensor, dim: Optional[DimLike] = None, *, keepdims: bool = False) -> Tensor:
@@ -141,7 +141,7 @@ def minimum(x1: Tensor, x2: Tensor | ScalarLike) -> Tensor:
     Tensor
         Tensor containing the element-wise minimum.
     """
-    return Tensor(x1.device.module.minimum(x1.data, to_arraylike(x2)))
+    return Tensor(x1.device.module.minimum(x1.data, unpack(x2)))
 
 
 def topk(x: Tensor, k: int, dim: DimLike = -1) -> tuple[Tensor, Tensor]:

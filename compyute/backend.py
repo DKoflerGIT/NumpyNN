@@ -95,9 +95,7 @@ ArrayLike: TypeAlias = numpy.ndarray | cupy.ndarray
 
 def data_to_device(data: ArrayLike, device: Device) -> ArrayLike:
     """Moves the data to the specified device."""
-    if device == cpu:
-        return cupy.asnumpy(data)
-    return cupy.asarray(data)
+    return cupy.asnumpy(data) if device == cpu else cupy.asarray(data)
 
 
 def gpu_available() -> bool:
@@ -110,9 +108,7 @@ def gpu_available() -> bool:
 
 def get_device_count() -> int:
     """Returns the number of available devices."""
-    if not gpu_available():
-        return 0
-    return cupy.cuda.runtime.getDeviceCount()
+    return 0 if not gpu_available() else cupy.cuda.runtime.getDeviceCount()
 
 
 def free_memory() -> None:
@@ -170,9 +166,7 @@ def use_device(device: Device) -> Generator:
 
 def get_device_from_array(array: ArrayLike) -> Device:
     """Infers the device by type."""
-    if isinstance(array, cupy.ndarray):
-        return cuda
-    return cpu
+    return cuda if isinstance(array, cupy.ndarray) else cpu
 
 
 def select_device(device: Optional[Device]) -> Device:

@@ -249,12 +249,8 @@ class Module(ABC):
         OrderedDict[str, Tensor]
             State dict containing parameters and buffers.
         """
-        state_dict = self._get_pointer_state_dict()
-
-        for k, v in state_dict.items():
-            state_dict[k] = v.to_cpu()
-
-        return state_dict
+        pointer_sd = self._get_pointer_state_dict()
+        return OrderedDict({k: v.to_cpu() for k, v in pointer_sd.items()})
 
     def load_state_dict(
         self, state_dict: OrderedDict, target_device: Optional[Device] = cpu
@@ -432,9 +428,9 @@ def _is_repr_attr(attr: str, value: Any) -> bool:
     """Checks if an attribute should be included int the class representation."""
     return all(
         [
-            attr not in {"label", "function_ctx"},
+            attr not in {"label"},
             not attr.startswith("_"),
-            not isinstance(value, (Tensor, Module, ModuleList)),
+            not isinstance(value, (Tensor, Module, ModuleList, FunctionContext)),
             value is not None,
         ]
     )
