@@ -88,8 +88,7 @@ class BatchNorm1D(Module):
 
     def backward(self, dy: Tensor) -> Tensor:
         dx, dw, db = BatchNorm1DFunction.backward(self.ctx, dy)
-        self.update_parameter_grad(self.w, dw)
-        self.update_parameter_grad(self.b, db)
+        self.apply_grads((self.w, self.b), (dw, db))
         return dx
 
 
@@ -166,8 +165,7 @@ class BatchNorm2D(Module):
 
     def backward(self, dy: Tensor) -> Tensor:
         dx, dw, db = BatchNorm2DFunction.backward(self.ctx, dy)
-        self.update_parameter_grad(self.w, dw)
-        self.update_parameter_grad(self.b, db)
+        self.apply_grads((self.w, self.b), (dw, db))
         return dx
 
 
@@ -221,8 +219,7 @@ class LayerNorm(Module):
 
     def backward(self, dy: Tensor) -> Tensor:
         dx, dw, db = LayerNormFunction.backward(self.ctx, dy)
-        self.update_parameter_grad(self.w, dw)
-        self.update_parameter_grad(self.b, db)
+        self.apply_grads((self.w, self.b), (dw, db))
         return dx
 
 
@@ -274,5 +271,5 @@ class RMSNorm(Module):
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
         dx, dw = RMSNormFunction.backward(self.ctx, dy)
-        self.update_parameter_grad(self.w, dw)
+        self.apply_grads((self.w,), (dw,))
         return dx

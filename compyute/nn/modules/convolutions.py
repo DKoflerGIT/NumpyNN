@@ -116,8 +116,7 @@ class Conv1D(Module):
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
         dx, dw, db = Conv1DFunction.backward(self.ctx, dy)
-        self.update_parameter_grad(self.w, dw)
-        self.update_parameter_grad(self.b, db)
+        self.apply_grads((self.w, self.b), (dw, db))
         return dx
 
 
@@ -211,8 +210,7 @@ class Conv2D(Module):
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
         dx, dw, db = Conv2DFunction.backward(self.ctx, dy)
-        self.update_parameter_grad(self.w, dw)
-        self.update_parameter_grad(self.b, db)
+        self.apply_grads((self.w, self.b), (dw, db))
         return dx
 
 
@@ -300,8 +298,7 @@ class ConvTranspose1D(Module):
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
         dx, dw, db = ConvTranspose1DFunction.backward(self.ctx, dy)
-        self.update_parameter_grad(self.w, dw)
-        self.update_parameter_grad(self.b, db)
+        self.apply_grads((self.w, self.b), (dw, db))
         return dx
 
 
@@ -391,6 +388,5 @@ class ConvTranspose2D(Module):
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
         dx, dw, db = ConvTranspose2DFunction.backward(self.ctx, dy)
-        self.update_parameter_grad(self.w, dw)
-        self.update_parameter_grad(self.b, db)
+        self.apply_grads((self.w, self.b), (dw, db))
         return dx

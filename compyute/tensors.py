@@ -534,7 +534,6 @@ class Tensor:
     # ----------------------------------------------------------------------------------
     # UNARY TENSOR OPS
     # ----------------------------------------------------------------------------------
-
     def abs(self) -> Tensor:
         """Computes the element-wise absolute value of a tensor.
 

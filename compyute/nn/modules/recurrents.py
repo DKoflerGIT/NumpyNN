@@ -86,10 +86,9 @@ class Recurrent(Module):
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
         dx, dw_i, db_i, dw_h, db_h = RecurrentFunction.backward(self.ctx, dy)
-        self.update_parameter_grad(self.w_i, dw_i)
-        self.update_parameter_grad(self.b_i, db_i)
-        self.update_parameter_grad(self.w_h, dw_h)
-        self.update_parameter_grad(self.b_h, db_h)
+        self.apply_grads(
+            (self.w_i, self.b_i, self.w_h, self.b_h), (dw_i, db_i, dw_h, db_h)
+        )
         return dx
 
 
@@ -177,10 +176,9 @@ class LSTM(Module):
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
         dx, dw_i, db_i, dw_h, db_h = LSTMFunction.backward(self.ctx, dy)
-        self.update_parameter_grad(self.w_i, dw_i)
-        self.update_parameter_grad(self.b_i, db_i)
-        self.update_parameter_grad(self.w_h, dw_h)
-        self.update_parameter_grad(self.b_h, db_h)
+        self.apply_grads(
+            (self.w_i, self.b_i, self.w_h, self.b_h), (dw_i, db_i, dw_h, db_h)
+        )
         return dx
 
 
@@ -266,8 +264,7 @@ class GRU(Module):
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
         dx, dw_i, db_i, dw_h, db_h = GRUFunction.backward(self.ctx, dy)
-        self.update_parameter_grad(self.w_i, dw_i)
-        self.update_parameter_grad(self.b_i, db_i)
-        self.update_parameter_grad(self.w_h, dw_h)
-        self.update_parameter_grad(self.b_h, db_h)
+        self.apply_grads(
+            (self.w_i, self.b_i, self.w_h, self.b_h), (dw_i, db_i, dw_h, db_h)
+        )
         return dx

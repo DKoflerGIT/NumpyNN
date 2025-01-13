@@ -1,9 +1,13 @@
 """Tensor multinary operations."""
 
-from ..tensors import ShapeError, Tensor
+from typing import Any
+
+from ..tensors import ShapeError, Tensor, unpack
+from ..typing import ScalarLike
 from .unary_ops import fft1d, fft2d, ifft1d, ifft2d, real
 
 __all__ = [
+    "add_at",
     "allclose",
     "convolve1d_fft",
     "convolve2d_fft",
@@ -12,6 +16,21 @@ __all__ = [
     "inner",
     "outer",
 ]
+
+
+def add_at(x: Tensor, at: Any, values: Tensor | ScalarLike) -> None:
+    """Adds values at specified indices to a tensor inplace.
+
+    Parameters
+    ----------
+    x: Tensor
+        First input tensor.
+    at : Any
+        Indices at which to add the values.
+    values: Tensor | ScalarLike
+        Second input tensor to add to the first one.
+    """
+    x.device.module.add.at(x.data, unpack(at), unpack(values))
 
 
 def allclose(

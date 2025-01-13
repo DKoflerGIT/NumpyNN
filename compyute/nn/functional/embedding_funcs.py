@@ -1,6 +1,7 @@
 """Neural network embedding functions."""
 
-from ...preprocessing.basic import one_hot_encode
+from ...tensor_ops.creation_ops import zeros
+from ...tensor_ops.multiary_ops import add_at
 from ...tensors import Tensor
 from ...typing import is_integer
 from .functions import Function, FunctionContext, PseudoContext
@@ -16,15 +17,15 @@ class EmbeddingFunction(Function):
         if not is_integer(x.dtype):
             raise ValueError(f"Input must be an integer, got '{x.dtype}'.")
         y = embed_table[x]
-        ctx.add(x, embed_table.shape[0])
+        ctx.add(x, embed_table.shape)
         return y
 
     @staticmethod
     def backward(ctx: FunctionContext, dy: Tensor) -> Tensor:
-        x, n_embs = ctx.get()
-        batch_dims = tuple(range(x.ndim - 1))
-        x = one_hot_encode(x, n_embs, dy.dtype)
-        return (x.T @ dy).sum(batch_dims)
+        x, emb_shape = ctx.get()
+        dw = zeros(emb_shape, device=dy.device, dtype=dy.dtype)
+        add_at(dw, x, dy)
+        return dw
 
 
 def embedding(x: Tensor, embed_table: Tensor) -> Tensor:

@@ -220,7 +220,7 @@ class Module(ABC):
             for m in self.get_modules():
                 yield from m.get_buffers(recursive=False)
 
-    def _get_pointer_state_dict(self) -> OrderedDict[str, Tensor]:
+    def get_pointer_state_dict(self) -> OrderedDict[str, Tensor]:
         """Returns a state dict containing pointers to module parameters and buffers."""
         state_dict: OrderedDict[str, Tensor] = OrderedDict()
         state_dict.update(self._parameters)
@@ -228,7 +228,7 @@ class Module(ABC):
 
         for k, m in self._modules.items():
             # get child module state dict
-            m_state_dict = m._get_pointer_state_dict()
+            m_state_dict = m.get_pointer_state_dict()
 
             # update child module state dict keys
             new_m_state_dict = OrderedDict()
@@ -249,7 +249,7 @@ class Module(ABC):
         OrderedDict[str, Tensor]
             State dict containing parameters and buffers.
         """
-        pointer_sd = self._get_pointer_state_dict()
+        pointer_sd = self.get_pointer_state_dict()
         return OrderedDict({k: v.to_cpu() for k, v in pointer_sd.items()})
 
     def load_state_dict(
@@ -264,7 +264,7 @@ class Module(ABC):
         target_device : Device, optional
             Device to move the parameters and buffers to. Defaults to ``cpu``.
         """
-        self_state_dict = self._get_pointer_state_dict()
+        self_state_dict = self.get_pointer_state_dict()
         for (k1, v1), (k2, v2) in zip(self_state_dict.items(), state_dict.items()):
             if k1 != k2:
                 raise ValueError(f"State dict key mismatch: {k1},  {k2}")
@@ -381,16 +381,21 @@ class Module(ABC):
 
         free_memory()
 
-    def update_parameter_grad(
-        self, parameter: Optional[Parameter], grad: Optional[Tensor]
+    def apply_grads(
+        self,
+        parameters: Iterable[Optional[Parameter]],
+        grads: Iterable[Optional[Tensor]],
     ) -> None:
-        """Updates the parameter gradients."""
-        if not self.trainable or not parameter:
+        """Updates parameter gradients."""
+        if not self.trainable:
             return
-        if not parameter.grad:
-            parameter.grad = grad
-        else:
-            parameter.grad += grad  # accumulate gradients
+        for parameter, grad in zip(parameters, grads):
+            if not parameter or not grad:
+                continue
+            if not parameter.grad:
+                parameter.grad = grad
+            else:
+                parameter.grad += grad  # accumulate gradients
 
 
 class Identity(Module):

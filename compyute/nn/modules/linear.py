@@ -67,6 +67,5 @@ class Linear(Module):
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
         dx, dw, db = LinearFunction.backward(self.ctx, dy)
-        self.update_parameter_grad(self.w, dw)
-        self.update_parameter_grad(self.b, db)
+        self.apply_grads((self.w, self.b), (dw, db))
         return dx

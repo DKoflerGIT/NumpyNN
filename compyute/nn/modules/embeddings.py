@@ -54,5 +54,5 @@ class Embedding(Module):
     @Module.register_backward
     def backward(self, dy: Tensor) -> Tensor:
         dw = EmbeddingFunction.backward(self.ctx, dy)
-        self.update_parameter_grad(self.w, dw)
+        self.apply_grads((self.w,), (dw,))
         return empty((0,))
